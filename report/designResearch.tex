@@ -9,7 +9,7 @@
 \maketitle
 \clearpage
 
-\section*{Rating User Interfaces}
+\section*{Rating Usability of User Interfaces}
 Based on the Shneiderman's Principles of Interaction Design, Don Norman's Design Principles and Tog's First Principles of Interaction Design, these criteria have be identified as a solid starting point for any user interface.
 
 \subsection*{The Criteria}
@@ -25,17 +25,17 @@ Based on the Shneiderman's Principles of Interaction Design, Don Norman's Design
 
 \clearpage
 
-\section*{The Interfaces}
+\subsection*{The Interfaces}
 Two interfaces related to the topic of the assessment were chosen for analysis.
 
-\subsection*{AllRecipes}
+\subsubsection*{AllRecipes}
 A website with a great diversity of content and a site that employs various forms 
 of media to deliver information to its users. The site offers limited anonymous
 use, restricted to browsing content only. With membership comes full access to 
 site features, including the provisions for submitting recipes, uploading
 photographs of completed dishes, saving recipes and creating shopping lists.
 
-\subsection*{BigOven}
+\subsubsection*{BigOven}
 A website and application that runs on both Windows and mobile platforms, BigOven
 boasts one of the largest recipe collections available online (250 000+). As well
 as recipe organization and display, BigOven provides nutritional calculations,
@@ -44,9 +44,9 @@ a cookbook creator.
 
 \clearpage
 
-\section*{Analysis}
+\subsection*{Analysis}
 
-\subsection*{AllRecipes}
+\subsubsection*{AllRecipes}
 \begin{itemize}
 \item \emph{Consistency:} The layout of the site is consistent across pages, with an identical header / navigation bar horizontal at the top and a panel placed at the right. A strong colour scheme is present throughout pages, and this is never broken. Features of the same / similar types take the same shape / size and emphasizing details, with even the advertisements placed in the same places on every page. The font features are established on the homepage and remain constant.
 \item \emph{Feedback:} When manipulating recipes, a clear sense of what has been modified post-action is established through highly visible and concise feedback messages. The feedback messages do not intrude into the regular user experience.
@@ -57,7 +57,7 @@ a cookbook creator.
 \item \emph{Information Readability:} Font face is standard, although colour and sizing are problematic at times. Light font colours on a light background coupled with small font sizes (in places, particularly the side panel) can make some information difficult to read. Primary information highly visible, though.
 \end{itemize}
 
-\subsection*{BigOven}
+\subsubsection*{BigOven}
 \begin{itemize}
 \item \emph{Consistency:} Core site layout is maintained across the board, but the 'body layout' changes between pages and this causes confusion. Lack of an ability to predict where content will be placed based on previous pages. A colour scheme is consistent throughout the site, as are font details.
 \item \emph{Feedback:} Poor feedback on user interaction on the whole. Sometimes feedback is misleading, most of the time it is not at all visible and there isn't much of an attempt to highlight changes made by users to recipe views. 
@@ -67,5 +67,87 @@ a cookbook creator.
 \item \emph{Feature Visibility:} The site makes most features very visible, and there is often nothing to distract from features which should take user focus. Grouping, shape and size are employed well.
 \item \emph{Information Readability:} Information is generally very readable. There are no issues with fonts or text sizing, and the colour scheme is well-chosen. The feedback after user actions can get in the way of important information in the recipes, as it isn't differentiated from the body text of the recipe.
 \end{itemize}
+
+\clearpage
+
+\section{Analysis of Relevant Layouts}
+\vspace{0.5cm}
+\subsection{Chosen Websites}
+\begin{itemize}
+\item finecooking.com
+\item bbc.co.uk/food/recipes
+\item jamieoliver.com/recipes
+\item bbcgoodfood.com/recipes
+\item uktv.co.uk/food/homepage/sid/423
+\end{itemize}
+
+\clearpage
+
+\subsection{Common Features}
+\begin{itemize}
+\item The front pages of all chosen sites had some sort of 'featured recipes' / 'recent recipes' element which more-or-less consumed the whole of the body space of that page. 
+\item The chosen sites all had a 'related recipes' feature on pages where recipes were being browsed.
+\end{itemize}
+
+\clearpage
+
+\subsection{Individual Features}
+\vspace{0.5cm}
+
+\subsubsection{finecooking.com}
+\begin{itemize}
+\item Recipes are browsable using 'overlapping' categories, e.g. 'Ingredient', 'Course' etc.
+\item Recipe navigation elements give concise information about the dish, e.g. suitability for vegetarians, preparation time.
+\item Recipes are essentially a 'text dump' with a list of ingredients place at the top of the body.
+\end{itemize}
+
+\subsubsection{bbc.co.uk/food/recipes}
+\begin{itemize}
+\item Preparation instructions are separated into distinct steps, with ingredients displayed first.
+\item Recipes can be browsed by ingredients that they contain.
+\item A 'Favourite Recipes' feature is provided.
+\item A filterable search is provided.
+\end{itemize}
+
+\subsubsection{jamieoliver.com/recipes}
+\begin{itemize}
+\item Confusing front-page layout, with multiple navigation bars and oversized images.
+\item Recipes are again just a 'text dump'.
+\item Ingredients spacing makes reading require a lot of scrolling.
+\end{itemize}
+
+\subsubsection{bbcgoodfood.com/recipes}
+\begin{itemize}
+\item A summary of important information about the recipe is displayed at the top of recipe viewing pages.
+\item Three column layout for recipe pages is confusing, no clear focus.
+\end{itemize}
+
+\subsubsection{uktv.co.uk/food/homepage/sid/423}
+\begin{itemize}
+\item Featured recipes links on the home page don't navigate directly to the recipe.
+\item Recipe page layout is pleasant: picture and important information at the top, ingredients and instructions side-by-side beneath the image and information with clear distinction between ingredients and instructions.
+\end{itemize}
+
+\clearpage
+
+\section{Functional Requirements}
+User must be able to:
+\begin{itemize}
+\item browse all available recipes;
+\item decipher difficulty of dish;
+\item see ingredients required to prepare a dish;
+\item 'check' off acquired ingredients;
+\item see how long a dish will require to prepare;
+\item 'check off' steps in a recipe as they are performed;
+\item search for specific dish titles;
+\item search for dished matching a specified 'cuisine type';
+\item switch between available recipe views;
+\item quickly navigate to the last viewed recipe;
+\item discern dietary information of a recipe;
+\item seamlessly acquire detailed information about a single step in a recipe;
+\item determine what equipment is required to prepare the dish;
+\end{itemize}
+
+% For discussion: 6, 9, 12, 16
 
 \end{document}
