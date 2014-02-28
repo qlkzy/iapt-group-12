@@ -19,8 +19,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		// $this->load->view('welcome_message');
-		echo "The layout branch has started.";
+		$this->load->view('welcome_message');
 	}
 }
 
