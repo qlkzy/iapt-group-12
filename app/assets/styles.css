@@ -1,0 +1,25 @@
+/* One Stylesheet to rule them all, One Stylesheet to find them,
+   One Stylesheet to bring them all and in the darkness bind them. */
+
+#banner {
+    height: 10%;
+    width: 100%;
+}
+
+#banner_text {
+    display: inline-block;
+}
+
+#search{
+    display: inline-block;
+    height: 90%;
+    width: 20%;
+}
+
+#search_input{
+    display: inline-block;
+}
+
+#search_submit{
+    display: inline-block;
+}
