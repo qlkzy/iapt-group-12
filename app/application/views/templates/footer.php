@@ -1,3 +1,3 @@
-<div id="footer"><strong>&copy; IAPT Group 12</strong></div>
+<div id="footer"></div>
 </body>
 </html>

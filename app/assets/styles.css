@@ -1,19 +1,131 @@
 /* One Stylesheet to rule them all, One Stylesheet to find them,
    One Stylesheet to bring them all and in the darkness bind them. */
 
+body {
+    background: #FFF;
+    color: #555753;
+    font: 75% georgia, sans-serif;
+    line-height: 1.88889;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: -25px;
+    position: relative;
+}
+
 #banner {
-    height: 10%;
+    background-color: #2D6360;
+    height: 90px;
+    position: absolute;
     width: 100%;
 }
 
 #banner_text {
+    color: #FFF;
     display: inline-block;
+    left: 5%;
+    position: absolute;
+    top: 5%;
 }
 
-#search{
+#categorical_browse_title{
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    top: 100px;
+    width: 700px;
+}
+
+#categorical_recipe_browse {
+    border: 1px dashed #555753;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    width: 700px;
+    top: 100px;
+}
+
+/* #footer {
+    background-color: #2D6360;
+    bottom: 0;
+    color: #FFF;
+    height: 25px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+} */
+
+#ingredients_sidebar {}
+
+.nar_view_button {
+    left: 595px;
+    position: absolute;
+    top: 448px;
+}
+
+.nar_recipe_text {}
+
+#recently_viewed_recipes {
+    border: 1px dashed #555753;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    width: 700px;
+}
+
+#recently_viewed_recipes_title{
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    top: 100px;
+    width: 700px;
+}
+
+.recipe_attributes{
+    font-size: 150%;
+    left: 350px;
+    margin: 0;
+    position: absolute;
+    top: 175px;
+}
+
+.recipe_cover_image {
+    display: inline;
+    height: 300px;
+    left: 20px;
+    margin: 0;
+    position: absolute;
+    top: 175px;
+    width: 300px
+}
+
+.recipe_page_title{
+    position: absolute;
+    left: 20px;
+    margin: 0;
+    top: 125px;
+}
+
+.sbs_recipe_text {
+    left: 20px;
+    position: absolute;
+    top: 500px;
+}
+
+.sbs_view_button {
+    position: absolute;
+    top: 448px;
+    left: 350px;
+}
+
+#search {
     display: inline-block;
-    height: 90%;
-    width: 20%;
+    max-height: 90px;
+    position: absolute;
+    right: 5%;
+    top: 30px;
+    width: 275px;
 }
 
 #search_input{
@@ -23,3 +135,11 @@
 #search_submit{
     display: inline-block;
 }
+
+.sgm_view_button {
+    left: 480px;
+    position: absolute;
+    top: 448px;
+}
+
+.sgm_recipe_text{}
