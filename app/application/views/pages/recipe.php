@@ -9,10 +9,16 @@
     <li>Attribute 6</li>
     <li>Attribute 7</li>
 </ul>
-<button class="sbs_view_button">Step-By-Step</button>
-<button class="sgm_view_button">Segmented</button>
-<button class="nar_view_button">Narrative</button>
-<div class="sbs_recipe_text">
+<button class="recipe_view_selector_button" id="sbs_view_button" value="sbs">Step-By-Step</button>
+<button class="recipe_view_selector_button" id="sgm_view_button" value="sgm">Segmented</button>
+<button class="recipe_view_selector_button" id="nar_view_button" value="nar">Narrative</button>
+<div class="recipe_text" id="sbs_recipe_text">
+    This is the step-by-step garbage.
+</div>
+<div class="recipe_text" id="sgm_recipe_text">
+    This is the segmented recipe view.
+</div>
+<div class="recipe_text" id="nar_recipe_text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta mi nec odio dapibus facilisis. Curabitur
     nec consectetur lectus, quis tempor magna. Maecenas at adipiscing justo, eu interdum metus. Etiam et felis in mi
     eleifend ullamcorper et id metus. Nullam posuere ligula sagittis velit laoreet commodo. Sed sem lorem, tempus
@@ -103,6 +109,4 @@
     sem leo, sit amet scelerisque erat luctus vitae. In at arcu vitae metus commodo pellentesque. Maecenas in massa
     euismod, pretium tortor vitae, ultrices eros.
 </div>
-<div class="sgm_recipe_text">Segmented recipe instructions.</div>
-<div class="nar_recipe_text">Narrative recipe instructions</div>
-<div id="ingredients_sidebar">Ingredients go here.</div>
+<div id="ingredients_sidebar"><h2>Ingredients</h2></div>

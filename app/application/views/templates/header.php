@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="<? echo base_url()."assets/styles.css"; ?>" rel="stylesheet" type="text/css">
+    <script src="<? echo base_url()."assets/jquery.js"; ?>" type="text/javascript"></script>
+    <script src="<? echo base_url()."assets/recipe.js"; ?>" type ="text/javascript"></script>
 </head>
 <body>
 <div id="banner">

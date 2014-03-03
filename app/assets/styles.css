@@ -45,25 +45,26 @@ body {
     top: 100px;
 }
 
-/* #footer {
-    background-color: #2D6360;
-    bottom: 0;
-    color: #FFF;
-    height: 25px;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-} */
+.display_none {
+   /* Javascript alchemy requires this reagent. */
+}
 
-#ingredients_sidebar {}
+html {
+    overflow-y: scroll;
+}
 
-.nar_view_button {
-    left: 595px;
+#ingredients_sidebar {
+    display: none;
+}
+
+#nar_view_button {
+    left: 620px;
     position: absolute;
     top: 448px;
 }
 
-.nar_recipe_text {}
+#nar_recipe_text {
+}
 
 #recently_viewed_recipes {
     border: 1px dashed #555753;
@@ -93,7 +94,7 @@ body {
 .recipe_cover_image {
     display: inline;
     height: 300px;
-    left: 20px;
+    left: 5%;
     margin: 0;
     position: absolute;
     top: 175px;
@@ -102,21 +103,29 @@ body {
 
 .recipe_page_title{
     position: absolute;
-    left: 20px;
+    left: 5%;
     margin: 0;
     top: 125px;
 }
 
-.sbs_recipe_text {
-    left: 20px;
+.recipe_text{
+    display: inline-block;
+    left: 5%;
+    min-width: 700px;
+    max-width: 1200px;
     position: absolute;
     top: 500px;
 }
 
-.sbs_view_button {
+#sbs_recipe_text {
+
+}
+
+#sbs_view_button {
     position: absolute;
     top: 448px;
-    left: 350px;
+    left: 45%;
+    right: 65%;
 }
 
 #search {
@@ -136,10 +145,11 @@ body {
     display: inline-block;
 }
 
-.sgm_view_button {
-    left: 480px;
+#sgm_view_button {
+    left: 505px;
     position: absolute;
     top: 448px;
 }
 
-.sgm_recipe_text{}
+#sgm_recipe_text{
+}
