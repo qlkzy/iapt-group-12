@@ -22,9 +22,23 @@ body {
 }
 
 #categorical_browse_title {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 50%;
 }
 
 #categorical_recipe_browse {
+    height: 450px;
+    margin: 0 auto;
+    width: 75%;
+}
+
+#category_grid {
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    width: 460px;
 }
 
 #container {
@@ -55,10 +69,51 @@ html {
 #nar_recipe_text {
 }
 
+#recently_viewed_grid {
+    margin: 0 auto;
+    position: relative;
+    width: 460px;
+}
+
+.recently_viewed_recipe {
+    display: inline-block;
+    border: 1px solid #DDDDDD;
+    height: 125px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    width: 125px;
+}
+
+.recently_viewed_recipe_image {
+    width: 125px;
+    height: 125px;
+}
+
+.recently_viewed_recipe_name {
+    background: rgba(100, 100, 100, 0.7);
+    color: #FFFFFF;
+    height: 25px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    font-size: 150%;
+    top: 100px;
+    width: 125px;
+}
+
 #recently_viewed_recipes {
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 75%;
 }
 
 #recently_viewed_recipes_title {
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 50%;
 }
 
 .recipe_attributes {
@@ -71,6 +126,33 @@ html {
 }
 
 .recipe_buttons_container {
+}
+
+.recipe_category {
+    display: inline-block;
+    border: 1px solid #DDDDDD;
+    height: 125px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    width: 125px;
+}
+
+.recipe_category_image {
+    width: 125px;
+    height: 125px;
+}
+
+.recipe_category_name {
+    background: rgba(100, 100, 100, 0.7);
+    color: #FFFFFF;
+    height: 25px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    font-size: 150%;
+    top: 100px;
+    width: 125px;
 }
 
 .recipe_cover_image {
@@ -132,10 +214,50 @@ html {
         width: 300px;
     }
 
+    #category_grid {
+        width: 100%;
+    }
+
+    #categorical_browse_title {
+        display: block;
+    }
+
+    #categorical_recipe_browse {
+        display: block;
+        height: 1200px;
+        width: 125px;
+    }
+
+    .recently_viewed_recipe {
+        margin: 0 auto;
+        margin-top: 5px;
+        display: block;
+    }
+
+    #recently_viewed_grid {
+        width: 100%;
+    }
+
+    #recently_viewed_recipes {
+        display: block;
+        height: 400px;
+        width: 125px;
+    }
+
+    #recently_viewed_recipes_title {
+        display: block;
+    }
+
     .recipe_attributes {
         display: block;
         position: static;
         width: 220px;
+    }
+
+    .recipe_category {
+        margin: 0 auto;
+        margin-top: 5px;
+        display: block;
     }
 
     #search {
