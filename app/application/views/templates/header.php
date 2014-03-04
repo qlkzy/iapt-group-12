@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title><?php echo $title ?> - CodeIgniter 2 Tutorial</title>
+    <title><?= $title ?></title>
 </head>
 <body>
-    <h1>CodeIgniter 2 Tutorial</h1>
+    <h1><a href="<?= site_url() ?>">Recipe Site</a></h1>
