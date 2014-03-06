@@ -195,6 +195,38 @@ html {
 #search_input {
 }
 
+.search_result {
+    height: 130px;
+    width: 400px;
+}
+
+#search_results {
+    margin: 0 auto;
+    width: 75%;
+}
+
+#search_results h2{
+    text-align: center;
+}
+
+.search_result_attributes {
+    display: inline-block;
+    height: 125px;
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 0;
+    position: relative;
+    top: -65px;
+    width: 200px;
+}
+
+.search_result_image {
+    display: inline-block;
+    height: 125px;
+    position: relative;
+    width: 125px;
+}
+
 #search_submit {
 }
 
@@ -206,7 +238,7 @@ html {
 
 /* Media queries: */
 @media screen and (max-width: 767px) {
-    #banner_text{
+    #banner_text {
         padding-left: 10px;
     }
 
