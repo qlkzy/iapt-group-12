@@ -38,10 +38,7 @@
 |
 */
 
-//$route['default_controller'] = "welcome";
-$route['404_override'] = '';
-$route['default_controller'] = 'recipes/index';
-//$route['(:any)'] = 'pages/view/$1';
+$route['default_controller'] = 'home';
 
 
 /* End of file routes.php */

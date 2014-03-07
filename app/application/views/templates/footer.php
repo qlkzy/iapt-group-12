@@ -1,3 +1,4 @@
-<strong>&copy; 2014</strong>
+<div id="footer"></div>
+</div>
 </body>
 </html>
