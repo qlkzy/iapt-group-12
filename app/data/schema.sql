@@ -20,7 +20,7 @@ CREATE TABLE recipes
     cooking_time INT,
     difficulty ENUM('easy', 'medium', 'extreme'),
     image VARCHAR(255),
-    PRIMARY KEY (recipe_id)
+    PRIMARY KEY (recipe_id),
     FOREIGN KEY (category_id) REFERENCES categories (category_id)
 );
 
@@ -30,7 +30,7 @@ CREATE TABLE dietary
     recipe_id INT UNSIGNED,
     restriction VARCHAR(255),
     PRIMARY KEY (dietary_id),
-    FOREIGN KEY (recipe_id) REFERENCES recipes (recipe_id),
+    FOREIGN KEY (recipe_id) REFERENCES recipes (recipe_id)
 );
 
 CREATE TABLE presentations
