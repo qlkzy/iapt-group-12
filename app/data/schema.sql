@@ -1,5 +1,9 @@
+DROP TABLE IF EXISTS instructions;
+DROP TABLE IF EXISTS ingredients;
+DROP TABLE IF EXISTS dietary;
 DROP TABLE IF EXISTS presentations;
 DROP TABLE IF EXISTS recipes;
+DROP TABLE IF EXISTS categories;
 
 CREATE TABLE categories
 (
