@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h2 id="recently_viewed_recipes_title">Recently Viewed Recipes</h2>
 <div id="recently_viewed_recipes">
     <!-- Here as many recently viewed items as the controller informs this view

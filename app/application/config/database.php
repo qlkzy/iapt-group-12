@@ -50,7 +50,8 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'mysql-student';
 $db['default']['username'] = 'drm511';
-$db['default']['password'] = 'xiCuQ5A_xvQS';
+//$db['default']['password'] = 'xiCuQ5A_xvQS';
+$db['default']['password'] = 'xu-K8WGzhJT9';
 $db['default']['database'] = 'IAPT131412';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

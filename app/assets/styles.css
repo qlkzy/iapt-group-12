@@ -167,8 +167,9 @@ html {
 .recipe_text {
 }
 
-.recipe_text_container {
+#recipe_text_container {
     display: block;
+    width: 450px;
 }
 
 .recipe_view_selector_button {

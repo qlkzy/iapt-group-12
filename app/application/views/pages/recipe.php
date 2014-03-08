@@ -15,6 +15,7 @@
         <button class="recipe_view_selector_button" id="sgm_view_button" value="sgm">Segmented</button>
         <button class="recipe_view_selector_button" id="nar_view_button" value="nar">Narrative</button>
     </div>
+    <h2 id="instructionsTitle">Instructions:</h2>
     <div id="recipe_text_container">
         <div class="recipe_text" id="sbs_recipe_text">
             This is the step-by-step garbage.
