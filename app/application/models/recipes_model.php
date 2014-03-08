@@ -27,9 +27,48 @@ class Recipes_model extends CI_Model {
         $restrictions = $query->row_array();
 
         // Get the SBS ingredients:
-        $query = $this->db->query("SELECT description FROM ingredients JOIN presentations on ingredients.presentation_id = presentations.presentation_id JOIN recipes on presentations.recipe_id = recipes.recipe_id AND recipe_name = \"".$name."\" AND detail = 'step';");
-        $sbsIngredients = $query->result_array();
-        return $sbsIngredients;
+        $sbsIngredients = $this->getRecipeIngredients($name, "step");
+
+        // Get the SGM ingredients:
+        $sgmIngredients = $this->getRecipeIngredients($name, "segment");
+
+        // Get the NAR ingredients:
+        $narIngredients = $this->getRecipeIngredients($name, "narrative");
+
+        // Get the SBS instructions:
+        $sbsInstructions = $this->getRecipeInstructions($name, "step");
+
+        // Get the SGM instructions:
+        $sgmInstructions = $this->getRecipeInstructions($name, "segment");
+
+        // Get the NAR instructions:
+        $narInstructions = $this->getRecipeInstructions($name, "narrative");
+
+        // Build a Recipe object and return it:
+        return Recipe::createBuilder($recipeName)->cookingTime($cookingTime)->difficulty($difficulty)->image($image)->
+                                    category($category)->dietaryRestrictions($restrictions)->
+                                    sbsIngredients($sbsIngredients)->sgmIngredients($sgmIngredients)->
+                                    narIngredients($narIngredients)->sbsInstructions($sbsInstructions)->
+                                    sgmInstructions($sgmInstructions)->narInstructions($narInstructions)->build();
     }
 
+    public function getRecipeIngredients($name, $presentation) {
+        $query = $this->db->query("SELECT description FROM ingredients JOIN presentations on ingredients.presentation_id = presentations.presentation_id JOIN recipes on presentations.recipe_id = recipes.recipe_id AND recipe_name = \"".$name."\" AND detail = \"".$presentation."\";");
+        $ingredientsRaw = $query->result_array();
+        $ingredients = array();
+        foreach ($ingredientsRaw as $row) {
+            array_push($ingredients, $row['description']);
+        }
+        return $ingredients;
+    }
+
+    public function getRecipeInstructions($name, $presentation) {
+        $query = $this->db->query("SELECT description FROM instructions JOIN presentations ON instructions.presentation_id = presentations.presentation_id JOIN recipes ON presentations.recipe_id = recipes.recipe_id AND recipe_name = \"".$name."\" AND detail = \"".$presentation."\" ORDER BY seq;");
+        $instructionsRaw = $query->result_array();
+        $instructions = array();
+        foreach ($instructionsRaw as $row) {
+            array_push($instructions, $row['description']);
+        }
+        return $instructions;
+    }
 }

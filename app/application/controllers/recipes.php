@@ -10,9 +10,17 @@ class Recipes extends CI_Controller
     }
 
     public function index() {
-        var_dump($this->recipes_model->getRecipe("Beef Burgers"));
-
         $data['title'] = "Recipe";
+
+        $this->load->view("templates/header", $data);
+        $this->load->view("pages/recipe", $data);
+        $this->load->view("templates/footer", $data);
+    }
+
+    public function view($r) {
+        $recipe = (str_replace('_', ' ', $r));
+        $data['title'] = "Recipe";
+        $data['recipe'] = $this->recipes_model->getRecipe(strtolower($recipe));
 
         $this->load->view("templates/header", $data);
         $this->load->view("pages/recipe", $data);

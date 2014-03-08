@@ -42,4 +42,99 @@ class Recipe {
         $this->narInstructions = $builder->getNarInstructions();
     }
 
+    /**
+     * @return mixed
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCookingTime()
+    {
+        return $this->cookingTime;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDietaryRestrictions()
+    {
+        return $this->dietaryRestrictions;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDifficulty()
+    {
+        return $this->difficulty;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNarIngredients()
+    {
+        return $this->narIngredients;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNarInstructions()
+    {
+        return $this->narInstructions;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSbsIngredients()
+    {
+        return $this->sbsIngredients;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSbsInstructions()
+    {
+        return $this->sbsInstructions;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSgmIngredients()
+    {
+        return $this->sgmIngredients;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSgmInstructions()
+    {
+        return $this->sgmInstructions;
+    }
 }
