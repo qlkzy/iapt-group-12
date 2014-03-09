@@ -2,11 +2,14 @@
     <div id="search_results">
         <h2>Search Results:</h2>
         <?
-
-        for ($i = 1; $i < ($numRecs + 1); $i++) {
-            $rName = "recipe" . $i;
-            $data = array('recipe' => $$rName);
-            $this->load->view("templates/search_result", $data);
+        if (isset($numRecs)) {
+            for ($i = 1; $i < ($numRecs + 1); $i++) {
+                $rName = "recipe" . $i;
+                $data = array('recipe' => $$rName);
+                $this->load->view("templates/search_result", $data);
+            }
+        } else {
+            echo "No search results bitch.";
         }
         ?>
 

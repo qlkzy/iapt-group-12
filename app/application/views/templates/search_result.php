@@ -1,4 +1,4 @@
-<a href="<? echo base_url() . "index.php/recipes/view/" . $recipe->getName(); ?>">
+<a href="<? echo base_url() . "index.php/recipes/view/" . urlencode($recipe->getName()); ?>">
     <div class="search_result">
         <img class="search_result_image" src="http://is.gd/OZuAPp"/>
         <ul class="search_result_attributes">

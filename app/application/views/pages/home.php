@@ -12,7 +12,7 @@
 <div id="categorical_recipe_browse">
     <div id="category_grid">
         <? for ($i = 1; $i < 10; $i++) {
-            echo "<div class=\"recipe_category\"><img class =\"recipe_category_image\" src=\"http://is.gd/MLNCn7\"/><h3 class=\"recipe_category_name\">Category</h3></div>";
+            echo "<a class=\"category_link\"><div class=\"recipe_category\"><img class =\"recipe_category_image\" src=\"http://is.gd/MLNCn7\"/><h3 class=\"recipe_category_name\">Category</h3></div></a>";
         } ?>
     </div>
 </div>

@@ -18,7 +18,8 @@ class Recipes extends CI_Controller
     }
 
     public function view($r) {
-        $recipe = (str_replace('_', ' ', $r));
+        $recipe = urldecode($r);
+
         $data['title'] = "Recipe";
         $data['recipe'] = $this->recipes_model->getRecipe(strtolower($recipe));
 

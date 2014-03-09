@@ -15,7 +15,7 @@ class Recipes_model extends CI_Model
         // Get the basic recipe attributes:
         $query = $this->db->query("SELECT * FROM recipes WHERE recipe_name = \"" . $name . "\"");
         $attributesRaw = $query->row_array();
-        $recipeName = $attributesRaw['recipe_name'];
+        $recipeName = htmlentities($attributesRaw['recipe_name']);
         $cookingTime = $attributesRaw['cooking_time'];
         $difficulty = $attributesRaw['difficulty'];
         $image = $attributesRaw['image'];
@@ -81,10 +81,6 @@ class Recipes_model extends CI_Model
     {
         $query = $this->db->query("SELECT recipe_name FROM recipes WHERE recipe_name LIKE (\"%" . strtolower($name) . "%\")");
         $idsRaw = $query->result_array();
-        if (empty($idsRaw)) {
-            echo "No search results...";
-        } else {
-            return $idsRaw;
-        }
+        return $idsRaw;
     }
 }
