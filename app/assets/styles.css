@@ -1,6 +1,13 @@
 /* One Stylesheet to rule them all, One Stylesheet to find them,
    One Stylesheet to bring them all and in the darkness bind them. */
 
+a {
+    font-family: "Lucida Grande", Arial;
+    font-size: 13px;
+    line-height: 21px;
+    color: #444444;
+}
+
 body {
     background: #F5F5F5;
     font-family: "Lucida Grande", Arial;
@@ -167,6 +174,7 @@ html {
 
 #recipe_columns {
     margin: 0 auto;
+    position: relative;
     width: 100%;
 }
 
@@ -176,12 +184,20 @@ html {
     width: 275px;
 }
 
+.recipe_ingredient {
+    transition: color 0.3s ease-out;
+}
+
+.recipe_ingredient:hover {
+    color: #16A6B6;
+    cursor: pointer;
+    transition: color 0.3s ease-in;
+}
+
 #recipe_ingredients_container {
     display: inline-block;
-    left: 70px;
-    position: relative;
-    top: 40px;
-    width: 200px;
+    left: 500px;
+    position: absolute;
 }
 
 .recipe_page_title {
@@ -192,6 +208,7 @@ html {
 
 #recipe_text_container {
     display: inline-block;
+    position: absolute;
     width: 450px;
 }
 
@@ -220,21 +237,47 @@ html {
     width: 275px;
 }
 
+#search_filters {
+    display: none;
+    left: 5px;
+    position: absolute;
+}
+
 #search_input {
 }
 
+#search_page_columns {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+#search_page_columns h2{
+    text-align: left;
+}
+
 .search_result {
+    display: block;
     height: 130px;
-    width: 400px;
+    margin-top: 10px;
+    position: relative;
+    width: 500px;
+
+    transition: background-color 0.3s ease-in;
+}
+
+.search_result:hover {
+    background-color: rgba(218, 218, 218, 0.5);
+    cursor: pointer;
+
+    transition: background-color 0.3s ease-in;
 }
 
 #search_results {
-    margin: 0 auto;
-    width: 75%;
-}
-
-#search_results h2{
-    text-align: center;
+    display: inline-block;
+    left: 20px;
+    position: relative;
+    width: 450px;
 }
 
 .search_result_attributes {
@@ -242,14 +285,13 @@ html {
     height: 125px;
     margin-left: 10px;
     padding: 0;
-    position: relative;
-    top: -65px;
-    width: 200px;
+    position: absolute;
+    width: 350px;
 }
 
 .search_result_image {
     display: inline-block;
-    height: 125px;
+    height: 130px;
     position: relative;
     width: 125px;
 }

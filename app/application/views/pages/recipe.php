@@ -27,7 +27,7 @@
                     <?
                     $sbsInstructions = $recipe->getSbsInstructions();
                     foreach ($sbsInstructions as $instruction) {
-                        echo "<li>" . $instruction . "</li>";
+                        echo "<li class=\"recipe_instruction\">" . $instruction . "</li>";
                     }
                     ?>
                 </ul>
@@ -37,7 +37,7 @@
                     <?
                     $sgmInstructions = $recipe->getSgmInstructions();
                     foreach ($sgmInstructions as $instruction) {
-                        echo "<li>" . $instruction . "</li>";
+                        echo "<li class=\"recipe_instruction\">" . $instruction . "</li>";
                     }
                     ?>
                 </ul>
@@ -58,7 +58,7 @@
                     <?
                     $sbsIngredients = $recipe->getSbsIngredients();
                     foreach ($sbsIngredients as $ingredient) {
-                        echo "<li>" . $ingredient . "</li>";
+                        echo "<li class=\"recipe_ingredient\">" . $ingredient . "</li>";
                     }
                     ?>
                 </ul>
@@ -68,7 +68,7 @@
                     <?
                     $sgmIngredients = $recipe->getSgmIngredients();
                     foreach ($sgmIngredients as $ingredient) {
-                        echo "<li>" . $ingredient . "</li>";
+                        echo "<li class=\"recipe_ingredient\">" . $ingredient . "</li>";
                     }
                     ?>
                 </ul>
@@ -78,7 +78,7 @@
                     <?
                     $narIngredients = $recipe->getNarIngredients();
                     foreach ($narIngredients as $ingredient) {
-                        echo "<li>" . $ingredient . "</li>";
+                        echo "<li class=\"recipe_ingredient\">" . $ingredient . "</li>";
                     }
                     ?>
                 </ul>

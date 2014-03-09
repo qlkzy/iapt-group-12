@@ -18,7 +18,7 @@
         </div>
 
         <div id="search">
-            <form>
+            <form action="<? echo base_url() . "index.php/search/results"; ?>">
                 <input id="search_input" name="search_input" placeholder="Enter Search Query...">
                 <input id="search_submit" type="submit" value="Search">
             </form>
