@@ -24,3 +24,9 @@
             </form>
         </div>
     </div>
+    <nav>
+        <ul>
+            <li><a href="<? echo base_url(); ?>" id="nav_first">Home</a></li>
+            <li><a href="<? echo base_url()."index.php/search"; ?>">Browse Recipes</a></li>
+        </ul>
+    </nav>

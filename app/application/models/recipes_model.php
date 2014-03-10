@@ -55,6 +55,18 @@ class Recipes_model extends CI_Model
             sgmInstructions($sgmInstructions)->narInstructions($narInstructions)->build();
     }
 
+    public function getAllRecipes() {
+        $recipes = array();
+        $query = $this->db->query("SELECT recipe_name FROM recipes WHERE recipe_name LIKE \"%\"");
+        $recipeNames = $query->result_array();
+        foreach ($recipeNames as $row) {
+            $recipe = $this->getRecipe($row['recipe_name']);
+            array_push($recipes, $recipe);
+        }
+
+        return $recipes;
+    }
+
     public function getRecipeIngredients($name, $presentation)
     {
         $query = $this->db->query("SELECT description FROM ingredients JOIN presentations on ingredients.presentation_id = presentations.presentation_id JOIN recipes on presentations.recipe_id = recipes.recipe_id AND recipe_name = \"" . $name . "\" AND detail = \"" . $presentation . "\";");

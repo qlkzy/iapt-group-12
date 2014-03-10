@@ -11,6 +11,13 @@ class Search extends CI_Controller
     public function index()
     {
         $data['title'] = "Search";
+        $allRecipes = $this->recipes_model->getAllRecipes();
+        $keySuffix = 1;
+        foreach($allRecipes as $recipe) {
+            $data['recipe'.$keySuffix] = $recipe;
+            $keySuffix++;
+        }
+        $data['numRecs'] = sizeof($data) - 1;
 
         $this->load->view("templates/header", $data);
         $this->load->view("pages/search", $data);

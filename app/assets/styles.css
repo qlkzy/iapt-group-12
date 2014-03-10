@@ -99,6 +99,48 @@ html {
     text-align: justify;
 }
 
+nav {
+    background: #DADADA;
+    border-bottom: 1px #AAAAAA solid;
+    border-top: 1px #AAAAAA solid;
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav ul {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    height: 30px;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    height: 30px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in;
+}
+
+nav ul li a:hover {
+    background-color: whitesmoke;
+    height: 25px;
+    transition: background-color 0.3s ease-in;
+}
+
+
+
 #recently_viewed_grid {
     margin: 0 auto;
     position: relative;
