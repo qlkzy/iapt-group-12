@@ -105,12 +105,24 @@ html {
     width: 460px;
 }
 
-.recently_viewed_recipe {
+.recently_viewed_link {
     display: inline-block;
     border: 1px solid #DDDDDD;
     height: 125px;
     margin-left: 20px;
     margin-top: 10px;
+    position: relative;
+    width: 125px;
+}
+
+.recently_viewed_link:hover {
+    cursor: pointer;
+}
+
+.recently_viewed_recipe {
+    display: inline-block;
+    border: 1px solid #DDDDDD;
+    height: 125px;
     position: relative;
     width: 125px;
 }

@@ -4,7 +4,7 @@
          of will be passed to the recently viewed template to be rendered. -->
     <div id="recently_viewed_grid">
         <? for ($i = 1; $i < 4; $i++) {
-            echo "<div class=\"recently_viewed_recipe\"><img class =\"recently_viewed_recipe_image\" src=\"http://is.gd/MLNCn7\"/><h3 class=\"recently_viewed_recipe_name\">Recipe</h3></div>";
+            echo "<a class =\"recently_viewed_link\"><div class=\"recently_viewed_recipe\"><img class =\"recently_viewed_recipe_image\" src=\"http://is.gd/MLNCn7\"/><h3 class=\"recently_viewed_recipe_name\">Recipe</h3></div></a>";
         } ?>
     </div>
 </div>
