@@ -1,6 +1,6 @@
 <div id="main_recipe">
     <h2 class="recipe_page_title"><? echo $recipe->getName(); ?></h2>
-    <img src="http://is.gd/ExOYzN" class="recipe_cover_image"/>
+    <img src="<? echo $recipe->getImage(); ?>" class="recipe_cover_image"/>
     <ul class="recipe_attributes">
         <li><b>Category: </b><? echo ucfirst($recipe->getCategory()); ?></li>
         <li><b>Difficulty: </b><? echo ucfirst($recipe->getDifficulty()); ?></li>

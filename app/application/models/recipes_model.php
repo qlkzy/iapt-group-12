@@ -26,7 +26,7 @@ class Recipes_model extends CI_Model
         $category = $categoryRaw['category_name'];
 
         // Get the dietary restrictions:
-        $query = $this->db->query("SELECT restriction FROM recipes INNER JOIN dietary WHERE recipe_name = \"" . $name . "\"");
+        $query = $this->db->query("SELECT restriction FROM recipes JOIN dietary on recipes.recipe_id = dietary.recipe_id WHERE recipe_name = \"" . $name . "\"");
         $restrictions = $query->row_array();
 
         // Get the SBS ingredients:
