@@ -274,7 +274,7 @@ nav ul li a:hover {
 
 #recipe_text_container {
     display: inline-block;
-    position: absolute;
+    position: relative;
     width: 450px;
 }
 
@@ -381,7 +381,7 @@ ul {
 }
 
 /* Media queries: */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 321px) {
     #banner_text {
         padding-left: 10px;
     }
