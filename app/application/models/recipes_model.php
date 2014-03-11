@@ -69,7 +69,7 @@ class Recipes_model extends CI_Model
 
     public function getRecipeIngredients($name, $presentation)
     {
-        $query = $this->db->query("SELECT description FROM ingredients JOIN presentations on ingredients.presentation_id = presentations.presentation_id JOIN recipes on presentations.recipe_id = recipes.recipe_id AND recipe_name = \"" . $name . "\" AND detail = \"" . $presentation . "\";");
+        $query = $this->db->query("SELECT description FROM ingredients JOIN presentations on ingredients.presentation_id = presentations.presentation_id JOIN recipes on presentations.recipe_id = recipes.recipe_id WHERE recipe_name = \"" . $name . "\" AND detail = \"" . $presentation . "\";");
         $ingredientsRaw = $query->result_array();
         $ingredients = array();
         foreach ($ingredientsRaw as $row) {
@@ -80,7 +80,7 @@ class Recipes_model extends CI_Model
 
     public function getRecipeInstructions($name, $presentation)
     {
-        $query = $this->db->query("SELECT description FROM instructions JOIN presentations ON instructions.presentation_id = presentations.presentation_id JOIN recipes ON presentations.recipe_id = recipes.recipe_id AND recipe_name = \"" . $name . "\" AND detail = \"" . $presentation . "\" ORDER BY seq;");
+        $query = $this->db->query("SELECT description FROM instructions JOIN presentations ON instructions.presentation_id = presentations.presentation_id JOIN recipes ON presentations.recipe_id = recipes.recipe_id WHERE recipe_name = \"" . $name . "\" AND detail = \"" . $presentation . "\" ORDER BY seq;");
         $instructionsRaw = $query->result_array();
         $instructions = array();
         foreach ($instructionsRaw as $row) {

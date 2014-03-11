@@ -38,7 +38,7 @@ class Recipe {
         $this->narIngredients = $builder->getNarIngredients();
 
         $this->sbsInstructions = $builder->getSbsInstructions();
-        $this->sgmInstructions = $builder->getSbsInstructions();
+        $this->sgmInstructions = $builder->getSgmInstructions();
         $this->narInstructions = $builder->getNarInstructions();
     }
 
