@@ -18,9 +18,15 @@
         </div>
 
         <div id="search">
-            <form>
-                <input id="search_input" name="search_input" placeholder="Enter Search Query...">
-                <input id="search_submit" type="submit" value="Search">
+            <form action="<? echo base_url() . "index.php/search/results"; ?>">
+                <input id="search_input" required pattern="[a-zA-Z][a-zA-Z\s]+"  name="search_input" placeholder="Enter Search Query..."/>
+                <input id="search_submit" type="submit" value="Search"/>
             </form>
         </div>
     </div>
+    <nav>
+        <ul>
+            <li><a href="<? echo base_url(); ?>" id="nav_first">Home</a></li>
+            <li><a href="<? echo base_url()."index.php/search"; ?>">Browse Recipes</a></li>
+        </ul>
+    </nav>

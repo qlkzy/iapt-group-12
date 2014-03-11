@@ -1,15 +1,21 @@
-<div id="search_results">
-    <h2>Search Results:</h2>
-    <?
-      // Here as many result objects as were created by the search query or
-      // application of a filter will be passed to the
-      // 'views/templates/search_result.php' template to be rendered.
-    for ($i = 1; $i < 6; $i++) {
-        $recipe=['name' => "Recipe ".$i, 'difficulty' => "Mega", 'time' => "Forever"];
-        $this->load->view("templates/search_result", $recipe);
-    }
-    ?>
+<div id="search_page_columns">
+    <div id="search_results">
+        <h2>Search Results:</h2>
+        <?
+        if (isset($numRecs)) {
+            for ($i = 1; $i < ($numRecs + 1); $i++) {
+                $rName = "recipe" . $i;
+                $data = array('recipe' => $$rName);
+                $this->load->view("templates/search_result", $data);
+            }
+        } else {
+            echo "No search results bitch.";
+        }
+        ?>
 
+    </div>
+    <div id="search_filters">
+        <h2>Search Filters:</h2>
+        Search filters go here.
+    </div>
 </div>
-<div id="search_filters">Search filters go here.</div>
-<br/>
