@@ -4,6 +4,7 @@ $(document).ready(function () {
     $("#sgm_recipe_text").hide();
     $("#sbs_ingredients_text").hide();
     $("#sgm_ingredients_text").hide();
+    
 
     $(".recipe_view_selector_button").click(function () {
         $(".recipe_text").hide();

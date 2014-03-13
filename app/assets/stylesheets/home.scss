@@ -1,0 +1,7 @@
+@import "compass/reset";
+@import "compass/typography";
+
+
+#navlist {
+  @include inline-block-list;
+}

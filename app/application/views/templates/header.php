@@ -6,27 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="<? echo base_url() . "assets/styles.css"; ?>" rel="stylesheet" type="text/css">
-    <script src="<? echo base_url() . "assets/jquery.js"; ?>" type="text/javascript"></script>
-    <script src="<? echo base_url() . "assets/recipe.js"; ?>" type="text/javascript"></script>
+    <!-- <link href="<?php echo base_url() . "assets/stylesheets/backup.css"; ?>" rel="stylesheet" type="text/css"> -->
+    <link href="<?php echo base_url(). "assets/stylesheets/home.css"; ?>" rel="stylesheet" type="text/css">
+    <script src="<?php echo base_url() . "assets/scripts/jquery.js"; ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url() . "assets/scripts/recipe.js"; ?>" type="text/javascript"></script>
 </head>
 <body>
 <div id="container">
     <div id="banner">
-        <div id="banner_text">
-            <h1><?php echo $title ?></h1>
-        </div>
-
-        <div id="search">
-            <form action="<? echo base_url() . "index.php/search/results"; ?>">
-                <input id="search_input" required pattern="[a-zA-Z][a-zA-Z\s]+"  name="search_input" placeholder="Enter Search Query..."/>
+        <h1 id="banner_text"><?php echo $title; ?></h1>
+            <form action="<?php echo base_url() . "index.php/search/results"; ?>" id="search">
+                <input id="search_input" required pattern="[a-zA-Z][a-zA-Z\s]+"  name="search_input" placeholder="Enter recipe name..."/>
                 <input id="search_submit" type="submit" value="Search"/>
             </form>
-        </div>
     </div>
     <nav>
-        <ul>
-            <li><a href="<? echo base_url(); ?>" id="nav_first">Home</a></li>
-            <li><a href="<? echo base_url()."index.php/search"; ?>">Browse Recipes</a></li>
+        <ul id="navlist">
+            <li><a href="<?php echo base_url(); ?>" id="nav_first">Home</a></li>
+            <li><a href="<?php echo base_url()."index.php/search"; ?>">Browse Recipes</a></li>
         </ul>
     </nav>

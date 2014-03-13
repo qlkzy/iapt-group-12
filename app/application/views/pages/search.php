@@ -1,7 +1,7 @@
 <div id="search_page_columns">
     <div id="search_results">
         <h2>Search Results:</h2>
-        <?
+        <?php
         if (isset($numRecs)) {
             for ($i = 1; $i < ($numRecs + 1); $i++) {
                 $rName = "recipe" . $i;
