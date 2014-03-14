@@ -2,15 +2,15 @@ $(document).ready(function () {
     $(".nav_text").hide();
 
     $("#nav_home").hover(function() {
-        $("#nav_htext").fadeIn();
+        $("#nav_htext").fadeIn(200);
     }, function() {
-        $("#nav_htext").fadeOut();
+        $("#nav_htext").fadeOut(200);
     })
 
     $("#nav_browse").hover(function() {
-        $("#nav_btext").fadeIn();
+        $("#nav_btext").fadeIn(200);
     }, function() {
-        $("#nav_btext").fadeOut();
+        $("#nav_btext").fadeOut(200);
     });
 
 });

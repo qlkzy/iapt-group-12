@@ -4,12 +4,19 @@
 @import "../modules/import_all";
 
 // Constants:
-$content_width: 100%;
+$content_min_height: 760px;
+$content_min_width: 760px;
+$content_max_width: 1200px;
 
 #content_wrapper {
+  border-left: 2px $p_lgrey solid;
+  border-right: 2px $p_lgrey solid;
   font-family: $font-stack;
-  position: relative;
-  width: $content_width;
+  font-size: $base_font_size;
+  line-height: $base_line_height;
+  min-height: $content_min_height;
+  max-width: $content_max_width;
+  min-width: $content_min_width;
 
   @include center-block;
 }

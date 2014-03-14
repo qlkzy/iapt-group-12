@@ -6,10 +6,19 @@
 
  and are imported into this stylesheet.
 **********************************************************************************************************************/
+body {
+  margin: 0;
+  padding: 0; }
+
 #content_wrapper {
+  border-left: 2px #f2f2f5 solid;
+  border-right: 2px #f2f2f5 solid;
   font-family: "Arial";
-  position: relative;
-  width: 100%;
+  font-size: 20px;
+  line-height: 32px;
+  min-height: 760px;
+  max-width: 1200px;
+  min-width: 760px;
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -21,7 +30,7 @@
   display: none; }
 
 #banner {
-  background-color: #ffffff;
+  background-color: #f2f2f5;
   display: block;
   height: 100px;
   position: relative;
@@ -30,6 +39,7 @@
     height: 75px;
     left: 50px;
     position: absolute;
+    top: 10px;
     width: 296px;
     display: inline-block;
     vertical-align: baseline;
@@ -40,7 +50,7 @@
     height: 75%;
     position: absolute;
     right: 50px;
-    top: 10px;
+    top: 20px;
     width: 300px;
     align-items: center;
     display: inline-flex;
@@ -83,8 +93,8 @@
   #banner nav {
     left: 400px;
     position: absolute;
-    top: 30px;
-    width: 75px;
+    top: 40px;
+    width: 85px;
     align-items: center;
     display: inline-flex;
     flex-flow: row nowrap;
@@ -109,9 +119,39 @@
     left: 500px;
     position: absolute;
     font-size: 175%;
-    top: 7px;
+    top: 17px;
     display: inline-block;
     vertical-align: baseline;
     zoom: 1;
     *display: inline;
     *vertical-align: auto; }
+
+#welcome_message {
+  margin-top: 100px;
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  #welcome_message h1 {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  #welcome_message p {
+    text-align: justify;
+    text-justify: distribute;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  #welcome_message #w_list {
+    font-size: 30px;
+    line-height: 49px;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }

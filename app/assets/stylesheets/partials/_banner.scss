@@ -11,7 +11,7 @@ $banner_image_ratio: (793/201);
 $nav_height: 50px;
 
 #banner {
-  background-color: #ffffff;
+  background-color: $p_lgrey;
   display: block;
   height: $banner_height;
   position: relative;
@@ -21,6 +21,7 @@ $nav_height: 50px;
     height: $banner_image_height;
     left: $content_offset;
     position: absolute;
+    top: 10px;
     width: round($banner_image_height*$banner_image_ratio);
 
     @include inline-block;
@@ -30,7 +31,7 @@ $nav_height: 50px;
     height: 75%;
     position: absolute;
     right: $content_offset;
-    top: 10px;
+    top: 20px;
     width: 300px;
 
     @include jw-fbox;
@@ -50,8 +51,8 @@ $nav_height: 50px;
   nav {
     left: 400px;
     position: absolute;
-    top: 30px;
-    width: 75px;
+    top: 40px;
+    width: 85px;
     @include jw-fbox;
 
     a {
@@ -71,7 +72,7 @@ $nav_height: 50px;
     left: 500px;
     position: absolute;
     font-size: 175%;
-    top: 7px;
+    top: 17px;
     @include inline-block;
   }
 }

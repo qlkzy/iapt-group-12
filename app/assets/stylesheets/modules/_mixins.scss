@@ -10,12 +10,20 @@
   margin-right: auto;
 }
 
-// Establish a flexbox that just works:
+// Establish a flexbox with no wrap that just works:
 @mixin jw-fbox {
   align-items: center;
   display: inline-flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+}
+
+// Establish a flexbox::
+@mixin jw-wfbox($align, $display, $direction, $wrap, $justify) {
+  align-items: $align;
+  display: $display;
+  flex-flow: $direction $wrap;
+  justify-content: $justify;
 }
 
 // Unstyle a link:

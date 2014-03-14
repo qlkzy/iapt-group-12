@@ -1,0 +1,41 @@
+//*********************************************************************************************************************
+// Partial for the site welcome message,defining properties for the welcome message.
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+#welcome_message {
+  // margin-left: $content_offset;
+  margin-top: $welcome_offset;
+  width: 85%;
+
+  @include center-block;
+
+  h1 {
+    text-align: center;
+
+    @include center-block;
+  }
+
+  p {
+    text-align: justify;
+    text-justify: distribute;
+    width: 75%;
+
+    @include center-block;
+  }
+
+  #w_list {
+    font-size: $w_list_font_size;
+    line-height: $w_list_line_height;
+    width: 40%;
+
+    @include center-block;
+    @include jw-wfbox(center, flex, row, wrap, center);
+
+    i {
+    }
+
+    span {
+    }
+  }
+}
