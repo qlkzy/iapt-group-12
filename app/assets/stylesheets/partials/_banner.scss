@@ -3,18 +3,75 @@
 //*********************************************************************************************************************
 @import "../modules/import_all";
 
-#banner {
+// Some local variables:
+$banner_height: 100px;
+$banner_image_height: 75px;
+$banner_image_ratio: (793/201);
 
-  background-color: $banner_bg_colour;
-  height: 65px;
+$nav_height: 50px;
+
+#banner {
+  background-color: #ffffff;
+  display: block;
+  height: $banner_height;
   position: relative;
   width: 100%;
 
-  #banner_text {
+  #banner_image {
+    height: $banner_image_height;
+    left: $content_offset;
+    position: absolute;
+    width: round($banner_image_height*$banner_image_ratio);
 
+    @include inline-block;
   }
 
   #banner_search {
+    height: 75%;
+    position: absolute;
+    right: $content_offset;
+    top: 10px;
+    width: 300px;
 
+    @include jw-fbox;
+
+    #bs_input {
+      display: block;
+      height: 30px;
+      width: 200px;
+    }
+
+    #bs_submit {
+      height: 37px;
+      @include button(lighten($p_lblue, 10%));
+    }
+  }
+
+  nav {
+    left: 400px;
+    position: absolute;
+    top: 30px;
+    width: 75px;
+    @include jw-fbox;
+
+    a {
+      @include unstyled-link;
+      @include transition(color 0.3s ease-in 0s);
+
+      &:hover {
+        color: $p_lblue;
+        cursor: pointer;
+        @include transition(color 0.3s ease-in 0s);
+      }
+    }
+  }
+
+  .nav_text {
+    color: $p_medblue;
+    left: 500px;
+    position: absolute;
+    font-size: 175%;
+    top: 7px;
+    @include inline-block;
   }
 }

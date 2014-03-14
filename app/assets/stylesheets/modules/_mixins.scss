@@ -9,3 +9,22 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+// Establish a flexbox that just works:
+@mixin jw-fbox {
+  align-items: center;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+// Unstyle a link:
+@mixin unstyled-link {
+  color: inherit;
+  cursor: inherit;
+  text-decoration: none;
+
+  &:active, &:focus {
+    outline: none;
+  }
+}

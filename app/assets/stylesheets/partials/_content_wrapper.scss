@@ -4,14 +4,20 @@
 @import "../modules/import_all";
 
 // Constants:
-$content_width: 960px;
+$content_width: 100%;
 
 #content_wrapper {
-  background-color: $content_bg_colour;
-  font: $font-stack;
+  font-family: $font-stack;
   position: relative;
   width: $content_width;
 
   @include center-block;
 }
 
+#rv_container {
+  display: none;
+}
+
+#cb_container {
+  display: none;
+}
