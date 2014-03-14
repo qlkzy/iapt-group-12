@@ -1,0 +1,17 @@
+//*********************************************************************************************************************
+// Stylesheet for the content wrapper, defining properties to be inherited by all content.
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+// Constants:
+$content_width: 960px;
+
+#content_wrapper {
+  background-color: $content_bg_colour;
+  font: $font-stack;
+  position: relative;
+  width: $content_width;
+
+  @include center-block;
+}
+

@@ -1,18 +1,19 @@
-<h2 id="recently_viewed_recipes_title">Recently Viewed Recipes</h2>
-<div id="recently_viewed_recipes">
+<div id="rv_container">
+    <h2 id="rv_title">Recently Viewed Recipes</h2>
     <!-- Here as many recently viewed items as the controller informs this view
          of will be passed to the recently viewed template to be rendered. -->
-    <div id="recently_viewed_grid">
+    <div id="rv_grid">
         <?php for ($i = 1; $i < 4; $i++) {
-            echo "<a class =\"recently_viewed_link\"><div class=\"recently_viewed_recipe\"><img class =\"recently_viewed_recipe_image\" src=\"http://is.gd/MLNCn7\"/><h3 class=\"recently_viewed_recipe_name\">Recipe</h3></div></a>";
+            echo "<div class=\"rv_element\"><img class =\"rv_thumbnail\" src=\"http://is.gd/MLNCn7\"/><h3 class=\"rv_rname\">Recipe</h3></div>";
         } ?>
     </div>
 </div>
-<h2 id="categorical_browse_title">Browse Recipes By Category</h2>
-<div id="categorical_recipe_browse">
-    <div id="category_grid">
+
+<div id="cb_container">
+    <h2 id="cb_title">Browse Recipes By Category</h2>
+    <div id="cb_grid">
         <?php for ($i = 1; $i < 10; $i++) {
-            echo "<a class=\"category_link\"><div class=\"recipe_category\"><img class =\"recipe_category_image\" src=\"http://is.gd/MLNCn7\"/><h3 class=\"recipe_category_name\">Category</h3></div></a>";
+            echo "<div class=\"cb_element\"><img class =\"cb_thumbnail\" src=\"http://is.gd/MLNCn7\"/><h3 class=\"cb_rname\">Category</h3></div>";
         } ?>
     </div>
 </div>

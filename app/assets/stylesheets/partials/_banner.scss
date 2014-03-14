@@ -1,0 +1,20 @@
+//*********************************************************************************************************************
+// Partial for the site banner,defining properties for the banner and its children.
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+#banner {
+
+  background-color: $banner_bg_colour;
+  height: 65px;
+  position: relative;
+  width: 100%;
+
+  #banner_text {
+
+  }
+
+  #banner_search {
+
+  }
+}
