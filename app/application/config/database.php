@@ -48,7 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'mysql-student';
+$db['default']['hostname'] = 'mysql-student.cs.york.ac.uk';
 $db['default']['username'] = 'drm511';
 //$db['default']['password'] = 'xiCuQ5A_xvQS';
 $db['default']['password'] = 'xu-K8WGzhJT9';

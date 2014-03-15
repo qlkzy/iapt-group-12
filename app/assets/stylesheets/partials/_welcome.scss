@@ -27,15 +27,27 @@
   #w_list {
     font-size: $w_list_font_size;
     line-height: $w_list_line_height;
+    margin-left: auto;
+    margin-right: auto;
     width: 40%;
 
-    @include center-block;
-    @include jw-wfbox(center, flex, row, wrap, center);
+    @include jw-wfbox(stretch, flex, column, wrap, center);
 
-    i {
+    .w_list_item {
+
+      @include transition(color 0.2s ease-in 0s);
+
+      &:hover {
+        color: white;
+        cursor: pointer;
+        @include transition(color 0.2s ease-in 0s);
+      }
+
+      .w_list_itext {
+        margin-left: 20px;
+      }
+
     }
 
-    span {
-    }
   }
 }

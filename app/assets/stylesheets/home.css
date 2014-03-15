@@ -23,6 +23,17 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+#overlay {
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  height: 100%;
+  left: 0px;
+  pointer-events: none;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99997; }
+
 #rv_container {
   display: none; }
 
@@ -47,6 +58,9 @@ body {
     *display: inline;
     *vertical-align: auto; }
   #banner #banner_search {
+    -webkit-transition: color 0.3s ease-in 0s;
+    -moz-transition: color 0.3s ease-in 0s;
+    transition: color 0.3s ease-in 0s;
     height: 75%;
     position: absolute;
     right: 50px;
@@ -109,7 +123,7 @@ body {
       #banner nav a:active, #banner nav a:focus {
         outline: none; }
       #banner nav a:hover {
-        color: #bbd2e0;
+        color: #5893ac;
         cursor: pointer;
         -webkit-transition: color 0.3s ease-in 0s;
         -moz-transition: color 0.3s ease-in 0s;
@@ -147,11 +161,23 @@ body {
   #welcome_message #w_list {
     font-size: 30px;
     line-height: 49px;
-    width: 40%;
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
+    width: 40%;
+    align-items: stretch;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center; }
+    #welcome_message #w_list .w_list_item {
+      -webkit-transition: color 0.2s ease-in 0s;
+      -moz-transition: color 0.2s ease-in 0s;
+      transition: color 0.2s ease-in 0s; }
+      #welcome_message #w_list .w_list_item:hover {
+        color: white;
+        cursor: pointer;
+        -webkit-transition: color 0.2s ease-in 0s;
+        -moz-transition: color 0.2s ease-in 0s;
+        transition: color 0.2s ease-in 0s; }
+      #welcome_message #w_list .w_list_item .w_list_itext {
+        margin-left: 20px; }

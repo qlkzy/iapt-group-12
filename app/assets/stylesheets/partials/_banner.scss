@@ -27,7 +27,7 @@ $nav_height: 50px;
     @include inline-block;
   }
 
-  #banner_search {
+  #banner_search {@include transition(color 0.3s ease-in 0s);
     height: 75%;
     position: absolute;
     right: $content_offset;
@@ -60,7 +60,7 @@ $nav_height: 50px;
       @include transition(color 0.3s ease-in 0s);
 
       &:hover {
-        color: $p_lblue;
+        color: $p_medblue;
         cursor: pointer;
         @include transition(color 0.3s ease-in 0s);
       }

@@ -22,7 +22,8 @@
 @mixin jw-wfbox($align, $display, $direction, $wrap, $justify) {
   align-items: $align;
   display: $display;
-  flex-flow: $direction $wrap;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
   justify-content: $justify;
 }
 

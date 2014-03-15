@@ -8,13 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="<?php echo base_url() . "assets/fonts/font-awesome-4.0.3/css/font-awesome.min.css"; ?>"
           rel="stylesheet">
+    <link href="<?php echo base_url() . "assets/jqueryUI/css/ui-lightness/jquery-ui-1.10.4.custom.css"; ?>" rel="stylesheet">
     <link href="<?php echo base_url() . "assets/stylesheets/home.css"; ?>" rel="stylesheet" type="text/css">
     <script src="<?php echo base_url() . "assets/scripts/jquery.js"; ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url()."assets/jqueryUI/js/jquery-ui-1.10.4.custom.min.js"; ?>"></script>
     <script src="<?php echo base_url() . "assets/scripts/home.js"; ?>" type="text/javascript"></script>
     <script src="<?php echo base_url() . "assets/scripts/recipe.js"; ?>" type="text/javascript"></script>
 </head>
 <body>
 <div id="content_wrapper">
+    <div id="overlay"></div>
     <div id="banner">
         <a href="<?php echo base_url(); ?>">
             <img id="banner_image" src="<?php echo base_url() . "assets/images/branding_mockup_1.png"; ?>"/>
@@ -29,7 +32,7 @@
             </div>
             <div id="nav_browse">
                 <a href="<?php echo base_url() . "index.php/search"; ?>">
-                    <i class="fa fa-search fa-2x"></i>
+                    <i class="fa fa-eye fa-2x"></i>
                 </a>
             </div>
         </nav>

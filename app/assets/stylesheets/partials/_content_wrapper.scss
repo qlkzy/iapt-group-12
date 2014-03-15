@@ -21,6 +21,18 @@ $content_max_width: 1200px;
   @include center-block;
 }
 
+#overlay {
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  height: 100%;
+  left: 0px;
+  pointer-events: none;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99997;
+}
+
 #rv_container {
   display: none;
 }

@@ -27,7 +27,9 @@
     have its own tutorial...don't shit yourself just yet):</p>
 
     <div id="w_list">
-        Fuck the police.
+        <div class="w_list_item" id="w_list_home"><i class="fa fa-home fa-3x" id="w_list_hicon"></i><span class="w_list_itext">Navigate Home</span></div>
+        <div class="w_list_item" id="w_list_browse"><i class="fa fa-eye fa-3x" id="w_list_bicon"></i><span class="w_list_itext">Browse Recipes</span></div>
+        <div class="w_list_item" id="w_list_search"><i class="fa fa-search fa-3x" id="w_list_sicon"></i><span class="w_list_itext">Search for Recipes</span></div>
     </div>
 
 </div>
