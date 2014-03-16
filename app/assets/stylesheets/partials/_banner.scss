@@ -52,7 +52,7 @@ $nav_height: 50px;
     left: 400px;
     position: absolute;
     top: 40px;
-    width: 85px;
+    width: 130px;
     @include jw-fbox;
 
     a {
@@ -69,7 +69,7 @@ $nav_height: 50px;
 
   .nav_text {
     color: $p_medblue;
-    left: 500px;
+    left: 540px;
     position: absolute;
     font-size: 175%;
     top: 17px;

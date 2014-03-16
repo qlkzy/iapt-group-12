@@ -1,6 +1,6 @@
 /**********************************************************************************************************************
- This is the main stylesheet for the homepage, and the only stylesheet that will be served to the web browser when the
- home page is requested. The styles for the individual components of the page are located in:
+ This is the main stylesheet for the help page, and the only stylesheet that will be served to the web browser when the
+ help page is requested. The styles for the individual components of the page are located in:
 
  "app/assets/stylesheets/partials"
 
@@ -14,6 +14,9 @@ body {
   padding: 0;
 }
 
-// Import page-specific partials:
+// Import site-wide partials:
 @import "partials/content_wrapper";
 @import "partials/banner";
+@import "partials/help";
+
+// Import page-specific partials:

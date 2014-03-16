@@ -13,6 +13,12 @@ $(document).ready(function () {
         $("#nav_btext").fadeOut(200);
     });
 
+    $("#nav_help").hover(function() {
+        $("#nav_hlptext").fadeIn(200);
+    }, function() {
+        $("#nav_hlptext").fadeOut(200);
+    });
+
     $("#w_list").hover(function() {
         $("#overlay").fadeIn(150);
     }, function(e) {
@@ -39,6 +45,14 @@ $(document).ready(function () {
     }, function() {
         $("#nav_browse").css('z-index', '1');
         $("#nav_browse").css('color', '');
+    })
+
+    $("#w_list_help").hover(function() {
+        $("#nav_help").css('z-index', '99999');
+        $("#nav_help").css('color', 'white');
+    }, function() {
+        $("#nav_help").css('z-index', '1');
+        $("#nav_help").css('color', '');
     })
 
     $("#w_list_search").hover(function() {

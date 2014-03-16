@@ -108,7 +108,7 @@ body {
     left: 400px;
     position: absolute;
     top: 40px;
-    width: 85px;
+    width: 130px;
     align-items: center;
     display: inline-flex;
     flex-flow: row nowrap;
@@ -130,7 +130,7 @@ body {
         transition: color 0.3s ease-in 0s; }
   #banner .nav_text {
     color: #5893ac;
-    left: 500px;
+    left: 540px;
     position: absolute;
     font-size: 175%;
     top: 17px;
