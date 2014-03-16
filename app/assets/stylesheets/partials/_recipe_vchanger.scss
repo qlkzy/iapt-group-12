@@ -1,0 +1,24 @@
+//*********************************************************************************************************************
+// Partial for recipe view changer, defining properties for the view changer and its children.
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+// Some local variables:
+$vchanger_height: 50px;
+$vchanger_width: 80%;
+
+
+// Styles:
+#rcp_vchange {
+  height: $vchanger_height;
+  margin-left: auto;
+  margin-right: auto;
+  width: $vchanger_width;
+
+  @include jw-wfbox(center, flex, row, nowrap, space-between);
+
+  .rcp_vcbutton {
+    height: $vchanger_height;
+    @include button($p_lblue);
+  }
+}

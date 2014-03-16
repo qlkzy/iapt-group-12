@@ -1,0 +1,42 @@
+//*********************************************************************************************************************
+// Partial for recipe covers,defining properties for the cover and its children.
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+// Some local variables:
+$cvr_height: 400px;
+$cvr_width: 80%;
+
+$cvr_image_h2w_ratio: (497/723);
+$cvr_image_width: 100%;
+$cvr_image_height: 100%;
+
+// Styles:
+#recipe_cover {
+  height: $cvr_height;
+  margin-top: $content_offset;
+  width: $cvr_width;
+
+  @include center-block;
+
+  #rcp_cimage {
+    border-radius: 3px;
+    height: $cvr_image_height;
+    width: $cvr_image_width;
+
+    @include center-block;
+  }
+
+  #rcp_ctitle {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 50px;
+    height: 50px;
+    padding-top: 10px;
+    position: absolute;
+    top: 400px;
+
+
+    @include center-block();
+  }
+}

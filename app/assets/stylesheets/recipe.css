@@ -1,0 +1,240 @@
+/**********************************************************************************************************************
+ This is the main stylesheet for the recipe page, and the only stylesheet that will be served to the web browser when
+ the recipe page is requested. The styles for the individual components of the page are located in:
+
+ "app/assets/stylesheets/partials"
+
+ and are imported into this stylesheet.
+**********************************************************************************************************************/
+body {
+  margin: 0;
+  padding: 0; }
+
+#content_wrapper {
+  border-left: 2px #f2f2f5 solid;
+  border-right: 2px #f2f2f5 solid;
+  font-family: "Arial";
+  font-size: 20px;
+  line-height: 32px;
+  min-height: 760px;
+  max-width: 1200px;
+  min-width: 760px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#overlay {
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  height: 100%;
+  left: 0px;
+  pointer-events: none;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99997; }
+
+#rv_container {
+  display: none; }
+
+#cb_container {
+  display: none; }
+
+#banner {
+  background-color: #f2f2f5;
+  display: block;
+  height: 100px;
+  position: relative;
+  width: 100%; }
+  #banner #banner_image {
+    height: 75px;
+    left: 50px;
+    position: absolute;
+    top: 10px;
+    width: 296px;
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto; }
+  #banner #banner_search {
+    -webkit-transition: color 0.3s ease-in 0s;
+    -moz-transition: color 0.3s ease-in 0s;
+    transition: color 0.3s ease-in 0s;
+    height: 75%;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    width: 300px;
+    align-items: center;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+    #banner #banner_search #bs_input {
+      display: block;
+      height: 30px;
+      width: 200px; }
+    #banner #banner_search #bs_submit {
+      height: 37px;
+      border: 1px solid #a8cadf;
+      border-radius: 3px;
+      box-shadow: inset 0 1px 0 0 white;
+      color: #333333;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: bold;
+      background-color: #dee9f0;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dee9f0), color-stop(100%, #b3d1e3));
+      background-image: -webkit-linear-gradient(#dee9f0, #b3d1e3);
+      background-image: linear-gradient(#dee9f0, #b3d1e3);
+      padding: 7px 18px;
+      text-decoration: none;
+      text-shadow: 0 1px 0 #ebf3f8;
+      background-clip: padding-box; }
+      #banner #banner_search #bs_submit:hover:not(:disabled) {
+        box-shadow: inset 0 1px 0 0 #f0f5f7;
+        cursor: pointer;
+        background-color: #cedde7;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cedde7), color-stop(100%, #a8cade));
+        background-image: -webkit-linear-gradient(#cedde7, #a8cade);
+        background-image: linear-gradient(#cedde7, #a8cade); }
+      #banner #banner_search #bs_submit:active:not(:disabled) {
+        border: 1px solid #a8cadf;
+        box-shadow: inset 0 0 8px 4px #9ec3da, inset 0 0 8px 4px #9ec3da, 0 1px 1px 0 #eeeeee; }
+      #banner #banner_search #bs_submit:disabled {
+        opacity: 0.5;
+        cursor: not-allowed; }
+  #banner nav {
+    left: 400px;
+    position: absolute;
+    top: 40px;
+    width: 130px;
+    align-items: center;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+    #banner nav a {
+      color: inherit;
+      cursor: inherit;
+      text-decoration: none;
+      -webkit-transition: color 0.3s ease-in 0s;
+      -moz-transition: color 0.3s ease-in 0s;
+      transition: color 0.3s ease-in 0s; }
+      #banner nav a:active, #banner nav a:focus {
+        outline: none; }
+      #banner nav a:hover {
+        color: #5893ac;
+        cursor: pointer;
+        -webkit-transition: color 0.3s ease-in 0s;
+        -moz-transition: color 0.3s ease-in 0s;
+        transition: color 0.3s ease-in 0s; }
+  #banner .nav_text {
+    color: #5893ac;
+    left: 540px;
+    position: absolute;
+    font-size: 175%;
+    top: 17px;
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto; }
+
+#recipe_cover {
+  height: 400px;
+  margin-top: 50px;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  #recipe_cover #rcp_cimage {
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  #recipe_cover #rcp_ctitle {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 50px;
+    height: 50px;
+    padding-top: 10px;
+    position: absolute;
+    top: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+#rcp_vchange {
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+  #rcp_vchange .rcp_vcbutton {
+    height: 50px;
+    border: 1px solid #82b3d1;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #f0f5f7;
+    color: #333333;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #bbd2e0;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bbd2e0), color-stop(100%, #8dbad5));
+    background-image: -webkit-linear-gradient(#bbd2e0, #8dbad5);
+    background-image: linear-gradient(#bbd2e0, #8dbad5);
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #c5dcea;
+    background-clip: padding-box; }
+    #rcp_vchange .rcp_vcbutton:hover:not(:disabled) {
+      box-shadow: inset 0 1px 0 0 #cfdde5;
+      cursor: pointer;
+      background-color: #acc6d6;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #acc6d6), color-stop(100%, #83b3d0));
+      background-image: -webkit-linear-gradient(#acc6d6, #83b3d0);
+      background-image: linear-gradient(#acc6d6, #83b3d0); }
+    #rcp_vchange .rcp_vcbutton:active:not(:disabled) {
+      border: 1px solid #82b3d1;
+      box-shadow: inset 0 0 8px 4px #79accb, inset 0 0 8px 4px #79accb, 0 1px 1px 0 #eeeeee; }
+    #rcp_vchange .rcp_vcbutton:disabled {
+      opacity: 0.5;
+      cursor: not-allowed; }
+
+#rcp_columns {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 80%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start; }
+  #rcp_columns #rcp_ingredients {
+    padding: 0;
+    width: 35%; }
+    #rcp_columns #rcp_ingredients .rcp_inglist {
+      list-style-type: none; }
+  #rcp_columns #rcp_instructions {
+    height: 100%;
+    padding-left: 25px;
+    width: 65%; }
+    #rcp_columns #rcp_instructions .rcp_inslist {
+      list-style-type: none; }
+    #rcp_columns #rcp_instructions .rcp_instruction {
+      -webkit-transition: color 0.3s ease-in;
+      -moz-transition: color 0.3s ease-in;
+      transition: color 0.3s ease-in; }
+      #rcp_columns #rcp_instructions .rcp_instruction:hover {
+        color: #5893ac;
+        cursor: pointer;
+        -webkit-transition: color 0.3s ease-in;
+        -moz-transition: color 0.3s ease-in;
+        transition: color 0.3s ease-in; }

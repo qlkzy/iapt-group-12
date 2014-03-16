@@ -12,6 +12,7 @@
           rel="stylesheet">
     <link href="<?php echo base_url() . "assets/jqueryUI/css/ui-lightness/jquery-ui-1.10.4.custom.css"; ?>" rel="stylesheet">
     <link href="<?php echo base_url() . "assets/stylesheets/home.css"; ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url() . "assets/stylesheets/recipe.css"; ?>" rel ="stylesheet" type="text/css">
     <link href="<?php echo base_url() . "assets/stylesheets/help.css"; ?>" rel="stylesheet" type="text/css">
     <script src="<?php echo base_url() . "assets/scripts/jquery.js"; ?>" type="text/javascript"></script>
     <script src="<?php echo base_url()."assets/jqueryUI/js/jquery-ui-1.10.4.custom.min.js"; ?>"></script>

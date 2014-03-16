@@ -1,21 +1,88 @@
-$(document).ready(function () {
+var changerState = 0;
 
-    $("#sbs_recipe_text").hide();
-    $("#sgm_recipe_text").hide();
-    $("#sbs_ingredients_text").hide();
-    $("#sgm_ingredients_text").hide();
-    
+function changeStateForwards() {
+    switch (changerState) {
+        case 0:
+            changerState = 1;
+            $("#rcp_vch_exptext").toggle();
+            $("#rcp_nar_inglist").toggle();
+            $("#rcp_nar_inslist").toggle();
+            $("#rcp_vch_novtext").toggle();
+            $("#rcp_sbs_inglist").toggle();
+            $("#rcp_sbs_inslist").toggle();
+            break;
+        case 1:
+            changerState = 2;
+            $("#rcp_vch_novtext").toggle();
+            $("#rcp_sbs_inglist").toggle();
+            $("#rcp_sbs_inslist").toggle();
+            $("#rcp_vch_inttext").toggle();
+            $("#rcp_sgm_inglist").toggle();
+            $("#rcp_sgm_inslist").toggle();
+            break;
+        case 2:
+            changerState = 0;
+            $("#rcp_vch_inttext").toggle();
+            $("#rcp_sgm_inglist").toggle();
+            $("#rcp_sgm_inslist").toggle();
+            $("#rcp_vch_exptext").toggle();
+            $("#rcp_nar_inglist").toggle();
+            $("#rcp_nar_inslist").toggle();
+            break;
+    }
+}
 
-    $(".recipe_view_selector_button").click(function () {
-        $(".recipe_text").hide();
-        $(".ingredients_text").hide();
-        var visibleInstructions = $(this).val() + "_recipe_text";
-        var visibleIngredients = $(this).val() + "_ingredients_text";
-        $("#" + visibleInstructions).show();
-        $("#" + visibleIngredients).show();
+function changeStateBackwards() {
+    switch (changerState) {
+        case 0:
+            changerState = 2;
+            $("#rcp_vch_exptext").toggle();
+            $("#rcp_nar_inglist").toggle();
+            $("#rcp_nar_inslist").toggle();
+            $("#rcp_vch_inttext").toggle();
+            $("#rcp_sgm_inglist").toggle();
+            $("#rcp_sgm_inslist").toggle();
+            break;
+        case 1:
+            changerState = 0;
+            $("#rcp_vch_novtext").toggle();
+            $("#rcp_sbs_inglist").toggle();
+            $("#rcp_sbs_inslist").toggle();
+            $("#rcp_vch_exptext").toggle();
+            $("#rcp_nar_inglist").toggle();
+            $("#rcp_nar_inslist").toggle();
+            break;
+        case 2:
+            changerState = 1;
+            $("#rcp_vch_inttext").toggle();
+            $("#rcp_sgm_inglist").toggle();
+            $("#rcp_sgm_inslist").toggle();
+            $("#rcp_vch_novtext").toggle();
+            $("#rcp_sbs_inglist").toggle();
+            $("#rcp_sbs_inslist").toggle();
+            break;
+    }
+}
+
+$(document).ready(function() {
+    $("#rcp_vch_novtext").hide();
+    $("#rcp_sbs_inglist").hide();
+    $("#rcp_sbs_inslist").hide();
+
+    $("#rcp_vch_inttext").hide();
+    $("#rcp_sgm_inglist").hide();
+    $("#rcp_sgm_inslist").hide();
+
+
+    $("#rcp_vch_fbutton").click(function(e) {
+        changeStateForwards();
     });
 
-    $(".recipe_ingredient").click(function () {
+    $("#rcp_vch_bbutton").click(function(e) {
+        changeStateBackwards();
+    });
+
+    $(".rcp_instruction").click(function() {
         if ($(this).css("text-decoration") == "none") {
             $(this).css("text-decoration", "line-through");
         } else {

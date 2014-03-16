@@ -4,10 +4,10 @@ include_once "application/models/domainObjects/Recipe.php";
 
 class Recipes extends CI_Controller
 {
-    public function __construct() {
+    /* public function __construct() {
         parent::__construct();
         $this->load->model('recipes_model');
-    }
+    } */
 
     public function index() {
         $data['title'] = "Recipe";
@@ -17,7 +17,7 @@ class Recipes extends CI_Controller
         $this->load->view("templates/footer", $data);
     }
 
-    public function view($r) {
+    /* public function view($r) {
         $recipe = urldecode($r);
 
         $data['title'] = "Recipe";
@@ -26,5 +26,5 @@ class Recipes extends CI_Controller
         $this->load->view("templates/header", $data);
         $this->load->view("pages/recipe", $data);
         $this->load->view("templates/footer", $data);
-    }
+    } */
 }
