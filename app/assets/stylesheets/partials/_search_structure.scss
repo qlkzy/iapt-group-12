@@ -26,11 +26,11 @@
   #search_filters {
     box-shadow: 2px 2px 5px 2px #CCCCCC;
     border-radius: 3px;
-    cursor: pointer;
     margin-top: 20px;
     width: 35%;
 
     @include background-image(linear-gradient(hsla(0, 100%, 100%, 0.25) 0%, hsla(0, 100%, 100%, 0.08) 50%, transparent 50%), linear-gradient(lighten($p_lgrey, 10%), $p_lgrey));
+
 
     h3 {
       width: 50%;

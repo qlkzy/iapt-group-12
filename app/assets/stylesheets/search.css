@@ -133,7 +133,6 @@ body {
     color: #5893ac;
     left: 540px;
     position: absolute;
-    font-size: 175%;
     top: 17px;
     display: inline-block;
     vertical-align: baseline;
@@ -162,7 +161,6 @@ body {
   #search_columns #search_filters {
     box-shadow: 2px 2px 5px 2px #CCCCCC;
     border-radius: 3px;
-    cursor: pointer;
     margin-top: 20px;
     width: 35%;
     background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), -webkit-linear-gradient( white, #f2f2f5);
@@ -203,3 +201,10 @@ body {
     display: inline-block;
     margin-left: 10px;
     position: absolute; }
+
+#search_fform {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px; }
+  #search_fform ul {
+    list-style-type: none; }

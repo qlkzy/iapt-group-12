@@ -1,0 +1,49 @@
+//*********************************************************************************************************************
+// Partial for home page content, defining properties for the home page structure.
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+// Some local variables:
+
+// Styles:
+#home_content {
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  width: 60%;
+  @include jw-wfbox(flex-start, flex, row, nowrap, space-between);
+
+  .home_box {
+    box-shadow: 2px 2px 5px 2px #CCCCCC;
+    font-size: 50px;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 40%;
+    @include transition(all 0.05s ease-in);
+    @include unstyled-link;
+
+    &:hover {
+      box-shadow: 5px 5px 10px 5px #CCCCCC;
+      cursor: pointer;
+      top: -5px;
+      @include transition(all 0.1s ease-in);
+    }
+
+    .home_bicon {
+      color: rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .home_bhead {
+      font-size: 32px;
+    }
+
+    .home_btext {
+      font-size: 16px;
+      position: relative;
+      top: -20px;
+    }
+  }
+}
