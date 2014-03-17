@@ -8,6 +8,7 @@
 **********************************************************************************************************************/
 body {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0; }
 
 #content_wrapper {
@@ -159,12 +160,13 @@ body {
     min-height: 500px;
     width: 65%; }
   #search_columns #search_filters {
-    background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), -webkit-linear-gradient( #f2f2f5, #d5d5df);
-    background-image: linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), linear-gradient( #f2f2f5, #d5d5df);
+    box-shadow: 2px 2px 5px 2px #CCCCCC;
     border-radius: 3px;
+    cursor: pointer;
     margin-top: 20px;
-    min-height: 500px;
-    width: 35%; }
+    width: 35%;
+    background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), -webkit-linear-gradient( white, #f2f2f5);
+    background-image: linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), linear-gradient( white, #f2f2f5); }
     #search_columns #search_filters h3 {
       width: 50%;
       display: block;
@@ -172,14 +174,23 @@ body {
       margin-right: auto; }
 
 .search_result {
-  box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 2px 2px 5px 2px #CCCCCC;
   height: 200px;
   margin-top: 20px;
+  position: relative;
   width: 90%;
-  background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), -webkit-linear-gradient( #f2f2f5, #d5d5df);
-  background-image: linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), linear-gradient( #f2f2f5, #d5d5df); }
+  background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), -webkit-linear-gradient( white, #f2f2f5);
+  background-image: linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), linear-gradient( white, #f2f2f5);
+  -webkit-transition: all 0.05s ease-in;
+  -moz-transition: all 0.05s ease-in;
+  transition: all 0.05s ease-in; }
   .search_result:hover {
-    cursor: pointer; }
+    box-shadow: 5px 5px 10px 5px #CCCCCC;
+    cursor: pointer;
+    top: -5px;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in; }
   .search_result .srch_res_img {
     border-radius: 3px;
     display: inline-block;
@@ -188,6 +199,7 @@ body {
     margin-top: 20px;
     width: 30%; }
   .search_result h4 {
+    color: #003250;
     display: inline-block;
     margin-left: 10px;
     position: absolute; }

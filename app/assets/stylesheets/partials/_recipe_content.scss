@@ -15,6 +15,7 @@ $recipe_content_width: 80%;
   @include jw-wfbox(flex-start, flex, row, nowrap, flex-start);
 
   #rcp_ingredients {
+    line-height: 22px;
     padding: 0;
     width: 35%;
 

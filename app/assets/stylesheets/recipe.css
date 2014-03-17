@@ -218,6 +218,7 @@ body {
   flex-wrap: nowrap;
   justify-content: flex-start; }
   #rcp_columns #rcp_ingredients {
+    line-height: 22px;
     padding: 0;
     width: 35%; }
     #rcp_columns #rcp_ingredients .rcp_inglist {
