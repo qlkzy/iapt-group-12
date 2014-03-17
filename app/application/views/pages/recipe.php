@@ -1,6 +1,6 @@
 <div id="recipe_cover">
     <h1 id="rcp_ctitle">Motherfucking Beef Burgers</h1>
-    <img id="rcp_cimage" src="http://is.gd/8ED8vx">
+    <img id="rcp_cimage" src="<?php echo base_url() . "assets/images/bburgers.jpeg"; ?>">
 </div>
 <div id="rcp_vchange">
     <input class="rcp_vcbutton" id="rcp_vch_bbutton" type="button" value="<<"/>

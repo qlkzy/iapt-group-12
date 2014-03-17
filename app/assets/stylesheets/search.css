@@ -1,0 +1,193 @@
+/**********************************************************************************************************************
+ This is the main stylesheet for the search page, and the only stylesheet that will be served to the web browser when
+ the search page is requested. The styles for the individual components of the page are located in:
+
+ "app/assets/stylesheets/partials"
+
+ and are imported into this stylesheet.
+**********************************************************************************************************************/
+body {
+  margin: 0;
+  padding: 0; }
+
+#content_wrapper {
+  border-left: 2px #f2f2f5 solid;
+  border-right: 2px #f2f2f5 solid;
+  font-family: "Arial";
+  font-size: 20px;
+  line-height: 32px;
+  min-height: 760px;
+  max-width: 1200px;
+  min-width: 760px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#overlay {
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  height: 100%;
+  left: 0px;
+  pointer-events: none;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99997; }
+
+#rv_container {
+  display: none; }
+
+#cb_container {
+  display: none; }
+
+#banner {
+  background-color: #f2f2f5;
+  display: block;
+  height: 100px;
+  position: relative;
+  width: 100%; }
+  #banner #banner_image {
+    height: 75px;
+    left: 50px;
+    position: absolute;
+    top: 10px;
+    width: 296px;
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto; }
+  #banner #banner_search {
+    -webkit-transition: color 0.3s ease-in 0s;
+    -moz-transition: color 0.3s ease-in 0s;
+    transition: color 0.3s ease-in 0s;
+    height: 75%;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    width: 300px;
+    align-items: center;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+    #banner #banner_search #bs_input {
+      display: block;
+      height: 30px;
+      width: 200px; }
+    #banner #banner_search #bs_submit {
+      height: 37px;
+      border: 1px solid #a8cadf;
+      border-radius: 3px;
+      box-shadow: inset 0 1px 0 0 white;
+      color: #333333;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: bold;
+      background-color: #dee9f0;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dee9f0), color-stop(100%, #b3d1e3));
+      background-image: -webkit-linear-gradient(#dee9f0, #b3d1e3);
+      background-image: linear-gradient(#dee9f0, #b3d1e3);
+      padding: 7px 18px;
+      text-decoration: none;
+      text-shadow: 0 1px 0 #ebf3f8;
+      background-clip: padding-box; }
+      #banner #banner_search #bs_submit:hover:not(:disabled) {
+        box-shadow: inset 0 1px 0 0 #f0f5f7;
+        cursor: pointer;
+        background-color: #cedde7;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cedde7), color-stop(100%, #a8cade));
+        background-image: -webkit-linear-gradient(#cedde7, #a8cade);
+        background-image: linear-gradient(#cedde7, #a8cade); }
+      #banner #banner_search #bs_submit:active:not(:disabled) {
+        border: 1px solid #a8cadf;
+        box-shadow: inset 0 0 8px 4px #9ec3da, inset 0 0 8px 4px #9ec3da, 0 1px 1px 0 #eeeeee; }
+      #banner #banner_search #bs_submit:disabled {
+        opacity: 0.5;
+        cursor: not-allowed; }
+  #banner nav {
+    left: 400px;
+    position: absolute;
+    top: 40px;
+    width: 130px;
+    align-items: center;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+    #banner nav a {
+      color: inherit;
+      cursor: inherit;
+      text-decoration: none;
+      -webkit-transition: color 0.3s ease-in 0s;
+      -moz-transition: color 0.3s ease-in 0s;
+      transition: color 0.3s ease-in 0s; }
+      #banner nav a:active, #banner nav a:focus {
+        outline: none; }
+      #banner nav a:hover {
+        color: #5893ac;
+        cursor: pointer;
+        -webkit-transition: color 0.3s ease-in 0s;
+        -moz-transition: color 0.3s ease-in 0s;
+        transition: color 0.3s ease-in 0s; }
+  #banner .nav_text {
+    color: #5893ac;
+    left: 540px;
+    position: absolute;
+    font-size: 175%;
+    top: 17px;
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto; }
+
+#search_title {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#search_columns {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start; }
+  #search_columns #search_results {
+    min-height: 500px;
+    width: 65%; }
+  #search_columns #search_filters {
+    background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), -webkit-linear-gradient( #f2f2f5, #d5d5df);
+    background-image: linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), linear-gradient( #f2f2f5, #d5d5df);
+    border-radius: 3px;
+    margin-top: 20px;
+    min-height: 500px;
+    width: 35%; }
+    #search_columns #search_filters h3 {
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+
+.search_result {
+  box-shadow: 3px 3px 5px 6px #ccc;
+  height: 200px;
+  margin-top: 20px;
+  width: 90%;
+  background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), -webkit-linear-gradient( #f2f2f5, #d5d5df);
+  background-image: linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), linear-gradient( #f2f2f5, #d5d5df); }
+  .search_result:hover {
+    cursor: pointer; }
+  .search_result .srch_res_img {
+    border-radius: 3px;
+    display: inline-block;
+    height: 80%;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 30%; }
+  .search_result h4 {
+    display: inline-block;
+    margin-left: 10px;
+    position: absolute; }

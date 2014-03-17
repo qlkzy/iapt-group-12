@@ -1,0 +1,23 @@
+/**********************************************************************************************************************
+ This is the main stylesheet for the search page, and the only stylesheet that will be served to the web browser when
+ the search page is requested. The styles for the individual components of the page are located in:
+
+ "app/assets/stylesheets/partials"
+
+ and are imported into this stylesheet.
+**********************************************************************************************************************/
+// Import all necessary modules:
+@import "modules/import_all";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// Import site-wide partials:
+@import "partials/content_wrapper";
+@import "partials/banner";
+
+// Import page-specific partials:
+@import "partials/search_structure";
+@import "partials/search_result";

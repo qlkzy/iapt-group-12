@@ -1,21 +1,21 @@
-<div id="search_page_columns">
+<h2 id="search_title">You searched for: Potato Grids</h2>
+<div id="search_columns">
     <div id="search_results">
-        <h2>Search Results:</h2>
-        <?php
-        if (isset($numRecs)) {
-            for ($i = 1; $i < ($numRecs + 1); $i++) {
-                $rName = "recipe" . $i;
-                $data = array('recipe' => $$rName);
-                $this->load->view("templates/search_result", $data);
-            }
-        } else {
-            echo "No search results bitch.";
-        }
-        ?>
-
+        <!-- <h3>Search Results:</h3> -->
+        <div class="search_result">
+            <img class="srch_res_img" src="<?php echo base_url()."assets/images/bburgers.jpeg"; ?>"/>
+            <h4 class="srch_res_title">Beef Burgers</h4>
+        </div>
+        <div class="search_result">
+            <img class="srch_res_img" src="<?php echo base_url()."assets/images/bburgers.jpeg"; ?>"/>
+            <h4 class="srch_res_title">Beef Burgers</h4>
+        </div>
+        <div class="search_result">
+            <img class="srch_res_img" src="<?php echo base_url()."assets/images/bburgers.jpeg"; ?>"/>
+            <h4 class="srch_res_title">Beef Burgers</h4>
+        </div>
     </div>
     <div id="search_filters">
-        <h2>Search Filters:</h2>
-        Search filters go here.
+        <h3>Filter Results</h3>
     </div>
 </div>
