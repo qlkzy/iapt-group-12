@@ -1,32 +1,26 @@
 <h2 id="search_title">You searched for: Potato Grids</h2>
 <div id="search_columns">
     <div id="search_results">
-        <!-- <h3>Search Results:</h3> -->
-        <div class="search_result">
-            <img class="srch_res_img" src="<?php echo base_url() . "assets/images/bburgers.jpeg"; ?>"/>
-            <h4 class="srch_res_title">Beef Burgers</h4>
-        </div>
-        <div class="search_result">
-            <img class="srch_res_img" src="<?php echo base_url() . "assets/images/bburgers.jpeg"; ?>"/>
-            <h4 class="srch_res_title">Beef Burgers</h4>
-        </div>
-        <div class="search_result">
-            <img class="srch_res_img" src="<?php echo base_url() . "assets/images/bburgers.jpeg"; ?>"/>
-            <h4 class="srch_res_title">Beef Burgers</h4>
-        </div>
-        <div class="search_result">
-            <img class="srch_res_img" src="<?php echo base_url() . "assets/images/bburgers.jpeg"; ?>"/>
-            <h4 class="srch_res_title">Beef Burgers</h4>
-        </div>
+        <?php
+            if(isset($numRecs)) {
+                for ($i = 1; $i < ($numRecs + 1); $i++) {
+                    $rName = "recipe" . $i;
+                    $data = array('recipe' => $$rName);
+                    $this->load->view("templates/search_result", $data);
+                }
+            } else {
+                echo "No search results mether fecher.";
+            }
+        ?>
     </div>
     <div id="search_filters">
         <h3>Filter Results</h3>
 
-        <form action="#" id="search_fform" name="search_fform">
+        <form action="<?php echo base_url() . "index.php/search/filter"; ?>" id="search_fform" name="search_fform">
             <ul>
                 <li>
                     <label for="search_fcat">Dish Type:</label>
-                    <select class="search_fform_dd"  id="search_fcat" form="search_fform" name="search_fcat">
+                    <select class="search_fform_dd"  id="search_fcat" form="search_fform" name="category">
                         <option value="" disabled selected>----------------</option>
                         <option value="main">Main</option>
                         <option value="side">Side</option>
@@ -36,9 +30,9 @@
                 </li>
                 <li>
                     <label for="search_fdiet">Dietary Restrictions:</label>
-                    <select class="search_fform_dd" id="search_fdiet" form="search_fform" name="search_fdiet">
+                    <select class="search_fform_dd" id="search_fdiet" form="search_fform" name="dietary">
                         <option value="" disabled selected>----------------</option>
-                        <option value="vegetarian">Vegatarian</option>
+                        <option value="vegetarian">Vegetarian</option>
                         <option value="vegan">Vegan</option>
                         <option value="kosher">Kosher</option>
                         <option value="hala">Halal</option>
@@ -46,7 +40,7 @@
                 </li>
                 <li>
                     <label for="search_fdif">Difficulty:</label>
-                    <select class="search_fform_dd"  id="search_fdif" form="search_fform" name="search_fdif">
+                    <select class="search_fform_dd"  id="search_fdif" form="search_fform" name="diff">
                         <option value="" disabled selected>----------------</option>
                         <option value="beginner">Beginner</option>
                         <option value="intermediate">Intermediate</option>
@@ -55,19 +49,19 @@
                 </li>
                 <li>
                     <label for="search_fctime">Time (up to):</label>
-                    <input class="search_fform_ti" form="search_fform" id="search_fctime" maxlength="2" name="search_fctime" pattern="[0-9][0-9]" placeholder="minutes" type="text" />
+                    <input class="search_fform_ti" form="search_fform" id="search_fctime" maxlength="2" name="time" pattern="[0-9]+" placeholder="minutes" type="text" />
                 </li>
                 <li>
                     <label for="search_fserves">Serves:</label>
-                    <input class="search_fform_ti" form="search_fform" id="search_fserves" maxlength="2" name="search_fserves" pattern="[0-9][0-9]" placeholder="people" type="text"/>
+                    <input class="search_fform_ti" form="search_fform" id="search_fserves" maxlength="2" name="serves" pattern="[0-9]+" placeholder="people" type="text"/>
                 </li>
                 <li>
                     <label for="search_fcontains">Contains:</label>
-                    <input class="search_fform_ti" form="search_fform" id="search_fcontains" name="search_fcontains" pattern="[a-zA-Z]+" placeholder="ingredient" type="text"/>
+                    <input class="search_fform_ti" form="search_fform" id="search_fcontains"  name="contains" pattern="[a-zA-Z]+" placeholder="ingredient" type="text"/>
                 </li>
                 <br/>
                 <li>
-                    <input form="search_fform" id="search_fform_submit" name="submit" type="submit" value="submit"/>
+                    <input form="search_fform" id="search_fform_submit" type="submit" value="submit"/>
                 </li>
             </ul>
         </form>

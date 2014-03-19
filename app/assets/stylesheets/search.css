@@ -181,10 +181,7 @@ body {
   background-image: linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), linear-gradient( white, #f2f2f5);
   -webkit-transition: all 0.05s ease-in;
   -moz-transition: all 0.05s ease-in;
-  transition: all 0.05s ease-in;
-  color: inherit;
-  cursor: inherit;
-  text-decoration: none; }
+  transition: all 0.05s ease-in;}
   .search_result:active, .search_result:focus {
     outline: none; }
   .search_result:hover {
@@ -206,7 +203,11 @@ body {
     display: inline-block;
     margin-left: 10px;
     position: absolute; }
-
+  .srslt_link {
+      color: inherit;
+      cursor: inherit;
+      text-decoration: none;
+  }
 #search_fform {
   margin-left: auto;
   margin-right: auto;

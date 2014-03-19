@@ -78,6 +78,22 @@ class Recipes_model extends CI_Model
         return $ingredients;
     }
 
+    public function getRecipesByCategory($category) {
+        $queryString = "SELECT recipe_name FROM recipes JOIN categories WHERE recipes.category_id = categories.category_id AND category_name=\"".$category."\";";
+        $query = $this->db->query($queryString);
+        $recipeNamesRaw = $query->result_array();
+        $recipes = array();
+        foreach($recipeNamesRaw as $row) {
+            array_push($recipes, $this->getRecipe($row['recipe_name']));
+        }
+
+        return $recipes;
+    }
+
+    public function getRecipesByRestriction($restriction) {
+
+    }
+
     public function getRecipeInstructions($name, $presentation)
     {
         $query = $this->db->query("SELECT description FROM instructions JOIN presentations ON instructions.presentation_id = presentations.presentation_id JOIN recipes ON presentations.recipe_id = recipes.recipe_id WHERE recipe_name = \"" . $name . "\" AND detail = \"" . $presentation . "\" ORDER BY seq;");

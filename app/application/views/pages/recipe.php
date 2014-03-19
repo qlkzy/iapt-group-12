@@ -1,6 +1,7 @@
 <div id="recipe_cover">
-    <h1 id="rcp_ctitle">Motherfucking Beef Burgers</h1>
-    <img id="rcp_cimage" src="<?php echo base_url() . "assets/images/bburgers.jpeg"; ?>">
+
+    <img id="rcp_cimage" src="<?php echo $recipe->getImage(); ?>">
+    <h1 id="rcp_ctitle"><?php echo $recipe->getName(); ?></h1>
 </div>
 <div id="rcp_vchange">
     <input class="rcp_vcbutton" id="rcp_vch_bbutton" type="button" value="<<"/>
@@ -17,22 +18,28 @@
         <h2 id="rcp_ingtitle">Ingredients</h2>
 
         <ul class="rcp_inglist"id="rcp_sbs_inglist">
-            <?php for ($i = 1; $i < 21; $i++) {
-                echo "<li class=\"rcp_ingredient\">SbsIngredient" . $i . "</li></br>";
-            }
+            <?php
+                $sbsIngredients = $recipe->getSbsIngredients();
+                foreach($sbsIngredients as $ingredient) {
+                    echo "<li class=\"rcp_ingredient\">". $ingredient . "</li></br>";
+                }
             ?>
         </ul>
 
         <ul class="rcp_inglist"id="rcp_sgm_inglist">
-            <?php for ($i = 1; $i < 21; $i++) {
-                echo "<li class=\"rcp_ingredient\">SgmIngredient" . $i . "</li></br>";
-            }
+            <?php
+                $sgmIngredients = $recipe->getSgmIngredients();
+                foreach($sgmIngredients as $ingredient) {
+                    echo "<li class=\"rcp_ingredient\">". $ingredient . "</li></br>";
+                }
             ?>
         </ul>
 
         <ul class="rcp_inglist" id="rcp_nar_inglist">
-            <?php for ($i = 1; $i < 21; $i++) {
-                echo "<li class=\"rcp_ingredient\">NarIngredient" . $i . "</li></br>";
+            <?php
+            $narIngredients = $recipe->getNarIngredients();
+            foreach($narIngredients as $ingredient) {
+                echo "<li class=\"rcp_ingredient\">". $ingredient . "</li></br>";
             }
             ?>
         </ul>
@@ -40,22 +47,28 @@
     <div id="rcp_instructions">
         <h2 id="rcp_institle">Instructions</h2>
         <ul class="rcp_inslist" id="rcp_sbs_inslist">
-            <?php for ($i = 1; $i < 21; $i++) {
-                echo "<li class=\"rcp_instruction\">SBSLorem ipsum dolor sit amet, consectetur adipiscing elit.</li></br>";
-            }
+            <?php
+                $sbsInstructions = $recipe->getSbsInstructions();
+                foreach($sbsInstructions as $instruction) {
+                    echo "<li class=\"rcp_instruction\">". $instruction ."<li></br>";
+                }
             ?>
         </ul>
 
         <ul class="rcp_inslist" id="rcp_sgm_inslist">
-            <?php for ($i = 1; $i < 21; $i++) {
-                echo "<li class=\"rcp_instruction\">SGMLorem ipsum dolor sit amet, consectetur adipiscing elit.</li></br>";
+            <?php
+            $sgmInstructions = $recipe->getSgmInstructions();
+            foreach($sgmInstructions as $instruction) {
+                echo "<li class=\"rcp_instruction\">". $instruction ."<li></br>";
             }
             ?>
         </ul>
 
         <ul class="rcp_inslist" id="rcp_nar_inslist">
-            <?php for ($i = 1; $i < 21; $i++) {
-                echo "<li class=\"rcp_instruction\">NarLorem ipsum dolor sit amet, consectetur adipiscing elit.</li></br>";
+            <?php
+            $narInstructions = $recipe->getNarInstructions();
+            foreach($narInstructions as $instruction) {
+                echo "<li class=\"rcp_instruction\">". $instruction ."<li></br>";
             }
             ?>
         </ul>
