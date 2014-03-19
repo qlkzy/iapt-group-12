@@ -208,3 +208,24 @@ body {
   font-size: 16px; }
   #search_fform ul {
     list-style-type: none; }
+  #search_fform .search_fform_dd {
+    width: 30%; }
+  #search_fform .search_fform_ti {
+    width: 30%; }
+  #search_fform #search_fcat {
+    margin-left: 75px; }
+  #search_fform #search_fdiet {
+    margin-left: 8px; }
+  #search_fform #search_fdif {
+    margin-left: 87px; }
+  #search_fform #search_fctime {
+    margin-left: 65px; }
+  #search_fform #search_fserves {
+    margin-left: 100px; }
+  #search_fform #search_fcontains {
+    margin-left: 87px; }
+  #search_fform #search_fform_submit {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
