@@ -29,12 +29,14 @@ $cvr_image_height: 100%;
 
   #rcp_ctitle {
     background-color: rgba(0, 0, 0, 0.5);
+    bottom: 175px;
     color: white;
     font-size: 50px;
-    height: 50px;
+    line-height: 50px;
+    min-height: 50px;
     padding-top: 10px;
-    position: absolute;
-    top: 400px;
+    position: relative;
+    width: 100%;
 
 
     @include center-block();

@@ -132,7 +132,6 @@ body {
     color: #5893ac;
     left: 540px;
     position: absolute;
-    font-size: 175%;
     top: 17px;
     display: inline-block;
     vertical-align: baseline;
@@ -156,12 +155,14 @@ body {
     margin-right: auto; }
   #recipe_cover #rcp_ctitle {
     background-color: rgba(0, 0, 0, 0.5);
+    bottom: 175px;
     color: white;
     font-size: 50px;
-    height: 50px;
+    line-height: 50px;
+    min-height: 50px;
     padding-top: 10px;
-    position: absolute;
-    top: 400px;
+    position: relative;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto; }
