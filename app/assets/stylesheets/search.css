@@ -181,7 +181,12 @@ body {
   background-image: linear-gradient( rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 50%), linear-gradient( white, #f2f2f5);
   -webkit-transition: all 0.05s ease-in;
   -moz-transition: all 0.05s ease-in;
-  transition: all 0.05s ease-in; }
+  transition: all 0.05s ease-in;
+  color: inherit;
+  cursor: inherit;
+  text-decoration: none; }
+  .search_result:active, .search_result:focus {
+    outline: none; }
   .search_result:hover {
     box-shadow: 5px 5px 10px 5px #CCCCCC;
     cursor: pointer;
