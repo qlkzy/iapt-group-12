@@ -18,6 +18,7 @@
     </div>
 </div>
 <br/> -->
+<h1 id="home_wmsg">Welcome to CookBox!</h1>
 <div id="home_content">
     <a class="home_box" href="#" id="home_gs">
         <h2 class="home_bhead">Get Started!</h2>
