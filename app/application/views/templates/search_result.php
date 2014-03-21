@@ -1,15 +1,5 @@
-<!-- <a href="<?php echo base_url() . "index.php/recipes/view/" . urlencode($recipe->getName()); ?>">
-    <div class="search_result">
-        <img class="search_result_image" src="<?php echo $recipe->getImage(); ?>"/>
-        <ul class="search_result_attributes">
-            <li><b>Name:</b> <?php echo $recipe->getName(); ?></li>
-            <li><b>Difficulty:</b> <?php echo $recipe->getDifficulty(); ?></li>
-            <li><b>Cooking Time:</b> <?php echo $recipe->getCookingTime() . " minutes"; ?></li>
-        </ul>
-    </div>
-</a> -->
 <a  class="srslt_link" href="<?php echo base_url() . "index.php/recipes/view/" . urlencode($recipe->getName()); ?>">
-    <div class="search_result">
+    <div class="search_result" data-category="<?php echo strtolower($recipe->getCategory()); ?>" data-difficulty="<?php echo $recipe->getDifficulty(); ?>" data-time="<?php echo $recipe->getCookingTime(); ?>" data-serves="<?php echo $recipe->getServes(); ?>">
         <img class="srch_res_img" src="<?php echo $recipe->getImage(); ?>"/>
         <h4 class="srch_res_title"><?php echo $recipe->getName(); ?></h4>
     </div>

@@ -19,9 +19,10 @@ class Recipes_model extends CI_Model
         $cookingTime = $attributesRaw['cooking_time'];
         $difficulty = $attributesRaw['difficulty'];
         $image = $attributesRaw['image'];
+        $serves = $attributesRaw['serves'];
 
         // Get the category name:
-        $query = $this->db->query("SELECT category_name FROM recipes INNER JOIN categories WHERE recipe_name = \"" . $name . "\"");
+        $query = $this->db->query("SELECT category_name FROM recipes JOIN categories ON recipes.category_id=categories.category_id WHERE recipe_name = \"" . $name . "\"");
         $categoryRaw = $query->row_array();
         $category = $categoryRaw['category_name'];
 
@@ -49,7 +50,7 @@ class Recipes_model extends CI_Model
 
         // Build a Recipe object and return it:
         return Recipe::createBuilder($recipeName)->cookingTime($cookingTime)->difficulty($difficulty)->image($image)->
-            category($category)->dietaryRestrictions($restrictions)->
+            category($category)->dietaryRestrictions($restrictions)->serves($serves)->
             sbsIngredients($sbsIngredients)->sgmIngredients($sgmIngredients)->
             narIngredients($narIngredients)->sbsInstructions($sbsInstructions)->
             sgmInstructions($sgmInstructions)->narInstructions($narInstructions)->build();
@@ -76,22 +77,6 @@ class Recipes_model extends CI_Model
             array_push($ingredients, $row['description']);
         }
         return $ingredients;
-    }
-
-    public function getRecipesByCategory($category) {
-        $queryString = "SELECT recipe_name FROM recipes JOIN categories WHERE recipes.category_id = categories.category_id AND category_name=\"".$category."\";";
-        $query = $this->db->query($queryString);
-        $recipeNamesRaw = $query->result_array();
-        $recipes = array();
-        foreach($recipeNamesRaw as $row) {
-            array_push($recipes, $this->getRecipe($row['recipe_name']));
-        }
-
-        return $recipes;
-    }
-
-    public function getRecipesByRestriction($restriction) {
-
     }
 
     public function getRecipeInstructions($name, $presentation)

@@ -19,6 +19,7 @@
     <script src="<?php echo base_url()."assets/jqueryUI/js/jquery-ui-1.10.4.custom.min.js"; ?>"></script>
     <script src="<?php echo base_url() . "assets/scripts/home.js"; ?>" type="text/javascript"></script>
     <script src="<?php echo base_url() . "assets/scripts/recipe.js"; ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url() . "assets/scripts/search.js"; ?>" type="text/javascript"></script>
 </head>
 <body>
 <div id="content_wrapper">

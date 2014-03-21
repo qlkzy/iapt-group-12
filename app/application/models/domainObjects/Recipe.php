@@ -9,6 +9,7 @@ class Recipe {
     private $cookingTime;
     private $image;
     private $dietaryRestrictions;
+    private $serves;
 
     // Ingredients for each of the presentation types:
     private $sbsIngredients;
@@ -32,6 +33,7 @@ class Recipe {
         $this->cookingTime = $builder->getCookingTime();
         $this->image = $builder->getImage();
         $this->dietaryRestrictions = $builder->getDietaryRestrictions();
+        $this->serves = $builder->getServes();
 
         $this->sbsIngredients = $builder->getSbsIngredients();
         $this->sgmIngredients = $builder->getSgmIngredients();
@@ -88,6 +90,14 @@ class Recipe {
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getServes()
+    {
+        return $this->serves;
     }
 
     /**

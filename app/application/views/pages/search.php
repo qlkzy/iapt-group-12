@@ -16,7 +16,7 @@
     <div id="search_filters">
         <h3>Filter Results</h3>
 
-        <form action="<?php echo base_url() . "index.php/search/filter"; ?>" id="search_fform" name="search_fform">
+        <form id="search_fform" name="search_fform">
             <ul>
                 <li>
                     <label for="search_fcat">Dish Type:</label>
@@ -42,9 +42,9 @@
                     <label for="search_fdif">Difficulty:</label>
                     <select class="search_fform_dd"  id="search_fdif" form="search_fform" name="diff">
                         <option value="" disabled selected>----------------</option>
-                        <option value="beginner">Beginner</option>
-                        <option value="intermediate">Intermediate</option>
-                        <option value="advanced">Advanced</option>
+                        <option value="easy">Beginner</option>
+                        <option value="medium">Intermediate</option>
+                        <option value="extreme">Advanced</option>
                     </select>
                 </li>
                 <li>
@@ -61,7 +61,10 @@
                 </li>
                 <br/>
                 <li>
-                    <input form="search_fform" id="search_fform_submit" type="submit" value="submit"/>
+                    <input form="search_fform" id="search_fform_submit" type="button" value="submit"/>
+                </li>
+                <li>
+                    <input form="search_fform" id="search_fform_reset" type="button" value="reset"/>
                 </li>
             </ul>
         </form>
