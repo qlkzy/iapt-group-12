@@ -10,19 +10,33 @@
     <!-- TODO: consider how all these scripts and stylesheets are going to be served! -->
     <script type="text/javascript">
         var baseUrl = '<?php echo base_url(); ?>';
+
     </script>
-    <link href="<?php echo base_url() . "assets/fonts/font-awesome-4.0.3/css/font-awesome.min.css"; ?>"
-          rel="stylesheet">
-    <link href="<?php echo base_url() . "assets/jqueryUI/css/ui-lightness/jquery-ui-1.10.4.custom.css"; ?>" rel="stylesheet">
-    <link href="<?php echo base_url() . "assets/stylesheets/home.css"; ?>" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url() . "assets/stylesheets/recipe.css"; ?>" rel ="stylesheet" type="text/css">
-    <link href="<?php echo base_url() . "assets/stylesheets/help.css"; ?>" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url() . "assets/stylesheets/search.css"; ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url() . "assets/fonts/font-awesome-4.0.3/css/font-awesome.min.css"; ?>" rel="stylesheet">
     <script src="<?php echo base_url() . "assets/scripts/jquery.js"; ?>" type="text/javascript"></script>
-    <script src="<?php echo base_url()."assets/jqueryUI/js/jquery-ui-1.10.4.custom.min.js"; ?>"></script>
-    <script src="<?php echo base_url() . "assets/scripts/home.js"; ?>" type="text/javascript"></script>
-    <script src="<?php echo base_url() . "assets/scripts/recipe.js"; ?>" type="text/javascript"></script>
-    <script src="<?php echo base_url() . "assets/scripts/search.js"; ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url() . "assets/scripts/header.js"; ?>" type="text/javascript"></script>
+    <?php
+    if ($title == 'Home') {
+    echo "<link href=\"".base_url() . "assets/stylesheets/home.css"."\" rel=\"stylesheet\" type=\"text/css\">";
+    echo "<script src=\"" . base_url() . "assets/scripts/home.js"."\" type=\"text/javascript\"></script>";
+    }
+
+    elseif($title == 'Recipe') {
+    echo "<link href=\"".base_url()."assets/stylesheets/recipe.css"."\" rel =\"stylesheet\" type=\"text/css\">";
+    echo "<script src=\"".base_url()."assets/scripts/recipe.js"."\" type=\"text/javascript\"></script>";
+    }
+
+    elseif($title == 'Help') {
+    echo "<link href=\"".base_url()."assets/stylesheets/help.css"."\" rel=\"stylesheet\" type=\"text/css\">";
+    echo "<script src=\"".base_url()."assets/scripts/help.js"."\" type=\"text/javascript\"></script>";
+    }
+
+    else {
+    echo "<link href=\"".base_url()."assets/stylesheets/search.css"."\" rel=\"stylesheet\" type=\"text/css\">";
+    echo "<script src=\"".base_url()."assets/scripts/search.js"."\" type=\"text/javascript\"></script>";
+    }
+    ?>
+
 </head>
 <body>
 <div id="content_wrapper">

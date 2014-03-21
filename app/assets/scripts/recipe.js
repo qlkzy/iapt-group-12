@@ -1,26 +1,4 @@
-var changerState = 0;
-
-$.ajax({
-    type: "POST",
-    url: baseUrl+'index.php/recipes/getDefaultView',
-    success: function(data) {
-        defaultView = data;
-        switch(data) {
-            case 'nar':
-                changerState = 0;
-                break;
-            case 'sbs':
-                changerState = 1;
-                break;
-            case 'sgm':
-                changerState = 2;
-                break;
-        }
-    },
-    error: function(xhr, desc, err) {
-        console.log("Error getting default view.");
-    }
-});
+var changerState = -1;
 
 function changeStateForwards() {
     switch (changerState) {
@@ -87,6 +65,7 @@ function changeStateBackwards() {
 }
 
 function initState(state) {
+    console.log("Initialising state: " + state);
     switch(state) {
         case 0:
             $("#rcp_vch_novtext").hide();
@@ -115,14 +94,37 @@ function initState(state) {
             $("#rcp_nar_inglist").hide();
             $("#rcp_nar_inslist").hide();
             break;
+        case (-1):
+            console.log("changerState not set correctly.");
+            break;
     }
 }
 
 $(document).ready(function() {
-
-
-
-
+    $.ajax({
+        type: "POST",
+        url: baseUrl+'index.php/recipes/getDefaultView',
+        success: function(data) {
+            console.log("Data received: "+ data);
+            switch(data) {
+                case 'sbs':
+                    changerState = 1;
+                    initState(1);
+                    break;
+                case 'sgm':
+                    changerState = 2;
+                    initState(2);
+                    break;
+                case 'nar':
+                    changerState = 0;
+                    initState(0);
+                    break;
+            }
+        },
+        error: function(xhr, desc, err) {
+            console.log("Error getting default view.");
+        }
+    });
 
     $("#rcp_vch_fbutton").click(function(e) {
         changeStateForwards();

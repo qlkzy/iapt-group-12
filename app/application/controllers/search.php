@@ -8,14 +8,6 @@ class Search extends CI_Controller
         $this->load->model('recipes_model');
     }
 
-    /* public function index() {
-        $data['title'] = "Search";
-
-        $this->load->view("templates/header", $data);
-        $this->load->view("pages/search", $data);
-        $this->load->view("templates/footer", $data);
-    } */
-
     public function index()
     {
         $data['title'] = "Search";
