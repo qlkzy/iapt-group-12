@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- TODO: consider how all these scripts and stylesheets are going to be served! -->
+    <script type="text/javascript">
+        var baseUrl = '<?php echo base_url(); ?>';
+        var seshDefault = '<?php echo $this->session->userdata('default'); ?>';
+    </script>
     <link href="<?php echo base_url() . "assets/fonts/font-awesome-4.0.3/css/font-awesome.min.css"; ?>"
           rel="stylesheet">
     <link href="<?php echo base_url() . "assets/jqueryUI/css/ui-lightness/jquery-ui-1.10.4.custom.css"; ?>" rel="stylesheet">

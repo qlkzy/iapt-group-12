@@ -60,4 +60,18 @@ $(document).ready(function () {
     }, function() {
         $("#banner_search").css('z-index', '1');
     });
+
+    $("#home_gs").click(function() {
+        $.ajax({
+            type: "POST",
+            url: baseUrl+'assets/scripts/setDefaultView.php',
+            data: '{"default":"narrative"}',
+            success: function (data) {
+                console.log("Successfully set default view!");
+            },
+            error: function (xhr, desc, err) {
+                console.log("Error setting default view.");
+            }
+        });
+    });
 });
