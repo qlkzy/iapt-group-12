@@ -1,3 +1,26 @@
+var defaultView = null;
+
+$.ajax({
+    type: "POST",
+    url: baseUrl+'index.php/recipes/getDefaultView',
+    success: function(data) {
+        defaultView = data;
+        console.log("defaultView currently at: " + defaultView);
+    },
+    error: function(xhr, desc, err) {
+        console.log("Error getting default view.");
+    }
+});
+
+switch (defaultView) {
+    case "nar":
+        break;
+    case "sbs":
+        break;
+    case "sgm":
+        break;
+}
+
 var changerState = 0;
 
 function changeStateForwards() {

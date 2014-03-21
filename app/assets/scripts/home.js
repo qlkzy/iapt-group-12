@@ -1,3 +1,5 @@
+var defaultView = null;
+
 $(document).ready(function () {
     $(".nav_text").hide();
 
@@ -64,10 +66,9 @@ $(document).ready(function () {
     $("#home_gs").click(function() {
         $.ajax({
             type: "POST",
-            url: baseUrl+'assets/scripts/setDefaultView.php',
-            data: '{"default":"narrative"}',
+            url: baseUrl+'index.php/recipes/setDefaultView/narrative',
             success: function (data) {
-                console.log("Successfully set default view!");
+                console.log("Successfully set default view.");
             },
             error: function (xhr, desc, err) {
                 console.log("Error setting default view.");
