@@ -1,27 +1,26 @@
-var defaultView = null;
+var changerState = 0;
 
 $.ajax({
     type: "POST",
     url: baseUrl+'index.php/recipes/getDefaultView',
     success: function(data) {
         defaultView = data;
-        console.log("defaultView currently at: " + defaultView);
+        switch(data) {
+            case 'nar':
+                changerState = 0;
+                break;
+            case 'sbs':
+                changerState = 1;
+                break;
+            case 'sgm':
+                changerState = 2;
+                break;
+        }
     },
     error: function(xhr, desc, err) {
         console.log("Error getting default view.");
     }
 });
-
-switch (defaultView) {
-    case "nar":
-        break;
-    case "sbs":
-        break;
-    case "sgm":
-        break;
-}
-
-var changerState = 0;
 
 function changeStateForwards() {
     switch (changerState) {
@@ -87,14 +86,42 @@ function changeStateBackwards() {
     }
 }
 
-$(document).ready(function() {
-    $("#rcp_vch_novtext").hide();
-    $("#rcp_sbs_inglist").hide();
-    $("#rcp_sbs_inslist").hide();
+function initState(state) {
+    switch(state) {
+        case 0:
+            $("#rcp_vch_novtext").hide();
+            $("#rcp_sbs_inglist").hide();
+            $("#rcp_sbs_inslist").hide();
 
-    $("#rcp_vch_inttext").hide();
-    $("#rcp_sgm_inglist").hide();
-    $("#rcp_sgm_inslist").hide();
+            $("#rcp_vch_inttext").hide();
+            $("#rcp_sgm_inglist").hide();
+            $("#rcp_sgm_inslist").hide();
+            break;
+        case 1:
+            $("#rcp_vch_exptext").hide();
+            $("#rcp_nar_inglist").hide();
+            $("#rcp_nar_inslist").hide();
+
+            $("#rcp_vch_inttext").hide();
+            $("#rcp_sgm_inglist").hide();
+            $("#rcp_sgm_inslist").hide();
+            break;
+        case 2:
+            $("#rcp_vch_novtext").hide();
+            $("#rcp_sbs_inglist").hide();
+            $("#rcp_sbs_inslist").hide();
+
+            $("#rcp_vch_exptext").hide();
+            $("#rcp_nar_inglist").hide();
+            $("#rcp_nar_inslist").hide();
+            break;
+    }
+}
+
+$(document).ready(function() {
+
+
+
 
 
     $("#rcp_vch_fbutton").click(function(e) {

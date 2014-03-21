@@ -1,6 +1,7 @@
 var defaultView = null;
 
 $(document).ready(function () {
+    $(".home_vset").hide();
     $(".nav_text").hide();
 
     $("#nav_home").hover(function () {
@@ -64,9 +65,41 @@ $(document).ready(function () {
     });
 
     $("#home_gs").click(function() {
+        $(this).hide();
+        $("#home_vh").hide();
+        $(".home_vset").show();
+    });
+
+    $("#home_setnar").click(function() {
         $.ajax({
             type: "POST",
-            url: baseUrl+'index.php/recipes/setDefaultView/narrative',
+            url: baseUrl+'index.php/recipes/setDefaultView/nar',
+            success: function (data) {
+                console.log("Successfully set default view.");
+            },
+            error: function (xhr, desc, err) {
+                console.log("Error setting default view.");
+            }
+        });
+    });
+
+    $("#home_setsbs").click(function() {
+        $.ajax({
+            type: "POST",
+            url: baseUrl+'index.php/recipes/setDefaultView/sbs',
+            success: function (data) {
+                console.log("Successfully set default view.");
+            },
+            error: function (xhr, desc, err) {
+                console.log("Error setting default view.");
+            }
+        });
+    });
+
+    $("#home_setsgm").click(function() {
+        $.ajax({
+            type: "POST",
+            url: baseUrl+'index.php/recipes/setDefaultView/sgm',
             success: function (data) {
                 console.log("Successfully set default view.");
             },
