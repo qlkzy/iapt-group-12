@@ -1,103 +1,12 @@
-var changerState = -1;
-
-function changeStateForwards() {
-    switch (changerState) {
-        case 0:
-            changerState = 1;
-            $("#rcp_vch_exptext").toggle();
-            $("#rcp_nar_inglist").toggle();
-            $("#rcp_nar_inslist").toggle();
-            $("#rcp_vch_novtext").toggle();
-            $("#rcp_sbs_inglist").toggle();
-            $("#rcp_sbs_inslist").toggle();
-            break;
-        case 1:
-            changerState = 2;
-            $("#rcp_vch_novtext").toggle();
-            $("#rcp_sbs_inglist").toggle();
-            $("#rcp_sbs_inslist").toggle();
-            $("#rcp_vch_inttext").toggle();
-            $("#rcp_sgm_inglist").toggle();
-            $("#rcp_sgm_inslist").toggle();
-            break;
-        case 2:
-            changerState = 0;
-            $("#rcp_vch_inttext").toggle();
-            $("#rcp_sgm_inglist").toggle();
-            $("#rcp_sgm_inslist").toggle();
-            $("#rcp_vch_exptext").toggle();
-            $("#rcp_nar_inglist").toggle();
-            $("#rcp_nar_inslist").toggle();
-            break;
-    }
-}
-
-function changeStateBackwards() {
-    switch (changerState) {
-        case 0:
-            changerState = 2;
-            $("#rcp_vch_exptext").toggle();
-            $("#rcp_nar_inglist").toggle();
-            $("#rcp_nar_inslist").toggle();
-            $("#rcp_vch_inttext").toggle();
-            $("#rcp_sgm_inglist").toggle();
-            $("#rcp_sgm_inslist").toggle();
-            break;
-        case 1:
-            changerState = 0;
-            $("#rcp_vch_novtext").toggle();
-            $("#rcp_sbs_inglist").toggle();
-            $("#rcp_sbs_inslist").toggle();
-            $("#rcp_vch_exptext").toggle();
-            $("#rcp_nar_inglist").toggle();
-            $("#rcp_nar_inslist").toggle();
-            break;
-        case 2:
-            changerState = 1;
-            $("#rcp_vch_inttext").toggle();
-            $("#rcp_sgm_inglist").toggle();
-            $("#rcp_sgm_inslist").toggle();
-            $("#rcp_vch_novtext").toggle();
-            $("#rcp_sbs_inglist").toggle();
-            $("#rcp_sbs_inslist").toggle();
-            break;
-    }
-}
-
 function initState(state) {
     console.log("Initialising state: " + state);
-    switch(state) {
-        case 0:
-            $("#rcp_vch_novtext").hide();
-            $("#rcp_sbs_inglist").hide();
-            $("#rcp_sbs_inslist").hide();
-
-            $("#rcp_vch_inttext").hide();
-            $("#rcp_sgm_inglist").hide();
-            $("#rcp_sgm_inslist").hide();
-            break;
-        case 1:
-            $("#rcp_vch_exptext").hide();
-            $("#rcp_nar_inglist").hide();
-            $("#rcp_nar_inslist").hide();
-
-            $("#rcp_vch_inttext").hide();
-            $("#rcp_sgm_inglist").hide();
-            $("#rcp_sgm_inslist").hide();
-            break;
-        case 2:
-            $("#rcp_vch_novtext").hide();
-            $("#rcp_sbs_inglist").hide();
-            $("#rcp_sbs_inslist").hide();
-
-            $("#rcp_vch_exptext").hide();
-            $("#rcp_nar_inglist").hide();
-            $("#rcp_nar_inslist").hide();
-            break;
-        case (-1):
-            console.log("changerState not set correctly.");
-            break;
-    }
+    $(".rcp_item").each(function() {
+       if ($(this).hasClass("rcp_"+state)) {
+           $(this).show();
+       } else {
+           $(this).hide();
+       }
+    });
 }
 
 $(document).ready(function() {
@@ -108,16 +17,13 @@ $(document).ready(function() {
             console.log("Data received: "+ data);
             switch(data) {
                 case 'sbs':
-                    changerState = 1;
-                    initState(1);
+                    initState("sbs");
                     break;
                 case 'sgm':
-                    changerState = 2;
-                    initState(2);
+                    initState("sgm");
                     break;
                 case 'nar':
-                    changerState = 0;
-                    initState(0);
+                    initState("nar");
                     break;
             }
         },
@@ -126,12 +32,16 @@ $(document).ready(function() {
         }
     });
 
-    $("#rcp_vch_fbutton").click(function(e) {
-        changeStateForwards();
+    $("#rcp_sbsvchb").click(function() {
+        initState("sbs");
     });
 
-    $("#rcp_vch_bbutton").click(function(e) {
-        changeStateBackwards();
+    $("#rcp_sgmvchb").click(function() {
+        initState("sgm");
+    });
+
+    $("#rcp_narvchb").click(function() {
+        initState("nar");
     });
 
     $(".rcp_instruction").click(function() {

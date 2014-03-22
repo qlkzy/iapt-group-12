@@ -4,20 +4,23 @@
     <h1 id="rcp_ctitle"><?php echo $recipe->getName(); ?></h1>
 </div>
 <div id="rcp_vchange">
-    <input class="rcp_vcbutton" id="rcp_vch_bbutton" type="button" value="<<"/>
+    <!-- <input class="rcp_vcbutton" id="rcp_vch_bbutton" type="button" value="<<"/>
 
     <h3 id="rcp_vch_exptext">Your current display: Expert</h3>
 
     <h3 id="rcp_vch_novtext">Your current display: Novice</h3>
 
     <h3 id="rcp_vch_inttext">Your current display: Intermediate</h3>
-    <input class="rcp_vcbutton" id="rcp_vch_fbutton" type="button" value=">>"/>
+    <input class="rcp_vcbutton" id="rcp_vch_fbutton" type="button" value=">>"/> -->
+    <input class="rcp_vchb" id="rcp_sbsvchb" type="button" value="Step-By-Step"/>
+    <input class="rcp_vchb" id="rcp_sgmvchb" type="button" value="Segmented"/>
+    <input class="rcp_vchb" id="rcp_narvchb" type="button" value="Narrative"/>
 </div>
 <div id="rcp_columns">
     <div id="rcp_ingredients">
         <h2 id="rcp_ingtitle">Ingredients</h2>
 
-        <ul class="rcp_inglist"id="rcp_sbs_inglist">
+        <ul class="rcp_inglist rcp_item rcp_sbs" id="rcp_sbs_inglist">
             <?php
                 $sbsIngredients = $recipe->getSbsIngredients();
                 foreach($sbsIngredients as $ingredient) {
@@ -26,7 +29,7 @@
             ?>
         </ul>
 
-        <ul class="rcp_inglist"id="rcp_sgm_inglist">
+        <ul class="rcp_inglist rcp_item rcp_sgm" id="rcp_sgm_inglist">
             <?php
                 $sgmIngredients = $recipe->getSgmIngredients();
                 foreach($sgmIngredients as $ingredient) {
@@ -35,7 +38,7 @@
             ?>
         </ul>
 
-        <ul class="rcp_inglist" id="rcp_nar_inglist">
+        <ul class="rcp_inglist rcp_item rcp_nar" id="rcp_nar_inglist">
             <?php
             $narIngredients = $recipe->getNarIngredients();
             foreach($narIngredients as $ingredient) {
@@ -46,7 +49,7 @@
     </div>
     <div id="rcp_instructions">
         <h2 id="rcp_institle">Instructions</h2>
-        <ul class="rcp_inslist" id="rcp_sbs_inslist">
+        <ul class="rcp_inslist rcp_item rcp_sbs" id="rcp_sbs_inslist">
             <?php
                 $sbsInstructions = $recipe->getSbsInstructions();
                 foreach($sbsInstructions as $instruction) {
@@ -55,7 +58,7 @@
             ?>
         </ul>
 
-        <ul class="rcp_inslist" id="rcp_sgm_inslist">
+        <ul class="rcp_inslist rcp_item rcp_sgm" id="rcp_sgm_inslist">
             <?php
             $sgmInstructions = $recipe->getSgmInstructions();
             foreach($sgmInstructions as $instruction) {
@@ -64,7 +67,7 @@
             ?>
         </ul>
 
-        <ul class="rcp_inslist" id="rcp_nar_inslist">
+        <ul class="rcp_inslist rcp_item rcp_nar" id="rcp_nar_inslist">
             <?php
             $narInstructions = $recipe->getNarInstructions();
             foreach($narInstructions as $instruction) {
