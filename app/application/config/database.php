@@ -48,10 +48,14 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'mysql-student.cs.york.ac.uk';
-$db['default']['username'] = 'drm511';
-//$db['default']['password'] = 'xiCuQ5A_xvQS';
-$db['default']['password'] = 'xu-K8WGzhJT9';
+// TODO: CHANGE THESE DETAILS BACK WHEN DONE FUCKING AROUND ON LAPTOP!!!
+// $db['default']['hostname'] = 'mysql-student.cs.york.ac.uk';
+// $db['default']['username'] = 'drm511';
+// $db['default']['password'] = 'xiCuQ5A_xvQS';
+// $db['default']['password'] = 'xu-K8WGzhJT9';
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'odin';
+$db['default']['password'] = 'p4ssw0rd';
 $db['default']['database'] = 'IAPT131412';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

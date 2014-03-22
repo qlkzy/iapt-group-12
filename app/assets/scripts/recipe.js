@@ -10,6 +10,7 @@ function initState(state) {
 }
 
 $(document).ready(function() {
+    $("#radio").buttonset();
     $.ajax({
         type: "POST",
         url: baseUrl+'index.php/recipes/getDefaultView',
@@ -24,6 +25,9 @@ $(document).ready(function() {
                     break;
                 case 'nar':
                     initState("nar");
+                    break;
+                default:
+                    initState("sbs");
                     break;
             }
         },

@@ -37,7 +37,7 @@ $(document).ready(function () {
             }
         });
     });
-
+k
     $("#home_setsgm").click(function() {
         $.ajax({
             type: "GET",

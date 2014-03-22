@@ -5,7 +5,7 @@
 
 // Some local variables:
 $cvr_height: 400px;
-$cvr_width: 80%;
+$cvr_width: 40%;
 
 $cvr_image_h2w_ratio: (497/723);
 $cvr_image_width: 100%;
@@ -14,10 +14,9 @@ $cvr_image_height: 100%;
 // Styles:
 #recipe_cover {
   height: $cvr_height;
+  margin-left: 120px;
   margin-top: $content_offset;
   width: $cvr_width;
-
-  @include center-block;
 
   #rcp_cimage {
     border-radius: 3px;
@@ -29,7 +28,7 @@ $cvr_image_height: 100%;
 
   #rcp_ctitle {
     background-color: rgba(0, 0, 0, 0.5);
-    bottom: 175px;
+    bottom: 225px;
     color: white;
     font-size: 50px;
     line-height: 50px;
@@ -42,4 +41,12 @@ $cvr_image_height: 100%;
 
     @include center-block();
   }
+}
+
+#rcp_shorthand {
+  left: 850px;
+  line-height: 50px;
+  list-style-type: none;
+  position: absolute;
+  top: 225px;
 }

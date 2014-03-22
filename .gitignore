@@ -10,3 +10,4 @@
 .idea
 .sass*
 */.sass*
+webMirror.sh

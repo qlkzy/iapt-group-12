@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title><?php echo $title ?></title>
     <meta charset="utf-8">
@@ -14,6 +14,8 @@
     </script>
     <link href="<?php echo base_url() . "assets/fonts/font-awesome-4.0.3/css/font-awesome.min.css"; ?>" rel="stylesheet">
     <script src="<?php echo base_url() . "assets/scripts/jquery.js"; ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url() . "assets/jqueryUI/js/jquery-ui-1.10.4.custom.min.js";?>"></script>
+    <link href="<?php echo base_url() . "assets/jqueryUI/css/ui-lightness/jquery-ui-1.10.4.custom.min.css"; ?>" rel="stylesheet">
     <script src="<?php echo base_url() . "assets/scripts/header.js"; ?>" type="text/javascript"></script>
     <?php
     if ($title == 'Home') {

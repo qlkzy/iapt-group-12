@@ -40,6 +40,16 @@
     }
   }
 
+  .search_res_list {
+    color: $p_dblue;
+    display: inline-block;
+    font-size: 14px;
+    left: 160px;
+    list-style-type: none;
+    position: absolute;
+    top: 40px;
+  }
+
   h4 {
     color: $p_dblue;
     display: inline-block;

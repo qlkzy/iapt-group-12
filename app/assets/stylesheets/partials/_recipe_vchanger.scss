@@ -5,20 +5,20 @@
 
 // Some local variables:
 $vchanger_height: 50px;
-$vchanger_width: 80%;
+$vchanger_width: 40%;
 
 
 // Styles:
 #rcp_vchange {
   height: $vchanger_height;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 120px;
+  margin-top: 0;
+  padding: 0;
   width: $vchanger_width;
 
   @include jw-wfbox(center, flex, row, nowrap, space-between);
 
-  .rcp_vcbutton {
-    height: $vchanger_height;
-    @include button($p_lblue);
+  .rcp_vchb {
+    width: 33%;
   }
 }

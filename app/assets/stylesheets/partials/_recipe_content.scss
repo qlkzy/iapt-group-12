@@ -15,25 +15,45 @@ $recipe_content_width: 80%;
   @include jw-wfbox(flex-start, flex, row, nowrap, flex-start);
 
   #rcp_ingredients {
+    background-color: $p_lblue;
+    box-shadow: 2px 2px 5px 2px #CCCCCC;
     line-height: 22px;
     padding: 0;
     width: 35%;
 
+    #rcp_ingtitle{
+      margin-left: 15px;
+    }
+
     .rcp_inglist {
       list-style-type: none;
+    }
+
+    .rcp_inglist li {
+      margin-top: 5px;
     }
   }
 
   #rcp_instructions {
+    margin-left: 20px;
+
+    background-color: $p_lblue;
+    box-shadow: 2px 2px 5px 2px #CCCCCC;
     height: 100%;
-    padding-left: $content_offset/2;
+    padding-left: $content_offset/4;
     width: 65%;
 
-    .rcp_inslist {
+    .rcp_inslist{
       list-style-type: none;
     }
 
+    #rcp_institle {
+      position: relative;
+      top: -8px;
+    }
+
     .rcp_instruction {
+      padding-top: 10px;
       @include transition(color 0.3s ease-in);
 
       &:hover {
