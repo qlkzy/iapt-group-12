@@ -12,7 +12,7 @@ $vchanger_width: 40%;
 #rcp_vchange {
   height: $vchanger_height;
   margin-left: 120px;
-  margin-top: 0;
+  margin-top: -125px;
   padding: 0;
   width: $vchanger_width;
 
@@ -20,5 +20,6 @@ $vchanger_width: 40%;
 
   .rcp_vchb {
     width: 33%;
+    @include button($p_lblue);
   }
 }

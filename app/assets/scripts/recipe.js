@@ -7,6 +7,7 @@ function initState(state) {
            $(this).hide();
        }
     });
+    $("#rcp_"+state+"vchb").attr("disabled", "disabled");
 }
 
 $(document).ready(function() {
@@ -16,35 +17,31 @@ $(document).ready(function() {
         url: baseUrl+'index.php/recipes/getDefaultView',
         success: function(data) {
             console.log("Data received: "+ data);
-            switch(data) {
-                case 'sbs':
-                    initState("sbs");
-                    break;
-                case 'sgm':
-                    initState("sgm");
-                    break;
-                case 'nar':
-                    initState("nar");
-                    break;
-                default:
-                    initState("sbs");
-                    break;
-            }
+            initState(data);
         },
         error: function(xhr, desc, err) {
-            console.log("Error getting default view.");
+            initState("sbs");
         }
     });
 
     $("#rcp_sbsvchb").click(function() {
+        $(this).attr("disabled", "disabled");
+        $("#rcp_sgmvchb").removeAttr("disabled");
+        $("#rcp_narvchb").removeAttr("disabled");
         initState("sbs");
     });
 
     $("#rcp_sgmvchb").click(function() {
+        $(this).attr("disabled", "disabled");
+        $("#rcp_sbsvchb").removeAttr("disabled");
+        $("#rcp_narvchb").removeAttr("disabled");
         initState("sgm");
     });
 
     $("#rcp_narvchb").click(function() {
+        $(this).attr("disabled", "disabled");
+        $("#rcp_sbsvchb").removeAttr("disabled");
+        $("#rcp_sgmvchb").removeAttr("disabled");
         initState("nar");
     });
 

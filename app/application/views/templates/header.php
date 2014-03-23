@@ -48,7 +48,7 @@
             <img id="banner_image" src="<?php echo base_url() . "assets/images/branding_mockup_1.png"; ?>"/>
         </a>
 
-        <nav>
+        <!-- <nav>
             <div id="nav_home">
                 <a href="<?php echo base_url(); ?>">
                     <i class="fa fa-home fa-2x"></i>
@@ -65,13 +65,29 @@
                     <i class="fa fa-question fa-2x"></i>
                 </a>
             </div>
+        </nav> -->
+
+        <nav>
+            <a class="nav_icon" href="<?php echo base_url();?>" id="nav_home">
+                <i class="fa fa-home fa-2x"></i>
+                <p class="nav_itext">Home</p>
+            </a>
+            <a class="nav_icon" href="<?php echo base_url() . "index.php/search"; ?>" id="nav_browse">
+                <i class="fa fa-eye fa-2x"></i>
+                <p class="nav_itext">Browse</p>
+            </a>
+            <a class="nav_icon" href="<?php echo base_url() . "index.php/help"; ?>" id="nav_help">
+                <i class="fa fa-question fa-2x"></i>
+                <p class="nav_itext">Help</p>
+            </a>
+
         </nav>
 
-        <h2 class="nav_text" id="nav_htext">Home</h2>
+        <!-- <h2 class="nav_text" id="nav_htext">Home</h2>
 
         <h2 class="nav_text" id="nav_btext">Browse Recipes</h2>
 
-        <h2 class="nav_text" id="nav_hlptext">Help</h2>
+        <h2 class="nav_text" id="nav_hlptext">Help</h2> -->
 
         <form action="<?php echo base_url() . "index.php/search/results"; ?>" id="banner_search">
             <input id="bs_input" required pattern="[a-zA-Z][a-zA-Z\s]+" name="search_input"

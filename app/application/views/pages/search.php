@@ -1,4 +1,4 @@
-<h2 id="search_title">You searched for: Potato Grids</h2>
+<h2 id="search_title">You searched for: <?php echo $this->input->get('search_input', FALSE); ?></h2>
 <div id="search_columns">
     <div id="search_results">
         <?php
@@ -9,7 +9,7 @@
                     $this->load->view("templates/search_result", $data);
                 }
             } else {
-                echo "No search results mether fecher.";
+                echo "<span id=\"search_emsg\">There were no search results to match your query.</span>";
             }
         ?>
     </div>
@@ -61,10 +61,10 @@
                 </li>
                 <br/>
                 <li>
-                    <input form="search_fform" id="search_fform_submit" type="button" value="submit"/>
+                    <input form="search_fform" id="search_fform_submit" type="button" value="Submit"/>
                 </li>
                 <li>
-                    <input form="search_fform" id="search_fform_reset" type="button" value="reset"/>
+                    <input form="search_fform" id="search_fform_reset" type="button" value="Reset"/>
                 </li>
             </ul>
         </form>

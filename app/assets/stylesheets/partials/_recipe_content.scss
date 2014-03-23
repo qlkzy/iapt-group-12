@@ -15,7 +15,7 @@ $recipe_content_width: 80%;
   @include jw-wfbox(flex-start, flex, row, nowrap, flex-start);
 
   #rcp_ingredients {
-    background-color: $p_lblue;
+    background-color: lighten($p_lblue, 20%);
     box-shadow: 2px 2px 5px 2px #CCCCCC;
     line-height: 22px;
     padding: 0;
@@ -37,10 +37,11 @@ $recipe_content_width: 80%;
   #rcp_instructions {
     margin-left: 20px;
 
-    background-color: $p_lblue;
+    background-color: lighten($p_lblue, 20%);
     box-shadow: 2px 2px 5px 2px #CCCCCC;
     height: 100%;
     padding-left: $content_offset/4;
+    padding-right: $content_offset/2;
     width: 65%;
 
     .rcp_inslist{
@@ -48,6 +49,8 @@ $recipe_content_width: 80%;
     }
 
     #rcp_institle {
+      margin-bottom: 0;
+      padding-bottom: 0;
       position: relative;
       top: -8px;
     }

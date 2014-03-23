@@ -7,6 +7,7 @@ $(document).ready(function () {
     $("#home_gs").click(function() {
         $(this).hide();
         $("#home_vh").hide();
+        $("#home_wmsg").text('Choose Your Default View');
         $(".home_vset").show();
     });
 

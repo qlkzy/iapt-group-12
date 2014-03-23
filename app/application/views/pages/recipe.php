@@ -15,6 +15,7 @@
     <input class="rcp_vchb ui-button" id="rcp_sgmvchb" type="button" value="Segmented"/>
     <input class="rcp_vchb ui-button" id="rcp_narvchb" type="button" value="Narrative"/>
 </div>
+
 <div id="rcp_columns">
     <div id="rcp_ingredients">
         <h2 id="rcp_ingtitle">Ingredients</h2>
@@ -23,7 +24,7 @@
             <?php
             $sbsIngredients = $recipe->getSbsIngredients();
             foreach ($sbsIngredients as $ingredient) {
-                echo "<li class=\"rcp_ingredient\">" . $ingredient . "</li>";
+                echo "<li class=\"rcp_ingredient\">" . preg_replace("/\d+[a-z]*\s/", "<b>$0</b>",$ingredient) . "</li>";
             }
             ?>
         </ul>
@@ -32,7 +33,7 @@
             <?php
             $sgmIngredients = $recipe->getSgmIngredients();
             foreach ($sgmIngredients as $ingredient) {
-                echo "<li class=\"rcp_ingredient\">" . $ingredient . "</li>";
+                echo "<li class=\"rcp_ingredient\">" . preg_replace("/\d+[a-z]*\s/", "<b>$0</b>",$ingredient) . "</li>";
             }
             ?>
         </ul>
@@ -41,7 +42,7 @@
             <?php
             $narIngredients = $recipe->getNarIngredients();
             foreach ($narIngredients as $ingredient) {
-                echo "<li class=\"rcp_ingredient\">" . $ingredient . "</li>";
+                echo "<li class=\"rcp_ingredient\">" . preg_replace("/\d+[a-z]*\s/", "<b>$0</b>",$ingredient) . "</li>";
             }
             ?>
         </ul>

@@ -51,18 +51,33 @@ $nav_height: 50px;
   nav {
     left: 400px;
     position: absolute;
-    top: 40px;
-    width: 130px;
+    top: 30px;
+    width: 150px;
     @include jw-fbox;
 
-    a {
+    .nav_icon {
       @include unstyled-link;
       @include transition(color 0.3s ease-in 0s);
+      @include jw-wfbox(center, inline-flex, column, nowrap, flex-start);
 
       &:hover {
         color: $p_medblue;
         cursor: pointer;
         @include transition(color 0.3s ease-in 0s);
+      }
+
+      i {
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-size: 14px;
+        margin-top: -10px;
+        margin-left: 2px;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0;
       }
     }
   }

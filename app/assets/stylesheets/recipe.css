@@ -107,27 +107,42 @@ body {
   #banner nav {
     left: 400px;
     position: absolute;
-    top: 40px;
-    width: 130px;
+    top: 30px;
+    width: 150px;
     align-items: center;
     display: inline-flex;
     flex-flow: row nowrap;
     justify-content: space-between; }
-    #banner nav a {
+    #banner nav .nav_icon {
       color: inherit;
       cursor: inherit;
       text-decoration: none;
       -webkit-transition: color 0.3s ease-in 0s;
       -moz-transition: color 0.3s ease-in 0s;
-      transition: color 0.3s ease-in 0s; }
-      #banner nav a:active, #banner nav a:focus {
+      transition: color 0.3s ease-in 0s;
+      align-items: center;
+      display: inline-flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start; }
+      #banner nav .nav_icon:active, #banner nav .nav_icon:focus {
         outline: none; }
-      #banner nav a:hover {
+      #banner nav .nav_icon:hover {
         color: #5893ac;
         cursor: pointer;
         -webkit-transition: color 0.3s ease-in 0s;
         -moz-transition: color 0.3s ease-in 0s;
         transition: color 0.3s ease-in 0s; }
+      #banner nav .nav_icon i {
+        margin: 0;
+        padding: 0; }
+      #banner nav .nav_icon p {
+        font-size: 14px;
+        margin-top: -10px;
+        margin-left: 2px;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0; }
   #banner .nav_text {
     color: #5893ac;
     left: 540px;
@@ -140,6 +155,7 @@ body {
     *vertical-align: auto; }
 
 #recipe_cover {
+  display: inline-block;
   height: 400px;
   margin-left: 120px;
   margin-top: 50px;
@@ -167,16 +183,16 @@ body {
     margin-right: auto; }
 
 #rcp_shorthand {
-  left: 850px;
+  display: inline-block;
   line-height: 50px;
   list-style-type: none;
-  position: absolute;
-  top: 225px; }
+  position: relative;
+  top: -200px; }
 
 #rcp_vchange {
   height: 50px;
   margin-left: 120px;
-  margin-top: 0;
+  margin-top: -125px;
   padding: 0;
   width: 40%;
   align-items: center;
@@ -185,7 +201,35 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between; }
   #rcp_vchange .rcp_vchb {
-    width: 33%; }
+    width: 33%;
+    border: 1px solid #82b3d1;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #f0f5f7;
+    color: #333333;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #bbd2e0;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bbd2e0), color-stop(100%, #8dbad5));
+    background-image: -webkit-linear-gradient(#bbd2e0, #8dbad5);
+    background-image: linear-gradient(#bbd2e0, #8dbad5);
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #c5dcea;
+    background-clip: padding-box; }
+    #rcp_vchange .rcp_vchb:hover:not(:disabled) {
+      box-shadow: inset 0 1px 0 0 #cfdde5;
+      cursor: pointer;
+      background-color: #acc6d6;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #acc6d6), color-stop(100%, #83b3d0));
+      background-image: -webkit-linear-gradient(#acc6d6, #83b3d0);
+      background-image: linear-gradient(#acc6d6, #83b3d0); }
+    #rcp_vchange .rcp_vchb:active:not(:disabled) {
+      border: 1px solid #82b3d1;
+      box-shadow: inset 0 0 8px 4px #79accb, inset 0 0 8px 4px #79accb, 0 1px 1px 0 #eeeeee; }
+    #rcp_vchange .rcp_vchb:disabled {
+      opacity: 0.5;
+      cursor: not-allowed; }
 
 #rcp_columns {
   margin-left: auto;
@@ -198,7 +242,7 @@ body {
   flex-wrap: nowrap;
   justify-content: flex-start; }
   #rcp_columns #rcp_ingredients {
-    background-color: #bbd2e0;
+    background-color: white;
     box-shadow: 2px 2px 5px 2px #CCCCCC;
     line-height: 22px;
     padding: 0;
@@ -211,14 +255,17 @@ body {
       margin-top: 5px; }
   #rcp_columns #rcp_instructions {
     margin-left: 20px;
-    background-color: #bbd2e0;
+    background-color: white;
     box-shadow: 2px 2px 5px 2px #CCCCCC;
     height: 100%;
     padding-left: 12.5px;
+    padding-right: 25px;
     width: 65%; }
-    #rcp_columns #rcp_instructions .rcp_inslist#rcp_nar_inslist {
+    #rcp_columns #rcp_instructions .rcp_inslist {
       list-style-type: none; }
     #rcp_columns #rcp_instructions #rcp_institle {
+      margin-bottom: 0;
+      padding-bottom: 0;
       position: relative;
       top: -8px; }
     #rcp_columns #rcp_instructions .rcp_instruction {

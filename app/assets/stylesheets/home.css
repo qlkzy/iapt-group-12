@@ -107,27 +107,42 @@ body {
   #banner nav {
     left: 400px;
     position: absolute;
-    top: 40px;
-    width: 130px;
+    top: 30px;
+    width: 150px;
     align-items: center;
     display: inline-flex;
     flex-flow: row nowrap;
     justify-content: space-between; }
-    #banner nav a {
+    #banner nav .nav_icon {
       color: inherit;
       cursor: inherit;
       text-decoration: none;
       -webkit-transition: color 0.3s ease-in 0s;
       -moz-transition: color 0.3s ease-in 0s;
-      transition: color 0.3s ease-in 0s; }
-      #banner nav a:active, #banner nav a:focus {
+      transition: color 0.3s ease-in 0s;
+      align-items: center;
+      display: inline-flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start; }
+      #banner nav .nav_icon:active, #banner nav .nav_icon:focus {
         outline: none; }
-      #banner nav a:hover {
+      #banner nav .nav_icon:hover {
         color: #5893ac;
         cursor: pointer;
         -webkit-transition: color 0.3s ease-in 0s;
         -moz-transition: color 0.3s ease-in 0s;
         transition: color 0.3s ease-in 0s; }
+      #banner nav .nav_icon i {
+        margin: 0;
+        padding: 0; }
+      #banner nav .nav_icon p {
+        font-size: 14px;
+        margin-top: -10px;
+        margin-left: 2px;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0; }
   #banner .nav_text {
     color: #5893ac;
     left: 540px;
@@ -162,6 +177,9 @@ body {
     box-shadow: 2px 2px 5px 2px #CCCCCC;
     font-size: 50px;
     height: 100%;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: relative;
     text-align: center;
     width: 40%;

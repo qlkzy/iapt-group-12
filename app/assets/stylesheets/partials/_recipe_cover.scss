@@ -13,6 +13,7 @@ $cvr_image_height: 100%;
 
 // Styles:
 #recipe_cover {
+  display: inline-block;
   height: $cvr_height;
   margin-left: 120px;
   margin-top: $content_offset;
@@ -44,9 +45,9 @@ $cvr_image_height: 100%;
 }
 
 #rcp_shorthand {
-  left: 850px;
+  display: inline-block;
   line-height: 50px;
   list-style-type: none;
-  position: absolute;
-  top: 225px;
+  position: relative;
+  top: -200px;
 }
