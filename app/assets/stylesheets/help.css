@@ -189,7 +189,7 @@ body {
       transition: color 0.2s ease-in 0s; }
       #welcome_message #w_list .w_list_item:hover {
         color: white;
-        cursor: pointer;
+        cursor: default;
         -webkit-transition: color 0.2s ease-in 0s;
         -moz-transition: color 0.2s ease-in 0s;
         transition: color 0.2s ease-in 0s; }

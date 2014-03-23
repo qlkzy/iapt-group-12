@@ -39,7 +39,7 @@
 
       &:hover {
         color: white;
-        cursor: pointer;
+        cursor: default;
         @include transition(color 0.2s ease-in 0s);
       }
 

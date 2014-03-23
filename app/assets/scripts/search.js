@@ -6,10 +6,24 @@ function reset() {
     });
 }
 
-function filter(property, value) {
+/* function filter(property, values) {
     if (value) {
     $(".search_result[data-" + property + "!='" + value + "']").hide();
     }
+}
+*/
+
+function filter(values) {
+    var category = values[0];
+    var difficulty = values[1];
+    var time = values[2];
+    var serves = values[3];
+
+    var test = ".search_result" + (category?("[data-category='"+category+"']") : ("")) + (difficulty?("[data-difficulty='" + difficulty + "']") : ("")) + (time?("[data-time='" + time + "']") : ("")) + (serves?("[data-serves='" + serves + "']") : (""));
+    $(test).show();
+    $(".search_result").not(test.slice(14)).hide();
+
+
 }
 
 function filterTime(property, value) {
@@ -25,10 +39,13 @@ function filterTime(property, value) {
 
 $(document).ready(function() {
     $("#search_fform_submit").click(function() {
-        filter("category", $("#search_fcat").val());
-        filter("difficulty", $("#search_fdif").val());
-        filterTime("time", $("#search_fctime").val());
-        filter("serves", $("#search_fserves").val());
+        var filters = new Array();
+        filters.push($("#search_fcat").val());
+        filters.push($("#search_fdif").val());
+        filters.push($("#search_fctime").val());
+        filters.push($("#search_fserves").val());
+
+        filter(filters);
     });
 
     $("#search_fform_reset").click(reset);

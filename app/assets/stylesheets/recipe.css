@@ -230,6 +230,8 @@ body {
     #rcp_vchange .rcp_vchb:disabled {
       opacity: 0.5;
       cursor: not-allowed; }
+    #rcp_vchange .rcp_vchb:hover {
+      cursor: default; }
 
 #rcp_columns {
   margin-left: auto;
@@ -250,6 +252,7 @@ body {
     #rcp_columns #rcp_ingredients #rcp_ingtitle {
       margin-left: 15px; }
     #rcp_columns #rcp_ingredients .rcp_inglist {
+      padding-right: 10px;
       list-style-type: none; }
     #rcp_columns #rcp_ingredients .rcp_inglist li {
       margin-top: 5px; }

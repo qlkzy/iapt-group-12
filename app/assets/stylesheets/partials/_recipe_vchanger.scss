@@ -21,5 +21,9 @@ $vchanger_width: 40%;
   .rcp_vchb {
     width: 33%;
     @include button($p_lblue);
+
+    &:hover {
+      cursor: default;
+    }
   }
 }
