@@ -33,6 +33,11 @@ class Recipes extends CI_Controller
     }
 
     public function getDefaultView() {
-        echo $this->session->userdata('defaultView');
+        $dv = $this->session->userdata('defaultView');
+        if(!empty($dv)) {
+            echo $dv;
+        } else {
+            echo "sbs";
+        }
     }
 }

@@ -25,7 +25,7 @@ echo "<h2 id=\"search_title\">You searched for: " .  $this->input->get('search_i
                 <li>
                     <label for="search_fcat">Dish Type:</label>
                     <select class="search_fform_dd search_form_i"  id="search_fcat" form="search_fform" name="category">
-                        <option value="" disabled selected>----------------</option>
+                        <option value="" selected>----------------</option>
                         <option value="main">Main</option>
                         <option value="side">Side</option>
                         <option value="salad">Salad</option>
@@ -35,7 +35,7 @@ echo "<h2 id=\"search_title\">You searched for: " .  $this->input->get('search_i
                 <li>
                     <label for="search_fdiet">Dietary Restrictions:</label>
                     <select class="search_fform_dd  search_form_i" id="search_fdiet" form="search_fform" name="dietary">
-                        <option value="" disabled selected>----------------</option>
+                        <option value="" selected>----------------</option>
                         <option value="vegetarian">Vegetarian</option>
                         <option value="vegan">Vegan</option>
                         <option value="kosher">Kosher</option>
@@ -45,7 +45,7 @@ echo "<h2 id=\"search_title\">You searched for: " .  $this->input->get('search_i
                 <li>
                     <label for="search_fdif">Difficulty:</label>
                     <select class="search_fform_dd  search_form_i"  id="search_fdif" form="search_fform" name="diff">
-                        <option value="" disabled selected>----------------</option>
+                        <option value="" selected>----------------</option>
                         <option value="easy">Beginner</option>
                         <option value="medium">Intermediate</option>
                         <option value="extreme">Advanced</option>
@@ -59,10 +59,10 @@ echo "<h2 id=\"search_title\">You searched for: " .  $this->input->get('search_i
                     <label for="search_fserves  search_form_i">Serves:</label>
                     <input class="search_fform_ti" form="search_fform" id="search_fserves" maxlength="2" name="serves" pattern="[0-9]+" placeholder="# people" type="text"/>
                 </li>
-                <li>
+                <!--<li>
                     <label for="search_fcontains  search_form_i">Contains:</label>
                     <input class="search_fform_ti" form="search_fform" id="search_fcontains"  name="contains" pattern="[a-zA-Z]+" placeholder="ingredients" type="text"/>
-                </li>
+                </li>-->
                 <br/>
                 <li>
                     <input form="search_fform" id="search_fform_submit" type="button" value="Filter"/>

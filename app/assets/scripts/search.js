@@ -14,12 +14,14 @@ function reset() {
 */
 
 function filter(values) {
+    console.log(values.toString());
     var category = values[0];
-    var difficulty = values[1];
-    var time = values[2];
-    var serves = values[3];
+    var dietary = values[1];
+    var difficulty = values[2];
+    var time = values[3];
+    var serves = values[4];
 
-    var test = ".search_result" + (category?("[data-category='"+category+"']") : ("")) + (difficulty?("[data-difficulty='" + difficulty + "']") : ("")) + (time?("[data-time='" + time + "']") : ("")) + (serves?("[data-serves='" + serves + "']") : (""));
+    var test = ".search_result" + (category?("[data-category='"+category+"']") : ("")) + (dietary?("[data-dietary='" + dietary + "']") : ("")) + (difficulty?("[data-difficulty='" + difficulty + "']") : ("")) + (time?("[data-time='" + time + "']") : ("")) + (serves?("[data-serves='" + serves + "']") : (""));
     $(test).show();
     $(".search_result").not(test.slice(14)).hide();
 
@@ -41,6 +43,7 @@ $(document).ready(function() {
     $("#search_fform_submit").click(function() {
         var filters = new Array();
         filters.push($("#search_fcat").val());
+        filters.push($("#search_fdiet").val());
         filters.push($("#search_fdif").val());
         filters.push($("#search_fctime").val());
         filters.push($("#search_fserves").val());
