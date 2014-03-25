@@ -51,9 +51,9 @@ $active_record = TRUE;
 // TODO: CHANGE THESE DETAILS BACK WHEN DONE FUCKING AROUND ON LAPTOP!!!
 $db['default']['hostname'] = 'mysql-student.cs.york.ac.uk';
 $db['default']['username'] = 'drm511';
-$db['default']['password'] = 'xiCuQ5A_xvQS';
+// $db['default']['password'] = 'xiCuQ5A_xvQS';
 $db['default']['password'] = 'xu-K8WGzhJT9';
-$db['default']['hostname'] = 'localhost';
+$db['default']['database'] = 'IAPT131412';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
