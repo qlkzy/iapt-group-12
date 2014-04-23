@@ -46,10 +46,15 @@ $(document).ready(function() {
     });
 
     $(".rcp_instruction").click(function() {
-        if ($(this).css("text-decoration") == "none") {
-            $(this).css("text-decoration", "line-through");
+        // if ($(this).css("text-decoration") == "none") {
+        //     $(this).css("text-decoration", "line-through");
+        // } else {
+        //     $(this).css("text-decoration", "none");
+        // }
+        if ($(this).hasClass('ticked')) {
+            $(this).removeClass('ticked');
         } else {
-            $(this).css("text-decoration", "none");
+            $(this).addClass('ticked');
         }
     });
 });

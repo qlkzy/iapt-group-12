@@ -45,10 +45,6 @@ $recipe_content_width: 80%;
     padding-right: $content_offset/2;
     width: 65%;
 
-    .rcp_inslist{
-      list-style-type: none;
-    }
-
     #rcp_institle {
       margin-bottom: 0;
       padding-bottom: 0;
@@ -57,13 +53,24 @@ $recipe_content_width: 80%;
     }
 
     .rcp_instruction {
+      list-style-image: url("/app/assets/images/unchecked_small.png");
       padding-top: 10px;
       @include transition(color 0.3s ease-in);
 
       &:hover {
+        list-style-image: url("/app/assets/images/checked_small.png");
         color: $p_medblue;
         cursor: pointer;
         @include transition(color 0.3s ease-in);
+      }
+    }
+
+    .rcp_instruction.ticked {
+      opacity: 0.4;
+      color: $p_medblue;
+      list-style-image: url("/app/assets/images/checked_small.png");
+      &:hover {
+        list-style-image: url("/app/assets/images/unchecked_small.png");
       }
     }
   }
