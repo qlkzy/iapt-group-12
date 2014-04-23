@@ -46,15 +46,23 @@ $(document).ready(function() {
     });
 
     $(".rcp_instruction").click(function() {
-        // if ($(this).css("text-decoration") == "none") {
-        //     $(this).css("text-decoration", "line-through");
-        // } else {
-        //     $(this).css("text-decoration", "none");
-        // }
         if ($(this).hasClass('ticked')) {
             $(this).removeClass('ticked');
         } else {
             $(this).addClass('ticked');
         }
+    });
+
+    $(".help").hide();
+    $(".help").append('<p class="dismiss">Click anywhere in this box to hide it.</p>');
+
+    
+    $(".help").click(function() {
+        $(this).hide();
+    });
+
+    $("#nav_help").click(function() {
+        $(".help").show();
+        return false;
     });
 });

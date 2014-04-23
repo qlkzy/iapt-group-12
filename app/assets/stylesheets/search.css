@@ -155,6 +155,15 @@ body {
     *display: inline;
     *vertical-align: auto; }
 
+.help {
+  background-color: #ffffa3;
+  font-size: 80%;
+  cursor: pointer; }
+  .help .dismiss {
+    font-size: 75%;
+    font-weight: bold;
+    text-align: center; }
+
 #search_title {
   width: 100%;
   text-align: center;
@@ -230,6 +239,9 @@ body {
     display: inline-block;
     margin-left: 10px;
     position: absolute; }
+
+#search_results_help {
+  width: 90%; }
 
 #search_fform {
   margin-left: auto;

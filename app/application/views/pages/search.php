@@ -5,6 +5,11 @@ echo "<h2 id=\"search_title\">You searched for: " .  $this->input->get('search_i
 ?>
 <div id="search_columns">
     <div id="search_results">
+        <div class="help" id="search_results_help">
+          <p>The recipes you are browsing or have searched for will be
+          shown here.</p>
+          <p>You can use the box on the right to filter the recipes.</p>
+        </div>
         <?php
             if(isset($numRecs)) {
                 for ($i = 1; $i < ($numRecs + 1); $i++) {
@@ -18,6 +23,10 @@ echo "<h2 id=\"search_title\">You searched for: " .  $this->input->get('search_i
         ?>
     </div>
     <div id="search_filters">
+        <div class="help">
+          Use the dropdowns here to filter the list of recipes shown.
+          Only recipes that satisfy all the conditions will be shown.
+        </div>
         <h3>Filter Recipes</h3>
 
         <form id="search_fform" name="search_fform">

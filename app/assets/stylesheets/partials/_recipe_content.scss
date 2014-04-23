@@ -53,12 +53,12 @@ $recipe_content_width: 80%;
     }
 
     .rcp_instruction {
-      list-style-image: url("/app/assets/images/unchecked_small.png");
+      list-style-image: url("images/unchecked_small.png");
       padding-top: 10px;
       @include transition(color 0.3s ease-in);
 
       &:hover {
-        list-style-image: url("/app/assets/images/checked_small.png");
+        list-style-image: url("images/checked_small.png");
         color: $p_medblue;
         cursor: pointer;
         @include transition(color 0.3s ease-in);

@@ -1,0 +1,19 @@
+//*********************************************************************************************************************
+// Partial for recipe view changer, defining properties for the view changer and its children.
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+// Some local variables:
+
+// Styles:
+.help {
+    background-color: #ffffa3;
+    font-size: 80%;
+    cursor: pointer;
+
+    .dismiss {
+        font-size: 75%;
+        font-weight: bold;
+        text-align: center;
+    }
+}

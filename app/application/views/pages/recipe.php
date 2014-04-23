@@ -10,6 +10,19 @@
     <li><b>Cooking time: </b><?php echo $recipe->getCookingTime()." minutes"; ?></li>
     <li><b>Serves: </b><?php echo $recipe->getServes(); ?></li>
 </ul>
+
+<div class="help" id="vchange_help">
+  Click on one of these buttons to change the view:
+  <dl>
+    <dt>Step-by-Step</dt>
+    <dd>Intended for novices, this presentation goes into extreme detail.</dd>
+    <dt>Segmented</dt>
+    <dd>A good compromise between brevity and detail, this
+    presentation is good for intermediate cooks</dd>
+    <dt>Narrative</dt>
+    <dd>For advanced cooks, this presentation is concise but full of information</dd>
+  </dl>
+</div>
 <div id="rcp_vchange">
     <input class="rcp_vchb ui-button" id="rcp_sbsvchb" type="button" value="Step-By-Step"/>
     <input class="rcp_vchb ui-button" id="rcp_sgmvchb" type="button" value="Segmented"/>
@@ -49,6 +62,9 @@
     </div>
     <div id="rcp_instructions">
         <h2 id="rcp_institle">Instructions</h2>
+        <div class="help">
+          You can tick off each instruction as you go along by clicking on it.
+        </div>
         <ul class="rcp_inslist rcp_item rcp_sbs" id="rcp_sbs_inslist">
             <?php
             $sbsInstructions = $recipe->getSbsInstructions();
