@@ -1,0 +1,60 @@
+//*********************************************************************************************************************
+// Partial for search page filters, defining properties for the filters.
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+// Some local variables:
+
+// Styles:
+#search_fform {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+
+  ul {
+    list-style-type: none;
+  }
+
+  .search_fform_dd {
+    width: 30%;
+  }
+
+  .search_fform_ti {
+    width: 30%;
+  }
+
+  #search_fcat {
+    margin-left: 75px;
+  }
+
+  #search_fdiet {
+    margin-left: 8px;
+  }
+
+  #search_fdif {
+    margin-left: 87px;
+  }
+
+  #search_fctime {
+    margin-left: 65px;
+  }
+
+  #search_fserves {
+    margin-left: 100px;
+  }
+
+  #search_fcontains {
+    margin-left: 87px;
+  }
+
+  #search_fform_submit {
+    width: 50%;
+    @include center-block;
+  }
+
+  #search_fform_reset {
+    display: block;
+    width: 50%;
+    @include center-block;
+  }
+}

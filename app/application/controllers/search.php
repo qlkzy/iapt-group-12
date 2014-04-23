@@ -25,10 +25,10 @@ class Search extends CI_Controller
     }
 
     public function results()
-    {
-        $data['title'] = "Search";
+    {   $data['title'] = "Search";
         $searchString = $this->input->get('search_input', FALSE);
-        $resultRecipeNames = $this->recipes_model->recipeSearch($searchString);
+
+        $resultRecipeNames = $this->recipes_model->recipeSearch(strtolower($searchString));
         if (empty($resultRecipeNames)) {
             goto dataPassing;
         } else {

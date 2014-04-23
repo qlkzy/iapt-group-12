@@ -8,3 +8,6 @@
 *.pdf
 */.idea
 .idea
+.sass*
+*/.sass*
+webMirror.sh

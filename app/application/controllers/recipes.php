@@ -27,4 +27,17 @@ class Recipes extends CI_Controller
         $this->load->view("pages/recipe", $data);
         $this->load->view("templates/footer", $data);
     }
+
+    public function setDefaultView($v) {
+        $this->session->set_userdata('defaultView', $v);
+    }
+
+    public function getDefaultView() {
+        $dv = $this->session->userdata('defaultView');
+        if(!empty($dv)) {
+            echo $dv;
+        } else {
+            echo "sbs";
+        }
+    }
 }

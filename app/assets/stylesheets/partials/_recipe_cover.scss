@@ -1,0 +1,53 @@
+//*********************************************************************************************************************
+// Partial for recipe covers,defining properties for the cover and its children.
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+// Some local variables:
+$cvr_height: 400px;
+$cvr_width: 40%;
+
+$cvr_image_h2w_ratio: (497/723);
+$cvr_image_width: 100%;
+$cvr_image_height: 100%;
+
+// Styles:
+#recipe_cover {
+  display: inline-block;
+  height: $cvr_height;
+  margin-left: 120px;
+  margin-top: $content_offset;
+  width: $cvr_width;
+
+  #rcp_cimage {
+    border-radius: 3px;
+    height: $cvr_image_height;
+    width: $cvr_image_width;
+
+    @include center-block;
+  }
+
+  #rcp_ctitle {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 225px;
+    color: white;
+    font-size: 50px;
+    line-height: 50px;
+    min-height: 50px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    position: relative;
+    width: 100%;
+
+
+    @include center-block();
+  }
+}
+
+#rcp_shorthand {
+  display: inline-block;
+  line-height: 50px;
+  list-style-type: none;
+  position: relative;
+  top: -200px;
+}

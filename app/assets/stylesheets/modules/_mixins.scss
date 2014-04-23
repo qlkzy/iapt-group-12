@@ -1,0 +1,39 @@
+//*********************************************************************************************************************
+// Custom mixins to achieve various things.
+//*********************************************************************************************************************
+
+// Center-align a block level element within its parent
+// (requires width OR max-width to be set):
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Establish a flexbox with no wrap that just works:
+@mixin jw-fbox {
+  align-items: center;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+// Establish a flexbox::
+@mixin jw-wfbox($align, $display, $direction, $wrap, $justify) {
+  align-items: $align;
+  display: $display;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+}
+
+// Unstyle a link:
+@mixin unstyled-link {
+  color: inherit;
+  cursor: inherit;
+  text-decoration: none;
+
+  &:active, &:focus {
+    outline: none;
+  }
+}

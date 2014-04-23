@@ -28,6 +28,10 @@ class RecipeBuilder {
      * @var
      */
     private $dietaryRestrictions;
+    /**
+     * @var
+     */
+    private $serves;
 
     // Ingredients for each of the presentation types:
     /**
@@ -113,6 +117,15 @@ class RecipeBuilder {
      */
     function dietaryRestrictions($r) {
         $this->dietaryRestrictions = $r;
+        return $this;
+    }
+
+    /**
+     * @param $s
+     * @return $this
+     */
+    function serves($s) {
+        $this->serves = $s;
         return $this;
     }
 
@@ -217,6 +230,13 @@ class RecipeBuilder {
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getServes() {
+        return $this->serves;
     }
 
     /**

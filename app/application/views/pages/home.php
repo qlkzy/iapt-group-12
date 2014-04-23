@@ -1,19 +1,25 @@
-<h2 id="recently_viewed_recipes_title">Recently Viewed Recipes</h2>
-<div id="recently_viewed_recipes">
-    <!-- Here as many recently viewed items as the controller informs this view
-         of will be passed to the recently viewed template to be rendered. -->
-    <div id="recently_viewed_grid">
-        <? for ($i = 1; $i < 4; $i++) {
-            echo "<a class =\"recently_viewed_link\"><div class=\"recently_viewed_recipe\"><img class =\"recently_viewed_recipe_image\" src=\"http://is.gd/MLNCn7\"/><h3 class=\"recently_viewed_recipe_name\">Recipe</h3></div></a>";
-        } ?>
-    </div>
+<h1 id="home_wmsg">Welcome to CookBox!</h1>
+<div id="home_content">
+    <a class="home_box" id="home_gs">
+        <h2 class="home_bhead">Get Started!</h2>
+        <i class="fa fa-check fa-5x home_bicon"></i>
+        <p class="home_btext">Set your default recipe view and start checking out some recipes.</p>
+    </a>
+    <a class ="home_box" href="<?php echo base_url()."index.php/help"; ?>" id="home_vh">
+        <h2 class="home_bhead">View Help</h2>
+        <i class="fa fa-question fa-5x home_bicon"></i>
+        <p class="home_btext">Find out how you can use this app.</p>
+    </a>
+    <a class="home_box home_vset" id="home_setsbs">
+        <h2 class="home_bhead">Step-By-Step</h2>
+        <p class="home_btext">Step-by-step view provides the most precise detail about all steps of the recipe.</p>
+    </a>
+    <a class="home_box home_vset" id="home_setsgm">
+        <h2 class="home_bhead">Segmented</h2>
+        <p class="home_btext">Segmented view provides a more concise step-by-step recipe.</p>
+    </a>
+    <a class="home_box home_vset" id="home_setnar">
+        <h2 class="home_bhead">Narrative</h2>
+        <p class="home_btext">Narrative view provides instructions for the experienced cook.</p>
+    </a>
 </div>
-<h2 id="categorical_browse_title">Browse Recipes By Category</h2>
-<div id="categorical_recipe_browse">
-    <div id="category_grid">
-        <? for ($i = 1; $i < 10; $i++) {
-            echo "<a class=\"category_link\"><div class=\"recipe_category\"><img class =\"recipe_category_image\" src=\"http://is.gd/MLNCn7\"/><h3 class=\"recipe_category_name\">Category</h3></div></a>";
-        } ?>
-    </div>
-</div>
-<br/>

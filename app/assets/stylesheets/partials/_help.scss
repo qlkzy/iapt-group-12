@@ -1,0 +1,60 @@
+//*********************************************************************************************************************
+// Partial for the site welcome message,defining properties for the welcome message.
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+#welcome_message {
+  // margin-left: $content_offset;
+  margin-top: $welcome_offset;
+  width: 85%;
+
+  @include center-block;
+
+  h1 {
+    text-align: center;
+
+    @include center-block;
+  }
+
+  p {
+    text-align: justify;
+    text-justify: distribute;
+    width: 75%;
+
+    @include center-block;
+  }
+
+  #w_list {
+    font-size: $w_list_font_size;
+    line-height: $w_list_line_height;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+    @include jw-wfbox(stretch, flex, column, wrap, center);
+
+    .w_list_item {
+
+      @include transition(color 0.2s ease-in 0s);
+
+      &:hover {
+        color: white;
+        cursor: default;
+        @include transition(color 0.2s ease-in 0s);
+      }
+
+      .w_list_itext {
+        margin-left: 40px;
+      }
+    }
+
+    #w_list_help {
+      margin-left: 20px;
+
+      .w_list_itext {
+        margin-left: 55px;
+      }
+    }
+
+  }
+}

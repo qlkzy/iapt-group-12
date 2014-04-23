@@ -1,0 +1,59 @@
+//*********************************************************************************************************************
+// Partial for search results, defining properties for the search results...
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+// Some local variables:
+
+// Styles:
+.search_result {
+  box-shadow: 2px 2px 5px 2px #CCCCCC;
+  height: 250px;
+  margin-top: 20px;
+  position: relative;
+  width: 90%;
+
+  @include background-image(linear-gradient(hsla(0, 100%, 100%, 0.25) 0%, hsla(0, 100%, 100%, 0.08) 50%, transparent 50%), linear-gradient(lighten($p_lgrey, 10%), $p_lgrey));
+  @include transition(all 0.05s ease-in);
+  @include unstyled-link;
+
+
+
+  &:hover {
+
+    box-shadow: 5px 5px 10px 5px #CCCCCC;
+    cursor: pointer;
+    top: -5px;
+    @include transition(all 0.1s ease-in);
+
+  }
+
+  .srch_res_img {
+    border-radius: 3px;
+    display: inline-block;
+    height: 80%;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 30%;
+
+    &:hover {
+    }
+  }
+
+  .search_res_list {
+    color: black;
+    display: inline-block;
+    font-size: 14px;
+    left: 160px;
+    list-style-type: none;
+    position: absolute;
+    top: 80px;
+  }
+
+  h4 {
+    color: black;
+    display: inline-block;
+    margin-left: 10px;
+    position: absolute;
+  }
+}

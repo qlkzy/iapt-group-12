@@ -1,0 +1,70 @@
+//*********************************************************************************************************************
+// Partial for the recipe page main content area, defining properties for recipe content.
+//*********************************************************************************************************************
+// Some variables:
+$recipe_content_width: 80%;
+
+// Styles:
+#rcp_columns {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: $content_offset;
+  width: $recipe_content_width;
+
+
+  @include jw-wfbox(flex-start, flex, row, nowrap, flex-start);
+
+  #rcp_ingredients {
+    background-color: lighten($p_lblue, 20%);
+    box-shadow: 2px 2px 5px 2px #CCCCCC;
+    line-height: 22px;
+    padding: 0;
+    width: 35%;
+
+    #rcp_ingtitle{
+      margin-left: 15px;
+    }
+
+    .rcp_inglist {
+      padding-right: 10px;
+      list-style-type: none;
+    }
+
+    .rcp_inglist li {
+      margin-top: 5px;
+    }
+  }
+
+  #rcp_instructions {
+    margin-left: 20px;
+
+    background-color: lighten($p_lblue, 20%);
+    box-shadow: 2px 2px 5px 2px #CCCCCC;
+    height: 100%;
+    padding-left: $content_offset/4;
+    padding-right: $content_offset/2;
+    width: 65%;
+
+    .rcp_inslist{
+      list-style-type: none;
+    }
+
+    #rcp_institle {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      position: relative;
+      top: -8px;
+    }
+
+    .rcp_instruction {
+      padding-top: 10px;
+      @include transition(color 0.3s ease-in);
+
+      &:hover {
+        color: $p_medblue;
+        cursor: pointer;
+        @include transition(color 0.3s ease-in);
+      }
+    }
+  }
+}

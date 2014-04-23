@@ -1,0 +1,42 @@
+//*********************************************************************************************************************
+// Stylesheet for the content wrapper, defining properties to be inherited by all content.
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+// Constants:
+$content_min_height: 760px;
+$content_min_width: 760px;
+$content_max_width: 1200px;
+
+#content_wrapper {
+  border-left: 2px $p_lgrey solid;
+  border-right: 2px $p_lgrey solid;
+  font-family: $font-stack;
+  font-size: $base_font_size;
+  line-height: $base_line_height;
+  min-height: $content_min_height;
+  max-width: $content_max_width;
+  min-width: $content_min_width;
+
+  @include center-block;
+}
+
+#overlay {
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  height: 100%;
+  left: 0px;
+  pointer-events: none;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99997;
+}
+
+#rv_container {
+  display: none;
+}
+
+#cb_container {
+  display: none;
+}

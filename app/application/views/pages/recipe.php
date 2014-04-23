@@ -1,89 +1,79 @@
-<div id="main_recipe">
-    <h2 class="recipe_page_title"><? echo $recipe->getName(); ?></h2>
-    <img src="<? echo $recipe->getImage(); ?>" class="recipe_cover_image"/>
-    <ul class="recipe_attributes">
-        <li><b>Category: </b><? echo ucfirst($recipe->getCategory()); ?></li>
-        <li><b>Difficulty: </b><? echo ucfirst($recipe->getDifficulty()); ?></li>
-        <li><b>Cooking Time: </b><? echo $recipe->getCookingTime() ?> minutes.</li>
-        <?
-        $restrictions = $recipe->getDietaryRestrictions();
-        foreach ($restrictions as $restriction) {
-            echo "<li><b>Dietary Restriction: </b>" . ucfirst($restriction) . "</li>";
-        }
-        ?>
-    </ul>
-    <div id="recipe_buttons_container">
-        <button class="recipe_view_selector_button" id="sbs_view_button" value="sbs">Step-By-Step</button>
-        <button class="recipe_view_selector_button" id="sgm_view_button" value="sgm">Segmented</button>
-        <button class="recipe_view_selector_button" id="nar_view_button" value="nar">Narrative</button>
+<div id="recipe_cover">
+
+    <img id="rcp_cimage" src="<?php echo $recipe->getImage(); ?>">
+
+    <h1 id="rcp_ctitle"><?php echo $recipe->getName(); ?></h1>
+</div>
+<ul id="rcp_shorthand">
+    <li><b>Category: </b><?php echo $recipe->getCategory(); ?></li>
+    <li><b>Difficulty: </b><?php echo $recipe->getDifficulty(); ?></li>
+    <li><b>Cooking time: </b><?php echo $recipe->getCookingTime()." minutes"; ?></li>
+    <li><b>Serves: </b><?php echo $recipe->getServes(); ?></li>
+</ul>
+<div id="rcp_vchange">
+    <input class="rcp_vchb ui-button" id="rcp_sbsvchb" type="button" value="Step-By-Step"/>
+    <input class="rcp_vchb ui-button" id="rcp_sgmvchb" type="button" value="Segmented"/>
+    <input class="rcp_vchb ui-button" id="rcp_narvchb" type="button" value="Narrative"/>
+</div>
+
+<div id="rcp_columns">
+    <div id="rcp_ingredients">
+        <h2 id="rcp_ingtitle">Ingredients</h2>
+
+        <ul class="rcp_inglist rcp_item rcp_sbs" id="rcp_sbs_inglist">
+            <?php
+            $sbsIngredients = $recipe->getSbsIngredients();
+            foreach ($sbsIngredients as $ingredient) {
+                echo "<li class=\"rcp_ingredient\">" . preg_replace("/\d+[a-z]*\s/", "<b>$0</b>",$ingredient) . "</li>";
+            }
+            ?>
+        </ul>
+
+        <ul class="rcp_inglist rcp_item rcp_sgm" id="rcp_sgm_inglist">
+            <?php
+            $sgmIngredients = $recipe->getSgmIngredients();
+            foreach ($sgmIngredients as $ingredient) {
+                echo "<li class=\"rcp_ingredient\">" . preg_replace("/\d+[a-z]*\s/", "<b>$0</b>",$ingredient) . "</li>";
+            }
+            ?>
+        </ul>
+
+        <ul class="rcp_inglist rcp_item rcp_nar" id="rcp_nar_inglist">
+            <?php
+            $narIngredients = $recipe->getNarIngredients();
+            foreach ($narIngredients as $ingredient) {
+                echo "<li class=\"rcp_ingredient\">" . preg_replace("/\d+[a-z]*\s/", "<b>$0</b>",$ingredient) . "</li>";
+            }
+            ?>
+        </ul>
     </div>
+    <div id="rcp_instructions">
+        <h2 id="rcp_institle">Instructions</h2>
+        <ul class="rcp_inslist rcp_item rcp_sbs" id="rcp_sbs_inslist">
+            <?php
+            $sbsInstructions = $recipe->getSbsInstructions();
+            foreach ($sbsInstructions as $instruction) {
+                echo "<li class=\"rcp_instruction\">" . $instruction . "<li>";
+            }
+            ?>
+        </ul>
 
-    <div id="recipe_columns">
-        <div id="recipe_text_container">
-            <h2 id="instructionsTitle">Instructions:</h2>
+        <ul class="rcp_inslist rcp_item rcp_sgm" id="rcp_sgm_inslist">
+            <?php
+            $sgmInstructions = $recipe->getSgmInstructions();
+            foreach ($sgmInstructions as $instruction) {
+                echo "<li class=\"rcp_instruction\">" . $instruction . "<li>";
+            }
+            ?>
+        </ul>
 
-            <div class="recipe_text" id="sbs_recipe_text">
-                <ul>
-                    <?
-                    $sbsInstructions = $recipe->getSbsInstructions();
-                    foreach ($sbsInstructions as $instruction) {
-                        echo "<li class=\"recipe_instruction\">" . $instruction . "</li>";
-                    }
-                    ?>
-                </ul>
-            </div>
-            <div class="recipe_text" id="sgm_recipe_text">
-                <ul>
-                    <?
-                    $sgmInstructions = $recipe->getSgmInstructions();
-                    foreach ($sgmInstructions as $instruction) {
-                        echo "<li class=\"recipe_instruction\">" . $instruction . "</li>";
-                    }
-                    ?>
-                </ul>
-            </div>
-            <div class="recipe_text" id="nar_recipe_text">
-                <?
-                $narInstructions = $recipe->getNarInstructions();
-                foreach ($narInstructions as $instruction) {
-                    echo $instruction . "</br></br>";
-                }
-                ?>
-            </div>
-        </div>
-        <div id="recipe_ingredients_container">
-            <h2 id="ingredients_title">Ingredients:</h2>
-            <div class="ingredients_text" id="sbs_ingredients_text">
-                <ul>
-                    <?
-                    $sbsIngredients = $recipe->getSbsIngredients();
-                    foreach ($sbsIngredients as $ingredient) {
-                        echo "<li class=\"recipe_ingredient\">" . $ingredient . "</li>";
-                    }
-                    ?>
-                </ul>
-            </div>
-            <div class="ingredients_text" id="sgm_ingredients_text">
-                <ul>
-                    <?
-                    $sgmIngredients = $recipe->getSgmIngredients();
-                    foreach ($sgmIngredients as $ingredient) {
-                        echo "<li class=\"recipe_ingredient\">" . $ingredient . "</li>";
-                    }
-                    ?>
-                </ul>
-            </div>
-            <div class="ingredients_text" id="nar_ingredients_text">
-                <ul>
-                    <?
-                    $narIngredients = $recipe->getNarIngredients();
-                    foreach ($narIngredients as $ingredient) {
-                        echo "<li class=\"recipe_ingredient\">" . $ingredient . "</li>";
-                    }
-                    ?>
-                </ul>
-            </div>
-
-        </div>
+        <ul class="rcp_inslist rcp_item rcp_nar" id="rcp_nar_inslist">
+            <?php
+            $narInstructions = $recipe->getNarInstructions();
+            foreach ($narInstructions as $instruction) {
+                echo "<li class=\"rcp_instruction\">" . $instruction . "<li>";
+            }
+            ?>
+        </ul>
     </div>
 </div>

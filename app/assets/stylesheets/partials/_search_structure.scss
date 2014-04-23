@@ -1,0 +1,41 @@
+//*********************************************************************************************************************
+// Partial for search page structure, defining properties for the search page structure and its children.
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+// Some local variables:
+
+// Styles:
+#search_title{
+  width: 100%;
+  text-align: center;
+  @include center-block();
+}
+
+#search_columns {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+  @include jw-wfbox(flex-start, flex, row, nowrap, flex-start);
+
+  #search_results {
+    min-height: 500px;
+    width: 65%;
+  }
+
+  #search_filters {
+    box-shadow: 2px 2px 5px 2px #CCCCCC;
+    border-radius: 3px;
+    margin-top: 20px;
+    width: 35%;
+
+    @include background-image(linear-gradient(hsla(0, 100%, 100%, 0.25) 0%, hsla(0, 100%, 100%, 0.08) 50%, transparent 50%), linear-gradient(lighten($p_lgrey, 10%), $p_lgrey));
+
+
+    h3 {
+      width: 50%;
+      @include center-block();
+    }
+  }
+}

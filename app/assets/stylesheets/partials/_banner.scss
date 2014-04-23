@@ -1,0 +1,92 @@
+//*********************************************************************************************************************
+// Partial for the site banner,defining properties for the banner and its children.
+//*********************************************************************************************************************
+@import "../modules/import_all";
+
+// Some local variables:
+$banner_height: 100px;
+$banner_image_height: 75px;
+$banner_image_ratio: (793/201);
+
+$nav_height: 50px;
+
+#banner {
+  background-color: $p_lgrey;
+  display: block;
+  height: $banner_height;
+  position: relative;
+  width: 100%;
+
+  #banner_image {
+    height: $banner_image_height;
+    left: $content_offset;
+    position: absolute;
+    top: 10px;
+    width: round($banner_image_height*$banner_image_ratio);
+
+    @include inline-block;
+  }
+
+  #banner_search {@include transition(color 0.3s ease-in 0s);
+    height: 75%;
+    position: absolute;
+    right: $content_offset;
+    top: 20px;
+    width: 300px;
+
+    @include jw-fbox;
+
+    #bs_input {
+      display: block;
+      height: 30px;
+      width: 200px;
+    }
+
+    #bs_submit {
+      height: 37px;
+      @include button(lighten($p_lblue, 10%));
+    }
+  }
+
+  nav {
+    left: 400px;
+    position: absolute;
+    top: 30px;
+    width: 150px;
+    @include jw-fbox;
+
+    .nav_icon {
+      @include unstyled-link;
+      @include transition(color 0.3s ease-in 0s);
+      @include jw-wfbox(center, inline-flex, column, nowrap, flex-start);
+
+      &:hover {
+        color: $p_medblue;
+        cursor: pointer;
+        @include transition(color 0.3s ease-in 0s);
+      }
+
+      i {
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-size: 14px;
+        margin-top: -10px;
+        margin-left: 2px;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .nav_text {
+    color: $p_medblue;
+    left: 540px;
+    position: absolute;
+    top: 17px;
+    @include inline-block;
+  }
+}

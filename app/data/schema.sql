@@ -19,6 +19,7 @@ CREATE TABLE recipes
     recipe_name VARCHAR(255) UNIQUE,
     cooking_time INT,
     difficulty ENUM('easy', 'medium', 'extreme'),
+    serves INT,
     image VARCHAR(255),
     PRIMARY KEY (recipe_id),
     FOREIGN KEY (category_id) REFERENCES categories (category_id)
