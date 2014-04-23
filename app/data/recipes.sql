@@ -1,9 +1,9 @@
 INSERT INTO categories (category_name) VALUES ('All');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Apple and Wensleydale pie', 1, 20, 'medium', 6);
+    ('Apple and Wensleydale pie', 1, 20, 'medium', 6, '');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -306,9 +306,9 @@ VALUES
     (3, 24, 'The pie is delicious hot or cold and needs no accompaniment.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Black Bean Dip', 1, 20, 'medium', 4);
+    ('Black Bean Dip', 1, 20, 'medium', 4, 'http://is.gd/Srmcpx');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -746,9 +746,9 @@ VALUES
     (6, 28, 'Serve hot with corn chips on the side for dipping.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Beef Burgers', 1, 20, 'medium', 2);
+    ('Beef Burgers', 1, 20, 'medium', 2, 'http://is.gd/RFMpxW');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -1046,9 +1046,9 @@ VALUES
     (9, 13, 'Serve the burgers in soft rolls with lettuce, mint, coriander and chilli sauce.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Chilled fresh fruit salad', 1, 20, 'medium', 6);
+    ('Chilled fresh fruit salad', 1, 20, 'medium', 6, '');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -1271,9 +1271,9 @@ VALUES
     (12, 14, 'Just before serving, add the fresh raspberries.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Corned beef hash with poached eggs', 1, 20, 'medium', 4);
+    ('Corned beef hash with poached eggs', 1, 20, 'medium', 4, '');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -1701,9 +1701,9 @@ VALUES
     (15, 21, 'Turn out, cut into slices and serve with the corned beef hash.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Cumin-crusted vegetables', 1, 20, 'medium', 4-6);
+    ('Cumin-crusted vegetables', 1, 20, 'medium', 4-6, '');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -2001,9 +2001,9 @@ VALUES
     (18, 13, 'Toss lightly together and return to the oven for another 25&amp;ndash;30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Fattoush', 1, 20, 'medium', 4);
+    ('Fattoush', 1, 20, 'medium', 4, '');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -2286,9 +2286,9 @@ VALUES
     (21, 6, 'To serve, pour the dressing, to taste, over the salad and gently mix together to coat the salad evenly.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Fennel and potato gratin', 1, 20, 'medium', 4-6);
+    ('Fennel and potato gratin', 1, 20, 'medium', 4-6, '');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -2491,9 +2491,9 @@ VALUES
     (24, 12, 'Bake for 30-40 minutes.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Highland beef salad', 1, 20, 'medium', 2);
+    ('Highland beef salad', 1, 20, 'medium', 2, '');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -2801,9 +2801,9 @@ VALUES
     (27, 9, 'Slice the beef and lay it on top of the salad.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Piri-piri chicken', 1, 20, 'medium', 2-4);
+    ('Piri-piri chicken', 1, 20, 'medium', 2-4, '');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -3106,9 +3106,9 @@ VALUES
     (30, 18, 'Serve with chips and salad.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Potato, bean and tomato salad with gremolata', 1, 20, 'medium', 4);
+    ('Potato, bean and tomato salad with gremolata', 1, 20, 'medium', 4, 'http://is.gd/1jmC3k');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -3461,9 +3461,9 @@ VALUES
     (33, 25, 'Scatter over the gremolata to serve.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Pretzels', 1, 20, 'medium', 12);
+    ('Pretzels', 1, 20, 'medium', 12, '');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -3886,9 +3886,9 @@ VALUES
     (36, 33, 'Place the baked pretzels on a wire cooling rack, brush the sweet pretzels with the syrup glaze and sprinkle over the candied zest.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Quiche Maritime', 1, 20, 'medium', 4);
+    ('Quiche Maritime', 1, 20, 'medium', 4, 'http://is.gd/T7pzKZ');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -4236,9 +4236,9 @@ VALUES
     (39, 28, 'Place green onions or chives on top of baked pie.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Rhubarb crumble', 1, 20, 'medium', 4);
+    ('Rhubarb crumble', 1, 20, 'medium', 4, '');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -4446,9 +4446,9 @@ VALUES
     (42, 10, 'Remove and allow to cool slightly before serving with double cream.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Spicy lamb albondigas', 1, 20, 'medium', 4);
+    ('Spicy lamb albondigas', 1, 20, 'medium', 4, '');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -4981,9 +4981,9 @@ VALUES
     (45, 19, 'Serve with the patatas fritas.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Three fish pie', 1, 20, 'medium', 6);
+    ('Three fish pie', 1, 20, 'medium', 6, '');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -5356,9 +5356,9 @@ VALUES
     (48, 22, 'Bake for 30-40 minutes, or until lightly golden-brown on top and bubbling around the edges.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Tourtère', 1, 20, 'medium', 4);
+    ('Tourtère', 1, 20, 'medium', 4, 'http://is.gd/9DXW6j');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -5816,9 +5816,9 @@ VALUES
     (51, 36, 'Cook for 30-40 min at 350 degrees F.');
 
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('vanilla slice', 1, 20, 'medium', 16);
+    ('vanilla slice', 1, 20, 'medium', 16, 'http://is.gd/VbpVol');
 
 INSERT INTO presentations
     (recipe_id, detail)

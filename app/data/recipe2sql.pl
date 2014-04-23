@@ -27,11 +27,14 @@ CONST
 
 for (@ARGV) {
     my $recipe = LoadFile($_);
+    my $name = $recipe->{name};
+    my $serves = $recipe->{serves};
+    my $image = $recipe->{image} || '';
     print <<RECIPE;
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty, serves)
+    (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('$recipe->{name}', 1, 20, 'medium', $recipe->{serves});
+    ('$name', 1, 20, 'medium', $serves, '$image');
 
 RECIPE
     for (('narrative', 'segment', 'step')) {

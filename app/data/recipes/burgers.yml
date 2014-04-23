@@ -2,6 +2,8 @@
 name: Beef Burgers
 type: Main Dish
 serves: 2
+image: http://is.gd/RFMpxW
+
 narrative:
     ingredients:
         - 1 small onion list
