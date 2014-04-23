@@ -53,7 +53,7 @@
             <?php
             $sbsInstructions = $recipe->getSbsInstructions();
             foreach ($sbsInstructions as $instruction) {
-                echo "<li class=\"rcp_instruction\">" . $instruction . "<li>";
+                echo "<li class=\"rcp_instruction\">" . $instruction . "</li>";
             }
             ?>
         </ul>
@@ -62,7 +62,7 @@
             <?php
             $sgmInstructions = $recipe->getSgmInstructions();
             foreach ($sgmInstructions as $instruction) {
-                echo "<li class=\"rcp_instruction\">" . $instruction . "<li>";
+                echo "<li class=\"rcp_instruction\">" . $instruction . "</li>";
             }
             ?>
         </ul>
@@ -71,7 +71,7 @@
             <?php
             $narInstructions = $recipe->getNarInstructions();
             foreach ($narInstructions as $instruction) {
-                echo "<li class=\"rcp_instruction\">" . $instruction . "<li>";
+                echo "<li class=\"rcp_instruction\">" . $instruction . "</li>";
             }
             ?>
         </ul>
