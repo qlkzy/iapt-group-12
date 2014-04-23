@@ -5,6 +5,7 @@ use warnings;
 
 use Data::Dumper;
 
+use HTML::Entities;
 use YAML::Any qw( LoadFile );
 
 my $recipe_id = 1;
@@ -97,5 +98,5 @@ INGRED
 sub escape {
     my $in = shift;
     $in =~ s/'/\\'/g;
-    return $in;
+    return encode_entities($in);
 };
