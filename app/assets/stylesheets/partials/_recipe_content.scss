@@ -68,9 +68,9 @@ $recipe_content_width: 80%;
     .rcp_instruction.ticked {
       opacity: 0.4;
       color: $p_medblue;
-      list-style-image: url("/app/assets/images/checked_small.png");
+      list-style-image: url("images/checked_small.png");
       &:hover {
-        list-style-image: url("/app/assets/images/unchecked_small.png");
+        list-style-image: url("images/unchecked_small.png");
       }
     }
   }

@@ -285,6 +285,6 @@ body {
     #rcp_columns #rcp_instructions .rcp_instruction.ticked {
       opacity: 0.4;
       color: #5893ac;
-      list-style-image: url("/app/assets/images/checked_small.png"); }
+      list-style-image: url("images/checked_small.png"); }
       #rcp_columns #rcp_instructions .rcp_instruction.ticked:hover {
-        list-style-image: url("/app/assets/images/unchecked_small.png"); }
+        list-style-image: url("images/unchecked_small.png"); }
