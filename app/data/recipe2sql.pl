@@ -29,9 +29,9 @@ for (@ARGV) {
     my $recipe = LoadFile($_);
     print <<RECIPE;
 INSERT INTO recipes
-    (recipe_name, category_id, cooking_time, difficulty)
+    (recipe_name, category_id, cooking_time, difficulty, serves)
 VALUES
-    ('$recipe->{name}', 1, 20, 'medium');
+    ('$recipe->{name}', 1, 20, 'medium', $recipe->{serves});
 
 RECIPE
     for (('narrative', 'segment', 'step')) {
