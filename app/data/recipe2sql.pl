@@ -20,8 +20,10 @@ my %detail_names = (
 
 
 print <<CONST;
-INSERT INTO categories (category_name) VALUES ('All');
-
+INSERT INTO categories (category_name) VALUES ('main');
+INSERT INTO categories (category_name) VALUES ('side');
+INSERT INTO categories (category_name) VALUES ('dessert');
+INSERT INTO categories (category_name) VALUES ('salad');
 CONST
 
 
@@ -30,11 +32,12 @@ for (@ARGV) {
     my $name = $recipe->{name};
     my $serves = $recipe->{serves};
     my $image = $recipe->{image} || '';
+    my $category = $recipe->{type};
     print <<RECIPE;
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('$name', 1, 20, 'medium', $serves, '$image');
+    ('$name', (SELECT category_id FROM categories WHERE category_name = '$category'), 20, 'medium', $serves, '$image');
 
 RECIPE
     for (('narrative', 'segment', 'step')) {
