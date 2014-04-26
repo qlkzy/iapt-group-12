@@ -29,6 +29,7 @@ class Recipes extends CI_Controller
 
     public function setDefaultView($v) {
         $this->session->set_userdata('defaultView', $v);
+        echo $this->session->userdata('defaultView');
     }
 
     public function getDefaultView() {
