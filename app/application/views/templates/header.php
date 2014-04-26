@@ -12,30 +12,26 @@
         var baseUrl = '<?php echo base_url(); ?>';
 
     </script>
-    <link href="<?php echo base_url() . "assets/fonts/font-awesome-4.0.3/css/font-awesome.min.css"; ?>" rel="stylesheet">
+    <link href="<?php echo base_url() . "assets/fonts/font-awesome-4.0.3/css/font-awesome.min.css"; ?>"
+          rel="stylesheet">
     <script src="<?php echo base_url() . "assets/scripts/jquery.js"; ?>" type="text/javascript"></script>
-    <script src="<?php echo base_url() . "assets/jqueryUI/js/jquery-ui-1.10.4.custom.min.js";?>"></script>
-    <link href="<?php echo base_url() . "assets/jqueryUI/css/ui-lightness/jquery-ui-1.10.4.custom.min.css"; ?>" rel="stylesheet">
+    <script src="<?php echo base_url() . "assets/jqueryUI/js/jquery-ui-1.10.4.custom.min.js"; ?>"></script>
+    <link href="<?php echo base_url() . "assets/jqueryUI/css/ui-lightness/jquery-ui-1.10.4.custom.min.css"; ?>"
+          rel="stylesheet">
     <script src="<?php echo base_url() . "assets/scripts/header.js"; ?>" type="text/javascript"></script>
     <?php
     if ($title == 'Home') {
-    echo "<link href=\"".base_url() . "assets/stylesheets/home.css"."\" rel=\"stylesheet\" type=\"text/css\">";
-    echo "<script src=\"" . base_url() . "assets/scripts/home.js"."\" type=\"text/javascript\"></script>";
-    }
-
-    elseif($title == 'Recipe') {
-    echo "<link href=\"".base_url()."assets/stylesheets/recipe.css"."\" rel =\"stylesheet\" type=\"text/css\">";
-    echo "<script src=\"".base_url()."assets/scripts/recipe.js"."\" type=\"text/javascript\"></script>";
-    }
-
-    elseif($title == 'Help') {
-    echo "<link href=\"".base_url()."assets/stylesheets/help.css"."\" rel=\"stylesheet\" type=\"text/css\">";
-    echo "<script src=\"".base_url()."assets/scripts/help.js"."\" type=\"text/javascript\"></script>";
-    }
-
-    else {
-    echo "<link href=\"".base_url()."assets/stylesheets/search.css"."\" rel=\"stylesheet\" type=\"text/css\">";
-    echo "<script src=\"".base_url()."assets/scripts/search.js"."\" type=\"text/javascript\"></script>";
+        echo "<link href=\"" . base_url() . "assets/stylesheets/home.css" . "\" rel=\"stylesheet\" type=\"text/css\">";
+        echo "<script src=\"" . base_url() . "assets/scripts/home.js" . "\" type=\"text/javascript\"></script>";
+    } elseif ($title == 'Recipe') {
+        echo "<link href=\"" . base_url() . "assets/stylesheets/recipe.css" . "\" rel =\"stylesheet\" type=\"text/css\">";
+        echo "<script src=\"" . base_url() . "assets/scripts/recipe.js" . "\" type=\"text/javascript\"></script>";
+    } elseif ($title == 'Help') {
+        echo "<link href=\"" . base_url() . "assets/stylesheets/help.css" . "\" rel=\"stylesheet\" type=\"text/css\">";
+        echo "<script src=\"" . base_url() . "assets/scripts/help.js" . "\" type=\"text/javascript\"></script>";
+    } else {
+        echo "<link href=\"" . base_url() . "assets/stylesheets/search.css" . "\" rel=\"stylesheet\" type=\"text/css\">";
+        echo "<script src=\"" . base_url() . "assets/scripts/search.js" . "\" type=\"text/javascript\"></script>";
     }
     ?>
 
@@ -61,23 +57,26 @@
                 </a>
             </div>
             <div id="nav_help">
-                <a href="<?php echo base_url()."index.php/help"; ?>">
+                <a href="<?php echo base_url() . "index.php/help"; ?>">
                     <i class="fa fa-question fa-2x"></i>
                 </a>
             </div>
         </nav> -->
 
         <nav>
-            <a class="nav_icon" href="<?php echo base_url();?>" id="nav_home">
+            <a class="nav_icon" href="<?php echo base_url(); ?>" id="nav_home">
                 <i class="fa fa-home fa-2x"></i>
+
                 <p class="nav_itext">Home</p>
             </a>
             <a class="nav_icon" href="<?php echo base_url() . "index.php/search"; ?>" id="nav_browse">
                 <i class="fa fa-eye fa-2x"></i>
+
                 <p class="nav_itext">Browse</p>
             </a>
             <a class="nav_icon" href="<?php echo base_url() . "index.php/help"; ?>" id="nav_help">
                 <i class="fa fa-question fa-2x"></i>
+
                 <p class="nav_itext">Help</p>
             </a>
 
@@ -91,7 +90,8 @@
 
         <form action="<?php echo base_url() . "index.php/search"; ?>" id="banner_search">
             <input id="bs_input" required pattern="[a-zA-Z][a-zA-Z\s]+" name="query"
-                   placeholder="Enter recipe name..."/>
+                   placeholder="Enter recipe name..."/
+            <?= (isset($query) && $query) ? 'value=' . $query : '' ?>>
             <input id="bs_submit" type="submit" value="Search"/>
         </form>
     </div>

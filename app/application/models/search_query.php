@@ -57,6 +57,10 @@ SQL;
         return $this;
     }
 
+    public function difficulty($difficulty) {
+        $this->db->where('difficulty', $difficulty);
+    }
+
     public function result() {
 
         return array_map(
