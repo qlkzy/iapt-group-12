@@ -1,6 +1,6 @@
 <?php
 if(!empty($_GET)) {
-echo "<h2 id=\"search_title\">You searched for: " .  $this->input->get('search_input', FALSE). "</h2>";
+echo "<h2 id=\"search_title\">You searched for: " .  $query. "</h2>";
 }
 ?>
 <div id="search_columns">
@@ -11,14 +11,12 @@ echo "<h2 id=\"search_title\">You searched for: " .  $this->input->get('search_i
           <p>You can use the box on the right to filter the recipes.</p>
         </div>
         <?php
-            if(isset($numRecs)) {
-                for ($i = 1; $i < ($numRecs + 1); $i++) {
-                    $rName = "recipe" . $i;
-                    $data = array('recipe' => $$rName);
-                    $this->load->view("templates/search_result", $data);
-                }
-            } else {
+            if(empty($recipes)) {
                 echo "<span id=\"search_emsg\">There were no search results to match your query.</span>";
+            } else {
+                foreach ($recipes as $recipe) {
+                    $this->load->view('templates/search_result', array('recipe' => $recipe));
+                }
             }
         ?>
     </div>

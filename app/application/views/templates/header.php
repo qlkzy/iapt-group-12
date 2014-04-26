@@ -89,8 +89,8 @@
 
         <h2 class="nav_text" id="nav_hlptext">Help</h2> -->
 
-        <form action="<?php echo base_url() . "index.php/search/results"; ?>" id="banner_search">
-            <input id="bs_input" required pattern="[a-zA-Z][a-zA-Z\s]+" name="search_input"
+        <form action="<?php echo base_url() . "index.php/search"; ?>" id="banner_search">
+            <input id="bs_input" required pattern="[a-zA-Z][a-zA-Z\s]+" name="query"
                    placeholder="Enter recipe name..."/>
             <input id="bs_submit" type="submit" value="Search"/>
         </form>
