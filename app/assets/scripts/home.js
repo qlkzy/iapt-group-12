@@ -14,7 +14,7 @@ $(document).ready(function () {
     $("#home_setnar").click(function() {
         $.ajax({
             type: "GET",
-            url: baseUrl+'index.php/recipes/setDefaultView/nar',
+            url: baseUrl+'index.php/recipes/setDefaultView/narrative',
             success: function (data) {
                 console.log("Successfully set default view.");
                 window.location.href = baseUrl + 'index.php/search';
@@ -28,7 +28,7 @@ $(document).ready(function () {
     $("#home_setsbs").click(function() {
         $.ajax({
             type: "GET",
-            url: baseUrl+'index.php/recipes/setDefaultView/sbs',
+            url: baseUrl+'index.php/recipes/setDefaultView/step',
             success: function (data) {
                 console.log("Successfully set default view.");
                 window.location.href = baseUrl + 'index.php/search';
@@ -42,7 +42,7 @@ $(document).ready(function () {
     $("#home_setsgm").click(function() {
         $.ajax({
             type: "GET",
-            url: baseUrl+'index.php/recipes/setDefaultView/sgm',
+            url: baseUrl+'index.php/recipes/setDefaultView/segment',
             success: function (data) {
                 console.log("Successfully set default view.");
                 window.location.href = baseUrl + 'index.php/search';

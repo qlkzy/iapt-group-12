@@ -1,51 +1,34 @@
-function initState(state) {
-    console.log("Initialising state: " + state);
-    $(".rcp_item").each(function() {
-       if ($(this).hasClass("rcp_"+state)) {
-           $(this).show();
-       } else {
-           $(this).hide();
-       }
-    });
-    $("#rcp_"+state+"vchb").attr("disabled", "disabled");
+function selectDetail(state) {
+    // hide *all* levels of detail, and enable all buttons (we will narrow in shortly)
+    $('.detail_specific[data-detail!=' + state + ']').hide();
+    $('.rcp_vchb').removeAttr('disabled');
+
+    // show the correct level of detail, and disable its button
+    $('.detail_specific[data-detail=' + state + ']').show();
+    $('#select_' + state).attr('disabled', 'disabled');
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     $("#radio").buttonset();
     $.ajax({
         type: "POST",
-        url: baseUrl+'index.php/recipes/getDefaultView',
-        success: function(data) {
-            console.log("Data received: "+ data);
-            initState(data);
+        url: baseUrl + 'index.php/recipes/getDefaultView',
+        success: function (data) {
+            console.log("Data received: " + data);
+            selectDetail(data);
         },
-        error: function(xhr, desc, err) {
-            initState("sbs");
+        error: function (xhr, desc, err) {
+            selectDetail("step");
         }
     });
 
-    $("#rcp_sbsvchb").click(function() {
-        $(this).attr("disabled", "disabled");
-        $("#rcp_sgmvchb").removeAttr("disabled");
-        $("#rcp_narvchb").removeAttr("disabled");
-        initState("sbs");
+    ['step', 'segment', 'narrative'].forEach(function (detail) {
+        $('#select_' + detail).click(function () {
+            selectDetail(detail);
+        });
     });
 
-    $("#rcp_sgmvchb").click(function() {
-        $(this).attr("disabled", "disabled");
-        $("#rcp_sbsvchb").removeAttr("disabled");
-        $("#rcp_narvchb").removeAttr("disabled");
-        initState("sgm");
-    });
-
-    $("#rcp_narvchb").click(function() {
-        $(this).attr("disabled", "disabled");
-        $("#rcp_sbsvchb").removeAttr("disabled");
-        $("#rcp_sgmvchb").removeAttr("disabled");
-        initState("nar");
-    });
-
-    $(".rcp_instruction").click(function() {
+    $(".rcp_instruction").click(function () {
         if ($(this).hasClass('ticked')) {
             $(this).removeClass('ticked');
         } else {
@@ -56,12 +39,12 @@ $(document).ready(function() {
     $(".help").hide();
     $(".help").append('<p class="dismiss">Click anywhere in this box to hide it.</p>');
 
-    
-    $(".help").click(function() {
+
+    $(".help").click(function () {
         $(this).hide();
     });
 
-    $("#nav_help").click(function() {
+    $("#nav_help").click(function () {
         $(".help").show();
         return false;
     });

@@ -6,12 +6,14 @@ class Search extends CI_Controller
     {
         parent::__construct();
         $this->load->model('recipes_model');
+        $this->load->model('search_query');
     }
 
     public function index()
     {
         $data['title'] = "Search";
-        $allRecipes = $this->recipes_model->getAllRecipes();
+//        $allRecipes = $this->recipes_model->getAllRecipes();
+        $allRecipes = $this->search_query->like('')->result();
         $keySuffix = 1;
         foreach($allRecipes as $recipe) {
             $data['recipe'.$keySuffix] = $recipe;
