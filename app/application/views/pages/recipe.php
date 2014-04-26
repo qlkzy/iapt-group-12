@@ -24,10 +24,20 @@
         <dd>For advanced cooks, this presentation is concise but full of information</dd>
     </dl>
 </div>
-<div id="rcp_vchange">
-    <input class="rcp_vchb ui-button" id="select_step" type="button" value="Step-By-Step"/>
-    <input class="rcp_vchb ui-button" id="select_segment" type="button" value="Segmented"/>
-    <input class="rcp_vchb ui-button" id="select_narrative" type="button" value="Narrative"/>
+<div id="view_selector">
+    <div id="rcp_vchange">
+        <input class="rcp_vchb ui-button" id="select_step" type="button" value="Step-By-Step" data-detail="step" data-default="true"/>
+        <input class="rcp_vchb ui-button" id="select_segment" type="button" value="Segmented" data-detail="segment" data-default="false"/>
+        <input class="rcp_vchb ui-button" id="select_narrative" type="button" value="Narrative" data-detail="narrative" data-default="false"/>
+    </div>
+    <div class="default_view_setter">
+        <a href='#' id="set_default">
+            Set this view as the default
+        </a>
+        <span id="is_default">
+            This is the default view
+        </span>
+    </div>
 </div>
 
 <div id="rcp_columns">
