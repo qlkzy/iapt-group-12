@@ -16,15 +16,24 @@ class Search_query extends CI_Model {
             ->select('recipes.recipe_id')
             ->distinct()
             ->from('recipes')
-            ->join('categories', 'categories.category_id = recipes.recipe_id', 'left')
-            ->join('dietary', 'dietary.recipe_id = recipes.recipe_id', 'left')
+            ->join('categories', 'categories.category_id = recipes.recipe_id', 'left outer')
+            ->join('dietary', 'dietary.recipe_id = recipes.recipe_id', 'left outer')
             ->order_by('recipe_name ASC');
     }
 
     public function like($query) {
-        $this->db->or_like('recipe_name', $query);
-        $this->db->or_like('category_name', $query);
-        $this->db->or_like('restriction', $query);
+        // 'ActiveRecord' screws up the parentheses here if we use or_like, so do it ourselves :/
+        $pattern = $this->db->escape('%' . $query . '%');
+        $sql = <<<SQL
+(
+  recipe_name LIKE $pattern
+  OR
+  category_name LIKE $pattern
+  OR
+  restriction LIKE $pattern
+)
+SQL;
+        $this->db->where($sql);
         return $this;
     }
 
@@ -49,6 +58,7 @@ class Search_query extends CI_Model {
     }
 
     public function result() {
+
         return array_map(
             function ($r) {
                 return new Recipe($this->db, $r->recipe_id);

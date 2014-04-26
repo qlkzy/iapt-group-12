@@ -11,10 +11,29 @@ class Search extends CI_Controller
     public function index()
     {
         $data['title'] = "Search";
-//        $allRecipes = $this->recipes_model->getAllRecipes();
         $searchString = $this->input->get('query', FALSE);
 
         $query = $searchString ? $searchString : '';
+
+        $type = $this->input->get('type', FALSE);
+        if ($type) {
+            $this->search_query->inCategory($type);
+        }
+
+        $restriction = $this->input->get('restriction', FALSE);
+        if ($restriction) {
+            $this->search_query->withRestriction($restriction);
+        }
+
+        $maxCookingTime = $this->input->get('max_time', FALSE);
+        if ($maxCookingTime) {
+            $this->search_query->maxCookingTime($maxCookingTime);
+        }
+
+        $serves = $this->input->get('serves', FALSE);
+        if ($serves) {
+            $this->search_query->serves($serves);
+        }
 
         $recipes = $this->search_query->like($query)->result();
 
