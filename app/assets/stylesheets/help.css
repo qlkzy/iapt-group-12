@@ -127,6 +127,9 @@ body {
       justify-content: flex-start; }
       #banner nav .nav_icon:active, #banner nav .nav_icon:focus {
         outline: none; }
+      #banner nav .nav_icon:focus {
+        color: #5893ac;
+        border: 1px dotted black; }
       #banner nav .nav_icon:hover {
         color: #5893ac;
         cursor: pointer;

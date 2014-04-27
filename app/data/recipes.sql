@@ -65,32 +65,32 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (2, 1, '350g/12oz plain flour');
+    (2, 1, '350g plain flour');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (2, 2, '175g/6oz cold unsalted butter, cut into roughly 1cm cubes, plus extra for greasing');
+    (2, 2, '175g cold unsalted butter, cut into roughly 1cm cubes, plus extra for greasing');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (2, 3, '500g/1lb 2oz cooking apples');
+    (2, 3, '500g cooking apples, peeled, cored and quartered');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (2, 4, '500g/1lb 2oz eating apples');
+    (2, 4, '500g eating apples, peeled, cored and quartered');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (2, 5, '100g/3&frac12;oz caster sugar');
+    (2, 5, '100g caster sugar');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (2, 6, '125g/4&frac12;oz Wensleydale cheese, crumbled');
+    (2, 6, '125g Wensleydale cheese, crumbled');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -125,7 +125,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (2, 5, 'For the filling, peel, quarter and core all the apples.  Slice into a large bowl and mix them together.');
+    (2, 5, 'Slice the apples into a large bowl and mix them together.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -150,32 +150,32 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (3, 1, '350g/12oz plain flour');
+    (3, 1, '350g plain flour');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (3, 2, '175g/6oz cold unsalted butter, cut into roughly 1cm cubes, plus extra for greasing');
+    (3, 2, '175g cold unsalted butter, plus extra for greasing');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (3, 3, '500g/1lb 2oz cooking apples');
+    (3, 3, '500g cooking apples');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (3, 4, '500g/1lb 2oz eating apples');
+    (3, 4, '500g eating apples');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (3, 5, '100g/3&frac12;oz caster sugar');
+    (3, 5, '100g caster sugar');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (3, 6, '125g/4&frac12;oz Wensleydale cheese, crumbled');
+    (3, 6, '125g Wensleydale cheese');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -190,122 +190,132 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 1, 'To make the pastry, put the flour in a bowl.');
+    (3, 1, 'To make the pastry, put the 350g of flour in a bowl.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 2, 'Add the butter and rub it in lightly with your fingertips until the mixture resembles fine breadcrumbs.');
+    (3, 2, 'Cut 175g of unsalted butter into roughly 1cm cubes');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 3, 'Alternatively, do this in a food processor or a mixer and then transfer to a bowl.');
+    (3, 3, 'Add the butter and rub it in lightly with your fingertips until the mixture resembles fine breadcrumbs.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 4, 'Using a table knife, work in just enough cold water (about 75ml/2&frac12;fl oz) to bring the pastry together.');
+    (3, 4, 'Alternatively, do this in a food processor or a mixer and then transfer to a bowl.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 5, 'When the dough begins to stick together, use your hands to gently knead it into a ball.');
+    (3, 5, 'Using a table knife, work in just enough cold water (about 75ml/2&frac12;fl oz) to bring the pastry together.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 6, 'Wrap the pastry in cling film and rest in the fridge for about 30 minutes.');
+    (3, 6, 'When the dough begins to stick together, use your hands to gently knead it into a ball.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 7, 'Preheat the oven to 200C/400F/Gas 6. Lightly butter a baking tin, about 26x20cm/10&frac12;x8in and 3cm/1&frac14;&frac14;in deep.');
+    (3, 7, 'Wrap the pastry in cling film and rest in the fridge for about 30 minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 8, 'For the filling, peel, quarter and core all the apples.');
+    (3, 8, 'Preheat the oven to 200C/400F/Gas 6. Lightly butter a baking tin, about 26x20cm/10&frac12;x8in and 3cm/1&frac14;&frac14;in deep.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 9, 'Slice into a large bowl and mix them together.');
+    (3, 9, 'For the filling, peel, quarter and core all the 500g of apples.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 10, 'Once the dough has rested, cut it into two pieces, roughly one-third and two-thirds of the total.');
+    (3, 10, 'Slice into a large bowl and mix them together.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 11, 'Lightly dust a work surface with flour.');
+    (3, 11, 'Once the dough has rested, cut it into two pieces, roughly one-third and two-thirds of the total.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 12, 'Roll out the larger piece of pastry so it\&#39;s a good centimetre larger all round than the tin.');
+    (3, 12, 'Lightly dust a work surface with flour.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 13, 'Line the base and sides of the tin with the pastry, leaving the excess hanging over the sides.');
+    (3, 13, 'Roll out the larger piece of pastry so it\&#39;s a good centimetre larger all round than the tin.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 14, 'Lay a third of the apple slices in the pastry-lined tin and sprinkle with a third of the sugar.');
+    (3, 14, 'Line the base and sides of the tin with the pastry, leaving the excess hanging over the sides.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 15, 'Repeat with the remaining apple and sugar.');
+    (3, 15, 'Lay a third of the apple slices in the pastry-lined tin and sprinkle with a third of the sugar.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 16, 'Now scatter the crumbled cheese evenly over the fruit.');
+    (3, 16, 'Repeat with the remaining apple and sugar.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 17, 'Roll out the remaining pastry to make a lid.');
+    (3, 17, 'Crumble 125g of Wensleydale cheese');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 18, 'Brush the edges of the pastry in the tin with milk then put the pastry lid on top.');
+    (3, 18, 'Now scatter the crumbled cheese evenly over the fruit.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 19, 'Seal the edges with your fingertips and trim off the excess pastry neatly. -');
+    (3, 19, 'Roll out the remaining pastry to make a lid.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 20, 'Brush the pastry with milk and sprinkle over a little sugar.');
+    (3, 20, 'Brush the edges of the pastry in the tin with milk then put the pastry lid on top.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 21, 'Make two slits in the top to allow steam to escape.');
+    (3, 21, 'Seal the edges with your fingertips and trim off the excess pastry neatly. -');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 22, 'Bake for 30-35 minutes, or until the crust is golden-brown.');
+    (3, 22, 'Brush the pastry with milk and sprinkle over a little sugar.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 23, 'Leave for at least 15 minutes before slicing.');
+    (3, 23, 'Make two slits in the top to allow steam to escape.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 24, 'The pie is delicious hot or cold and needs no accompaniment.');
+    (3, 24, 'Bake for 30-35 minutes, or until the crust is golden-brown.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (3, 25, 'Leave for at least 15 minutes before slicing.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (3, 26, 'The pie is delicious hot or cold and needs no accompaniment.');
 
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
@@ -1110,7 +1120,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (11, 2, '2 ripe mangoes');
+    (11, 2, '2 ripe mangoes, peeled');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1120,7 +1130,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (11, 4, '1 ripe papaya');
+    (11, 4, '1 ripe papaya, peeled');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1130,7 +1140,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (11, 6, '225g/8oz raspberries');
+    (11, 6, '225g raspberries');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1145,7 +1155,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (11, 2, 'Peel the mango using a sharp knife or peeler. Slice the mango cheeks off either side of the large central flat stone, then cut the mango into cubes.');
+    (11, 2, 'Slice the mango cheeks off either side of the large central flat stone, then cut the mango into cubes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -1155,7 +1165,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (11, 4, 'Peel the papaya with a knife or potato peeler and then cut the fruit in half. Scoop out and discard the seeds and cut the fruit into pieces. Cut the passion fruit in half and scoop out the seeds.');
+    (11, 4, 'CUt the papaya in half. Scoop out and discard the seeds and cut the fruit into pieces. Cut the passion fruit in half and scoop out the seeds.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -1195,7 +1205,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (12, 6, '225g/8oz raspberries');
+    (12, 6, '225g raspberries');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1260,7 +1270,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (12, 12, 'Cut the passion fruit in half and scoop out the seeds.');
+    (12, 12, 'Cut 4 passion fruits in half and scoop out the seeds.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -1270,7 +1280,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (12, 14, 'Just before serving, add the fresh raspberries.');
+    (12, 14, 'Just before serving, add 225g of raspberries.');
 
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
@@ -1395,7 +1405,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (14, 5, '340g/12oz corned beef, tinned');
+    (14, 5, '340g corned beef, tinned');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1420,17 +1430,17 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (14, 10, '300g/10&frac12;oz plain flour');
+    (14, 10, '300g plain flour');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (14, 11, '315g/11oz cornmeal');
+    (14, 11, '315g cornmeal');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (14, 12, '200g/7oz icing sugar');
+    (14, 12, '200g icing sugar');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1445,12 +1455,12 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (14, 15, '250ml/9fl oz milk');
+    (14, 15, '250ml milk');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (14, 16, '200g/7oz butter, melted');
+    (14, 16, '200g butter, melted');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -1540,7 +1550,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (15, 5, '340g/12oz corned beef, tinned');
+    (15, 5, '340g corned beef, tinned');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1565,17 +1575,17 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (15, 10, '300g/10&frac12;oz plain flour');
+    (15, 10, '300g plain flour');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (15, 11, '315g/11oz cornmeal');
+    (15, 11, '315g cornmeal');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (15, 12, '200g/7oz icing sugar');
+    (15, 12, '200g icing sugar');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1590,117 +1600,132 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (15, 15, '250ml/9fl oz milk');
+    (15, 15, '250ml milk');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (15, 16, '200g/7oz butter, melted');
+    (15, 16, '200g butter');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 1, 'For the corned beef hash, place the potatoes into a saucepan and cover with water.');
+    (15, 1, 'Dice 4 potatoes into cubes');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 2, 'Bring to the boil and simmer until just tender.');
+    (15, 2, 'For the corned beef hash, place the potatoes into a saucepan and cover with water.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 3, 'Drain and set aside.');
+    (15, 3, 'Bring to the boil and simmer until just tender.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 4, 'Heat a frying pan until hot.');
+    (15, 4, 'Drain and set aside.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 5, 'Add one tablespoon of the olive oil, the onion and garlic and fry for two to three minutes.');
+    (15, 5, 'Heat a frying pan until hot.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 6, 'Add the potatoes and fry for a further minute.');
+    (15, 6, 'Finely dice 1 onion and crush 1 garlic clove');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 7, 'Crumble in the corned beef and mix together.');
+    (15, 7, 'Add one tablespoon of the 3 tbsp of olive oil, the onion and garlic and fry for two to three minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 8, 'Spoon the mixture into a soup dish then place under the grill for three to four minutes, until crusty.');
+    (15, 8, 'Add the potatoes and fry for a further minute.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 9, 'Bring a pan of water to the boil, add the vinegar and whirl the water around.');
+    (15, 9, 'Crumble in the 340g of corned beef and mix together.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 10, 'Crack an egg into a ladle.');
+    (15, 10, 'Spoon the mixture into a soup dish then place under the grill for three to four minutes, until crusty.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 11, 'Pour the egg into the pan and simmer for two minutes, until ready.');
+    (15, 11, 'Bring a pan of water to the boil, add 1 tbsp vinegar and whirl the water around.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 12, 'Remove from the pan and drain.');
+    (15, 12, 'Crack an egg into a ladle.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 13, 'Remove the hash from the grill and top with the egg.');
+    (15, 13, 'Pour the egg into the pan and simmer for two minutes, until ready.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 14, 'Top with a squeeze of ketchup and serve with hot, buttered corn bread.');
+    (15, 14, 'Remove from the pan and drain.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 15, 'For the cornbread, mix together the flour, cornmeal, icing sugar and baking powder.');
+    (15, 15, 'Remove the hash from the grill and top with the egg.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 16, 'Make a well in the centre of the dry ingredients and add the milk and egg.');
+    (15, 16, 'Top with a squeeze of ketchup and serve with hot, buttered corn bread.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 17, 'Mix together from the centre outwards, incorporating the dry ingredients into the wet gradually to create a dough-like paste.');
+    (15, 17, 'For the cornbread, mix together 300g plain flour, 315g cornmeal, 200g icing sugar and 1 tbsp of baking powder.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 18, 'Add the melted butter last.');
+    (15, 18, 'Make a well in the centre of the dry ingredients and add the 250ml milk and 1 free-range egg.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 19, 'Place in a hot baking tin. Place in a hot oven for about 15 minutes until golden brown.');
+    (15, 19, 'Mix together from the centre outwards, incorporating the dry ingredients into the wet gradually to create a dough-like paste.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 20, 'Remove from the oven, allow to cool slightly.');
+    (15, 20, 'Melt 200g of butter');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (15, 21, 'Turn out, cut into slices and serve with the corned beef hash.');
+    (15, 21, 'Add the melted butter to the mix.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (15, 22, 'Place in a hot baking tin. Place in a hot oven for about 15 minutes until golden brown.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (15, 23, 'Remove from the oven, allow to cool slightly.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (15, 24, 'Turn out, cut into slices and serve with the corned beef hash.');
 
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
@@ -1775,7 +1800,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (16, 1, 'Preheat the oven to 190C/400F/Gas 6. Half-fill a medium saucepan with water and bring to the boil. Peel the potatoes, cut them into quarters and lower them carefully into the water. Bring the water back to the boil and cook for five minutes &amp;mdash; just enough to parboil them. While the potatoes are boiling, place a large non-stick frying pan over a medium heat and add the mustard and cumin seeds. Toast for about 30 seconds, then stir in the oil, garam masala and turmeric. Sizzle for a few seconds and add the onion. Fry the onion in the spices for 1-2 minutes, stirring frequently. Drain the potatoes in a large colander and toss several times to roughen up the surface of each potato. Tip the potatoes into the pan with the onion and spices, season with a few twists of ground black pepper and toss together until the potatoes are lightly coated. Tip everything onto a large baking tray and roast for 30 minutes. Take the tray out of the oven and add the peppers and courgettes. Toss lightly together and return to the oven for another 25&amp;ndash;30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
+    (16, 1, 'Preheat the oven to 190C/400F/Gas 6. Half-fill a medium saucepan with water and bring to the boil. Peel the potatoes, cut them into quarters and lower them carefully into the water. Bring the water back to the boil and cook for five minutes &amp;mdash; just enough to parboil them. While the potatoes are boiling, place a large non-stick frying pan over a medium heat and add the mustard and cumin seeds. Toast for about 30 seconds, then stir in the oil, garam masala and turmeric. Sizzle for a few seconds and add the onion. Fry the onion in the spices for 1-2 minutes, stirring frequently. Drain the potatoes in a large colander and toss several times to roughen up the surface of each potato. Tip the potatoes into the pan with the onion and spices, season with a few twists of ground black pepper and toss together until the potatoes are lightly coated. Tip everything onto a large baking tray and roast for 30 minutes. Take the tray out of the oven and add the peppers and courgettes. Toss lightly together and return to the oven for another 25 - 30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -1785,7 +1810,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (17, 1, '600g/1lb 5oz potatoes, preferably Maris Piper');
+    (17, 1, '600g potatoes, peeled and quartered, preferably Maris Piper');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1820,22 +1845,22 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (17, 8, '1 yellow pepper, deseeded and cut into 4cm/1&frac12;in chunks');
+    (17, 8, '1 yellow pepper, deseeded and cut into 4cm chunks');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (17, 9, '1 red pepper, deseeded and cut into 4cm/1&frac12;in chunks');
+    (17, 9, '1 red pepper, deseeded and cut into 4cm chunks');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (17, 10, '1 orange pepper, deseeded and cut into 4cm/1&frac12;in chunks');
+    (17, 10, '1 orange pepper, deseeded and cut into 4cm chunks');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (17, 11, '2 medium courgettes, cut into 1cm/&frac12;in slices');
+    (17, 11, '2 medium courgettes, cut into 1cm slices');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1850,27 +1875,22 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (17, 2, 'Peel the potatoes, cut them into quarters and lower them carefully into the water.');
+    (17, 2, 'Put the potatoes into water and bring the water back to the boil and cook for five minutes, just enough to parboil them.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (17, 3, 'Bring the water back to the boil and cook for five minutes &amp;mdash; just enough to parboil them.');
+    (17, 3, 'While the potatoes are boiling, place a large non-stick frying pan over a medium heat and add the mustard and cumin seeds. Toast for about 30 seconds, then stir in the oil, garam masala and turmeric. Sizzle for a few seconds and add the onion. Fry the onion in the spices for 1-2 minutes, stirring frequently.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (17, 4, 'While the potatoes are boiling, place a large non-stick frying pan over a medium heat and add the mustard and cumin seeds. Toast for about 30 seconds, then stir in the oil, garam masala and turmeric. Sizzle for a few seconds and add the onion. Fry the onion in the spices for 1-2 minutes, stirring frequently.');
+    (17, 4, 'Drain the potatoes in a large colander and toss several times to roughen up the surface of each potato. Tip the potatoes into the pan with the onion and spices, season with a few twists of ground black pepper and toss together until the potatoes are lightly coated.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (17, 5, 'Drain the potatoes in a large colander and toss several times to roughen up the surface of each potato. Tip the potatoes into the pan with the onion and spices, season with a few twists of ground black pepper and toss together until the potatoes are lightly coated.');
-
-INSERT INTO instructions
-    (presentation_id, seq, description)
-VALUES
-    (17, 6, 'Tip everything onto a large baking tray and roast for 30 minutes. Take the tray out of the oven and add the peppers and courgettes. Toss lightly together and return to the oven for another 25&amp;ndash;30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
+    (17, 5, 'Tip everything onto a large baking tray and roast for 30 minutes. Take the tray out of the oven and add the peppers and courgettes. Toss lightly together and return to the oven for another 25 - 30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -1880,7 +1900,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (18, 1, '600g/1lb 5oz potatoes, preferably Maris Piper');
+    (18, 1, '600g potatoes, preferably Maris Piper');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1910,27 +1930,27 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (18, 7, '1 medium red onion, halved and cut into thin wedges');
+    (18, 7, '1 medium red onion');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (18, 8, '1 yellow pepper, deseeded and cut into 4cm/1&frac12;in chunks');
+    (18, 8, '1 yellow pepper');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (18, 9, '1 red pepper, deseeded and cut into 4cm/1&frac12;in chunks');
+    (18, 9, '1 red pepper');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (18, 10, '1 orange pepper, deseeded and cut into 4cm/1&frac12;in chunks');
+    (18, 10, '1 orange pepper');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (18, 11, '2 medium courgettes, cut into 1cm/&frac12;in slices');
+    (18, 11, '2 medium courgettes');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1955,12 +1975,12 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (18, 4, 'Bring the water back to the boil and cook for five minutes &amp;mdash; just enough to parboil them.');
+    (18, 4, 'Bring the water back to the boil and cook for five minutes , just enough to parboil them.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (18, 5, 'While the potatoes are boiling, place a large non-stick frying pan over a medium heat and add the mustard and cumin seeds.');
+    (18, 5, 'While the potatoes are boiling, place a large non-stick frying pan over a medium heat and add 1 tbsp of black mustard seeds and 1 tbsp of cumin seeds.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -1970,37 +1990,52 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (18, 7, 'Sizzle for a few seconds and add the onion.');
+    (18, 7, 'Half and cut 1 medium red onion into thin wedges');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (18, 8, 'Fry the onion in the spices for 1-2 minutes, stirring frequently.');
+    (18, 8, 'Sizzle for a few seconds and add the onion wedges.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (18, 9, 'Drain the potatoes in a large colander and toss several times to roughen up the surface of each potato.');
+    (18, 9, 'Fry the onion in the spices for 1-2 minutes, stirring frequently.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (18, 10, 'Tip the potatoes into the pan with the onion and spices, season with a few twists of ground black pepper and toss together until the potatoes are lightly coated.');
+    (18, 10, 'Drain the potatoes in a large colander and toss several times to roughen up the surface of each potato.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (18, 11, 'Tip everything onto a large baking tray and roast for 30 minutes.');
+    (18, 11, 'Deseed and cut red, yeallow and orange peppers into 4cm chunks');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (18, 12, 'Take the tray out of the oven and add the peppers and courgettes.');
+    (18, 12, 'Tip the potatoes into the pan with the onion and spices, season with a few twists of ground black pepper and toss together until the potatoes are lightly coated.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (18, 13, 'Toss lightly together and return to the oven for another 25&amp;ndash;30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
+    (18, 13, 'Tip everything onto a large baking tray and roast for 30 minutes.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (18, 14, 'Cut 2 medium courgettes into 1cm slices');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (18, 15, 'Take the tray out of the oven and add the peppers and courgettes.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (18, 16, 'Toss lightly together and return to the oven for another 25 - 30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
 
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
@@ -2095,7 +2130,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (20, 1, '300ml/10fl oz olive oil');
+    (20, 1, '300ml olive oil');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2190,17 +2225,17 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (21, 1, '300ml/10fl oz olive oil');
+    (21, 1, '300ml  olive oil');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (21, 2, '2 lemons, juice and zest only');
+    (21, 2, '2 lemons');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (21, 3, '1 garlic clove, crushed');
+    (21, 3, '1 garlic clove');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2215,17 +2250,17 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (21, 6, '1 pitta bread, torn into small pieces');
+    (21, 6, '1 pitta bread');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (21, 7, '8 plum tomatoes, seeds removed, quartered');
+    (21, 7, '8 plum tomatoes');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (21, 8, 'half cucumber, peeled, cut into 5cm/2in batons');
+    (21, 8, 'half cucumber, peeled, cut into 5cm batons');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2235,12 +2270,12 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (21, 10, '8 radishes, sliced');
+    (21, 10, '8 radishes');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (21, 11, '1 shallot, sliced');
+    (21, 11, '1 shallot');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2260,22 +2295,22 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (21, 1, 'For the dressing, place the olive oil, lemon juice and zest, crushed garlic and sumac into a bowl');
+    (21, 1, 'Extract the zest and juice from the 2 lemons');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (21, 2, 'Whisk together to combine.');
+    (21, 2, 'Crush 1 garlic clove');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (21, 3, 'Season, to taste, with salt and freshly ground black pepper.');
+    (21, 3, 'For the dressing, place the 300ml of olive oil, lemon juice and zest, crushed garlic and 4 tbsp of sumac into a bowl');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (21, 4, 'For the salad, place the torn pitta, tomatoes, cucumber, pepper, radishes, shallot, rocket leaves, Little Gem lettuce leaves and mint leaves into a large bowl.');
+    (21, 4, 'Whisk together to combine.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -2285,7 +2320,37 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (21, 6, 'To serve, pour the dressing, to taste, over the salad and gently mix together to coat the salad evenly.');
+    (21, 6, 'Tear 1 pitta bread into small pieces');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (21, 7, 'Remove the seeds from 8 plum tomatoes and quarter them');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (21, 8, 'Peel and cut half of a cucumber into 5 cm batons');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (21, 9, 'Slice 8 radishes and 1 shallot');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (21, 10, 'For the salad, place the torn pitta, tomatoes, cucumber, pepper, radishes, shallot, small handful of rocket leaves, Little Gem lettuce leaves and mint leaves into a large bowl.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (21, 11, 'Season, to taste, with salt and freshly ground black pepper.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (21, 12, 'To serve, pour the dressing, to taste, over the salad and gently mix together to coat the salad evenly.');
 
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
@@ -2340,7 +2405,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (23, 1, '50g/1&frac34;oz butter, plus extra for greasing');
+    (23, 1, '50g butter, plus extra for greasing');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2355,7 +2420,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (23, 4, '600g/1lb 6oz large potatoes, peeled');
+    (23, 4, '600g large potatoes, peeled');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2365,7 +2430,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (23, 6, '50g/1&frac34;oz parmesan cheese, grated (or vegetarian equivalent)');
+    (23, 6, '50gparmesan cheese, grated (or vegetarian equivalent)');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -2390,7 +2455,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (23, 5, 'Put the 50g/1&frac34;oz butter and the garlic in the same large pan set over a low heat until just melted.');
+    (23, 5, 'Put the butter and the garlic in the same large pan set over a low heat until just melted.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -2405,7 +2470,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (24, 1, '50g/1&frac34;oz butter, plus extra for greasing');
+    (24, 1, '50g butter, plus extra for greasing');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2420,17 +2485,17 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (24, 4, '600g/1lb 6oz large potatoes, peeled');
+    (24, 4, '600g large potatoes');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (24, 5, '2 garlic cloves, crushed');
+    (24, 5, '2 garlic cloves');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (24, 6, '50g/1&frac34;oz parmesan cheese, grated (or vegetarian equivalent)');
+    (24, 6, '50g parmesan cheese');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -2445,7 +2510,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (24, 3, 'Trim the tops from the fennel and cut each bulb in half through the root.');
+    (24, 3, 'Trim the tops from the 3 large bulb fennel and cut each bulb in half through the root.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -2455,42 +2520,57 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (24, 5, 'Cut the onions into six wedges too in a similar way.');
+    (24, 5, 'Cut the 3 onions into six wedges too in a similar way.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (24, 6, 'Cut the potatoes into wedges the same size as the fennel wedges.');
+    (24, 6, 'Peel the 600g of large potatoes');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (24, 7, 'Boil the fennel and onions in a large pan of salted water for about five minutes');
+    (24, 7, 'Cut the potatoes into wedges the same size as the fennel wedges.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (24, 8, 'Add the potatoes and boil for a further five minutes, or until the potatoes and fennel are just tender. Drain well.');
+    (24, 8, 'Boil the fennel and 3 onions in a large pan of salted water for about five minutes');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (24, 9, 'Put the 50g/1&frac34;oz butter and the garlic in the same large pan set over a low heat until just melted.');
+    (24, 9, 'Add the potatoes and boil for a further five minutes, or until the potatoes and fennel are just tender. Drain well.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (24, 10, 'Return the potatoes and fennel to the butter, toss until coated then tip into the ovenproof dish.');
+    (24, 10, 'Crush the 2 garlic cloves');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (24, 11, 'Sprinkle with the parmesan.');
+    (24, 11, 'Put the 50g butter and the garlic in the same large pan set over a low heat until just melted.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (24, 12, 'Bake for 30-40 minutes.');
+    (24, 12, 'Return the potatoes and fennel to the butter, toss until coated then tip into the ovenproof dish.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (24, 13, 'Grate 50g of parmesan cheese');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (24, 14, 'Sprinkle the potatoes with the parmesan.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (24, 15, 'Bake for 30-40 minutes.');
 
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
@@ -2585,7 +2665,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (26, 1, '1 x 300g/10&frac12;oz sirloin or fillet steak');
+    (26, 1, '1 x 300g sirloin or fillet steak');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2595,7 +2675,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (26, 3, '25ml/1fl oz rapeseed oil');
+    (26, 3, '25ml rapeseed oil');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2645,7 +2725,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (26, 13, '50g/1&frac34;oz sugar-snap peas, halved');
+    (26, 13, '50g sugar-snap peas, halved');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2690,7 +2770,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (27, 1, '1 x 300g/10&frac12;oz sirloin or fillet steak');
+    (27, 1, '1 x 300g sirloin or fillet steak');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2700,12 +2780,12 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (27, 3, '25ml/1fl oz rapeseed oil');
+    (27, 3, '25ml rapeseed oil');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (27, 4, '1 red chilli, finely chopped');
+    (27, 4, '1 red chilli');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2715,7 +2795,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (27, 6, '2 garlic cloves, sliced');
+    (27, 6, '2 garlic cloves');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2750,12 +2830,12 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (27, 13, '50g/1&frac34;oz sugar-snap peas, halved');
+    (27, 13, '50g sugar-snap peas');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (27, 14, '6 radishes, sliced');
+    (27, 14, '6 radishes');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -2765,42 +2845,67 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (27, 2, 'Season the steak with lots of black pepper, drizzle with oil and place onto a hot barbecue or griddle pan for five minutes, turning half-way through.');
+    (27, 2, 'Season the 300g sirloin or fillet steak with lots of black pepper, drizzle with 25ml of rapeseed oil and place onto a hot barbecue or griddle pan for five minutes, turning half-way through.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (27, 3, 'To make the dressing, put the chilli, palm sugar, garlic and a teaspoon of salt into a pestle and mortar.');
+    (27, 3, 'Finely chop 1 red chilly');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (27, 4, 'Grind for 1-2 minutes, then add the coriander and mint and grind for another minute.');
+    (27, 4, 'Slice 2 cloves of garlic');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (27, 5, 'Mix in the fish sauce, soy sauce, lime juice and zest.');
+    (27, 5, 'To make the dressing, put the chilli, palm sugar, garlic and a teaspoon of salt into a pestle and mortar.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (27, 6, 'Cut the lettuce into six wedges and place in a bowl.');
+    (27, 6, 'Grind for 1-2 minutes, then add tbsp of fresh coriander and mint and grind for another minute.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (27, 7, 'Top with the sugar-snap peas, radishes and a few coriander leaves.');
+    (27, 7, 'Extract juice and zest from the lime');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (27, 8, 'Pour the dressing over the salad and toss to coat.');
+    (27, 8, 'Mix in the 1 tbsp of fish sauce, 1 tbsp of soy sauce, lime juice and zest.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (27, 9, 'Slice the beef and lay it on top of the salad.');
+    (27, 9, 'Cut the 1 round lettuce into six wedges and place in a bowl.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (27, 10, 'Slice 6 radishes');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (27, 11, 'Half the 50g of sugar-snap peas');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (27, 12, 'Top with the sugar-snap peas, radishes and a few coriander leaves.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (27, 13, 'Pour the dressing over the salad and toss to coat.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (27, 14, 'Slice the beef and lay it on top of the salad.');
 
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
@@ -2870,7 +2975,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (29, 1, '1 whole chicken (about 1kg/2lb 3oz), spatchcocked');
+    (29, 1, '1 whole chicken (about 1kg), spatchcocked');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2910,12 +3015,12 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (29, 9, '100ml/3&frac12;fl oz olive oil');
+    (29, 9, '100ml olive oil');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (29, 10, '50ml/1&frac34;fl oz red wine vinegar');
+    (29, 10, '50ml red wine vinegar');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -2970,7 +3075,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (30, 1, '1 whole chicken (about 1kg/2lb 3oz), spatchcocked');
+    (30, 1, '1 whole chicken (about 1kg/2lb 3oz)');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -2990,7 +3095,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (30, 5, '1 tbsp garlic, blanched and chopped');
+    (30, 5, '1 tbsp garlic');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -3010,12 +3115,12 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (30, 9, '100ml/3&frac12;fl oz olive oil');
+    (30, 9, '100ml olive oil');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (30, 10, '50ml/1&frac34;fl oz red wine vinegar');
+    (30, 10, '50ml red wine vinegar');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -3025,7 +3130,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 2, 'Place the chillies on a roasting tray and roast them for 10 minutes.');
+    (30, 2, 'Place 6-12 fresh red chillies on a roasting tray and roast them for 10 minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -3035,77 +3140,82 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 4, 'Place the chillies, garlic, salt, oregano, paprika, olive oil and vinegar in a saucepan, and simmer for 2-3 minutes.');
+    (30, 4, 'Blanch and chop 1 tbsp of garlic');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 5, 'Allow the mixture to cool.');
+    (30, 5, 'Place the chillies, garlic, 1 tsp of salt, &frac12; tsp of oregano, &frac12; tbsp of paprika, 100ml of olive oil and 50ml of red wine vinegar in a saucepan, and simmer for 2-3 minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 6, 'Blend the mixture to a pur&eacute;e in a jug blender or food processor.');
+    (30, 6, 'Allow the mixture to cool.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 7, 'Store in a lidded container at room temperature.');
+    (30, 7, 'Blend the mixture to a pur&eacute;e in a jug blender or food processor.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 8, 'Shake before using.');
+    (30, 8, 'Store in a lidded container at room temperature.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 9, 'Place the spatchcocked chicken in a sealable plastic bag.');
+    (30, 9, 'Shake before using.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 10, 'Add half the piri-piri sauce, spreading it evenly over the chicken.');
+    (30, 10, 'Spatchcock the chicken');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 11, 'Seal and marinate in the refrigerator for at least one hour.');
+    (30, 11, 'Place the spatchcocked chicken in a sealable plastic bag.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 12, 'Spatchcocking chicken and poultry');
+    (30, 12, 'Add half the piri-piri sauce, spreading it evenly over the chicken.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 13, 'Preheat the oven to 200C/390F/Gas 6, preheat a large griddle pan on the hob.');
+    (30, 13, 'Seal and marinate in the refrigerator for at least one hour.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 14, 'Alternatively, light your barbecue.');
+    (30, 14, 'Preheat the oven to 200C/390F/Gas 6, preheat a large griddle pan on the hob.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 15, 'Season the marinated chicken');
+    (30, 15, 'Alternatively, light your barbecue.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 16, 'Cook it on the griddle pan for 2-3 minutes on each side.');
+    (30, 16, 'Season the marinated chicken');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 17, 'Transfer the griddled chicken to a roasting tray and roast in the oven for 30 minutes, until cooked through.');
+    (30, 17, 'Cook it on the griddle pan for 2-3 minutes on each side.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 18, 'Serve with chips and salad.');
+    (30, 18, 'Transfer the griddled chicken to a roasting tray and roast in the oven for 30 minutes, until cooked through.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (30, 19, 'Serve with chips and salad.');
 
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
@@ -4315,17 +4425,17 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (41, 5, '110g/4oz butter, softened');
+    (41, 5, '110g butter, softened');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (41, 6, '110g/4oz demerara sugar');
+    (41, 6, '110g demerara sugar');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (41, 7, '180-200g/6-7oz flour');
+    (41, 7, '180-200g flour');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4385,17 +4495,17 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (42, 5, '110g/4oz butter, softened');
+    (42, 5, '110gbutter, softened');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (42, 6, '110g/4oz demerara sugar');
+    (42, 6, '110g demerara sugar');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (42, 7, '180-200g/6-7oz flour');
+    (42, 7, '180-200g flour');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4405,12 +4515,12 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (42, 2, 'Cut the rhubarb into 7&frac12;cm/3in long sticks and place on an oven tray.');
+    (42, 2, 'Cut the 10 rhubarb sticks into 7&frac12;cm long sticks and place on an oven tray.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (42, 3, 'Sprinkle with the water and caster sugar and roast in the oven for 10 minutes.');
+    (42, 3, 'Sprinkle with 4 tablespoons of water and caster 8 tbsp sugar and roast in the oven for 10 minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4420,17 +4530,17 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (42, 5, 'Sprinkle over the ginger and mix well.');
+    (42, 5, 'Sprinkle over the 1 tsp of powdered ginger and mix well.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (42, 6, 'Fill an ovenproof dish about 4cm/1&frac12;in deep with the rhubarb.');
+    (42, 6, 'Fill an ovenproof dish about 4cm deep with the rhubarb.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (42, 7, 'Rub the butter into the flour and sugar to make the crumble topping.');
+    (42, 7, 'Rub the 110g of butter into the 180-200g of flour and 110g of demerara sugar to make the crumble topping.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4595,7 +4705,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (44, 1, '40g/1&frac12;oz thinly sliced crustless white bread');
+    (44, 1, '40g thinly sliced crustless white bread');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -4605,12 +4715,12 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (44, 3, '125g/4&frac12;oz thinly sliced Serrano ham, finely chopped');
+    (44, 3, '125g thinly sliced Serrano ham, finely chopped');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (44, 4, '600g/1lb 5oz lamb mince');
+    (44, 4, '600g lamb mince');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -4660,7 +4770,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (44, 14, '150g/5oz shallots, finely chopped');
+    (44, 14, '150g shallots, finely chopped');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -4675,17 +4785,17 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (44, 17, '800g/1lb 12oz vine-ripened tomatoes, peeled, chopped');
+    (44, 17, '800gvine-ripened tomatoes, peeled, chopped');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (44, 18, '200ml/7fl oz good quality fino sherry');
+    (44, 18, '200ml good quality fino sherry');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (44, 19, '200ml/7fl oz homemade chicken stock');
+    (44, 19, '200ml homemade chicken stock');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -4770,7 +4880,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (45, 1, '40g/1&frac12;oz thinly sliced crustless white bread');
+    (45, 1, '40g crustless white bread');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -4780,17 +4890,17 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (45, 3, '125g/4&frac12;oz thinly sliced Serrano ham, finely chopped');
+    (45, 3, '125g of Serrano ham');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (45, 4, '600g/1lb 5oz lamb mince');
+    (45, 4, '600g lamb mince');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (45, 5, '2 garlic cloves, crushed');
+    (45, 5, '2 garlic cloves');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -4835,12 +4945,12 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (45, 14, '150g/5oz shallots, finely chopped');
+    (45, 14, '150g shallots');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (45, 15, '3 garlic cloves, crushed');
+    (45, 15, '3 garlic cloves');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -4850,17 +4960,17 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (45, 17, '800g/1lb 12oz vine-ripened tomatoes, peeled, chopped');
+    (45, 17, '800g vine-ripened tomatoes');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (45, 18, '200ml/7fl oz good quality fino sherry');
+    (45, 18, '200ml good quality fino sherry');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (45, 19, '200ml/7fl oz homemade chicken stock');
+    (45, 19, '200ml homemade chicken stock');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -4885,102 +4995,132 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (45, 24, '3 large potatoes, peeled, very finely julienned');
+    (45, 24, '3 large potatoes');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 1, 'For the albondigas, soak the bread in the milk for five minutes');
+    (45, 1, 'Thinly slice 40g of crustless white bread');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 2, 'Then squeeze out the excess milk.');
+    (45, 2, 'For the albondigas, soak the bread in 3 table spoons of milk for five minutes');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 3, 'Place the bread, ham, lamb mince, garlic, spices, parsley and seasoning into a bowl');
+    (45, 3, 'Then squeeze out the excess milk.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 4, 'Mix until well combined.');
+    (45, 4, 'Thinly slice and chop 125g of Serrano ham');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 5, 'Shape the mixture into approximately 40 meatballs.');
+    (45, 5, 'Finely chop the 150g of shallots');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 6, 'Heat the oil in a frying pan and fry the meatballs for 4-5 minutes.');
+    (45, 6, 'Place the bread, ham, 600g of lamb mince, garlic, spices, 2 tablespoons of parsley and seasoning into a bowl');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 7, 'For the sauce, heat the olive oil a frying pan and fry the shallots, garlic and chilli for 8-10 minutes, or until softened.');
+    (45, 7, 'Mix until well combined.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 8, 'Add the tomatoes, sherry, stock, bay leaves, salt and pepper.');
+    (45, 8, 'Shape the mixture into approximately 40 meatballs.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 9, 'Simmer gently, stirring now and then, for one hour.');
+    (45, 9, 'Heat the oil in a frying pan and fry the meatballs for 4-5 minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 10, 'Add the meatballs and simmer gently for five minutes or until heated through.');
+    (45, 10, 'Crush 2 garlic cloves');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 11, 'Discard the bay leaves.');
+    (45, 11, 'For the sauce, heat the 2 tablespoons of olive oil a frying pan and fry the shallots, crushed garlic and &frac12; tsp crushed dried chillies for 8-10 minutes, or until softened.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 12, 'Meanwhile, for the patatas fritas, heat a deep fat fryer to 120C/250F.');
+    (45, 12, 'Peel and chop 800g of vine-ripened tomatoes');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 13, 'Cook the potatoes for two minutes, then remove them from the oil.');
+    (45, 13, 'Add the tomatoes, 200ml of sherry, 200ml homemade chicken stock, 2 bay leaves, &frac34; tsp of salt and pepper.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 14, 'Increase the temperature to 180C/350F and cook the potatoes for a further 4-5 minutes.');
+    (45, 14, 'Simmer gently, stirring now and then, for one hour.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 15, 'Remove the patatas fritas from the fryer and set aside to drain on kitchen paper.');
+    (45, 15, 'Add the meatballs and simmer gently for five minutes or until heated through.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 16, 'Season with salt.');
+    (45, 16, 'Discard the bay leaves.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 17, 'To serve, spoon the meatballs onto a plate, scatter with a little chopped parsley.');
+    (45, 17, 'Meanwhile, for the patatas fritas, heat a deep fat fryer to 120C.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 18, 'Drizzle with a little more olive oil.');
+    (45, 18, 'Peeled and very finely julienne 3 large potatoes');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 19, 'Serve with the patatas fritas.');
+    (45, 19, 'Cook the potatoes for two minutes, then remove them from the oil.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (45, 20, 'Increase the temperature to 180C and cook the potatoes for a further 4-5 minutes.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (45, 21, 'Remove the patatas fritas from the fryer and set aside to drain on kitchen paper.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (45, 22, 'Season with salt.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (45, 23, 'To serve, spoon the meatballs onto a plate, scatter with a little chopped parsley.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (45, 24, 'Drizzle with a little more olive oil.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (45, 25, 'Serve with the patatas fritas.');
 
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
@@ -5060,7 +5200,12 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (46, 1, 'Preheat the oven to 200C/400F/Gas 6 (180C fan). Put the potatoes into a saucepan of cold salted water. Bring up to the boil and simmer until completely tender. Drain well and then mash with the butter and milk. Add pepper and taste to check the seasoning. Add salt and more pepper if necessary. For the fish filling, melt the butter in a saucepan, add the leeks and stir over the heat. Cover with a lid and simmer gently for 10 minutes, or until soft. Measure the flour into a small bowl. Add the wine and whisk together until smooth. Add the milk to the leeks, bring to the boil and then add the wine mixture. Stir briskly until thickened. Season and add the parsley and fish. Stir over the heat for two minutes, then spoon into an ovenproof casserole. Scatter over the eggs. Allow to cool until firm. Spoon the mashed potatoes over the fish mixture and mark with a fork. Sprinkle with cheese. Bake for 30-40 minutes, or until lightly golden-brown on top and bubbling around the edges.');
+    (46, 1, 'Preheat the oven to 200C/400F/Gas 6 (180C fan). Put the potatoes into a saucepan of cold salted water. Bring up to the boil and simmer until completely tender. Drain well and then mash with the butter and milk. Add pepper and taste to check the seasoning. Add salt and more pepper if necessary. For the fish filling, melt the butter in a saucepan, add the leeks and stir over the heat. Cover with a lid and simmer gently for 10 minutes, or until soft. Measure the flour into a small bowl. Add the wine and whisk together until smooth. Add the milk to the leeks, bring to the boil and then add the wine mixture. Stir briskly until thickened. Season and add the parsley and fish. Stir over the heat for two minutes, then spoon into an ovenproof casserole.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (46, 2, 'Scatter over the eggs. Allow to cool until firm. Spoon the mashed potatoes over the fish mixture and mark with a fork. Sprinkle with cheese. Bake for 30-40 minutes, or until lightly golden-brown on top and bubbling around the edges.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -5070,7 +5215,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (47, 1, '1kg/2lb 4oz peeled main crop potatoes, cubed');
+    (47, 1, '1kg peeled main crop potatoes, cubed');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -5090,12 +5235,12 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (47, 5, '50g/1&frac34;oz Gruy&egrave;re cheese, grated');
+    (47, 5, '50g Gruy&egrave;re cheese, grated');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (47, 6, '75g/3oz butter');
+    (47, 6, '75g butter');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -5105,17 +5250,17 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (47, 8, '75g/2&frac34;oz plain flour');
+    (47, 8, '75g plain flour');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (47, 9, '150ml/5fl oz white wine');
+    (47, 9, '150ml oz white wine');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (47, 10, '568ml/1 pint milk');
+    (47, 10, '568ml milk');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -5125,7 +5270,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (47, 12, '750g/1lb 10oz mixture of salmon, smoked haddock and fresh haddock, skinned and cut into cubes');
+    (47, 12, '750g mixture of salmon, smoked haddock and fresh haddock, skinned and cut into cubes');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -5185,7 +5330,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (48, 1, '1kg/2lb 4oz peeled main crop potatoes, cubed');
+    (48, 1, '1kg of main crop potatoes');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -5205,32 +5350,32 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (48, 5, '50g/1&frac34;oz Gruy&egrave;re cheese, grated');
+    (48, 5, '50g Gruy&egrave;re cheese');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (48, 6, '75g/3oz butter');
+    (48, 6, '75g butter');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (48, 7, '2 leeks, sliced');
+    (48, 7, '2 leeks');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (48, 8, '75g/2&frac34;oz plain flour');
+    (48, 8, '75g plain flour');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (48, 9, '150ml/5fl oz white wine');
+    (48, 9, '150ml white wine');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (48, 10, '568ml/1 pint milk');
+    (48, 10, '568ml milk');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -5240,127 +5385,152 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (48, 12, '750g/1lb 10oz mixture of salmon, smoked haddock and fresh haddock, skinned and cut into cubes');
+    (48, 12, '750g mixture of salmon, smoked haddock and fresh haddock');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (48, 13, '6 free-range eggs, hard-boiled, peeled and quartered');
+    (48, 13, '6 free-range eggs');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 1, 'Preheat the oven to 200C/400F/Gas 6 (180C fan).');
+    (48, 1, 'Preheat the oven to 200C Gas 6 (180C fan).');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 2, 'Put the potatoes into a saucepan of cold salted water.');
+    (48, 2, 'Peel 1kg of the potatoes and cut them into cubes');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 3, 'Bring up to the boil and simmer until completely tender.');
+    (48, 3, 'Put the potatoes into a saucepan of cold salted water.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 4, 'Drain well and then mash with the butter and milk.');
+    (48, 4, 'Bring up to the boil and simmer until completely tender.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 5, 'Add pepper and taste to check the seasoning.');
+    (48, 5, 'Drain well and then mash with the butter and milk.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 6, 'Add salt and more pepper if necessary.');
+    (48, 6, 'Add pepper and taste to check the seasoning.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 7, 'For the fish filling, melt the butter in a saucepan');
+    (48, 7, 'Add salt and more pepper if necessary.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 8, 'Add the leeks and stir over the heat.');
+    (48, 8, 'For the fish filling, melt the knob of butter in a saucepan');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 9, 'Cover with a lid and simmer gently for 10 minutes.');
+    (48, 9, 'Slice the 2 leeks');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 10, 'Measure the flour into a small bowl.');
+    (48, 10, 'Add the leeks and stir over the heat.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 11, 'Add the wine and whisk together until smooth.');
+    (48, 11, 'Cover with a lid and simmer gently for 10 minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 12, 'Add the milk to the leeks, bring to the boil.');
+    (48, 12, 'Measure 75g of plain flour into a small bowl.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 13, 'Add the wine mixture.');
+    (48, 13, 'Add the 150ml of white wine and whisk together until smooth.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 14, 'Stir briskly until thickened.');
+    (48, 14, 'Add the 568 mil of milk to the leeks, bring to the boil.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 15, 'Season and add the parsley and fish.');
+    (48, 15, 'Add the flour and wine mixture.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 16, 'Stir over the heat for two minutes');
+    (48, 16, 'Stir briskly until thickened.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 17, 'Spoon into an ovenproof casserole.');
+    (48, 17, 'Hard-boil the 6 free-range  eggs, peel and quarter them.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 18, 'Scatter over the eggs.');
+    (48, 18, 'Skin and cut the 750g of smalon and haddock fish into cubes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 19, 'Allow to cool until firm.');
+    (48, 19, 'Season and add the parsley and fish.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 20, 'Spoon the mashed potatoes over the fish mixture and mark with a fork.');
+    (48, 20, 'Stir over the heat for two minutes');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 21, 'Sprinkle with cheese.');
+    (48, 21, 'Spoon into an ovenproof casserole.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 22, 'Bake for 30-40 minutes, or until lightly golden-brown on top and bubbling around the edges.');
+    (48, 22, 'Scatter over the eggs.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (48, 23, 'Allow to cool until firm.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (48, 24, 'Spoon the mashed potatoes over the fish mixture and mark with a fork.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (48, 25, 'Grate the 50g of Gruy&egrave;re cheese.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (48, 26, 'Sprinkle the mix with cheese.');
+
+INSERT INTO instructions
+    (presentation_id, seq, description)
+VALUES
+    (48, 27, 'Bake for 30-40 minutes, or until lightly golden-brown on top and bubbling around the edges.');
 
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Tourtère', (SELECT category_id FROM categories WHERE category_name = 'main'), 20, 'medium', 4, 'http://is.gd/9DXW6j');
+    ('Tourt&egrave;re', (SELECT category_id FROM categories WHERE category_name = 'main'), 20, 'medium', 4, 'http://is.gd/9DXW6j');
 
 INSERT INTO presentations
     (recipe_id, detail)

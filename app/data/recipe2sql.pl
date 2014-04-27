@@ -29,7 +29,7 @@ CONST
 
 for (@ARGV) {
     my $recipe = LoadFile($_);
-    my $name = $recipe->{name};
+    my $name = escape($recipe->{name});
     my $serves = $recipe->{serves};
     my $image = $recipe->{image} || '';
     my $category = $recipe->{type};
