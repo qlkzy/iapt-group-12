@@ -40,9 +40,12 @@ $(document).ready(function () {
         url: baseUrl + 'index.php/recipes/getDefaultView',
         success: function (data) {
             console.log("Data received: " + data);
+            setDefaultDetail(data);
             selectDetail(data);
         },
         error: function (xhr, desc, err) {
+            console.log("Unable to get default level of detail");
+            setDefaultDetail("data");
             selectDetail("step");
         }
     });
