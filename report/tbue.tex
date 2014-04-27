@@ -1,1 +1,187 @@
 \section{Task-Based User Evaluation}
+
+\subsection{Methodology}
+
+According to Marieke McCloskey in an article she wrote recently called
+``Turn User Goals into Task Scenarios for Usability
+Testing''\todo{reference}, you should use the goals of your system to
+guide you when creating tasks for task based evaluations. This idea
+resonated with our group; it follows that the best place to start when
+designing a good test scenario would be to ensure that it adequately
+tests that the user can achieve the core goals that they need to. As
+such we decided to first begin by defining the goals we hope to test.
+
+\tbueGoal{Being able to find a recipe} To do this they must be able
+to browse content of the site in some way and be able to utilise
+search and filters to find a specific recipe.
+
+\tbueGoal{Viewing a recipe} To do this they must be able to
+effectively manipulate view types and acquire all other information
+needed to carry out the recipe.
+
+\vspace{5mm}
+Marieke also defined three key principles to keep in mind to when
+creating tasks that we endeavoured to follow:
+
+\tbuePrinciple{Make the task relate to real life} She argues that making
+the task feel real makes the user perform more realistically: if you
+can suspend the user's disbelief, you will get more reliable test
+data. Even if you ask the user to do something they usually wouldn't,
+if you can flesh out the scenario enough you can achieve this effect.
+
+\tbuePrinciple{Make them actionable} She describes it as important to make
+the user actually use the system, it seems obvious but if the task is
+phrased badly the user could stop trying to actually use the system
+and instead just describe what they would do to the tester, which
+doesn’t provide any useful data.
+
+\tbuePrinciple{Avoid clues in task step} (Avoid using terms used on the site).
+Obviously, if the task contains phrases the user sees on the site they
+will gravitate towards them, even if that wouldn't be their normal
+interaction with the site.
+
+
+So, ensuring we followed these principles, and that our tasks
+encompass all the identified goals, the following tasks and scenarios
+were created:
+
+\tbueTask{Task 1}{
+  You are an experienced cook, you are looking for
+  a challenge and would therefore only like to cook something that is
+  hard to make.
+}{
+  Find the list of availmable recipes for main 
+  dishes that will pose a significant challenge in preparing.
+}
+
+\tbueTask{Task 2}{
+  You love vanilla slice, but have no idea how to
+  make it.
+}{
+  Find a Vanilla Slice recipe and view it in
+  its most verbose form.
+}
+
+\tbueTask{Task 3}{
+  You are an experienced cook and a vegetarian, you only have
+  about 30 minutes before you have to leave for work.
+}{
+  Instructions: Find the list of vegetarian dishes that can be prepared
+  within 20 minutes.
+}
+
+\tbueTask{Task 4}{
+  You are entering a pie making competition.
+}{
+  Bring up a list of all pie recipes.
+}
+
+\tbueTask{Task 5}{
+  You were a novice user but have now used the website quite a
+  lot. You are browsing a recipe and decide you do not need the step by
+  step instructions anymore.
+}{
+  Change the default recipe view.
+}
+
+\subsection{Who to use to test?}
+
+As described by By Deborah Hinderer Sova and Jakob Nielsen in their
+report ``How to Recruit Participants for Usability
+Studies''\todo{reference} the cardinal rule for recruiting is ``know
+thy users''. We have already gathered this information as part of our
+user-centered design process, to make our personae. To get the most
+out of our task based evaluation we will need to ensure our 8 test
+candidates represent a good mixture of our predicted user
+base. Obviously as students getting other students will be easy, but
+recruiting computer illiterate testers will prove more
+difficult. Thankfully, one of our team members was able to get their
+parents to help out; less than ideal, as that particular user group
+will be under represented, but probably sufficient.
+
+Nielsen also stresses the importance of focusing on what users do, not
+just on what they say: they may say they didn't struggle to find an
+element on the page, but their eye and mouse movements tell a
+different story. In the absence of the necessary hardware and software
+to monitor eye and mouse movements we instead opted to carry out the
+tests in pairs. This way one conductor can focus on the user and the
+other on the screen.
+
+However, we can still use what the user has to say about the system,
+and we used the same rating system as in the CHE. This provides a
+solid metric with which we can identify key problems with our system.
+
+\subsection{TBUE Data}
+
+\input{tbue_table.tex}
+
+\subsection{Issues Uncovered}
+
+Based on the results of the task based evaluation we have chosen to
+present problems relating to the tutorial features of our
+website. This includes the welcome and help page, where the user is
+told about the different view types and goes to set the default view
+as well as be given other useful information on how to use the
+website. The following are specific test cases that produced
+interesting results.
+
+\paragraph{Task: find vanilla slice recipe and view it in its most verbose form.}
+
+The user successfully completed the task by navigating the tutorial
+and then using the search bar to find the desired recipe. Afterwards
+he did express some concern over finding the most ‘verbose’ recipe
+view described by the task. He further elaborated that whilst he was
+given a summary of all the view types in the tutorial he failed to
+decipher which view the task was referring to based on the tutorial
+text. Perhaps work needs to be done to change the tutorial text to
+make it more obvious but the user did also confess to reading the
+tutorial particularly thoroughly. The user did state he had no issues
+with the layout of the tutorial, the text was obvious and easy to
+read, but it seems the user was more concerned about actually finding
+the recipe as such whilst the tutorial presented relevant information
+the user described it as ‘slowing him down’. Further elaboration
+reveals this user would have been happy to discover the different
+views of his own accord, but did state he probably would want to get
+this information at a later time. The user chose to give this a
+problem rating of 2, but they also claimed a large part of the fault
+lay in the ambiguity between the task and the website and so their
+rating may be weighted a bit heavily. From our point of view this
+purposeful disconnect provided valuable additional information on how
+the tutorial system is perceived by this user.
+
+\paragraph{Task: Change the default recipe view}
+
+The user remembered that they were given the opportunity to change
+default view from the tutorial on the home page. The opted to go
+straight back to the home page and change the default from there. They
+did however concede that they did not expect the tutorial to show up
+every time but opted for that route after a quick scan of the recipe
+page showed no obvious way to change the default.
+
+Another user, however struggled with the task, they spent a long time
+on the recipe page particularly around the view changing buttons to no
+avail. they then attempted to go to help, nothing there was helpful in
+fulfilling the task. Eventually they stumbled upon the home screen and
+were presented with the tutorial. They strongly disliked the flow they
+took and it did take a long time to complete the task, they decided to
+rate it 4 a very serious problem.
+
+\subsection{Changes}
+
+\todo{This Section}
+
+Apart from the bug fixes that are required the task based evaluation
+has caused us to reconsider a few things regarding the design of our
+website. Firstly, tutorials will be changed to only show on first use
+of the website. This brings us in line with what our volunteers were
+expecting. A direct result of this change is also changing the way
+default recipe views are chosen. As the tutorial is no longer
+presented after first use a new way must be added to change default
+view.
+
+Most likely this will be added to the recipe page, around the same
+area as the buttons to change the view in order to stay in line with
+principles regarding grouping. It should be noted that the ability to
+reset the tutorial will also be added, being placed in the help
+section. Now that we are only showing the tutorial once we don’t want
+to completely remove it from the user if they do not wish it to be.
