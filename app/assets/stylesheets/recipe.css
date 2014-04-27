@@ -309,9 +309,13 @@ body {
         -webkit-transition: color 0.3s ease-in;
         -moz-transition: color 0.3s ease-in;
         transition: color 0.3s ease-in; }
+      #rcp_columns #rcp_instructions .rcp_instruction a, #rcp_columns #rcp_instructions .rcp_instruction a:visited {
+        color: inherit;
+        text-decoration: none; }
     #rcp_columns #rcp_instructions .rcp_instruction.ticked {
       opacity: 0.4;
       color: #5893ac;
       list-style-image: url("images/checked_small.png"); }
       #rcp_columns #rcp_instructions .rcp_instruction.ticked:hover {
-        list-style-image: url("images/unchecked_small.png"); }
+        list-style-image: url("images/unchecked_small.png");
+        opacity: 1; }

@@ -71,12 +71,14 @@ $(document).ready(function () {
         return false;
     });
 
-    $(".rcp_instruction").click(function () {
-        if ($(this).hasClass('ticked')) {
-            $(this).removeClass('ticked');
+    $(".rcp_instruction a").click(function () {
+        var li = $(this).parent('li');
+        if (li.hasClass('ticked')) {
+            li.removeClass('ticked');
         } else {
-            $(this).addClass('ticked');
+            li.addClass('ticked');
         }
+        return false;
     });
 
     $(".help").hide();
