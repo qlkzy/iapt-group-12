@@ -1,0 +1,174 @@
+\section{Reliability and Maintainability}
+
+Our approach to reliability and maintainability took its cue from the
+purpose of the system.
+
+The purpose of the system:
+
+\begin{itemize}
+\item On one level, to explore a design for an adaptable cookery book.
+\item On another level, to serve as a focus for building and
+  demonstrating an understanding of techniques used for evaluating and
+  improving interactive systems.
+\end{itemize}
+
+These purposes place the engineering of the system as a peripheral
+concern: it is important that the system be sufficiently well-built
+that it is easy to modify and doesn't fall over while being evaluated,
+but making an application which is bulletproof in the face of
+malicious user input and whose code crackles with craftsmanship would
+be misspent effort.
+
+\subsection{Coding Standards}
+
+\subsubsection{General PHP Coding Standards}
+
+\subsubsection{Project-Specific Coding Standards}
+
+\begin{itemize}
+\item Naming, indentation, etc.
+\item Commentary.
+\item No use of magic methods (\verb!__get! \verb!__set! et al) in our
+  code (CodeIgniter makes limited use)
+\item No use of PHP references in our code.
+\item Minimise use of raw mutation methods, preferring `real' OO.
+\end{itemize}
+
+\subsection{Tool Support}
+
+\subsubsection{PHP CodeSniffer}
+
+\subsubsection{PHP Mess Detector}
+
+\subsubsection{HTML CodeSniffer}
+
+\subsubsection{PHPStorm Inspection Tools}
+
+\subsubsection{SCSS}
+
+\subsection{Version Control}
+
+\subsubsection{Choice of \texttt{git} over Subversion}
+
+Although a Subversion repository was provided for our use by the
+department, we chose to use a more modern version control tool,
+\texttt{git}. The principal reasons for this were as follows:
+
+\begin{itemize}
+\item Data integrity: particularly in the hands of inexperienced
+  users, subversion is prone to unrecoverably tangling the metadata it
+  holds on the working copy, leading to data loss.
+\item Team fit: our team is inherently distributed, only
+  intermittently working colocated, a natural fit for the distributed
+  model of git.
+\item Safe merging: large merges (such as those which would be
+  produced by our team structure) are especially fraught under
+  subversion, as it merges the repository onto an uncommitted working
+  copy; if the merge goes awry, the working-copy changes can be lost
+  or mangled.
+\item Availability: systems hosted on campus and in the department
+  have not, historically, been entirely issue-free. Given the
+  importance of the assessment, it was felt that not introducing
+  departmental IT services as a single point of failure was the
+  prudent course.
+\item Does it \textit{look} like 2002?
+\end{itemize}
+
+\subsubsection{Version control process}
+
+\begin{itemize}
+\item Branching
+\item Pull requests
+\item Somewhat flexible, heavy-duty collaboration process only
+  intermittently needed.
+\end{itemize}
+
+\subsection{Issue Tracking}
+
+\subsubsection{Choice of Issue Tracking tool}
+
+We used GitHub's issue issue tracking system. GitHub was already a
+natural place to host the principal copy of our repository, and their
+issue tracking tool is simple but reasonably full-featured, and
+has good repository integration.
+
+\subsubsection{Issue Tracking process}
+
+Issues
+
+Milestones
+
+Ended up not relying much on repository integration.
+
+\subsection{Data Model}
+
+\subsubsection{Sample data}
+
+To allow flexibility in the data model and database schema used, we
+wrote some small scripts that would take take naturalistic YAML
+descriptions of recipes (basically a one-to-one translation of the
+provided sample recipes) and populate the database from them. This
+made it easy to drop and recreate the database as we experimented with
+and refactored the data model.
+
+\subsubsection{Challenges imposed by CodeIgniter}
+
+For the sake of consistency, we decided to use CodeIgniter as a
+starting point. This turned out to introduce some issues that we had
+to work around.
+
+\begin{itemize}
+\item CodeIgniter's `Active Record' facilities are actually a kind of
+  pseudo-singleton Data Mapper, and actively inhibit using the Active
+  Record pattern (which we wanted to for its simplicity). Fortunately,
+  this can be fudged by borrowing a reference to the CodeIgniter
+  database module, which is just a global property of the underlying
+  CodeIgniter singleton anyway.
+\item CodeIgniter's idiosyncratic loading schemes impose a moderately
+  weird naming convention, and, more problematically, we weren't
+  confident that they would interact nicely with modern class
+  autoloading; we decided to fall back to bare \texttt{require}.
+\end{itemize}
+
+\subsubsection{DB-side data model}
+
+\subsubsection{PHP-side data model}
+
+\subsubsection{JS-side data model}
+
+\subsubsection{Active Record}
+
+\subsubsection{Lazy Loading}
+
+\subsection{Testing}
+
+\subsubsection{Acceptance Testing}
+
+\paragraph{Acceptance Testing Approach}
+
+\paragraph{Acceptance Test Procedures}
+
+\subsubsection{Integration Testing}
+
+\begin{itemize}
+\item Dependencies an issue
+\item Loading of CodeIgniter classes into independent tests an issue
+\item Solution: web page which runs `tests'
+\item Example test
+\item Mostly testing model/db integration.
+\end{itemize}
+
+\begin{itemize}
+\item End-to-end tests
+\item wget
+\item grep
+\item Test availability of urls
+\item Check for PHP errors
+\end{itemize}
+
+\subsubsection{No Unit Testing}
+
+Given the structural dependency issues associated with CodeIgniter,
+and the general issues of unit-tensting an application so heavily
+wedded to a database, we decided, with a heavy heart, that unit
+testing would be misplaced effort in this case.
