@@ -1,1 +1,219 @@
 \section{Design Rationale}
+
+\subsection{Initial Research}
+
+\subsubsection{Rating Usability of User Interfaces}
+Based on the Shneiderman's Principles of Interaction Design, Don Norman's Design Principles and Tog's First Principles of Interaction Design, the following criteria have be identified as a solid starting point for any user interface:
+
+\begin{itemize}
+\item Consistency;
+\item Informative feedback to the user;
+\item Straightforward reversal of actions;
+\item Promoting internal locus of control;
+\item Low short-term memory load;
+\item High feature visibility;
+\item Information readability;
+\end{itemize}
+
+It was decided that rating some existing software that aims to achieve much of what is required by the specification for this assessment would provide a starting point for designing an application. A brief introduction to each of the analysed services and the analysis itself follows. 
+
+\paragraph{AllRecipes} 
+A website with a great diversity of content and a site that employs various forms 
+of media to deliver information to its users. The site offers limited anonymous
+use, restricted to browsing content only. With membership comes full access to 
+site features, including the provisions for submitting recipes, uploading
+photographs of completed dishes, saving recipes and creating shopping lists.
+
+\paragraph{BigOven}: 
+A website and application that runs on both Windows and mobile platforms, BigOven
+boasts one of the largest recipe collections available online (250 000+). As well
+as recipe organization and display, BigOven provides nutritional calculations,
+an integrated meal planner, recipe importation, shopping list generators and even 
+a cookbook creator.
+\\*
+
+\falseHeading{Analysis}
+
+\paragraph{AllRecipes}
+\begin{itemize}
+\item \emph{Consistency:} The layout of the site is consistent across pages, with an identical header / navigation bar horizontal at the top and a panel placed at the right. A strong colour scheme is present throughout pages, and this is never broken. Features of the same / similar types take the same shape / size and emphasizing details, with even the advertisements placed in the same places on every page. The font features are established on the homepage and remain constant.
+\item \emph{Feedback:} When manipulating recipes, a clear sense of what has been modified post-action is established through highly visible and concise feedback messages. The feedback messages do not intrude into the regular user experience.
+\item \emph{Reversal of Actions:} Any modification of recipe settings is straightforward to undo via exactly the same process as was used to make the original change.
+\item \emph{Internal Locus of Control: }The site generally performs well in this regard. Navigation is seamless and the user is afforded a strong idea of what will happen when an action is performed. Backend computation time is low, and in no circumstances does the site present the user with results that weren't suggested would be produced before carrying out an action.
+\item \emph{Short-Term Memory Load:} Very low in that the site provides a wide range of options for preserving use state. Navigation is not heavily nested and so returning to a location typically requires very few actions.
+\item \emph{Feature Visibility:} Features are very distinct from each other whilst being logically grouped, with focus being directed in a logical fashion through size, grouping and stylesheet effects.
+\item \emph{Information Readability:} Font face is standard, although colour and sizing are problematic at times. Light font colours on a light background coupled with small font sizes (in places, particularly the side panel) can make some information difficult to read. Primary information highly visible, though.
+\end{itemize}
+
+\paragraph{BigOven}
+\begin{itemize}
+\item \emph{Consistency:} Core site layout is maintained across the board, but the 'body layout' changes between pages and this causes confusion. Lack of an ability to predict where content will be placed based on previous pages. A colour scheme is consistent throughout the site, as are font details.
+\item \emph{Feedback:} Poor feedback on user interaction on the whole. Sometimes feedback is misleading, most of the time it is not at all visible and there isn't much of an attempt to highlight changes made by users to recipe views. 
+\item \emph{Reversal of Actions:} Reversal of changes made to recipe views is straightforward, executed via the same actions that were used to instigate the initial changes. Difficult to discern successful revert due to bad feedback.
+\item \emph{Internal Locus of Control:} Although the user is making changes to content and initiating computation, slow action processing times and poor feedback combine to cause a feeling that the user is waiting on the site to produce difficult to interpret results.
+\item \emph{Short-Term Memory Load:} Not an issue, with light navigation and plenty of use state storage options.
+\item \emph{Feature Visibility:} The site makes most features very visible, and there is often nothing to distract from features which should take user focus. Grouping, shape and size are employed well.
+\item \emph{Information Readability:} Information is generally very readable. There are no issues with fonts or text sizing, and the colour scheme is well-chosen. The feedback after user actions can get in the way of important information in the recipes, as it isn't differentiated from the body text of the recipe.
+\end{itemize}
+
+\falseHeading{Layout Research}
+
+\paragraph{Chosen Websites}
+\begin{itemize}
+\item finecooking.com
+\item bbc.co.uk/food/recipes
+\item jamieoliver.com/recipes
+\item bbcgoodfood.com/recipes
+\item uktv.co.uk/food/homepage/sid/423
+\end{itemize}
+
+\paragraph{Common Features}
+\begin{itemize}
+\item The front pages of all chosen sites had some sort of 'featured recipes' / 'recent recipes' element which more-or-less consumed the whole of the body space of that page. 
+\item The chosen sites all had a 'related recipes' feature on pages where recipes were being browsed.
+\end{itemize}
+
+\paragraph{Individual Features}
+
+\subparagraph{finecooking.com}
+\begin{itemize}
+\item Recipes are browsable using 'overlapping' categories, e.g. 'Ingredient', 'Course' etc.
+\item Recipe navigation elements give concise information about the dish, e.g. suitability for vegetarians, preparation time.
+\item Recipes are essentially a 'text dump' with a list of ingredients place at the top of the body.
+\end{itemize}
+
+\emph{bbc.co.uk/food/recipes}
+\begin{itemize}
+\item Preparation instructions are separated into distinct steps, with ingredients displayed first.
+\item Recipes can be browsed by ingredients that they contain.
+\item A 'Favourite Recipes' feature is provided.
+\item A filterable search is provided.
+\end{itemize}
+
+\emph{jamieoliver.com/recipes}
+\begin{itemize}
+\item Confusing front-page layout, with multiple navigation bars and oversized images.
+\item Recipes are again just a 'text dump'.
+\item Ingredients spacing makes reading require a lot of scrolling.
+\end{itemize}
+
+\emph{bbcgoodfood.com/recipes}
+\begin{itemize}
+\item A summary of important information about the recipe is displayed at the top of recipe viewing pages.
+\item Three column layout for recipe pages is confusing, no clear focus.
+\end{itemize}
+
+\emph{uktv.co.uk/food/homepage/sid/423}
+\begin{itemize}
+\item Featured recipes links on the home page don't navigate directly to the recipe.
+\item Recipe page layout is pleasant: picture and important information at the top, ingredients and instructions side-by-side beneath the image and information with clear distinction between ingredients and instructions.
+\end{itemize}
+
+\subsection{Personas \& Scenarios}
+From both the initial reasearch into other services and group discussion about the specification, many personas and scenarios were devised. The purpose of these was to both identify the potential users of the system to be designed and to aid in the formation of formal functional requirements. The personas and scenarios follow.
+
+\paragraph{Jennifer}
+\subparagraph{Persona}
+Jennifer is a first-year student in History at the University of York. She is 
+living on her own for the first time, and after spending the first term eating
+primarily frozen dinners and instant noodles, she has decided it is time to 
+learn how to cook for herself. Jennifer is computer-literate, and in fact quite
+savvy on the web, but has little experience with kitchen appliances or utensils.
+\subparagraph{Scenario}
+Jennifer decides to cook a nice but fairly easy meal for herself and her 
+housemates. Earlier in the day, she browses through the recipe website, looking
+for fairly simple-looking recipes with cheap and easily-available ingredients.
+Then, she goes to her local supermarket, navigates to the recipe on her phone,
+and walks round picking up ingredients, checking off items in the recipe as she
+buys them. She then checks how long it will take to cook the recipe, so she can
+start at the right time, and heads off to a lecture.
+
+That evening, she sets up her laptop in the kitchen to look at the recipe,
+the easiest-to-follow view of the recipe, and starts cooking. She starts by 
+measuring out all the ingredients she will need, and then starts working through
+the individual steps. At one point, her housemates come into the kitchen and 
+start up a conversation. She joins in, and when she returns to cooking realises
+that she has forgotten where she was in the recipe. Fortunately, she was
+checking off recipe steps as she did them, and the recipe site helps her find
+where she left off to continue cooking.
+
+\paragraph{Dale}
+\subparagraph{Persona}
+Dale is a 45 year-old headmaster at a primary school. He has been cooking at home
+since he was about nine years old, being able to make complex meals for dinner
+parties since he was sixteen. He revels in trying out new recipes and the more
+complex the better. He regularly uses an iPad at home, including in the kitchen
+where he has access to all of the latest cookery apps and blogs.
+\subparagraph{Scenario}
+Dale is planning a dinner party and would like ideas on what to cook. One of his
+guests is vegetarian and so Dale would like to make sure that at least on of the
+dishes that he prepares is suitable for vegetarians.He also needs to know (roughly) 
+how long the meal will take to complete as he needs to be ready in time for his 
+guests' arrival.
+
+\paragraph{Bob}
+\subparagraph{Persona}
+Bob is a 16 year-old student. He aspires to become a professional cook after he 
+finishes school and experiments with cooking as much as he can. He often prepares
+dinners for his family and sometimes even his friends. Bob likes finding new
+recipes on the internet and always looks for meals that would test his abilities.
+\subparagraph{Scenario}
+Bob has decided to make a meat pie for his grandmother. On his way back from 
+school he picks up the groceries that he thinks he'll need for the pie. Bob finds
+a suitable recipe using the app. The app allows him to choose his expertise level
+and informs him that it affects how the recipe is displayed. He chooses 'expert'
+at first, but midway through Bob realizes that it's a bit too hard to follow and
+decides he would like to change to the 'intermediate' view. After the change, he
+has no trouble finishing the meat pie.
+
+\paragraph{Mike}
+\subparagraph{Persona}
+Mike is a 52 year-old store clerk. He is recently divorced and didn't really have
+to worry about cooking until this point in his life. Mike can't afford to eat
+take-away food anymore so he is trying to learn how to cook for himself. He knows
+his way around a computer, but is not completely confident with technology.
+\subparagraph{Scenario}
+Mike decides to make an omelette one evening for himself. He finds a fairly 
+simplistic, easy to follow recipe using the app and ther goes to a store to get
+the required ingredients. When he comes back home, he realizes that he absent
+mindedly shut off his device running the app, however when he loads up the 
+app after booting up the device he notices that the app has recorded his 
+recent activity and he has no trouble finding the omelette recipe again. He
+follows the instructions and successfully finishes preparing the dish.
+
+\paragraph{Mavis}
+\subparagraph{Persona}
+Mavis is a 65 year-old retiree, living alone. She has been cooking the same set 
+of meals with a high-level of skill for the majority of her life, and has
+decided that now she has a lot of time on her hands she would like to develop
+her repertoire. She would also like to use this time to get up to speed with 
+mobile technology, having never owned so much as a cell phone in the past.
+\subparagraph{Scenario}
+Mavis has decided to purchase a tablet to improve her relationship with modern
+technology. One of the first apps that she asks her daughter to install for her
+is the recipe app, so that she can get started with trying out some new recipes
+without the need to pore over lots of cookery books. Mavis is completely 
+unfamiliar with interacting with tablet devices, and would like an interactive 
+tutorial process to 'show her the ropes' that doesn't appear to patronize her.
+
+\paragraph{Andy}
+\subparagraph{Persona}
+Andy is a young man in his early twenties, who is comfortable in the kitchen but
+mostly cooks simple and straightforward food. He dislikes cooking from recipe
+books, but resorts to them for more complex meals and those with which he is
+unfamiliar. He tends to speed-read recipes, often skipping steps or executing
+instructions in the 'wrong' order, but is normally able to 'wing it' and produce
+something reasonable.
+\subparagraph{Scenario}
+Andy wants to cook a potato salad, but has no lemon or garlic to make the
+gremolata. He navigates to the recipe app, and starts cooking in the narrative
+view.
+
+Partway through, he discovers that he's having trouble keeping track of what he
+should be doing, so he switches the recipe to the step-by-step view, and
+discovers that he has done two of the steps in a different order than the 
+step-by-step view prescribes (the narrative view didn't specify an order). He
+checks off the out-of-order step, and then continues with the recipe in the
+order given, skipping the steps relating to the gremolata.
+
+\subsection{Functional Requirements}
