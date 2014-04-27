@@ -244,6 +244,9 @@ body {
       cursor: not-allowed; }
     #rcp_vchange .rcp_vchb:hover {
       cursor: default; }
+    #rcp_vchange .rcp_vchb:focus {
+      border: 2px dotted black;
+      border-radius: 0; }
 
 .default_view_setter {
   margin-left: 270px;

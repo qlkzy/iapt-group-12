@@ -25,6 +25,11 @@ $vchanger_width: 40%;
     &:hover {
       cursor: default;
     }
+
+    &:focus {
+      border: 2px dotted black;
+      border-radius: 0;
+    }
   }
 }
 
