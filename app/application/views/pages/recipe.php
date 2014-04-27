@@ -51,7 +51,7 @@
             <ul class="rcp_inglist rcp_item rcp_sbs detail_specific" data-detail="<?= $style ?>"
                 id="<?= $style . '_ingredients' ?>">
                 <?php foreach ($presentation->ingredients() as $ingredient) { ?>
-                    <li class="rcp_ingredient"><?= $ingredient ?></li>
+                    <li class="rcp_ingredient"><?= bold_quantities($ingredient) ?></li>
                 <?php } ?>
             </ul>
         <?php } ?>
@@ -70,7 +70,7 @@
             <ul class="rcp_inslist rcp_item rcp_sbs detail_specific" data-detail="<?= $style ?>"
                 id="<?= $style . "_instructions" ?>">
                 <?php foreach ($presentation->instructions() as $instruction) { ?>
-                    <li class="rcp_instruction"><a href="" tabindex="0"><?= $instruction ?></a></li>
+                    <li class="rcp_instruction"><a href="" tabindex="0"><?= bold_quantities($instruction) ?></a></li>
                 <?php } ?>
             </ul>
         <?php } ?>

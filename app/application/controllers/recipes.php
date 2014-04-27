@@ -19,6 +19,8 @@ class Recipes extends CI_Controller
     public function view($r) {
         $recipe = urldecode($r);
 
+        $this->load->helper('bold_quantities');
+
         $data['title'] = "Recipe";
         $data['recipe'] = $this->recipe_mapper->byId($recipe);
 

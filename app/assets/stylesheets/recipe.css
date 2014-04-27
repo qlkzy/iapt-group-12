@@ -322,3 +322,6 @@ body {
       #rcp_columns #rcp_instructions .rcp_instruction.ticked:hover {
         list-style-image: url("images/unchecked_small.png");
         opacity: 1; }
+
+.quantity {
+  font-weight: bold; }
