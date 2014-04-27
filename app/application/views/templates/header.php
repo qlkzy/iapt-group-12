@@ -26,12 +26,14 @@
     } elseif ($title == 'Recipe') {
         echo "<link href=\"" . base_url() . "assets/stylesheets/recipe.css" . "\" rel =\"stylesheet\" type=\"text/css\">";
         echo "<script src=\"" . base_url() . "assets/scripts/recipe.js" . "\" type=\"text/javascript\"></script>";
+        echo "<script src=\"" . base_url() . "assets/scripts/help_box.js" . "\" type=\"text/javascript\"></script>";
     } elseif ($title == 'Help') {
         echo "<link href=\"" . base_url() . "assets/stylesheets/help.css" . "\" rel=\"stylesheet\" type=\"text/css\">";
         echo "<script src=\"" . base_url() . "assets/scripts/help.js" . "\" type=\"text/javascript\"></script>";
     } else {
         echo "<link href=\"" . base_url() . "assets/stylesheets/search.css" . "\" rel=\"stylesheet\" type=\"text/css\">";
         echo "<script src=\"" . base_url() . "assets/scripts/search.js" . "\" type=\"text/javascript\"></script>";
+        echo "<script src=\"" . base_url() . "assets/scripts/help_box.js" . "\" type=\"text/javascript\"></script>";
     }
     ?>
 

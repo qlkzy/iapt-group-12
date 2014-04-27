@@ -80,18 +80,5 @@ $(document).ready(function () {
         }
         return false;
     });
-
-    $(".help").hide();
-    $(".help").append('<p class="dismiss">Click anywhere in this box to hide it.</p>');
-
-
-    $(".help").click(function () {
-        $(this).hide();
-    });
-
-    $("#nav_help").click(function () {
-        $(".help").show();
-        return false;
-    });
 })
 ;

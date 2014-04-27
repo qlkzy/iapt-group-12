@@ -163,9 +163,12 @@ body {
   font-size: 80%;
   cursor: pointer; }
   .help .dismiss {
+    display: block;
     font-size: 75%;
     font-weight: bold;
-    text-align: center; }
+    text-align: center;
+    color: inherit;
+    text-decoration: none; }
 
 #search_title {
   width: 100%;
