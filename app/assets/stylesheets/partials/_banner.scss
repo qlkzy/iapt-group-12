@@ -60,6 +60,11 @@ $nav_height: 50px;
       @include transition(color 0.3s ease-in 0s);
       @include jw-wfbox(center, inline-flex, column, nowrap, flex-start);
 
+      &:focus {
+        color: $p_medblue;
+        border: 1px dotted black;
+      }
+
       &:hover {
         color: $p_medblue;
         cursor: pointer;
