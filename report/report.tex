@@ -6,7 +6,30 @@
 \setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{2}
 
+\usepackage{environ}
 \usepackage{fullpage}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage[table]{xcolor}
+
+\NewEnviron{chetable}[1]
+{
+  \noindent
+  \begin{minipage}{\columnwidth}
+  \noindent\textbf{#1}\vskip 1mm
+  {\footnotesize
+   \rowcolors{2}{gray!15}{white}
+   \noindent
+   \begin{tabu} to \columnwidth {X l r r r r r}
+       \rowcolor{gray!30}
+       \rowfont{\bfseries}
+       Problem & Heuristics used & Zain & Tadas & David & Killian & Average \\
+       \BODY
+   \end{tabu}
+  }
+  \end{minipage}
+  \vskip 2mm
+}
 
 \begin{document}
 
