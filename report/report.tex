@@ -6,8 +6,10 @@
 \setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{2}
 
+\usepackage[title,titletoc,toc]{appendix}
 \usepackage{environ}
 \usepackage{fullpage}
+\usepackage{graphicx}
 \usepackage{pdflscape}
 \usepackage{tabu}
 \usepackage[table]{xcolor}
@@ -18,22 +20,32 @@
 {
   \noindent
   \begin{minipage}{\columnwidth}
-  \noindent\textbf{#1}\vskip 1mm
-  {\footnotesize
-   \rowcolors{2}{gray!15}{white}
-   \noindent
-   \begin{tabu} to \columnwidth {X c c c c c l}
-       \rowcolor{gray!30}
-       \rowfont{\bfseries}
-       Problem & Heuristics & Z & T & D & K & Avg \\
-       \BODY
-   \end{tabu}
-  }
+    \noindent\textbf{#1}\vskip 1mm
+    {\footnotesize
+      \rowcolors{2}{gray!15}{white}
+      \noindent
+      \begin{tabu} to \columnwidth {X c c c c c l}
+        \rowcolor{gray!30}
+        \rowfont{\bfseries}
+        Problem & Heuristics & Z & T & D & K & Avg \\
+        \BODY
+      \end{tabu}
+    }
   \end{minipage}
   \vskip 2mm
 }
 
 \newcommand{\falseHeading}[1]{\noindent \textbf{#1}}
+\newcommand{\magicFigure}[3]{
+  \begin{figure}[htbp]
+    \setlength\fboxsep{0pt}
+    \setlength\fboxrule{0.5pt}
+
+    \fbox{\includegraphics[width=350pt, keepaspectratio]{figures/{#1}.png}}
+    \caption{{#2}}
+    \label{{#3}}
+  \end{figure}
+}
 
 \input{tbue_preamble.tex}
 
