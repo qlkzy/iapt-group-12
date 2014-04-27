@@ -11,3 +11,9 @@
 .sass*
 */.sass*
 webMirror.sh
+
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.toc
