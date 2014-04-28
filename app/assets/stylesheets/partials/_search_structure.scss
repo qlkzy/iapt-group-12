@@ -72,5 +72,12 @@
       width: 50%;
       @include center-block();
     }
+
+    &.focused {
+      border: 2px solid black;
+      padding-bottom: 8px;
+      padding-right: 8px;
+    }
+
   }
 }
