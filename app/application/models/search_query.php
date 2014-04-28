@@ -19,7 +19,7 @@ class Search_query extends CI_Model {
             ->select('recipes.recipe_id')
             ->distinct()
             ->from('recipes')
-            ->join('categories', 'categories.category_id = recipes.recipe_id', 'left outer')
+            ->join('categories', 'categories.category_id = recipes.category_id', 'left outer')
             ->join('dietary', 'dietary.recipe_id = recipes.recipe_id', 'left outer')
             ->order_by('recipe_name ASC');
         return $this;
