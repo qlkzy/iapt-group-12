@@ -13,6 +13,7 @@ class Test extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('recipe_mapper');
+        $this->load->model('search_query');
     }
 
     public function index() {
@@ -143,6 +144,22 @@ class Test extends CI_Controller {
                            $recipe->presentation('segment'));
         $this->assertEqual($recipe->presentation('narrative'),
                            $recipe->presentation('narrative'));
+    }
+
+    private function test_searchContainsSomeResults() {
+        $result = $this->search_query->start()->like('')->result();
+        $this->assertNonEmpty($result);
+    }
+
+    private function test_sillySearchContainsNoResults() {
+        $result = $this->search_query->start()->like('lorem ipsum dolor sit amet')->result();
+        $this->assertEmpty($result);
+    }
+
+    private function test_searchReducesNumberOfResults() {
+        $result_1 = $this->search_query->start()->like('')->result();
+        $result_2 = $this->search_query->start()->like('pie')->result();
+        $this->assertLessThan($result_1, $result_2);
     }
 }
 
