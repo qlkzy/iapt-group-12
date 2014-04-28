@@ -30,9 +30,9 @@ class Test extends CI_Controller {
     public function runTest($name, $fn) {
         try {
             $fn();
-            $this->results[] = array('name' => $name, 'pass' => true, 'msg' => '');
+            $this->results[] = array('name' => $name, 'pass' => true, 'msg' => '', 'trace' => '');
         } catch (Exception $e) {
-            $this->results[] = array('name' => $name, 'pass' => false, 'msg' => $e->getMessage());
+            $this->results[] = array('name' => $name, 'pass' => false, 'msg' => $e->getMessage(), 'trace' => $e->getTrace());
         }
     }
 
@@ -68,6 +68,20 @@ class Test extends CI_Controller {
         }
     }
 
+    private function assertNonEmpty($var) {
+        if (empty($var)) {
+            $var_rep = var_export($var, true);
+            throw new Exception("Expected $var_rep to be non-empty");
+        }
+    }
+
+    private function assertEmpty($var) {
+        if (!empty($var)) {
+            $var_rep = var_export($var, true);
+            throw new Exception("Expected $var_rep to be empty");
+        }
+    }
+
     private function assertEqual($a, $b) {
         if ($a !== $b) {
             $a_rep = var_export($a, true);
@@ -84,6 +98,11 @@ class Test extends CI_Controller {
         }
     }
 
+    private function assertLessThan($larger, $smaller) {
+        if ($smaller >= $larger) {
+            throw new Exception("Expected $smaller to be smaller than $larger");
+        }
+    }
 
     private function test_getRecipeById() {
         $this->recipe_mapper->byId(1);

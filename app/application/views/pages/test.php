@@ -15,7 +15,12 @@
             <?php if (!$result['pass']) { ?>
                 <span class="ellipsis">...</span>
                 <div class="message">
-                    <?= $result['msg'] ?>
+                    <p>
+                        <?= $result['msg'] ?>
+                    </p>
+                    <p>
+                        <?= var_export($result['trace'], true) ?>
+                    </p>
                 </div>
             <?php } ?>
         </li>
