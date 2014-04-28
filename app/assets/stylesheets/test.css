@@ -1,0 +1,12 @@
+.result {
+  list-style-type: none;
+  cursor: hand;
+  margin: 6px; }
+  .result.pass {
+    color: green; }
+  .result.fail {
+    color: red;
+    cursor: pointer; }
+  .result .ellipsis {
+    font-weight: bold;
+    text-decoration: underline; }
