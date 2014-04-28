@@ -10,7 +10,7 @@ narrative:
         - salt and freshly ground black pepper
         - pitta bread, torn into small pieces
         - plum tomatoes, seeds removed, quartered
-        - half cucumber, peeled, cut into 5cm/2in batons
+        - half cucumber, peeled, cut into 5cm batons
         - half green pepper, cut into strips
         - radishes, sliced
         - shallot, sliced
@@ -29,7 +29,7 @@ segmented:
         - salt and freshly ground black pepper
         - 1 pitta bread, torn into small pieces
         - 8 plum tomatoes, seeds removed, quartered
-        - half cucumber, peeled, cut into 5cm/2in batons
+        - half cucumber, peeled, cut into 5cm batons
         - half green pepper, cut into strips
         - 8 radishes, sliced
         - 1 shallot, sliced
@@ -44,7 +44,7 @@ segmented:
 
 step-by-step:
     ingredients:
-        - 300ml  olive oil
+        - 300ml olive oil
         - 2 lemons
         - 1 garlic clove
         - 4 tbsp sumac (a sour-tasting ground spice, available in Middle Eastern delicatessens)
