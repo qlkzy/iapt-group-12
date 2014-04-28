@@ -63,6 +63,52 @@ HTML CodeSniffer
 \item Feedback on keyboard selection on recipe page
 \end{itemize}
 
+\paragraph{Highlighting of focused elements.}
+Several interactive elements with more complex visual styling---in
+particular, the buttons in the header bar and for selecting the level
+of detail at which to show recipes---had, in the process, lost the
+builtin visual feedback showing which element was selected for
+keyboard navigation. This is ironic, as much of the visual styling of
+these elements existed to provide more feedback for mouse-based
+navigation.
+
+These issues were generally easy to fix using the \verb!:focus!
+  pseudo-selector to replicate the browser built-in focus feedback
+  (with increased emphasis in some cases to cut through the visual
+  complexity).
+
+\paragraph{Keyboard activation of extra interactive functionality.}
+Richer pieces of interaction further from the original
+hypertext-document model of the web web (in particular, the popup help
+and tickable instructions) inherited no default keyboard-navigability
+from the browser, and were for some time impossible to control from
+the keyboard. This is particularly embarrasing given that the author
+of this functionality uses a keyboard-oriented browser with an
+interface borrowed from the \textsc{Unix} editor \verb!vim! for
+regular browsing.
+
+These issues were more problematic to resolve, as the \verb!onclick!
+  event (also fired by keyboard activation) is not consistently bound
+  to keyboard activation except in the case of \verb!a!,
+  \verb!button!, and \verb!input! elements. This required a few
+  slightly irritating changes to the markup and styling of the
+  application.
+
+\paragraph{Tab order of search filters}
+
+Search filters sit naturally on the right, for visual effect and
+inter-application consistency.
+
+`Natural' tab order for search filters is therefore after all search
+results; this is really inconvenient.
+
+Placing search filters earlier in tab order is easy partial fix, but
+causes focus to caper confusingly around the page.
+
+Full resolution to place filters earlier in tab order and to use
+script and styling to strongly emphasise the filter box when filters
+are selected, minimising confusion.
+
 \subsection{Feedforward and Feedback}
 
 \subsubsection{Evaluation Methodology}
