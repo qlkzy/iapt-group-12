@@ -55,7 +55,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (1, 1, 'To make the pastry, put the flour in a bowl. Add the butter and rub it in lightly with your fingertips until the mixture resembles fine breadcrumbs. Alternatively, do this in a food processor or a mixer and then transfer to a bowl. Using a table knife, work in just enough cold water (about 75ml) to bring the pastry together. When the dough begins to stick together, use your hands to gently knead it into a ball. Wrap the pastry in cling film and rest in the fridge for about 30 minutes. Preheat the oven to 200C/400F. Lightly butter a baking tin, about 26x20cm across and 3cm deep. For the filling, peel, quarter and core all the apples. Slice into a large bowl and mix them together. Once the dough has rested, cut it into two pieces, roughly one-third and two-thirds of the total. Lightly dust a work surface with flour. Roll out the larger piece of pastry so it\&#39;s a good centimetre larger all round than the tin. Line the base and sides of the tin with the pastry, leaving the excess hanging over the sides. Lay a third of the apple slices in the pastry-lined tin and sprinkle with a third of the sugar. Repeat with the remaining apple and sugar. Now scatter the crumbled cheese evenly over the fruit. Roll out the remaining pastry to make a lid. Brush the edges of the pastry in the tin with milk then put the pastry lid on top. Seal the edges with your fingertips and trim off the excess pastry neatly. Brush the pastry with milk and sprinkle over a little sugar. Make two slits in the top to allow steam to escape. Bake for 30&amp;ndash;35 minutes, or until the crust is golden-brown. Leave for at least 15 minutes before slicing. The pie is delicious hot or cold and needs no accompaniment.');
+    (1, 1, 'To make the pastry, put the flour in a bowl. Add the butter and rub it in lightly with your fingertips until the mixture resembles fine breadcrumbs. Alternatively, do this in a food processor or a mixer and then transfer to a bowl. Using a table knife, work in just enough cold water (about 75ml) to bring the pastry together. When the dough begins to stick together, use your hands to gently knead it into a ball. Wrap the pastry in cling film and rest in the fridge for about 30 minutes. Preheat the oven to 200C/400F. Lightly butter a baking tin, about 26x20cm across and 3cm deep. For the filling, peel, quarter and core all the apples. Slice into a large bowl and mix them together. Once the dough has rested, cut it into two pieces, roughly one-third and two-thirds of the total. Lightly dust a work surface with flour. Roll out the larger piece of pastry so it\&#39;s a good centimetre larger all round than the tin. Line the base and sides of the tin with the pastry, leaving the excess hanging over the sides. Lay a third of the apple slices in the pastry-lined tin and sprinkle with a third of the sugar. Repeat with the remaining apple and sugar. Now scatter the crumbled cheese evenly over the fruit. Roll out the remaining pastry to make a lid. Brush the edges of the pastry in the tin with milk then put the pastry lid on top. Seal the edges with your fingertips and trim off the excess pastry neatly. Brush the pastry with milk and sprinkle over a little sugar. Make two slits in the top to allow steam to escape. Bake for 30&ndash;35 minutes, or until the crust is golden-brown. Leave for at least 15 minutes before slicing. The pie is delicious hot or cold and needs no accompaniment.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -140,7 +140,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (2, 8, 'Bake for 30&amp;ndash;35 minutes, or until the crust is golden-brown. Leave for at least 15 minutes before slicing. The pie is delicious hot or cold and needs no accompaniment.');
+    (2, 8, 'Bake for 30&ndash;35 minutes, or until the crust is golden-brown. Leave for at least 15 minutes before slicing. The pie is delicious hot or cold and needs no accompaniment.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -305,7 +305,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (3, 24, 'Bake for 30&amp;ndash;35 minutes, or until the crust is golden-brown.');
+    (3, 24, 'Bake for 30&ndash;35 minutes, or until the crust is golden-brown.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -390,7 +390,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (4, 1, 'Soak the black beans in cold water overnight. Drain and rinse well. Put them in a large saucepan with plenty of water and bring to the boil. Cook for 25&amp;ndash;30 minute, until soft to the bite. Drain well and set aside.');
+    (4, 1, 'Soak the black beans in cold water overnight. Drain and rinse well. Put them in a large saucepan with plenty of water and bring to the boil. Cook for 25&ndash;30 minute, until soft to the bite. Drain well and set aside.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -495,7 +495,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (5, 5, 'Cook for 25&amp;ndash;30 minutes, until soft to the bite.');
+    (5, 5, 'Cook for 25&ndash;30 minutes, until soft to the bite.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -1440,7 +1440,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (14, 8, '1&amp;ndash;2 free-range eggs (per person)');
+    (14, 8, '1&ndash;2 free-range eggs (per person)');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1585,7 +1585,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (15, 8, '1&amp;ndash;2 free-range eggs (per person)');
+    (15, 8, '1&ndash;2 free-range eggs (per person)');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -1820,7 +1820,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (16, 1, 'Preheat the oven to 190C/400F. Half-fill a medium saucepan with water and bring to the boil. Peel the potatoes, cut them into quarters and lower them carefully into the water. Bring the water back to the boil and cook for five minutes &amp;mdash; just enough to parboil them. While the potatoes are boiling, place a large non-stick frying pan over a medium heat and add the mustard and cumin seeds. Toast for about 30 seconds, then stir in the oil, garam masala and turmeric. Sizzle for a few seconds and add the onion. Fry the onion in the spices for 1&amp;ndash;2 minutes, stirring frequently. Drain the potatoes in a large colander and toss several times to roughen up the surface of each potato. Tip the potatoes into the pan with the onion and spices, season with a few twists of ground black pepper and toss together until the potatoes are lightly coated. Tip everything onto a large baking tray and roast for 30 minutes. Take the tray out of the oven and add the peppers and courgettes. Toss lightly together and return to the oven for another 25&amp;ndash;30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
+    (16, 1, 'Preheat the oven to 190C/400F. Half-fill a medium saucepan with water and bring to the boil. Peel the potatoes, cut them into quarters and lower them carefully into the water. Bring the water back to the boil and cook for five minutes &mdash; just enough to parboil them. While the potatoes are boiling, place a large non-stick frying pan over a medium heat and add the mustard and cumin seeds. Toast for about 30 seconds, then stir in the oil, garam masala and turmeric. Sizzle for a few seconds and add the onion. Fry the onion in the spices for 1&ndash;2 minutes, stirring frequently. Drain the potatoes in a large colander and toss several times to roughen up the surface of each potato. Tip the potatoes into the pan with the onion and spices, season with a few twists of ground black pepper and toss together until the potatoes are lightly coated. Tip everything onto a large baking tray and roast for 30 minutes. Take the tray out of the oven and add the peppers and courgettes. Toss lightly together and return to the oven for another 25&ndash;30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -1910,7 +1910,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (17, 5, 'Tip everything onto a large baking tray and roast for 30 minutes. Take the tray out of the oven and add the peppers and courgettes. Toss lightly together and return to the oven for another 25&amp;ndash;30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
+    (17, 5, 'Tip everything onto a large baking tray and roast for 30 minutes. Take the tray out of the oven and add the peppers and courgettes. Toss lightly together and return to the oven for another 25&ndash;30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -2020,7 +2020,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (18, 9, 'Fry the onion in the spices for 1&amp;ndash;2 minutes, stirring frequently.');
+    (18, 9, 'Fry the onion in the spices for 1&ndash;2 minutes, stirring frequently.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -2055,7 +2055,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (18, 16, 'Toss lightly together and return to the oven for another 25&amp;ndash;30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
+    (18, 16, 'Toss lightly together and return to the oven for another 25&ndash;30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
 
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
@@ -2480,7 +2480,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (23, 6, 'Return the potatoes and fennel to the butter, toss until coated then tip into the ovenproof dish. Sprinkle with the parmesan. Bake for 30&amp;ndash;40 minutes, or until piping hot.');
+    (23, 6, 'Return the potatoes and fennel to the butter, toss until coated then tip into the ovenproof dish. Sprinkle with the parmesan. Bake for 30&ndash;40 minutes, or until piping hot.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -2590,7 +2590,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (24, 15, 'Bake for 30&amp;ndash;40 minutes.');
+    (24, 15, 'Bake for 30&ndash;40 minutes.');
 
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
@@ -2985,7 +2985,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (28, 1, 'To make the piri-piri sauce, preheat the oven to 180C/350F. Place the chillies on a roasting tray and roast them for 10 minutes. Cool and roughly chop the chillies. Place the chillies, garlic, salt, oregano, paprika, olive oil and vinegar in a saucepan, and simmer for 2&amp;ndash;3 minutes. Allow the mixture to cool, then blend it to a pur&eacute;e in a jug blender or food processor. Store in a lidded container at room temperature; it will keep for about a month. Shake before using. Place the spatchcocked chicken in a sealable plastic bag. Add half the piri-piri sauce, spreading it evenly over the chicken. Seal and marinate in the refrigerator for at least one hour. Preheat the oven to 200C/390F, and preheat a large griddle pan on the hob. Alternatively, light your barbecue. Season the marinated chicken, and cook it on the griddle pan for 2&amp;ndash;3 minutes on each side, until golden brown. Transfer the griddled chicken to a roasting tray and roast in the oven for 30 minutes, until cooked through. Alternatively, place the chicken on a medium heat barbecue, covered, for 10&amp;ndash;15 minutes on both sides or until cooked through, basting regularly with the remaining piri-piri sauce. Serve with chips and salad.');
+    (28, 1, 'To make the piri-piri sauce, preheat the oven to 180C/350F. Place the chillies on a roasting tray and roast them for 10 minutes. Cool and roughly chop the chillies. Place the chillies, garlic, salt, oregano, paprika, olive oil and vinegar in a saucepan, and simmer for 2&ndash;3 minutes. Allow the mixture to cool, then blend it to a pur&eacute;e in a jug blender or food processor. Store in a lidded container at room temperature; it will keep for about a month. Shake before using. Place the spatchcocked chicken in a sealable plastic bag. Add half the piri-piri sauce, spreading it evenly over the chicken. Seal and marinate in the refrigerator for at least one hour. Preheat the oven to 200C/390F, and preheat a large griddle pan on the hob. Alternatively, light your barbecue. Season the marinated chicken, and cook it on the griddle pan for 2&ndash;3 minutes on each side, until golden brown. Transfer the griddled chicken to a roasting tray and roast in the oven for 30 minutes, until cooked through. Alternatively, place the chicken on a medium heat barbecue, covered, for 10&ndash;15 minutes on both sides or until cooked through, basting regularly with the remaining piri-piri sauce. Serve with chips and salad.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -3010,7 +3010,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (29, 4, '6&amp;ndash;12 fresh red chillies, depending on how hot you want it');
+    (29, 4, '6&ndash;12 fresh red chillies, depending on how hot you want it');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -3055,7 +3055,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (29, 3, 'Place the chillies, garlic, salt, oregano, paprika, olive oil and vinegar in a saucepan, and simmer for 2&amp;ndash;3 minutes.');
+    (29, 3, 'Place the chillies, garlic, salt, oregano, paprika, olive oil and vinegar in a saucepan, and simmer for 2&ndash;3 minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -3080,12 +3080,12 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (29, 8, 'Season the marinated chicken, and cook it on the griddle pan for 2&amp;ndash;3 minutes on each side, until golden brown. Transfer the griddled chicken to a roasting tray and roast in the oven for 30 minutes, until cooked through.');
+    (29, 8, 'Season the marinated chicken, and cook it on the griddle pan for 2&ndash;3 minutes on each side, until golden brown. Transfer the griddled chicken to a roasting tray and roast in the oven for 30 minutes, until cooked through.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (29, 9, 'Alternatively, place the chicken on a medium heat barbecue, covered, for 10&amp;ndash;15 minutes on both sides or until cooked through, basting regularly with the remaining piri-piri sauce. Serve with chips and salad.');
+    (29, 9, 'Alternatively, place the chicken on a medium heat barbecue, covered, for 10&ndash;15 minutes on both sides or until cooked through, basting regularly with the remaining piri-piri sauce. Serve with chips and salad.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -3110,7 +3110,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (30, 4, '6&amp;ndash;12 fresh red chillies, depending on how hot you want it');
+    (30, 4, '6&ndash;12 fresh red chillies, depending on how hot you want it');
 
 INSERT INTO ingredients
     (presentation_id, seq, description)
@@ -3150,7 +3150,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 2, 'Place 6&amp;ndash;12 fresh red chillies on a roasting tray and roast them for 10 minutes.');
+    (30, 2, 'Place 6&ndash;12 fresh red chillies on a roasting tray and roast them for 10 minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -3165,7 +3165,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 5, 'Place the chillies, garlic, 1 tsp of salt, &frac12; tsp of oregano, &frac12; tbsp of paprika, 100ml of olive oil and 50ml of red wine vinegar in a saucepan, and simmer for 2&amp;ndash;3 minutes.');
+    (30, 5, 'Place the chillies, garlic, 1 tsp of salt, &frac12; tsp of oregano, &frac12; tbsp of paprika, 100ml of olive oil and 50ml of red wine vinegar in a saucepan, and simmer for 2&ndash;3 minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -3225,7 +3225,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (30, 17, 'Cook it on the griddle pan for 2&amp;ndash;3 minutes on each side.');
+    (30, 17, 'Cook it on the griddle pan for 2&ndash;3 minutes on each side.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -3305,7 +3305,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (31, 1, 'Cook the potatoes in a large pan of lightly salted boiling water for 10&amp;ndash;12 minutes or until just tender. Add the runner beans and cook for a further 2 minutes. Then drain and rinse under cold running water. Toss the potatoes and beans with the mixed tomatoes, salad onions and spinach and season to taste. For the gremolata, use a vegetable peeler to pare thin strips of rind from the lemon. Carefully remove as much white pith as possible (this is bitter). Finely chop the lemon rind and toss with the garlic and parsley. Season and set aside. Squeeze the juice from the lemon and whizz in a food processor with the peeled tomato and pesto for 10&amp;ndash;15 seconds. Pour over the potato mixture and toss through. Scatter over the gremolata to serve.');
+    (31, 1, 'Cook the potatoes in a large pan of lightly salted boiling water for 10&ndash;12 minutes or until just tender. Add the runner beans and cook for a further 2 minutes. Then drain and rinse under cold running water. Toss the potatoes and beans with the mixed tomatoes, salad onions and spinach and season to taste. For the gremolata, use a vegetable peeler to pare thin strips of rind from the lemon. Carefully remove as much white pith as possible (this is bitter). Finely chop the lemon rind and toss with the garlic and parsley. Season and set aside. Squeeze the juice from the lemon and whizz in a food processor with the peeled tomato and pesto for 10&ndash;15 seconds. Pour over the potato mixture and toss through. Scatter over the gremolata to serve.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -3370,7 +3370,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (32, 1, 'Cook the potatoes in a large pan of lightly salted boiling water for 10&amp;ndash;12');
+    (32, 1, 'Cook the potatoes in a large pan of lightly salted boiling water for 10&ndash;12');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -3395,7 +3395,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (32, 6, 'Squeeze the juice from the lemon and whizz in a food processor with the peeled tomato and pesto for 10&amp;ndash;15 seconds.');
+    (32, 6, 'Squeeze the juice from the lemon and whizz in a food processor with the peeled tomato and pesto for 10&ndash;15 seconds.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -3490,7 +3490,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (33, 5, 'Add 225g of small new potatoes to boiling water and boil for approximately 10&amp;ndash;12 minutes.');
+    (33, 5, 'Add 225g of small new potatoes to boiling water and boil for approximately 10&ndash;12 minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -3580,7 +3580,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (33, 23, 'Add lemon juice, tomatoes and pesto to a food processor and slice finely for 10&amp;ndash;15 seconds.');
+    (33, 23, 'Add lemon juice, tomatoes and pesto to a food processor and slice finely for 10&ndash;15 seconds.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -3755,7 +3755,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (35, 6, 'Once proved, turn both the doughs out and divide each one into six equal pieces. Using your hands, take each piece, and roll the dough into a long sausage shape, tapering the ends, and creating a slight bulge in the middle. Each piece should be about 40&amp;ndash;50cm in length.');
+    (35, 6, 'Once proved, turn both the doughs out and divide each one into six equal pieces. Using your hands, take each piece, and roll the dough into a long sausage shape, tapering the ends, and creating a slight bulge in the middle. Each piece should be about 40&ndash;50cm in length.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -3785,7 +3785,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (35, 12, 'While the plain dough is still wet from the water, sprinkle over the salt and sesame seeds. With a sharp knife, make a deep slash into the thickest part of the dough. Bake in the oven for 20&amp;ndash;25 minutes, or until they are a deep brown colour.');
+    (35, 12, 'While the plain dough is still wet from the water, sprinkle over the salt and sesame seeds. With a sharp knife, make a deep slash into the thickest part of the dough. Bake in the oven for 20&ndash;25 minutes, or until they are a deep brown colour.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -3920,7 +3920,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (36, 14, 'Each piece should be about 40&amp;ndash;50cm in length.');
+    (36, 14, 'Each piece should be about 40&ndash;50cm in length.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -3990,7 +3990,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (36, 28, 'Bake in the oven for 20&amp;ndash;25 minutes.');
+    (36, 28, 'Bake in the oven for 20&ndash;25 minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4065,7 +4065,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (37, 1, 'Preheat the oven to 350 degrees F.  Marinate the sliced tomatoes in French Dressing so they are fully coated.  Take the smoked fish fillets and cut them into pieces 2&amp;ndash;3 inches long.  Place all into a small baking dish and add milk.  Bake for 20 minutes or until fish separates into flakes with a fork.');
+    (37, 1, 'Preheat the oven to 350 degrees F.  Marinate the sliced tomatoes in French Dressing so they are fully coated.  Take the smoked fish fillets and cut them into pieces 2&ndash;3 inches long.  Place all into a small baking dish and add milk.  Bake for 20 minutes or until fish separates into flakes with a fork.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4135,7 +4135,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (38, 3, 'Cut fish into pieces 2&amp;ndash;3 inches long and place in a shallow baking dish.');
+    (38, 3, 'Cut fish into pieces 2&ndash;3 inches long and place in a shallow baking dish.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4240,7 +4240,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (39, 3, 'Cut fish into slices of 2&amp;ndash;3 inches long');
+    (39, 3, 'Cut fish into slices of 2&ndash;3 inches long');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4415,7 +4415,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (40, 1, 'Preheat the oven to 180C/350F Cut the rhubarb into 7&frac12;cm long sticks and place on an oven tray, sprinkle with the water and caster sugar and roast in the oven for 10 minutes. Once cooked, remove from the oven, sprinkle over the ginger and mix well. Fill an ovenproof dish about 4cm deep with the rhubarb. Rub the butter into the flour and sugar to make the crumble topping. Sprinkle over the rhubarb and bake in the oven for 35&amp;ndash;45 minutes, or until the crumble topping is crisp and golden-brown and the rhubarb filling has softened and is bubbling. Remove and allow to cool slightly before serving with double cream.');
+    (40, 1, 'Preheat the oven to 180C/350F Cut the rhubarb into 7&frac12;cm long sticks and place on an oven tray, sprinkle with the water and caster sugar and roast in the oven for 10 minutes. Once cooked, remove from the oven, sprinkle over the ginger and mix well. Fill an ovenproof dish about 4cm deep with the rhubarb. Rub the butter into the flour and sugar to make the crumble topping. Sprinkle over the rhubarb and bake in the oven for 35&ndash;45 minutes, or until the crumble topping is crisp and golden-brown and the rhubarb filling has softened and is bubbling. Remove and allow to cool slightly before serving with double cream.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -4455,7 +4455,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (41, 7, '180&amp;ndash;200g flour');
+    (41, 7, '180&ndash;200g flour');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4480,7 +4480,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (41, 5, 'Sprinkle over the rhubarb and bake in the oven for 35&amp;ndash;45 minutes, or until the crumble topping is crisp and golden-brown and the rhubarb filling has softened and is bubbling.');
+    (41, 5, 'Sprinkle over the rhubarb and bake in the oven for 35&ndash;45 minutes, or until the crumble topping is crisp and golden-brown and the rhubarb filling has softened and is bubbling.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4525,7 +4525,7 @@ VALUES
 INSERT INTO ingredients
     (presentation_id, seq, description)
 VALUES
-    (42, 7, '180&amp;ndash;200g flour');
+    (42, 7, '180&ndash;200g flour');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4560,7 +4560,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (42, 7, 'Rub the 110g of butter into the 180&amp;ndash;200g of flour and 110g of demerara sugar to make the crumble topping.');
+    (42, 7, 'Rub the 110g of butter into the 180&ndash;200g of flour and 110g of demerara sugar to make the crumble topping.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4570,7 +4570,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (42, 9, 'Bake in the oven for 35&amp;ndash;45 minutes');
+    (42, 9, 'Bake in the oven for 35&ndash;45 minutes');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4700,7 +4700,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (43, 1, 'For the albondigas, soak the bread in the milk for five minutes, then squeeze out the excess milk. Place the bread, ham, lamb mince, garlic, spices, parsley and seasoning into a bowl and mix until well combined. Shape the mixture into approximately 40 meatballs (each weighing about 20g). Heat the oil in a frying pan and fry the meatballs for 4&amp;ndash;5 minutes, or until golden-brown all over. (You may need to do this in batches.) For the sauce, heat the olive oil a frying pan and fry the shallots, garlic and chilli for 8&amp;ndash;10 minutes, or until softened. Add the tomatoes, sherry, stock, bay leaves, salt and pepper and simmer gently, stirring now and then, for one hour, or until the sauce has reduced and thickened. Add the meatballs and simmer gently for five minutes or until heated through. Discard the bay leaves.');
+    (43, 1, 'For the albondigas, soak the bread in the milk for five minutes, then squeeze out the excess milk. Place the bread, ham, lamb mince, garlic, spices, parsley and seasoning into a bowl and mix until well combined. Shape the mixture into approximately 40 meatballs (each weighing about 20g). Heat the oil in a frying pan and fry the meatballs for 4&ndash;5 minutes, or until golden-brown all over. (You may need to do this in batches.) For the sauce, heat the olive oil a frying pan and fry the shallots, garlic and chilli for 8&ndash;10 minutes, or until softened. Add the tomatoes, sherry, stock, bay leaves, salt and pepper and simmer gently, stirring now and then, for one hour, or until the sauce has reduced and thickened. Add the meatballs and simmer gently for five minutes or until heated through. Discard the bay leaves.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4710,7 +4710,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (43, 3, 'Cook the potatoes for two minutes, then remove them from the oil. Increase the temperature to 180C/350F and cook the potatoes for a further 4&amp;ndash;5 minutes, or until pale golden-brown. Remove the patatas fritas from the fryer and set aside to drain on kitchen paper. Season with salt.');
+    (43, 3, 'Cook the potatoes for two minutes, then remove them from the oil. Increase the temperature to 180C/350F and cook the potatoes for a further 4&ndash;5 minutes, or until pale golden-brown. Remove the patatas fritas from the fryer and set aside to drain on kitchen paper. Season with salt.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4855,12 +4855,12 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (44, 3, 'Heat the oil in a frying pan and fry the meatballs for 4&amp;ndash;5 minutes, or until golden-brown all over. (You may need to do this in batches.)');
+    (44, 3, 'Heat the oil in a frying pan and fry the meatballs for 4&ndash;5 minutes, or until golden-brown all over. (You may need to do this in batches.)');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (44, 4, 'For the sauce, heat the olive oil a frying pan and fry the shallots, garlic and chilli for 8&amp;ndash;10 minutes, or until softened.');
+    (44, 4, 'For the sauce, heat the olive oil a frying pan and fry the shallots, garlic and chilli for 8&ndash;10 minutes, or until softened.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -4880,7 +4880,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (44, 8, 'Increase the temperature to 180C/350F and cook the potatoes for a further 4&amp;ndash;5 minutes, or until pale golden-brown.');
+    (44, 8, 'Increase the temperature to 180C/350F and cook the potatoes for a further 4&ndash;5 minutes, or until pale golden-brown.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -5060,7 +5060,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 9, 'Heat the oil in a frying pan and fry the meatballs for 4&amp;ndash;5 minutes.');
+    (45, 9, 'Heat the oil in a frying pan and fry the meatballs for 4&ndash;5 minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -5070,7 +5070,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 11, 'For the sauce, heat the 2 tablespoons of olive oil a frying pan and fry the shallots, crushed garlic and &frac12; tsp crushed dried chillies for 8&amp;ndash;10 minutes, or until softened.');
+    (45, 11, 'For the sauce, heat the 2 tablespoons of olive oil a frying pan and fry the shallots, crushed garlic and &frac12; tsp crushed dried chillies for 8&ndash;10 minutes, or until softened.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -5115,7 +5115,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (45, 20, 'Increase the temperature to 180C and cook the potatoes for a further 4&amp;ndash;5 minutes.');
+    (45, 20, 'Increase the temperature to 180C and cook the potatoes for a further 4&ndash;5 minutes.');
 
 INSERT INTO instructions
     (presentation_id, seq, description)
@@ -5225,7 +5225,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (46, 2, 'Scatter over the eggs. Allow to cool until firm. Spoon the mashed potatoes over the fish mixture and mark with a fork. Sprinkle with cheese. Bake for 30&amp;ndash;40 minutes, or until lightly golden-brown on top and bubbling around the edges.');
+    (46, 2, 'Scatter over the eggs. Allow to cool until firm. Spoon the mashed potatoes over the fish mixture and mark with a fork. Sprinkle with cheese. Bake for 30&ndash;40 minutes, or until lightly golden-brown on top and bubbling around the edges.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -5340,7 +5340,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (47, 9, 'Bake for 30&amp;ndash;40 minutes, or until lightly golden-brown on top and bubbling around the edges.');
+    (47, 9, 'Bake for 30&ndash;40 minutes, or until lightly golden-brown on top and bubbling around the edges.');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -5545,7 +5545,7 @@ VALUES
 INSERT INTO instructions
     (presentation_id, seq, description)
 VALUES
-    (48, 27, 'Bake for 30&amp;ndash;40 minutes, or until lightly golden-brown on top and bubbling around the edges.');
+    (48, 27, 'Bake for 30&ndash;40 minutes, or until lightly golden-brown on top and bubbling around the edges.');
 
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
