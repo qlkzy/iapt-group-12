@@ -84,7 +84,7 @@ were created:
   Change the default recipe view.
 }
 
-\subsection{Who to use to test?}
+\subsubsection{Who to use to test?}
 
 As described by By Deborah Hinderer Sova and Jakob Nielsen in their
 report ``How to Recruit Participants for Usability
@@ -113,37 +113,38 @@ solid metric with which we can identify key problems with our system.
 
 \subsection{TBUE Data}
 
+The results of the task-based user evaluation are summarised in the
+following table. As noted, severity ratings are the same as those used
+for the CHE\todo{reference}.
+
 \input{tbue_table.tex}
 
-\subsection{Issues Uncovered}
-
-Based on the results of the task based evaluation we have chosen to
-present problems relating to the tutorial features of our
-website. This includes the welcome and help page, where the user is
-told about the different view types and goes to set the default view
-as well as be given other useful information on how to use the
-website. The following are specific test cases that produced
-interesting results.
+For the sake of brevity, we will not reproduce all of the notes
+associated with the task-based user evaluation here. However, a couple
+of the cases were particularly interesting from a usability point of
+view; what follows is a more in-depth description of the users'
+interactions while completing these tasks.
 
 \paragraph{Task: find vanilla slice recipe and view it in its most verbose form.}
 
 The user successfully completed the task by navigating the tutorial
 and then using the search bar to find the desired recipe. Afterwards
-he did express some concern over finding the most ‘verbose’ recipe
+he did express some concern over finding the most `verbose' recipe
 view described by the task. He further elaborated that whilst he was
 given a summary of all the view types in the tutorial he failed to
 decipher which view the task was referring to based on the tutorial
 text. Perhaps work needs to be done to change the tutorial text to
-make it more obvious but the user did also confess to reading the
-tutorial particularly thoroughly. The user did state he had no issues
-with the layout of the tutorial, the text was obvious and easy to
-read, but it seems the user was more concerned about actually finding
-the recipe as such whilst the tutorial presented relevant information
-the user described it as ‘slowing him down’. Further elaboration
-reveals this user would have been happy to discover the different
-views of his own accord, but did state he probably would want to get
-this information at a later time. The user chose to give this a
-problem rating of 2, but they also claimed a large part of the fault
+make it more obvious, but the user did confess to not reading the
+tutorial particularly thoroughly.
+
+The user did state he had no issues with the layout of the tutorial,
+the text was obvious and easy to read, but it seems the user was more
+focused on finding the recipe itself; although the tutorial presented
+relevant information, the user described it as `slowing him
+down'. Further elaboration reveals this user would have been happy to
+discover the different views on his own, but he did state he probably
+would want to get this information at a later time. The user gave this
+a problem rating of 2, but they also claimed a large part of the fault
 lay in the ambiguity between the task and the website and so their
 rating may be weighted a bit heavily. From our point of view this
 purposeful disconnect provided valuable additional information on how
@@ -158,30 +159,95 @@ did however concede that they did not expect the tutorial to show up
 every time but opted for that route after a quick scan of the recipe
 page showed no obvious way to change the default.
 
-Another user, however struggled with the task, they spent a long time
-on the recipe page particularly around the view changing buttons to no
-avail. they then attempted to go to help, nothing there was helpful in
-fulfilling the task. Eventually they stumbled upon the home screen and
-were presented with the tutorial. They strongly disliked the flow they
-took and it did take a long time to complete the task, they decided to
-rate it 4 a very serious problem.
+Another user, however struggled with the task: they spent a long time
+on the recipe page particularly around the view changing buttons, to
+no avail. They then attempted to go to help, finding that nothing
+there was helpful in fulfilling the task. Eventually they stumbled
+upon the home screen and were presented with the tutorial. They
+strongly disliked the flow they took and it took a long time to
+complete the task, so they rated the severity as 4, a very serious
+problem.
 
-\subsection{Changes}
+\subsection{Problems and subsequent changes}
 
-\todo{This Section}
+The task-based user evaluation highlighted a number of usability
+issues and bugs in the website. The two highest-severity issues
+highlighted by the evaluation were:
 
-Apart from the bug fixes that are required the task based evaluation
-has caused us to reconsider a few things regarding the design of our
-website. Firstly, tutorials will be changed to only show on first use
-of the website. This brings us in line with what our volunteers were
-expecting. A direct result of this change is also changing the way
-default recipe views are chosen. As the tutorial is no longer
-presented after first use a new way must be added to change default
-view.
+Regarding search:
+\begin{quote}
+  \footnotesize
+  Filter by vegetarian gives nothing, no information to suggest if
+  search return was empty or website errored, assumed website had
+  broken and stopped.
+\end{quote}
 
-Most likely this will be added to the recipe page, around the same
-area as the buttons to change the view in order to stay in line with
-principles regarding grouping. It should be noted that the ability to
-reset the tutorial will also be added, being placed in the help
-section. Now that we are only showing the tutorial once we don’t want
-to completely remove it from the user if they do not wish it to be.
+and, regarding choosing the default recipe view:
+\begin{quote}
+  \footnotesize
+  Nothing on page to show how they could change it, guess its in help,
+  help doesnt help doesnt mention default view. Doesn’t know what the
+  default view is or how to change it.
+\end{quote}
+
+Of these, the issue with the filters was a straightforward bug,
+whereas the issue with default view selection was a serious usability
+problem. In addition, the mechanics associated with varying
+presentations of recipes are a core piece of functionality---the
+`killer feature', in some sense. We will therefore present the issues
+with and redesign of the functionality around default recipe selection.
+
+In the website prior to the task-based evaluation (hereafter `the
+original'), there was no means to change the default view from the
+recipe view page\todo{reference}. It was possible to change the
+default view, but only by going all the way back to the entry point of
+the application and following through the welcome
+process\todo{reference}.
+
+This was extremely surprising to the users, unless they were given the
+task of changing the default view while still on the welcome page
+(whereas we would expect users to want to change the default view
+while browsing and viewing recipes).
+
+To address this issue, we considered the context for changing the
+default view, and the information needed to do so, taking advantage of
+our observations of the users during the evaluation.
+
+\todo{Come up with more synonyms for selecting things}
+
+Changing the view for recipes is strongly associated with actually
+viewing the recipes, and changing the default view is naturally
+associated with the rest of the view-changing machinery. In
+redesigning this functionality, we took account of this context by
+making the control to change the default view a `sibling' to the
+existing controls for switching between views.
+
+When changing the default view, the user needs to be able to evaluate
+the different views and choose one. The key information they need for
+this is how the view will appear in use. In the redesign, we ensured
+that the user would have this information by providing a control to
+make the \emph{current} view the default, rather than, say, a separate
+choice from a list of alternatives. This allows the user to explore
+the site and try out views until they find a presentation they are
+comfortable with, at which point they can make it the default. This
+follows a pattern seen in a number of other pieces of software (that
+is `make \emph{this} the default' rather than `\emph{select} a
+default'), hopefully allowing the user to make use of their previous
+experience.
+
+In the redesign, we addressed these considerations by adding a new
+control element underneath the view-changer buttons. When the current
+view is the default, this is uninteractive, and tells the user that
+the selected view is the default\todo{reference}. When the current
+view is \emph{not} the default, the control offers the user the
+opportunity to set the current view as the default\todo{reference}.
+
+To further improve the discoverability of this feature, the
+previously-implemented pop-up help functionality was extended to
+include an explanation of this feature.
+
+Allowing the user to choose the default view from the recipe page also
+made it possible to hide the `Welcome' screen, with \emph{its} option
+to choose the default view, after the user first sees it. This
+addresses the user frustration, noted above, that it was slightly
+awkward to get back to the list of recipes.
