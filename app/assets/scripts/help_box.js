@@ -4,7 +4,7 @@
 
 $(document).ready(function() {
     $(".help").hide();
-    $(".help").append('<a href="" class="dismiss">Click anywhere in this box to hide it.</a>');
+    $(".help").append('<a href="#" class="dismiss">Click anywhere in this box to hide it.</a>');
 
 
     $(".help").click(function () {

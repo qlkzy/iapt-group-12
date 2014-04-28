@@ -1,6 +1,10 @@
+
 <?php
 if (!empty($_GET)) {
-    echo "<h2 id=\"search_title\">You searched for: " . $query . "</h2>";
+    echo "<h1 id=\"search_title\">You searched for: " . $query . "</h2>";
+}
+else {
+    echo "<h1 id=\"search_title\">Browsing recipes</h1>";
 }
 ?>
 <div id="search_columns">
@@ -26,7 +30,7 @@ if (!empty($_GET)) {
             Use the dropdowns here to filter the list of recipes shown.
             Only recipes that satisfy all the conditions will be shown.
         </div>
-        <h3>Filter Recipes</h3>
+        <h2>Filter Recipes</h2>
 
         <form id="search_fform" name="search_fform" action="<?= base_url() . "index.php/search" ?>" method="get">
             <ul>
@@ -69,7 +73,7 @@ if (!empty($_GET)) {
                     </select>
                 </li>
                 <li>
-                    <label for="search_fctime  search_form_i">Time (up to):</label>
+                    <label for="search_fctime  search_fform_i">Time (up to):</label>
                     <input class="search_fform_ti"
                            id="search_fctime"
                            maxlength="3"
@@ -77,11 +81,12 @@ if (!empty($_GET)) {
                            pattern="[0-9]+"
                            placeholder="minutes"
                            type="text"
+                           title="Maximum time taken to prepare"
                         <?= $max_time ? 'value=' . $max_time : '' ?>
                         />
                 </li>
                 <li>
-                    <label for="search_fserves  search_form_i">Serves:</label>
+                    <label for="search_fserves  search_fform_i">Serves:</label>
                     <input class="search_fform_ti"
                            form="search_fform"
                            id="search_fserves"
@@ -90,6 +95,7 @@ if (!empty($_GET)) {
                            pattern="[0-9]+"
                            placeholder="# people"
                            type="text"
+                           title="Number of servings"
                         <?= $serves ? 'value=' . $serves : '' ?>
                         />
                 </li>

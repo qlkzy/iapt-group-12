@@ -173,6 +173,7 @@ body {
 #search_title {
   width: 100%;
   text-align: center;
+  font-size: 150%;
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -240,14 +241,21 @@ body {
     list-style-type: none;
     position: absolute;
     top: 80px; }
-  .search_result h4 {
+  .search_result .srch_res_title {
     color: black;
     display: inline-block;
     margin-left: 10px;
-    position: absolute; }
+    padding-top: 20px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 110%; }
 
 #search_results_help {
   width: 90%; }
+
+#search_filters h2 {
+  text-align: center;
+  font-size: 120%; }
 
 #search_fform {
   margin-left: auto;

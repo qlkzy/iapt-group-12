@@ -1,6 +1,6 @@
 <div id="recipe_cover">
 
-    <img id="rcp_cimage" src="<?php echo $recipe->image(); ?>">
+    <img id="rcp_cimage" alt="Image of finished dish (<?= $recipe->name() ?>)" src="<?php echo $recipe->image(); ?>">
 
     <h1 id="rcp_ctitle"><?php echo $recipe->name(); ?></h1>
 </div>

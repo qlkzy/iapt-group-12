@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html xmlns="http://www.w3.org/1999/html" lang="en">
 <head>
     <title><?php echo $title ?></title>
     <meta charset="utf-8">
@@ -43,7 +43,7 @@
     <div id="overlay"></div>
     <div id="banner">
         <a href="<?php echo base_url(); ?>">
-            <img id="banner_image" src="<?php echo base_url() . "assets/images/branding_mockup_1.png"; ?>"/>
+            <img id="banner_image" alt="CookBox Logo" src="<?php echo base_url() . "assets/images/branding_mockup_1.png"; ?>"/>
         </a>
 
         <!-- <nav>
@@ -92,7 +92,8 @@
 
         <form action="<?php echo base_url() . "index.php/search"; ?>" id="banner_search">
             <input id="bs_input" required pattern="[a-zA-Z][a-zA-Z\s]+" name="query"
-                   placeholder="Enter recipe name..."/
+                   title="Enter name of recipe to search for"
+                   placeholder="Enter recipe name..."
             <?= (isset($query) && $query) ? 'value=' . $query : '' ?>>
             <input id="bs_submit" type="submit" value="Search"/>
         </form>

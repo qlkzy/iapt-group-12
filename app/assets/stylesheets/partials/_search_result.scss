@@ -50,11 +50,14 @@
     top: 80px;
   }
 
-  h4 {
+  .srch_res_title {
     color: black;
     display: inline-block;
     margin-left: 10px;
+    padding-top: 20px;
     position: absolute;
+    font-weight: bold;
+    font-size: 110%;
   }
 }
 
