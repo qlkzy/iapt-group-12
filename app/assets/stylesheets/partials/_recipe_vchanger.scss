@@ -34,13 +34,19 @@ $vchanger_width: 40%;
 }
 
 .default_view_setter {
-  margin-left: 270px;
-  font-size: 80%;
+  margin-left: 120px;
+  width: $vchanger_width;
 
-  a, a:visited {
-    color: blue;
+
+  #set_default, #is_default {
+    text-align: center;
+    display: block;
+    font-size: 80%;
   }
 
+  a#set_default, a:visited#set_default {
+    color: blue;
+  }
 }
 
 #vchange_help {

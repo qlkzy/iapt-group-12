@@ -12,7 +12,7 @@
 </ul>
 
 <div class="help" id="vchange_help">
-    Click on one of these buttons to change the view:
+    Click on one of these buttons to change the presentation of the recipe:
     <dl>
         <dt>Step-by-Step</dt>
         <dd>Intended for novices, this presentation goes into extreme detail.</dd>
@@ -31,11 +31,17 @@
         <input class="rcp_vchb ui-button" id="select_narrative" type="button" value="Narrative" data-detail="narrative" data-default="false"/>
     </div>
     <div class="default_view_setter">
+        <div class="help"">
+            <p>Use this to set the presentation which will be shown by default when you navigate to a new recipe.</p>
+
+            <p>If the presentation you are using is already the default, it will say so; otherwise, click on the
+            link to set the currently-selected presentation as the default.</p>
+        </div>
         <a href='#' id="set_default">
-            Set this view as the default
+            Set this presentation as the default
         </a>
         <span id="is_default">
-            This is the default view
+            This is the default presentation
         </span>
     </div>
 </div>
