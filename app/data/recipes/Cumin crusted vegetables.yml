@@ -1,6 +1,10 @@
 name: Cumin-crusted vegetables
 type: side
 serves: 6
+restrictions:
+    - vegetarian
+    - vegan
+
 narrative:
     ingredients:
         - potatoes, preferably Maris Piper

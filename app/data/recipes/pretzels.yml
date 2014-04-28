@@ -1,6 +1,9 @@
 name: Pretzels
 type: dessert
 serves: 12
+retrictions:
+    - vegetarian
+
 narrative:
     ingredients:
         - strong white flour

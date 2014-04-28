@@ -1,6 +1,8 @@
 name: Apple and Wensleydale pie
 type: dessert
 serves: 6
+restrictions:
+    - vegetarian
 narrative:
     ingredients:
         - plain flour

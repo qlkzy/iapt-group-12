@@ -40,11 +40,29 @@ VALUES
     ('$name', (SELECT category_id FROM categories WHERE category_name = '$category'), 20, 'medium', $serves, '$image');
 
 RECIPE
+
     for (('narrative', 'segment', 'step')) {
         print_presentation($recipe, $_);
     }
 
+    print_restriction($recipe);
+
     $recipe_id++;
+}
+
+sub print_restriction {
+    my $recipe = shift;
+    if ($recipe->{restrictions}) {
+        foreach (@{$recipe->{restrictions}}) {
+            my $restriction = escape($_);
+            print <<DIET;
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    ($recipe_id, '$restriction');
+DIET
+        }
+    }
 }
 
 sub print_presentation {

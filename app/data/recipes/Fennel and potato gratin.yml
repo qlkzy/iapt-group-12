@@ -1,6 +1,9 @@
 name: Fennel and potato gratin
 type: main
 serves: 6
+restrictions:
+    - vegetarian
+
 narrative:
     ingredients:
         - butter, plus extra for greasing

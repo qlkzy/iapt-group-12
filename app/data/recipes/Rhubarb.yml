@@ -1,6 +1,9 @@
 name: Rhubarb crumble
 type: main
 serves: 4
+restrictions:
+    - vegetarian
+
 narrative:
     ingredients:
         - rhubarb sticks

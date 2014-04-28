@@ -317,6 +317,10 @@ INSERT INTO instructions
 VALUES
     (3, 26, 'The pie is delicious hot or cold and needs no accompaniment.');
 
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (1, 'vegetarian');
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
@@ -777,6 +781,14 @@ INSERT INTO instructions
 VALUES
     (6, 28, 'Serve hot with corn chips on the side for dipping.');
 
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (2, 'vegetarian');
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (2, 'vegan');
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
@@ -1302,6 +1314,14 @@ INSERT INTO instructions
 VALUES
     (12, 14, 'Just before serving, add 225g of raspberries.');
 
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (4, 'vegetarian');
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (4, 'vegan');
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
@@ -2057,6 +2077,14 @@ INSERT INTO instructions
 VALUES
     (18, 16, 'Toss lightly together and return to the oven for another 25&ndash;30 minutes until the potatoes are crisp and golden-brown and the vegetables have softened.');
 
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (6, 'vegetarian');
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (6, 'vegan');
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
@@ -2372,6 +2400,14 @@ INSERT INTO instructions
 VALUES
     (21, 12, 'To serve, pour the dressing, to taste, over the salad and gently mix together to coat the salad evenly.');
 
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (7, 'vegetarian');
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (7, 'vegan');
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
@@ -2592,6 +2628,10 @@ INSERT INTO instructions
 VALUES
     (24, 15, 'Bake for 30&ndash;40 minutes.');
 
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (8, 'vegetarian');
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
@@ -3592,6 +3632,14 @@ INSERT INTO instructions
 VALUES
     (33, 25, 'Scatter over the gremolata to serve.');
 
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (11, 'vegetarian');
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (11, 'vegan');
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
@@ -4577,6 +4625,10 @@ INSERT INTO instructions
 VALUES
     (42, 10, 'Remove and allow to cool slightly before serving with double cream.');
 
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (14, 'vegetarian');
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
@@ -6462,3 +6514,7 @@ INSERT INTO instructions
 VALUES
     (54, 36, 'Leave to rest overnight or at least 3 hours.');
 
+INSERT INTO dietary
+    (recipe_id, restriction)
+VALUES
+    (18, 'vegetarian');

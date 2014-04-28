@@ -2,6 +2,9 @@ name: Black Bean Dip
 type: side
 serves: 4
 image: http://is.gd/Srmcpx
+restrictions:
+    - vegetarian
+    - vegan
 
 narrative:
     ingredients:

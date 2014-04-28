@@ -1,6 +1,10 @@
 name: Chilled fresh fruit salad
 type: salad
 serves: 6
+restrictions:
+    - vegetarian
+    - vegan
+
 narrative:
     ingredients:
         - ripe cantaloupe melon
