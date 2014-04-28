@@ -142,6 +142,8 @@ to work around.
 
 \subsection{Testing}
 
+Mostly informal acceptance testing.
+
 \subsubsection{Acceptance Testing}
 
 \paragraph{Acceptance Testing Approach}
@@ -150,25 +152,32 @@ to work around.
 
 \subsubsection{Integration Testing}
 
+As noted above, most of the testing was acceptance testing of some
+form. However, there is still a place for some lightweight integration
+testing to catch casual errors.
+
+Our integration tests take the form of some very minimal smoke tests
+that check that the various URLs associated with our application are
+\begin{inparaenum}[\itshape a\upshape)]
+\item reachable and
+\item do not contain any obvious errors emitted by the PHP interpreter
+\end{inparaenum}.
+
+These goals are met by \verb!app/test/smoke.sh!, which does the
+obvious things with \texttt{wget}, \textt{grep}, etc., to check these
+properties for a sample of the significant URLs in our application.
+
+Obviously, these tests won't catch any errors of substance, but make
+it easier to avoid inadvertently breaking things while refactoring
+etc.
+
+\subsubsection{Unit Testing}
+
 \begin{itemize}
 \item Dependencies an issue
 \item Loading of CodeIgniter classes into independent tests an issue
 \item Solution: web page which runs `tests'
+\item Not classical unit tests, as also test DB integration, but catch
+  a useful range of issues.
 \item Example test
-\item Mostly testing model/db integration.
 \end{itemize}
-
-\begin{itemize}
-\item End-to-end tests
-\item wget
-\item grep
-\item Test availability of urls
-\item Check for PHP errors
-\end{itemize}
-
-\subsubsection{No Unit Testing}
-
-Given the structural dependency issues associated with CodeIgniter,
-and the general issues of unit-tensting an application so heavily
-wedded to a database, we decided, with a heavy heart, that unit
-testing would be misplaced effort in this case.
