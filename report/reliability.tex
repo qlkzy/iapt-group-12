@@ -164,7 +164,7 @@ that check that the various URLs associated with our application are
 \end{inparaenum}.
 
 These goals are met by \verb!app/test/smoke.sh!, which does the
-obvious things with \texttt{wget}, \textt{grep}, etc., to check these
+obvious things with \texttt{wget}, \texttt{grep}, etc., to check these
 properties for a sample of the significant URLs in our application.
 
 Obviously, these tests won't catch any errors of substance, but make
@@ -173,11 +173,21 @@ etc.
 
 \subsubsection{Unit Testing}
 
-\begin{itemize}
-\item Dependencies an issue
-\item Loading of CodeIgniter classes into independent tests an issue
-\item Solution: web page which runs `tests'
-\item Not classical unit tests, as also test DB integration, but catch
-  a useful range of issues.
-\item Example test
-\end{itemize}
+Some form of unit-level testing is a fundamental part of any
+engineering process. There are reasonably standard approaches to
+software unit testing; however, the classic approach is made awkward
+by:
+\begin{inparaenum}[\itshape a\upshape)]
+\item complex CodeIgniter dependencies and class loading
+\item tight coupling to the database
+\end{inparaenum}.
+It isn't really worth pursuing the database coupling in the face of
+the challenges caused by CodeIgniter and the small amount of logic
+currently present in the model layer.
+
+The compromise solution we've arrived at is a web page, part of the
+CodeIgniter application, which when visited `runs' a number of tests
+which sit somewhere between traditional unit tests and model/database
+integration tests.  While a compromise, these tests do exercise most
+of the functionality of the web application, catching a useful range
+of issues and making the codebase easier to work with.
