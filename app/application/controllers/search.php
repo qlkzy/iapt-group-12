@@ -12,6 +12,9 @@ class Search extends CI_Controller
     {
         $data['title'] = "Search";
 
+        $this->search_query->start();
+
+
         $searchString = $this->input->get('query', FALSE);
         $query = $searchString ? $searchString : '';
         $data['query'] = $query;

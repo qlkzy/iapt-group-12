@@ -12,6 +12,9 @@ class Search_query extends CI_Model {
 
     public function __construct() {
         $this->load->database();
+    }
+
+    public function start() {
         $this->db
             ->select('recipes.recipe_id')
             ->distinct()
@@ -19,6 +22,7 @@ class Search_query extends CI_Model {
             ->join('categories', 'categories.category_id = recipes.recipe_id', 'left outer')
             ->join('dietary', 'dietary.recipe_id = recipes.recipe_id', 'left outer')
             ->order_by('recipe_name ASC');
+        return $this;
     }
 
     public function like($query) {
