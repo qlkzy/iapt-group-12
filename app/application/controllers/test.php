@@ -14,12 +14,12 @@ class Test extends CI_Controller {
         parent::__construct();
         $this->load->model('recipe_mapper');
         $this->load->model('search_query');
+
+        $this->load->helper('stylesheet');
+        $this->load->helper('script');
     }
 
     public function index() {
-        $this->load->helper('stylesheet');
-        $this->load->helper('script');
-
         $this->results = array();
         $this->runAll();
 

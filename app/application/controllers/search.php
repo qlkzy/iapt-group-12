@@ -6,6 +6,9 @@ class Search extends CI_Controller
     {
         parent::__construct();
         $this->load->model('search_query');
+
+        $this->load->helper('stylesheet');
+        $this->load->helper('script');
     }
 
     public function index()

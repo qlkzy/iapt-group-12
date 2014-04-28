@@ -32,7 +32,7 @@ else {
         </div>
         <h2>Filter Recipes</h2>
 
-        <form id="search_fform" name="search_fform" action="<?= base_url() . "index.php/search" ?>" method="get">
+        <form id="search_fform" name="search_fform" action="<?= base_url("index.php/search") ?>" method="get">
             <ul>
                 <li>
                     <label for="search_fquery">Recipe Name:</label>

@@ -1,4 +1,4 @@
-<a  class="srslt_link" href="<?php echo base_url() . "index.php/recipes/view/" . $recipe->id(); ?>">
+<a  class="srslt_link" href="<?= base_url("index.php/recipes/view/" . $recipe->id()) ?>">
     <div class="search_result">
         <img class="srch_res_img"
              alt="Image of finished dish (<?= $recipe->name() ?>)"

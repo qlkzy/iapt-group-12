@@ -6,6 +6,10 @@ class Recipes extends CI_Controller
     public function __construct() {
         parent::__construct();
         $this->load->model('recipe_mapper');
+
+
+        $this->load->helper('stylesheet');
+        $this->load->helper('script');
     }
 
     public function index() {

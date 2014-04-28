@@ -1,14 +1,14 @@
 <div id="recipe_cover">
 
-    <img id="rcp_cimage" alt="Image of finished dish (<?= $recipe->name() ?>)" src="<?php echo $recipe->image(); ?>">
+    <img id="rcp_cimage" alt="Image of finished dish (<?= $recipe->name() ?>)" src="<?= $recipe->image() ?>">
 
-    <h1 id="rcp_ctitle"><?php echo $recipe->name(); ?></h1>
+    <h1 id="rcp_ctitle"><?= $recipe->name() ?></h1>
 </div>
 <ul id="rcp_shorthand">
-    <li><b>Category: </b><?php echo $recipe->category(); ?></li>
-    <li><b>Difficulty: </b><?php echo $recipe->difficulty(); ?></li>
-    <li><b>Cooking time: </b><?php echo $recipe->cookingTime() . " minutes"; ?></li>
-    <li><b>Serves: </b><?php echo $recipe->serves(); ?></li>
+    <li><b>Category: </b><?= $recipe->category() ?></li>
+    <li><b>Difficulty: </b><?= $recipe->difficulty() ?></li>
+    <li><b>Cooking time: </b><?= $recipe->cookingTime() . " minutes" ?></li>
+    <li><b>Serves: </b><?= $recipe->serves() ?></li>
 </ul>
 
 <div class="help" id="vchange_help">
