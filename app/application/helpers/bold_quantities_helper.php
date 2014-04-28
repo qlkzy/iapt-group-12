@@ -8,6 +8,8 @@ function bold_quantities($str) {
   (?:
     (?:\d+
       |
+      &\#x\d+;
+      |
       &frac\d+
     )
     (?:
@@ -25,7 +27,9 @@ function bold_quantities($str) {
     |
     grams | gram | g
     |
-    tsp | tbsp
+    teaspoons | teaspoon | tsp
+    |
+    tablespoons | tablespoon | tbsp
     |
     cup | cups
     |
@@ -33,9 +37,13 @@ function bold_quantities($str) {
     |
     millilitres | millilitre | ml
     |
-    C | &deg;C
+    F | &deg;F | (?:degrees\ F)
+    |
+    C | &deg;C | (?:degrees\ C)
     |
     minutes | minute | min
+    |
+    seconds | second | sec
   )
 )
 (\W)
