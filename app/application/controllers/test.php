@@ -49,7 +49,10 @@ class Test extends CI_Controller {
             }
         );
         foreach ($tests as $test) {
-            $this->runTest(preg_replace('/^test_/', '', $test), array($this, $test));
+            $pretty_name = preg_replace('/^test_/', '', $test);
+            $pretty_name = preg_replace('/([a-z])([A-Z])/', '${1} ${2}', $pretty_name);
+            $pretty_name = ucfirst(strtolower($pretty_name));
+            $this->runTest($pretty_name, array($this, $test));
         }
         set_error_handler($oldHandler);
     }
