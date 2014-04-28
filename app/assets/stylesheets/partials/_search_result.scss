@@ -16,6 +16,7 @@
 
   @media screen and (min-width: $break_large) {
     width: 90%;
+    min-width: 600px;
   }
 
   @media screen and (max-width: $break_large) {
