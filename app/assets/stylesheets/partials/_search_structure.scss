@@ -16,20 +16,54 @@
 #search_columns {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
 
-  @include jw-wfbox(flex-start, flex, row, nowrap, flex-start);
+  @media screen and (min-width: $break_large) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: $break_large) {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  //@include jw-wfbox(flex-start, flex, row, nowrap, flex-start);
 
   #search_results {
     min-height: 500px;
-    width: 65%;
+    min-width: 620px;
+
+
+    @media screen and (min-width: $break_small) {
+      display: inline-block;
+      width: 64%;
+      float: left;
+    }
+
+    @media screen and (max-width: $break_small) {
+      width: 620px;
+      float: none;
+      display: block;
+    }
   }
 
   #search_filters {
     box-shadow: 2px 2px 5px 2px #CCCCCC;
     border-radius: 3px;
     margin-top: 20px;
-    width: 35%;
+    padding: 12px;
+
+    @media screen and (min-width: $break_small) {
+      float: right;
+      width: 300px;
+      display: inline-block;
+    }
+
+    @media screen and (max-width: $break_small) {
+      float: none;
+      display: block;
+      max-width: 585px;
+      min-width: 300px;
+    }
 
     @include background-image(linear-gradient(hsla(0, 100%, 100%, 0.25) 0%, hsla(0, 100%, 100%, 0.08) 50%, transparent 50%), linear-gradient(lighten($p_lgrey, 10%), $p_lgrey));
 

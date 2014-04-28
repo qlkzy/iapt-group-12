@@ -9,6 +9,9 @@
 // Import all necessary modules:
 @import "modules/import_all";
 
+$break_small: 980px;
+$break_large: 1200px;
+
 body {
   margin: 0;
   margin-bottom: 10px;

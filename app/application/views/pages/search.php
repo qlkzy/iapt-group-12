@@ -8,23 +8,6 @@ else {
 }
 ?>
 <div id="search_columns">
-    <div id="search_results">
-        <div class="help" id="search_results_help">
-            <p>The recipes you are browsing or have searched for will be
-                shown here.</p>
-
-            <p>You can use the box on the right to filter the recipes.</p>
-        </div>
-        <?php
-        if (empty($recipes)) {
-            echo "<span id=\"search_emsg\">There were no search results to match your query.</span>";
-        } else {
-            foreach ($recipes as $recipe) {
-                $this->load->view('templates/search_result', array('recipe' => $recipe));
-            }
-        }
-        ?>
-    </div>
     <div id="search_filters">
         <div class="help">
             Use the dropdowns here to filter the list of recipes shown.
@@ -112,5 +95,22 @@ else {
                 </li>
             </ul>
         </form>
+    </div>
+    <div id="search_results">
+        <div class="help" id="search_results_help">
+            <p>The recipes you are browsing or have searched for will be
+                shown here.</p>
+
+            <p>You can use the box on the right to filter the recipes.</p>
+        </div>
+        <?php
+        if (empty($recipes)) {
+            echo "<span id=\"search_emsg\">There were no search results to match your query.</span>";
+        } else {
+            foreach ($recipes as $recipe) {
+                $this->load->view('templates/search_result', array('recipe' => $recipe));
+            }
+        }
+        ?>
     </div>
 </div>
