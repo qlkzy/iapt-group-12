@@ -1770,7 +1770,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Cumin-crusted vegetables', (SELECT category_id FROM categories WHERE category_name = 'side'), 150, 'medium', 6, 'http://is.gd/KqVbjZ');
+    ('Cumin-crusted vegetables', (SELECT category_id FROM categories WHERE category_name = 'side'), 150, 'medium', 6, 'http://1.bp.blogspot.com/-AP7m2y_pvCE/USQLYWFij1I/AAAAAAAAev8/Sh1qev0KK7o/s1600/368.JPG');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -2970,7 +2970,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Piri-piri chicken', (SELECT category_id FROM categories WHERE category_name = 'main'), 180, 'medium', 4, 'http://is.gd/hwpIWo');
+    ('Piri-piri chicken', (SELECT category_id FROM categories WHERE category_name = 'main'), 180, 'medium', 4, 'http://3.bp.blogspot.com/_QsXeqolrQR0/TMb0JMEuXgI/AAAAAAAAAhQ/Y0PITd9t8R0/s1600/IMG_6709.JPG');
 
 INSERT INTO presentations
     (recipe_id, detail)
