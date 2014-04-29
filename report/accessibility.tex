@@ -55,7 +55,7 @@ of HTML CodeSniffer's WCAG2.0AAA validation---obviously this can only
 detect a subset of issues, but while it cannot infer the real semantic
 meaning of elements it uses heuristics to identify `surprising'
 markup, which can often indicate areas which should be checked
-manuall---manual inspection of the HTML, and the DOM inspection tools
+manually---manual inspection of the HTML, and the DOM inspection tools
 provided by browsers.
 
 \paragraph{Issues Found}
@@ -84,18 +84,34 @@ document. This was easily fixed by restyling the logical headings.
 
 \subsubsection{Evaluation Methodology}
 
+To ensure that the website was keyboard-navigable (useful not only for
+power users, but also as an indication of whether the website is
+likely to be navigable to users with other accessibility issues), we
+wanted to establish that the following conditions were true:
+
 \begin{itemize}
-\item Tab through elements, checking for ordering and that all
-  elements are reachable.
+\item Tabbing through elements gives feedback on currently focused
+  element.
+\item All tab-focusable elements can be activated sensibly by Enter.
+\item All functionality specified in the requirements can be accessed
+  using the keyboard.
 \end{itemize}
+
+To check the first two properties, we went through each page (counting
+the search and recipe pages as one page each, rather than expanding
+all the combinatoric options), tabbing through to ensure that we could
+see the focus location at all times, and checking that the Enter key
+behaved as expected.
+
+To check the third property, we went through each functional
+requirement and attempted to fulfil it using only the keyboard (as we
+were checking for keyboard-navigability, we used our extensive
+knowledge of the structure of the site, glossing over temporarily the
+issue of discoverable keyboard navigation).
 
 \subsubsection{Issues Found}
 
-\begin{itemize}
-\item Feedback on keyboard selection in header
-\item Search page.
-\item Feedback on keyboard selection on recipe page
-\end{itemize}
+In doing this, we found a number of issues:
 
 \paragraph{Highlighting of focused elements.}
 Several interactive elements with more complex visual styling---in
@@ -129,19 +145,30 @@ These issues were more problematic to resolve, as the \verb!onclick!
   application.
 
 \paragraph{Tab order of search filters}
+The search filter form (in our design) sits naturally on the right,
+both for visual effect and inter-application consistency (many other
+applications with filterable searches place the filters in the right
+margin of the results, as a good compromise between being easy to
+reach and not distracting from the results).
 
-Search filters sit naturally on the right, for visual effect and
-inter-application consistency.
+This places the `natural' tab order for search filters \emph{after}
+all search results: this is very inconvenient---tabbing through a few
+consistent form elements to reach the results would not be too bad,
+but tabbing through a large and variable number of search results to
+reach the filters is very annoying.
 
-`Natural' tab order for search filters is therefore after all search
-results; this is really inconvenient.
+Part of the solution to this is obviously to place the filters earlier
+in the tab order; we did this by placing the filter form before the
+results in the DOM, as part of our effort to ensure that the site
+would respond tolerably to small browser windows.
 
-Placing search filters earlier in tab order is easy partial fix, but
-causes focus to caper confusingly around the page.
+However, this introduces a new issue---tabbing now causes the focus to
+`skip' across the first few results, which appear visually ``before''
+the filters in a left-to-right reading. This could cause the user to
+lose track of the focused location.
 
-Full resolution to place filters earlier in tab order and to use
-script and styling to strongly emphasise the filter box when filters
-are selected, minimising confusion.
+To resolve this, we added dynamic styling which calls attention to the
+filter box whenever one of its elements is selected.
 
 \subsection{Feedforward and Feedback}
 
