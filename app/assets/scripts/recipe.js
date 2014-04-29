@@ -10,6 +10,9 @@ function selectDetail(state) {
     updateDefaultSetter();
 }
 
+// Function for displaying the messages about the current view.
+// If the current view is the default view, a message saying as much will be shown.
+// If the current view is not the default view, the option to set it as default will be made available.
 function updateDefaultSetter() {
     if (getDefaultDetail() === getCurrentDetail()) {
         $('#is_default').show();
@@ -35,6 +38,9 @@ function getCurrentDetail() {
 
 $(document).ready(function () {
     $("#radio").buttonset();
+
+    // Request the default view from the server and set it somewhere useful
+    // client-side:
     $.ajax({
         type: "POST",
         url: baseUrl + 'index.php/recipes/getDefaultView',
@@ -56,6 +62,8 @@ $(document).ready(function () {
         });
     });
 
+    // Set the default view server-side and set it somewhere useful
+    // client-side:
     $('#set_default').click(function () {
         $.ajax({
             type: 'POST',
@@ -71,6 +79,7 @@ $(document).ready(function () {
         return false;
     });
 
+    // Check off a recipe instruction on instruction click:
     $(".rcp_instruction a").click(function () {
         var li = $(this).parent('li');
         if (li.hasClass('ticked')) {

@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $(".nav_text").hide();
 
+    // Change the colour of nav items on hover:
     $("#nav_home").hover(function () {
         $("#nav_htext").fadeIn(200);
     }, function () {

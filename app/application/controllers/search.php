@@ -1,7 +1,15 @@
 <?php
 
+/**
+ * Class Search describes the controller for searches.
+ */
 class Search extends CI_Controller
 {
+    /**
+     * Constructor for this controller.
+     *
+     * Loads the search query model and loads appropriate stylesheets/scripts.
+     */
     public function __construct()
     {
         parent::__construct();
@@ -11,6 +19,14 @@ class Search extends CI_Controller
         $this->load->helper('script');
     }
 
+    /**
+     * Index page for this controller.
+     *
+     * Establishes the title for the page, creates a suitable search query
+     * based on criteria specified by the user when searching, executes this
+     * search query to produce search results and passes {search results,
+     * page title, search term} to the views for presentation.
+     */
     public function index()
     {
         $data['title'] = "Search";

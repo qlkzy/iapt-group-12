@@ -1,3 +1,9 @@
+<?php
+/**
+ * A template for search results. Provides a container that contains recipe image,
+ * recipe title, and shorthand recipe information.
+ */
+?>
 <a class="srslt_link" href="<?= base_url("index.php/recipes/view/" . $recipe->id()) ?>">
     <div class="search_result">
         <img class="srch_res_img"

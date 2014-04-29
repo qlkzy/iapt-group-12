@@ -1,3 +1,8 @@
+<?php
+/**
+ * A template for the application header. Provides a logo, banner, navigation elements and a search element.
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +11,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- TODO: consider how all these scripts and stylesheets are going to be served! -->
+
     <script type="text/javascript">
         var baseUrl = '<?= base_url() ?>';
 
@@ -48,25 +53,6 @@
             <img id="banner_image" alt="CookBox Logo" src="<?= base_url("assets/images/branding_mockup_1.png") ?>"/>
         </a>
 
-        <!-- <nav>
-            <div id="nav_home">
-                <a href="<?= base_url() ?>">
-                    <i class="fa fa-home fa-2x"></i>
-                </a>
-
-            </div>
-            <div id="nav_browse">
-                <a href="<?= base_url("index.php/search") ?>">
-                    <i class="fa fa-eye fa-2x"></i>
-                </a>
-            </div>
-            <div id="nav_help">
-                <a href="<?= base_url("index.php/help") ?>">
-                    <i class="fa fa-question fa-2x"></i>
-                </a>
-            </div>
-        </nav> -->
-
         <nav>
             <a class="nav_icon" href="<?= base_url() ?>" id="nav_home">
                 <i class="fa fa-home fa-2x"></i>
@@ -85,12 +71,6 @@
             </a>
 
         </nav>
-
-        <!-- <h2 class="nav_text" id="nav_htext">Home</h2>
-
-        <h2 class="nav_text" id="nav_btext">Browse Recipes</h2>
-
-        <h2 class="nav_text" id="nav_hlptext">Help</h2> -->
 
         <form action="<?= base_url("index.php/search") ?>" id="banner_search">
             <input id="bs_input" required pattern="[a-zA-Z][a-zA-Z\s]+" name="query"

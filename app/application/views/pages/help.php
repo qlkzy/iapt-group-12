@@ -1,9 +1,9 @@
 <div id="welcome_message">
     <h1>CookBox Help</h1>
 
-    <p>This app can barely do anything, but we don't trust you to be able to interact with it in a meaningful way without
-        instruction. Here is a list of stuff you can do on this page (each page that we think you'll have trouble using will
-        have its own tutorial...don't shit yourself just yet):</p>
+    <p>The following lists the basic interactions that can be performed with the CookBox application.
+        Hover over each of the listed items for emphasis on how these interactions can be performed!
+    </p>
 
     <div id="w_list">
         <div class="w_list_item" id="w_list_home"><i class="fa fa-home fa-3x" id="w_list_hicon"></i><span class="w_list_itext">Navigate Home</span></div>
