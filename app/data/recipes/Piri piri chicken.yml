@@ -1,6 +1,7 @@
 name: Piri-piri chicken
 type: main
 serves: 4
+time: 180
 narrative:
     ingredients:
         - whole chicken, spatchcocked
