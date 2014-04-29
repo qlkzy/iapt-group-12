@@ -1,50 +1,84 @@
 \section{Accessibility Evaluation}
 
-\subsubsection{Tools}
-
-HTML CodeSniffer
-
 \subsection{Validation}
 
-\subsubsection{Evaluation Methodology}
+\paragraph{Evaluation methodology}
+We ensured that the page validated using a combination of the W3C
+validator\todo{bib reference} and the
+`HTML CodeSniffer' JavaScript tool\todo{bib reference}. The W3C
+validator is the accepted standard for validation, and provided us
+with the most rigourous check; the CodeSniffer tool is quicker and
+more convenient to use while developing, helping us to avoid creating
+issues in the first place.
 
-\begin{itemize}
-\item HTML CodeSniffer
-\item W3C Validator
-\end{itemize}
+No real `flaws' were uncovered as a result of this process.
 
-\subsubsection{Issues Found}
+\subsection{Labels and alternatives}
+
+\paragraph{Evaluation methodology}
+To ensure that the all appropriate elements had labels and text
+alternatives, we used the `HTML CodeSniffer' JavaScript tool; this
+tool is capable of checking all of the code-level criteria associated
+with the WCAG 2.0 set of web accessibility guidelines\todo{bib
+  reference}, up to level AAA, and will flag up missing labels and
+text alternatives as errors. It found enough issues that we are
+reasonably confident that it is accurate.
+
+\paragraph{Issues found}
+The design of our website does not make extensive use of images, so
+there was not much scope for them to cause accessibility
+issues. However, when checking for image text alteratives, we found
+that while we had normally added alternative text for meaningful
+images (such as clickable icons) without needing to pay explicit
+attention to it, `decorative' images, such as the picture of each
+finished dish, were left without text alternatives until the audit
+called attention to it. This would have presented a potentially
+serious accessibility issue, as the user of a screenreader, for
+example, would have no way of knowing that those images were
+meaningless.
+
+For the most part, our initial design had contained labels for all
+links and form controls, as a natural consequence of the text-oriented
+design. The only unlabelled control was the text-input box for the
+site-wide search, which (following a pattern established by many other
+websites) was mainly described by the immediately adjacent `Search'
+button. In this case, rather than adding an extra `Search' label,
+which would only be visually confusing, we added a \verb!title!
+attribute to the input box to ensure that a screen-reader-user could
+determine its purpose.
 
 \subsection{Semantic Markup}
 
-\subsubsection{Evaluation Methodology}
+\paragraph{Evaluation Methodology}
+We evaluated the semantic structure of the markup using a combination
+of HTML CodeSniffer's WCAG2.0AAA validation---obviously this can only
+detect a subset of issues, but while it cannot infer the real semantic
+meaning of elements it uses heuristics to identify `surprising'
+markup, which can often indicate areas which should be checked
+manuall---manual inspection of the HTML, and the DOM inspection tools
+provided by browsers.
 
-\begin{itemize}
-\item Inspection
-\item HTML CodeSniffer
-\end{itemize}
+\paragraph{Issues Found}
+By paying attention to the semantic structure of the document during
+the design phase, we pre-empted many issues here: the list of
+instructions is just a heavily-styled \verb!<ol>!, for example.
 
-\subsubsection{Issues Found}
+There are a few areas where the appropriate semantic markup is less
+obvious: for example, the recipe metadata---category, difficulty,
+cooking time, etc.---could be presented as a table or just as a list
+of text; in this case, we erred on the side of simplicity.
 
-\subsection{Alternatives}
+There were some fundamentally intractable semantic issues resulting
+from the general lack of semantic richness in HTML, even after the
+improvements with HTML5; fixing these accessibility problems is
+outside the scope of this project.
 
-\subsubsection{Evaluation Methodology}
-
-\begin{itemize}
-\item HTML CodeSniffer
-\end{itemize}
-
-\subsubsection{Issues Found}
-
-\subsection{Labels}
-
-\subsubsection{Evaluation Methodology}
-
-\begin{itemize}
-\item HTML CodeSniffer
-\end{itemize}
-
-\subsubsection{Issues Found}
+There were also a few instances where heading elements (\verb!h1!,
+\verb!h2!, etc.) had been used while prototyping for their visual
+effect, resulting in an inconsistent outline for some pages. This
+would have presented acessibility problems to anyone using a
+screenreader that used the heading structure to help understand the
+document. This was easily fixed by restyling the logical headings.
 
 \subsection{Keyboard}
 
