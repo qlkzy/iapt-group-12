@@ -174,12 +174,80 @@ filter box whenever one of its elements is selected.
 
 \subsubsection{Evaluation Methodology}
 
-Ad-Hoc - list of interactions?
+To systematically evaluate our application from a feedforward and
+feedback point of view, we examined each interactive element on each
+page, and listed out the visual, dynamic, and textual feedforward cues
+it provided, the user-visible feedback cues presented on using
+it, and the real consequences caused by using it.
+
+For each element, we considered these three pieces of data
+(feedforward cues, feedback cues, and consequences) and arrived at our
+best determination of whether the element had adequate feedforward and
+feedback. This was a fairly ad-hoc process done by individuals at
+various points over the course of the project, although it seemed
+fairly effective. In retrospect, however, it would have been valuable
+to explicitly borrow many of the techniques from the CHE---one person
+compiling the lists of elements, cues, and consequences, and then the
+group performing a collaborative evaluation directed by those lists
+rather than by heuristics. But what we did seemed to work reasonably.
+
+Obviously this process is very subjective and rather
+error-prone. Fortunately, it was a supplement to the other evaluations
+we had (Collaborative Heuristic and Task-Based); the Task-Based
+evaluation in particular really exercised the feedback and feedforward
+properties of our application, (the issues it raised were covered
+there).
 
 \subsubsection{Issues Found}
 
-\begin{itemize}
-\item Ticking off instructions
-\item Setting default view
-\item Search filters?
-\end{itemize}
+\paragraph{Ticking off instructions}
+One relatively early issue we uncovered was that the cues around the
+`ticking off completed instructions' steps were wholly inadequate. In
+the version with this issue, instruction steps were presented as an
+unadorned list of paragraphs; hovering over each step would cause it
+to be coloured a dark blue, and clicking on the step would cause it to
+be styled as `strikethrough' text. This satisfied the functional
+requirement, but the feedback was potentially unclear, and feedforward
+was entirely absent.
+
+To address this issue, we styled the list with an empty check-box next
+to each instruction step---making the suggestion that each step is
+checkable. Hovering over a step then places a tick in the checkbox,
+and fades out slightly. Clicking on the step then keeps the tick in
+the checkbox, and fades the step out further to call attention to the
+subsequent, unfaded, instruction steps. We feel that this represents a
+significant improvement in feedforward in particular, as well as
+making the ticking-off feature more useful by deemphasising completed
+steps.
+
+There is still some awkwardness integrating feedforward with feedback
+for this element: after ticking off a step, you have the opportunity
+to undo that by clicking on the step again. Feedforward for this undo
+operation suggests that the element should give an indication of what
+that will do, but this conflicts with providing feedback for the
+ticking-off operation (as the user will inevitably be hovering
+immediately after clicking, but the user does not get the best
+feedback until the cursor is moved away from the element). We could
+not find a simple mechanism that would provide good feedforward and
+feedback for these transitions, but despite this, we feel that the
+major issues with this functionality have been resolved.
+
+\paragraph{Activation of search filters}
+Evaluation and testing uncovered some issues with the application of
+search filters, and the interaction between the top-banner search box
+and the filtering controls further down the page. It took users some
+time to be confident as to the effects of various filtering
+operations.
+
+We addressed the issue of interaction between filters and search box
+by replicating the search box alongside the filtering controls
+(scripting was used to ensure that the search terms were identical, to
+prevent user confusion). This made it easy for the user to understand
+the interaction between the text query and the filters.
+
+To address the other issues, we altered the filtering controls so that
+the list of results would update immediately on changing the values of
+the filters. This gave the users immediate feedback on the effects of
+their actions, allowing them to become comfortable with the filtering
+more quickly. It also prevented the user from losing track of which
+filters they would apply on pressing the `Filter' button.
