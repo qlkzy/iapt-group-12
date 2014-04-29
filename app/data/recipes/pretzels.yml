@@ -1,6 +1,7 @@
 name: Pretzels
 type: dessert
 serves: 12
+time: 180
 retrictions:
     - vegetarian
 

@@ -1,7 +1,8 @@
 ---
-name: vanilla slice
+name: Vanilla slice
 type: dessert
 serves: 16
+time: 50
 image: http://is.gd/VbpVol
 restrictions:
     - vegetarian
