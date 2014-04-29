@@ -1,4 +1,3 @@
-
 <?php
 if (!empty($_GET)) {
     echo "<h1 id=\"search_title\">You searched for: " . $query . "</h2>";
@@ -20,7 +19,7 @@ else {
                 <li>
                     <label for="search_fquery">Recipe Name:</label>
                     <input id='search_fquery' required pattern="[a-zA-Z][a-zA-Z\s]+" name="query"
-                           placeholder="Enter recipe name..."/
+                           placeholder="Enter recipe name..."
                     <?= (isset($query) && $query) ? 'value=' . $query : '' ?>>
                 </li>
                 <li>
@@ -56,7 +55,7 @@ else {
                     </select>
                 </li>
                 <li>
-                    <label for="search_fctime  search_fform_i">Time (up to):</label>
+                    <label for="search_fctime">Time (up to):</label>
                     <input class="search_fform_ti"
                            id="search_fctime"
                            maxlength="3"
@@ -69,7 +68,7 @@ else {
                         />
                 </li>
                 <li>
-                    <label for="search_fserves  search_fform_i">Serves:</label>
+                    <label for="search_fserves">Serves:</label>
                     <input class="search_fform_ti"
                            form="search_fform"
                            id="search_fserves"
@@ -86,7 +85,6 @@ else {
                     <label for="search_fcontains  search_form_i">Contains:</label>
                     <input class="search_fform_ti" form="search_fform" id="search_fcontains"  name="contains" pattern="[a-zA-Z]+" placeholder="ingredients" type="text"/>
                 </li>-->
-                <br/>
                 <li>
                     <input form="search_fform" id="search_fform_submit" type="submit" value="Filter"/>
                 </li>
