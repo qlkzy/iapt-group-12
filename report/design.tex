@@ -1,7 +1,47 @@
 \section{Design Rationale}
 
+\subsection{System Overview}
+The final recipe-presentation web application was the product of a many-step process. These steps, in order, were:
+\begin{itemize}
+  \item Research into similar existing services, carried out to provide insight into the downfalls and successes of applications produced by others;
+  \item Analysis of the application specification;
+  \item Devising of user personas and scenarios for those personas, created to offer something of a user-centred perspective to the design process;
+  \item Formation of formal requirements for the application, these providing an easily-verified set of criteria laying out the minimum functionality required for the application;
+  \item Creation of an interactive first prototype;
+  \item Collaborative heuristic evaluation of the first prototype;
+  \item Redesign of the prototype to rectify problems uncovered in the CHE, and to bring the prototype more in line with both functional requirements and the goals implicit in the user scenarios;
+  \item Task-based user evaluation of redesigned prototype;
+  \item Final adjustments of the protoype to alleviate issues raised in the TBUE, and to ensure that goals and functional requirements were met;
+\end{itemize}
+
+From the initial reasearch into other services and analysis of the specification, many personas and scenarios were created. The purpose of these was to both identify the potential users of the system to be designed and to aid in the formation of formal functional requirements. The personas and scenarios follow.
+
+Following the personas and scenarios came the functional requirements. These were laid out to provide clear-cut goals which needed to be achieved by the application in order for it to provide a satisfactory quality of service. These requirements were split into two headings, each heading reflecting an essential component in the interactive system:
+
+\paragraph{Recipe Browsing}
+Users must be able to:
+\begin{itemize}
+\item search for recipes using a full or partial recipe name;
+\item view a list of all recipes that are present in the application's database of recipes;
+\item filter any list of recipes using specific filtration criteria.
+\end{itemize}
+
+\paragraph{Recipe Viewing}
+Users must be able to:
+\begin{itemize}
+\item see general information about a recipe both when browsing multiple recipes and when viewing a single recipe;
+\item see the ingredients required to complete a recipe;
+\item see the instructions that need to be followed in order to complete a recipe;
+\item change the level of detail in which recipe instructions are presented to them;
+\item set the default level of detail in which all recipe instructions are presented to them;
+\item mark instructions as completed through some interation.
+\end{itemize}
+
+Although all of the functional requirements were met in the final version of the application, the functionality of the system that has been produced is a little richer than the functionality suggested by the functional requirements. The complete functionality of the system consists of that functionality contained in the functional requirements plus the following: 
+
+
 \subsection{Personas \& Scenarios}
-From both the initial reasearch into other services and group discussion about the specification, many personas and scenarios were devised. The purpose of these was to both identify the potential users of the system to be designed and to aid in the formation of formal functional requirements. The personas and scenarios follow.
+
 
 \paragraph{Jennifer}
 \subparagraph{Persona}
@@ -110,24 +150,7 @@ order given, skipping the steps relating to the gremolata.
 \subsection{Functional Requirements}
 The functional requirements arrived upon through the above work are as follows:
 
-\subsubsection{Recipe Browsing}
-Users must be able to:
-\begin{itemize}
-\item search for recipes using a full or partial recipe name;
-\item view a list of all recipes that are present in the application's database of recipes;
-\item filter any list of recipes using specific filtration criteria.
-\end{itemize}
 
-\subsubsection{Recipe Viewing}
-Users must be able to:
-\begin{itemize}
-\item see general information about a recipe both when browsing multiple recipes and when viewing a single recipe;
-\item see the ingredients required to complete a recipe;
-\item see the instructions that need to be followed in order to complete a recipe;
-\item change the level of detail in which recipe instructions are presented to them;
-\item set the default level of detail in which all recipe instructions are presented to them;
-\item mark instructions as completed through some interation.
-\end{itemize}
 
 \subsection{Viewing a Recipe}
 The following is the design rationale behind the first piece of complex functionality found in the produced application: the process of viewing a recipe.
