@@ -43,27 +43,18 @@ improving maintainability.
 \paragraph{Commentary}
 All of the files, classes, and functions we have written have PHPDoc
 comments explaining them. This documentation is critical for
-maintainability; it also helps reliability, as the need to explain
-the code requires that it be well-understood. In addition, the
-principal IDE we used (PHPStorm) can take advantage of PHPDoc comments
-to provide more complete type checking, further improving reliability.
+maintainability; it also helps reliability, as it requires a clear
+understanding of the purpose of the code, which demands simple,
+clearly-written code.
 
 \paragraph{Fragile PHP features}
-PHP has a number of `advanced' features (and some misfeatures) whose
-use adversely affects the reliability and maintainability of a
-codebase. For example: the \verb!__get! and \verb!__set! magic methods
-and other reflection tools, while occasionally very powerful, make it
-much more difficult to understand a codebase; references have
-straightforwardly weird semantics that make their use very
-error-prone; and the reference-by-name behaviour associated with
-\verb!$$! etc. makes it very difficult to understand behaviour.
+We were careful to avoid some of the easy-to-misuse features of PHP,
+such as the \verb!__get! and \verb!__set! magic methods, references
+(because of the weird way they taint the symbol table), \verb!$$!, etc.
 
-By avoiding the use of these features, we have improved the
-reliability and maintainability of our system by avoiding the
-surprising and error-prone `mysterious action at a distance' they
-cause.
-
-\paragraph{Immutable domain objects}
+Doing this has improved the reliability and maintainability of our
+system by avoiding the surprising and error-prone `mysterious action
+at a distance' they cause.
 
 \subsection{CSS Preprocessing}
 
@@ -83,33 +74,23 @@ department, we chose to use a more modern version control tool,
 \texttt{git}. The principal reasons for this were as follows:
 
 \begin{itemize}
-\item Data integrity: particularly in the hands of inexperienced
-  users, subversion is prone to unrecoverably tangling the metadata it
-  holds on the working copy, leading to data loss.
-\item Team fit: our team is inherently distributed, only
-  intermittently working colocated, a natural fit for the distributed
-  model of git.
-\item Safe merging: large merges (such as those which would be
-  produced by our team structure) are especially fraught under
-  subversion, as it merges the repository onto an uncommitted working
-  copy; if the merge goes awry, the working-copy changes can be lost
-  or mangled.
-\item Availability: systems hosted on campus and in the department
-  have not, historically, been entirely issue-free, particularly as
-  load increases in the run-up to assessment submissions.
+\item Data integrity: with inexperienced users, subversion can be
+  fragile and occasionally trashes its working-copy metadata.
+\item Team fit: our team is inherently distributed and mostly works
+  separately, a natural fit for git.
+\item Safe merging: the git model of merging two commits is less
+  fragile than the subversion model of merging the remote onto an
+  uncommitted working copy, which can cause data loss.
 \end{itemize}
 
 \subsubsection{Version control process}
 
 Given the small size of the project, we opted for a lightweight
-version control process. Most of the time, we worked on the
-\texttt{master} branch, synchronising frequently with a remote
-database---essentially just a robust implementation of a simple
-centralised workflow, as would be used with subversion. Given the
-relative inexperience of the team, we largely eschewed `advanced'
-features such as feature branching, history rewriting, or directly
-synchronising between working copies. However, all of these features
-proved useful at various points to resolve specific issues.
+version control process. Most of the time, we followed a centralised
+workflow, as with subversion, as this was sufficient and appropriate
+for the experience level of the team. For similar reasons, we mostly
+eschewed `advanced' features such as feature branching, history
+rewriting, etc.
 
 In specific instances, for more complex and sweeping changes, we used
 a slightly more rigorous process, working in dedicated branches which
@@ -118,7 +99,8 @@ system\todo{reference GitHub flow}.
 
 In practice, we were satisfied most of the time with a simple
 no-branching centralised model. It was very useful, however, to have
-seamless access to more powerful tools in specific situations.
+seamless access to the more powerful tools afforded by \textt{git} in
+specific situations.
 
 Our version control process, although simple, establishes a clear
 audit trail for the codebase; this greatly improves the
@@ -156,9 +138,7 @@ also contribute significantly to maintainability, providing
 documentation and a rationale for much of the work done, and a
 powerful insight into the system.
 
-\subsection{Data Model}
-
-\subsubsection{Sample data}
+\subsection{Sample data}
 
 To allow flexibility in the data model and database schema used, we
 wrote some small scripts that would take take naturalistic YAML
@@ -167,49 +147,20 @@ provided sample recipes) and populate the database from them. This
 made it easy to drop and recreate the database as we experimented with
 and refactored the data model.
 
-\subsubsection{Challenges imposed by CodeIgniter}
-
-For the sake of consistency, we decided to use CodeIgniter as a
-starting point. This turned out to introduce some issues that we had
-to work around.
-
-\begin{itemize}
-\item CodeIgniter's `Active Record' facilities are actually a kind of
-  pseudo-singleton Data Mapper, and actively inhibit using the Active
-  Record pattern (which we wanted to for its simplicity). Fortunately,
-  this can be fudged by borrowing a reference to the CodeIgniter
-  database module, which is just a global property of the underlying
-  CodeIgniter singleton anyway.
-\item CodeIgniter's idiosyncratic loading schemes impose a moderately
-  weird naming convention, and, more problematically, we weren't
-  confident that they would interact nicely with modern class
-  autoloading; we decided to fall back to bare \texttt{require}.
-\end{itemize}
-
-\subsubsection{DB-side data model}
-
-\subsubsection{PHP-side data model}
-
-\subsubsection{JS-side data model}
-
-\subsubsection{Active Record}
-
-\subsubsection{Lazy Loading}
+This improves reliability by guaranteeing that the database will
+contain no invalid data; it also improves maintainability, by making
+it easy to refactor the database or extend that data model.
 
 \subsection{Testing}
 
-Mostly informal acceptance testing.
-
-\subsubsection{Acceptance Testing}
-
-\paragraph{Acceptance Testing Approach}
-
-\paragraph{Acceptance Test Procedures}
+Most of the testing we did was effectively informal acceptance testing; because of
+the amount of time we spent evaluating the website from a usability
+and interaction-design perspective, w
 
 \subsubsection{Integration Testing}
 
 As noted above, most of the testing was acceptance testing of some
-form. However, there is still a place for some lightweight integration
+form. However, we found a place for some lightweight integration
 testing to catch casual errors.
 
 Our integration tests take the form of some very minimal smoke tests
@@ -219,31 +170,35 @@ that check that the various URLs associated with our application are
 \item do not contain any obvious errors emitted by the PHP interpreter
 \end{inparaenum}.
 
-These goals are met by \verb!app/test/smoke.sh!, which does the
-obvious things with \texttt{wget}, \texttt{grep}, etc., to check these
-properties for a sample of the significant URLs in our application.
+These goals are met by \verb!app/test/smoke.sh!, which uses basic unix
+utilites to check these properties for the various important URLs in
+the application.
 
-Obviously, these tests won't catch any errors of substance, but make
-it easier to avoid inadvertently breaking things while refactoring
-etc.
+Having these tests has helped to improve the reliability of the system
+by making it easy to ensure a basic level of functionality across the
+application. They also help with maintainability by allowing more
+confident refactoring, acting as a safety net to catch heinous errors
+early.
+
 
 \subsubsection{Unit Testing}
 
 Some form of unit-level testing is a fundamental part of any
-engineering process. There are reasonably standard approaches to
-software unit testing; however, the classic approach is made awkward
-by:
-\begin{inparaenum}[\itshape a\upshape)]
-\item complex CodeIgniter dependencies and class loading
-\item tight coupling to the database
-\end{inparaenum}.
-It isn't really worth pursuing the database coupling in the face of
-the challenges caused by CodeIgniter and the small amount of logic
-currently present in the model layer.
+engineering process. However, the complexity of CodeIgniter
+initialisation and the tight coupling of our application to the
+database make it awkward to use classic xUnit-style strongly-decoupled
+tests.
 
-The compromise solution we've arrived at is a web page, part of the
-CodeIgniter application, which when visited `runs' a number of tests
-which sit somewhere between traditional unit tests and model/database
-integration tests.  While a compromise, these tests do exercise most
-of the functionality of the web application, catching a useful range
-of issues and making the codebase easier to work with.
+Our compromise was a page within the CodeIgniter site (\verb!index.php/test!) which, when
+visited, executes a number of simple tests which exercise the model
+layer. Given the database coupling, these really sit somewhere between
+unit and integration tests, but we felt this was acceptable given the
+lightweight nature of our model layer. Rather than an in-depth and
+exact verification of precise behaviour, these tests also function
+more as smoke tests, making it easy to exercise the whole of the model
+layer at once to catch a broader range of model-layer issues than the
+integration tests above.
+
+These tests have increased reliability by ensuring that the model
+layer works, and increase maintainability by allowing us to make
+changes with confidence.
