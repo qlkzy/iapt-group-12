@@ -5,7 +5,7 @@ INSERT INTO categories (category_name) VALUES ('salad');
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Apple and Wensleydale pie', (SELECT category_id FROM categories WHERE category_name = 'dessert'), 20, 'medium', 6, '');
+    ('Apple and Wensleydale pie', (SELECT category_id FROM categories WHERE category_name = 'dessert'), 90, 'medium', 6, 'http://is.gd/rmPCLm');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -324,7 +324,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Black Bean Dip', (SELECT category_id FROM categories WHERE category_name = 'side'), 20, 'medium', 4, 'http://is.gd/Srmcpx');
+    ('Black Bean Dip', (SELECT category_id FROM categories WHERE category_name = 'side'), 50, 'medium', 4, 'http://is.gd/Srmcpx');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -792,7 +792,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Beef Burgers', (SELECT category_id FROM categories WHERE category_name = 'main'), 20, 'medium', 2, 'http://is.gd/RFMpxW');
+    ('Beef Burgers', (SELECT category_id FROM categories WHERE category_name = 'main'), 45, 'medium', 2, 'http://is.gd/RFMpxW');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -1092,7 +1092,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Chilled fresh fruit salad', (SELECT category_id FROM categories WHERE category_name = 'salad'), 20, 'medium', 6, '');
+    ('Chilled fresh fruit salad', (SELECT category_id FROM categories WHERE category_name = 'salad'), 30, 'medium', 6, 'http://is.gd/0v5eST');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -1325,7 +1325,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Corned beef hash with poached eggs', (SELECT category_id FROM categories WHERE category_name = 'main'), 20, 'medium', 4, '');
+    ('Corned beef hash with poached eggs', (SELECT category_id FROM categories WHERE category_name = 'main'), 60, 'medium', 4, 'http://is.gd/odiBcJ');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -1770,7 +1770,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Cumin-crusted vegetables', (SELECT category_id FROM categories WHERE category_name = 'side'), 20, 'medium', 6, '');
+    ('Cumin-crusted vegetables', (SELECT category_id FROM categories WHERE category_name = 'side'), 150, 'medium', 6, 'http://is.gd/KqVbjZ');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -2088,7 +2088,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Fattoush', (SELECT category_id FROM categories WHERE category_name = 'side'), 20, 'medium', 4, '');
+    ('Fattoush', (SELECT category_id FROM categories WHERE category_name = 'side'), 30, 'medium', 4, 'http://is.gd/L3YWSX');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -2411,7 +2411,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Fennel and potato gratin', (SELECT category_id FROM categories WHERE category_name = 'main'), 20, 'medium', 6, '');
+    ('Fennel and potato gratin', (SELECT category_id FROM categories WHERE category_name = 'main'), 110, 'medium', 6, 'http://is.gd/Yb5bQR');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -2635,7 +2635,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Highland beef salad', (SELECT category_id FROM categories WHERE category_name = 'salad'), 20, 'medium', 2, '');
+    ('Highland beef salad', (SELECT category_id FROM categories WHERE category_name = 'salad'), 40, 'medium', 2, 'http://is.gd/S2j1jL');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -2970,7 +2970,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Piri-piri chicken', (SELECT category_id FROM categories WHERE category_name = 'main'), 20, 'medium', 4, '');
+    ('Piri-piri chicken', (SELECT category_id FROM categories WHERE category_name = 'main'), 180, 'medium', 4, 'http://is.gd/hwpIWo');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -3280,7 +3280,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Potato, bean and tomato salad with gremolata', (SELECT category_id FROM categories WHERE category_name = 'salad'), 20, 'medium', 4, 'http://is.gd/1jmC3k');
+    ('Potato, bean and tomato salad with gremolata', (SELECT category_id FROM categories WHERE category_name = 'salad'), 180, 'medium', 4, 'http://is.gd/1jmC3k');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -3643,7 +3643,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Pretzels', (SELECT category_id FROM categories WHERE category_name = 'dessert'), 20, 'medium', 12, '');
+    ('Pretzels', (SELECT category_id FROM categories WHERE category_name = 'dessert'), 180, 'medium', 12, 'http://is.gd/hG424L');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -4068,7 +4068,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Quiche Maritime', (SELECT category_id FROM categories WHERE category_name = 'main'), 20, 'medium', 4, 'http://is.gd/T7pzKZ');
+    ('Quiche Maritime', (SELECT category_id FROM categories WHERE category_name = 'main'), 120, 'medium', 4, 'http://is.gd/T7pzKZ');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -4418,7 +4418,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Rhubarb crumble', (SELECT category_id FROM categories WHERE category_name = 'main'), 20, 'medium', 4, '');
+    ('Rhubarb crumble', (SELECT category_id FROM categories WHERE category_name = 'main'), 90, 'medium', 4, 'http://is.gd/buXznJ');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -4632,7 +4632,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Spicy lamb albondigas', (SELECT category_id FROM categories WHERE category_name = 'main'), 20, 'medium', 4, '');
+    ('Spicy lamb albondigas', (SELECT category_id FROM categories WHERE category_name = 'main'), 150, 'medium', 4, 'http://is.gd/NXg3iO');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -5197,7 +5197,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Three fish pie', (SELECT category_id FROM categories WHERE category_name = 'main'), 20, 'medium', 6, '');
+    ('Three fish pie', (SELECT category_id FROM categories WHERE category_name = 'main'), 75, 'medium', 6, 'http://is.gd/af2tY0');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -5602,7 +5602,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('Tourti&egrave;re', (SELECT category_id FROM categories WHERE category_name = 'main'), 20, 'medium', 4, 'http://is.gd/9DXW6j');
+    ('Tourti&egrave;re', (SELECT category_id FROM categories WHERE category_name = 'main'), 80, 'medium', 4, 'http://is.gd/9DXW6j');
 
 INSERT INTO presentations
     (recipe_id, detail)
@@ -6062,7 +6062,7 @@ VALUES
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('vanilla slice', (SELECT category_id FROM categories WHERE category_name = 'dessert'), 20, 'medium', 16, 'http://is.gd/VbpVol');
+    ('Vanilla slice', (SELECT category_id FROM categories WHERE category_name = 'dessert'), 50, 'medium', 16, 'http://is.gd/VbpVol');
 
 INSERT INTO presentations
     (recipe_id, detail)
