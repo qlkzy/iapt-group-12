@@ -1,7 +1,14 @@
 <?php
 
+/**
+ * Helper function to wrap quantities ("1 cup", "200 grams", "200 degrees C")
+ * in a <span> that allows them to be styled.
+ *
+ * @param $str String containing quantities
+ * @return mixed String with quantities wrapped in <span class="result"></span>
+ */
 function bold_quantities($str) {
-    // because what program isn't improved by a thirty-line regular expression?
+    // because what program isn't improved by a forty-line regular expression?
     $pattern = <<<PAT
 /
 (
