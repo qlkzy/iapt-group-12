@@ -73,12 +73,12 @@
 
         <?php foreach (array('step', 'segment', 'narrative') as $style) {
             $presentation = $recipe->presentation($style); ?>
-            <ul class="rcp_inslist rcp_item rcp_sbs detail_specific" data-detail="<?= $style ?>"
+            <ol class="rcp_inslist rcp_item rcp_sbs detail_specific" data-detail="<?= $style ?>"
                 id="<?= $style . "_instructions" ?>">
                 <?php foreach ($presentation->instructions() as $instruction) { ?>
                     <li class="rcp_instruction"><a href="" tabindex="0"><?= bold_quantities($instruction) ?></a></li>
                 <?php } ?>
-            </ul>
+            </ol>
         <?php } ?>
     </div>
 
