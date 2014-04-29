@@ -31,13 +31,14 @@ for (@ARGV) {
     my $recipe = LoadFile($_);
     my $name = escape($recipe->{name});
     my $serves = $recipe->{serves};
+    my $time = $recipe->{time} || 20;
     my $image = $recipe->{image} || '';
     my $category = $recipe->{type};
     print <<RECIPE;
 INSERT INTO recipes
     (recipe_name, category_id, cooking_time, difficulty, serves, image)
 VALUES
-    ('$name', (SELECT category_id FROM categories WHERE category_name = '$category'), 20, 'medium', $serves, '$image');
+    ('$name', (SELECT category_id FROM categories WHERE category_name = '$category'), $time, 'medium', $serves, '$image');
 
 RECIPE
 
