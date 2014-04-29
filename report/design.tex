@@ -15,21 +15,18 @@ The final recipe-presentation web application was the product of a many-step pro
 \end{itemize}
 
 From the initial reasearch into other services and analysis of the specification, many personas and scenarios were created. The purpose of these was to both identify the potential users of the system to be designed and to aid in the formation of formal functional requirements. The personas and scenarios follow.
-\begin{center}
-\begin{tabularx}{\textwidth}{|X|X|X|}
-\hline
-Name & Details & Scenario \\ \hline
-Jennifer & Female, early-twenties, novice cook, computer-literate. & Starts cooking, becomes distracted. Comes back to checked off recipe steps. \\ \hline
-Dale & Male, middle-aged, accomplished cook, computer literate. & Hosting dinner party, needs vegetarian dish, preparation needed to time guests' arrival. \\ \hline
-Bob & Male, teenager, inexperienced but keen cook, computer literate. & Begins viewing a recipe in narrative, finds it too difficult, changes to segmented. \\ \hline
-Mike & Male, middle-aged, no cooking experience, computer illiterate. & Shopping for ingredients, forgot to make a list, needs a list of ingredients for recipe. \\ \hline
-Mavis & Female, elderly, experienced cook, computer illiterate. & Wants to use her recently purchased tablet to look up recipes. \\ \hline
-Andy & Male, early-twenties, intermediate cook, computer literate & Begins using narrative view, switches to step-by-step for more information, finds and checks off the step he was at. \\
-\hline
-\end{tabularx}
-\end{center}
-Andy: young male, intermediate cook and computer-literate.
-Scenario: Begins using the narrative view but switches to step by step for more information. Finds and checks off step he was on before continuing.
+
+\perSce{Jennifer}{Female, early-twenties, novice cook, computer-literate.}{Starts cooking, becomes distracted. Comes back to checked off recipe steps.}
+
+\perSce{Dale}{Male, middle-aged, accomplished cook, computer literate.}{Hosting dinner party, needs vegetarian dish, preparation needed to time guests' arrival.}
+
+\perSce{Bob}{Male, teenager, inexperienced but keen cook, computer literate.}{Begins viewing a recipe in narrative, finds it too difficult, changes to segmented.}
+
+\perSce{Mike}{Male, middle-aged, no cooking experience, computer illiterate.}{Shopping for ingredients, forgot to make a list, needs a list of ingredients for recipe.}
+
+\perSce{Mavis}{Female, elderly, experienced cook, computer illiterate.}{Wants to use her recently purchased tablet to look up recipes.}
+
+\perSce{Andy}{Male, early-twenties, intermediate cook, computer literate.}{Begins using narrative view, switches to step-by-step for more information, finds and checks off the step he was at.}
 
 Following the personas and scenarios came the functional requirements. These were laid out to provide clear-cut goals which needed to be achieved by the application in order for it to provide a satisfactory quality of service. These requirements were split into two headings, each heading reflecting an essential component in the interactive system:
 
@@ -52,21 +49,22 @@ Users must be able to:
 \item mark instructions as completed through some interation.
 \end{itemize}
 
-Although all of the functional requirements were met in the final version of the application, the functionality of the system that has been produced is a little richer than the functionality suggested by the functional requirements. The complete functionality of the system consists of that functionality contained in the functional requirements plus the following: 
+Although all of the functional requirements were met in the final version of the application, the functionality of the system that has been produced is a little richer than the functionality suggested by the functional requirements. The complete functionality of the system consists of that contained in the functional requirements plus the addition of an interactive help system. Users have the option, at any time, of clicking a 'help' element. This will provide them with help messages - these messages describe the key features of any page on which the help is requested, and can be dismissed by the user with a simple click.
 
-\section*{Rating Usability of User Interfaces}
-Out group attempted to distill and combine Shneiderman's Principles of Interaction Design, Don Norman's Design Principles and Tog's First Principles of Interaction Design, in order to make them easier to work with. These criteria have be identified as a solid starting point for any user interface.
+To aid the making of design desicisions, our group attempted to distill and combine Shneiderman's Principles of Interaction Design, Don Norman's Design Principles and Tog's First Principles of Interaction Design in order to make them easier to work with. These criteria have be identified as a solid starting point for any user interface.
 
 \subsection*{Design Criteria}
-\begin{itemize}
-\item 1. Consistency;
-\item 2. Informative feedback to the user;
-\item 3. Straightforward reversal of actions;
-\item 4. Promoting internal locus of control;
-\item 5. Low short-term memory load;
-\item 6. High feature visibility;
-\item 7. Information readability;
-\end{itemize}
+\begin{enumerate}
+\item Consistency;
+\item Informative feedback to the user;
+\item Straightforward reversal of actions;
+\item Promoting internal locus of control;
+\item Low short-term memory load;
+\item High feature visibility;
+\item Information readability;
+\end{enumerate}
+
+Two pieces of complex functionality were chosen based on the magnitude of their contribution to the application's functionality as a whole. They each fall under a distinct heading in the functional requirements, and thus had to fulfil different sets of functional requirements. The functionality chosen was 'viewing a recipe' and 'filtering lists of recipes' - full design choice justification for each follows.
 
 \subsection{Viewing a Recipe}
 The following is the design rationale behind the first piece of complex functionality found in the produced application: the process of viewing a recipe.
