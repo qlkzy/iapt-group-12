@@ -2,6 +2,7 @@ name: Corned beef hash with poached eggs
 type: main
 serves: 4
 time: 60
+image: http://is.gd/odiBcJ
 narrative:
     ingredients:
         - potatoes, diced into cubes

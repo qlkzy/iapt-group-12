@@ -2,6 +2,7 @@ name: Chilled fresh fruit salad
 type: salad
 serves: 6
 time: 30
+image: http://is.gd/0v5eST
 restrictions:
     - vegetarian
     - vegan
