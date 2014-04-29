@@ -31,7 +31,7 @@
         <input class="rcp_vchb ui-button" id="select_narrative" type="button" value="Narrative" data-detail="narrative" data-default="false"/>
     </div>
     <div class="default_view_setter">
-        <div class="help"">
+        <div class="help">
             <p>Use this to set the presentation which will be shown by default when you navigate to a new recipe.</p>
 
             <p>If the presentation you are using is already the default, it will say so; otherwise, click on the
