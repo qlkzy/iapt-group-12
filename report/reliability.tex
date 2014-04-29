@@ -19,32 +19,60 @@ but making an application which is bulletproof in the face of
 malicious user input and whose code crackles with craftsmanship would
 be misspent effort.
 
+Given this, we have generally followed lightweight processes intended
+to produce a reasonably robust and maintainable system without
+impeding the flexibility required to address the interaction design
+and usability focus of the assessment.
+
 \subsection{Coding Standards}
 
-\subsubsection{General PHP Coding Standards}
+When writing the code, we followed a number of principles to aid in
+ensuring reliability and maintainability.
 
-\subsubsection{Project-Specific Coding Standards}
+\paragraph{Naming}
+We have striven to follow a consistent naming scheme for classes,
+functions, and variables. This reduces mental overhead and confusion
+when working with the code, improving maintainability.
 
-\begin{itemize}
-\item Naming, indentation, etc.
-\item Commentary.
-\item No use of magic methods (\verb!__get! \verb!__set! et al) in our
-  code (CodeIgniter makes limited use)
-\item No use of PHP references in our code.
-\item Minimise use of raw mutation methods, preferring `real' OO.
-\end{itemize}
+\paragraph{Consistent formatting}
+Similarly, we have followed a consistent formatting convention
+(enforced by tools) when working on the codebase. As with naming, this
+reduces mental overhead and confusion when working with the code,
+improving maintainability.
 
-\subsection{Tool Support}
+\paragraph{Commentary}
+All of the files, classes, and functions we have written have PHPDoc
+comments explaining them. This documentation is critical for
+maintainability; it also helps reliability, as the need to explain
+the code requires that it be well-understood. In addition, the
+principal IDE we used (PHPStorm) can take advantage of PHPDoc comments
+to provide more complete type checking, further improving reliability.
 
-\subsubsection{PHP CodeSniffer}
+\paragraph{Fragile PHP features}
+PHP has a number of `advanced' features (and some misfeatures) whose
+use adversely affects the reliability and maintainability of a
+codebase. For example: the \verb!__get! and \verb!__set! magic methods
+and other reflection tools, while occasionally very powerful, make it
+much more difficult to understand a codebase; references have
+straightforwardly weird semantics that make their use very
+error-prone; and the reference-by-name behaviour associated with
+\verb!$$! etc. makes it very difficult to understand behaviour.
 
-\subsubsection{PHP Mess Detector}
+By avoiding the use of these features, we have improved the
+reliability and maintainability of our system by avoiding the
+surprising and error-prone `mysterious action at a distance' they
+cause.
 
-\subsubsection{HTML CodeSniffer}
+\paragraph{Immutable domain objects}
 
-\subsubsection{PHPStorm Inspection Tools}
+\subsection{CSS Preprocessing}
 
-\subsubsection{SCSS}
+CSS is missing a number of abstraction features which are important in
+keeping stylesheets maintainable, such as the ability to define
+variables (for colours, sizes, etc), and functional units (such as
+margin-based block centring). To improve the maintainability of our
+system, we used the Sass CSS preprocessor\todo{reference} to generate
+pure CSS from our more-maintainable SCSS stylesheets.
 
 \subsection{Version Control}
 
@@ -67,21 +95,37 @@ department, we chose to use a more modern version control tool,
   copy; if the merge goes awry, the working-copy changes can be lost
   or mangled.
 \item Availability: systems hosted on campus and in the department
-  have not, historically, been entirely issue-free. Given the
-  importance of the assessment, it was felt that not introducing
-  departmental IT services as a single point of failure was the
-  prudent course.
-\item Does it \textit{look} like 2002?
+  have not, historically, been entirely issue-free, particularly as
+  load increases in the run-up to assessment submissions.
 \end{itemize}
 
 \subsubsection{Version control process}
 
-\begin{itemize}
-\item Branching
-\item Pull requests
-\item Somewhat flexible, heavy-duty collaboration process only
-  intermittently needed.
-\end{itemize}
+Given the small size of the project, we opted for a lightweight
+version control process. Most of the time, we worked on the
+\texttt{master} branch, synchronising frequently with a remote
+database---essentially just a robust implementation of a simple
+centralised workflow, as would be used with subversion. Given the
+relative inexperience of the team, we largely eschewed `advanced'
+features such as feature branching, history rewriting, or directly
+synchronising between working copies. However, all of these features
+proved useful at various points to resolve specific issues.
+
+In specific instances, for more complex and sweeping changes, we used
+a slightly more rigorous process, working in dedicated branches which
+were subsequently reviewed and merged using GitHub's pull request
+system\todo{reference GitHub flow}.
+
+In practice, we were satisfied most of the time with a simple
+no-branching centralised model. It was very useful, however, to have
+seamless access to more powerful tools in specific situations.
+
+Our version control process, although simple, establishes a clear
+audit trail for the codebase; this greatly improves the
+maintainability of the system by allowing future developers to
+understand the history of, and rationale for, each piece of
+functionality, and provides a valuable source of additional
+documentation.
 
 \subsection{Issue Tracking}
 
@@ -94,11 +138,23 @@ has good repository integration.
 
 \subsubsection{Issue Tracking process}
 
-Issues
+We made extensive use of our issue tracking tool to keep track of bugs
+and outstanding work.
 
-Milestones
+At specific points in the development cycle---particularly prior to
+each stage of evaluation---we used milestones to collate issues and
+ensure that we went into each evaluation with the system in a known,
+well-defined state.
 
-Ended up not relying much on repository integration.
+Our issue tracking process has contributed significantly to the
+reliability of the system by ensuring that no work `fell through the
+cracks', and that no bugs, once identified, went unfixed.
+
+If we (or someone else with access to our issue tracking system) were
+to continue developing the system, our issue tracking process would
+also contribute significantly to maintainability, providing
+documentation and a rationale for much of the work done, and a
+powerful insight into the system.
 
 \subsection{Data Model}
 
