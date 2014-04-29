@@ -55,7 +55,7 @@ of HTML CodeSniffer's WCAG2.0AAA validation---obviously this can only
 detect a subset of issues, but while it cannot infer the real semantic
 meaning of elements it uses heuristics to identify `surprising'
 markup, which can often indicate areas which should be checked
-manuall---manual inspection of the HTML, and the DOM inspection tools
+manually---manual inspection of the HTML, and the DOM inspection tools
 provided by browsers.
 
 \paragraph{Issues Found}
@@ -84,18 +84,34 @@ document. This was easily fixed by restyling the logical headings.
 
 \subsubsection{Evaluation Methodology}
 
+To ensure that the website was keyboard-navigable (useful not only for
+power users, but also as an indication of whether the website is
+likely to be navigable to users with other accessibility issues), we
+wanted to establish that the following conditions were true:
+
 \begin{itemize}
-\item Tab through elements, checking for ordering and that all
-  elements are reachable.
+\item Tabbing through elements gives feedback on currently focused
+  element.
+\item All tab-focusable elements can be activated sensibly by Enter.
+\item All functionality specified in the requirements can be accessed
+  using the keyboard.
 \end{itemize}
+
+To check the first two properties, we went through each page (counting
+the search and recipe pages as one page each, rather than expanding
+all the combinatoric options), tabbing through to ensure that we could
+see the focus location at all times, and checking that the Enter key
+behaved as expected.
+
+To check the third property, we went through each functional
+requirement and attempted to fulfil it using only the keyboard (as we
+were checking for keyboard-navigability, we used our extensive
+knowledge of the structure of the site, glossing over temporarily the
+issue of discoverable keyboard navigation).
 
 \subsubsection{Issues Found}
 
-\begin{itemize}
-\item Feedback on keyboard selection in header
-\item Search page.
-\item Feedback on keyboard selection on recipe page
-\end{itemize}
+In doing this, we found a number of issues:
 
 \paragraph{Highlighting of focused elements.}
 Several interactive elements with more complex visual styling---in
@@ -129,30 +145,109 @@ These issues were more problematic to resolve, as the \verb!onclick!
   application.
 
 \paragraph{Tab order of search filters}
+The search filter form (in our design) sits naturally on the right,
+both for visual effect and inter-application consistency (many other
+applications with filterable searches place the filters in the right
+margin of the results, as a good compromise between being easy to
+reach and not distracting from the results).
 
-Search filters sit naturally on the right, for visual effect and
-inter-application consistency.
+This places the `natural' tab order for search filters \emph{after}
+all search results: this is very inconvenient---tabbing through a few
+consistent form elements to reach the results would not be too bad,
+but tabbing through a large and variable number of search results to
+reach the filters is very annoying.
 
-`Natural' tab order for search filters is therefore after all search
-results; this is really inconvenient.
+Part of the solution to this is obviously to place the filters earlier
+in the tab order; we did this by placing the filter form before the
+results in the DOM, as part of our effort to ensure that the site
+would respond tolerably to small browser windows.
 
-Placing search filters earlier in tab order is easy partial fix, but
-causes focus to caper confusingly around the page.
+However, this introduces a new issue---tabbing now causes the focus to
+`skip' across the first few results, which appear visually ``before''
+the filters in a left-to-right reading. This could cause the user to
+lose track of the focused location.
 
-Full resolution to place filters earlier in tab order and to use
-script and styling to strongly emphasise the filter box when filters
-are selected, minimising confusion.
+To resolve this, we added dynamic styling which calls attention to the
+filter box whenever one of its elements is selected.
 
 \subsection{Feedforward and Feedback}
 
 \subsubsection{Evaluation Methodology}
 
-Ad-Hoc - list of interactions?
+To systematically evaluate our application from a feedforward and
+feedback point of view, we examined each interactive element on each
+page, and listed out the visual, dynamic, and textual feedforward cues
+it provided, the user-visible feedback cues presented on using
+it, and the real consequences caused by using it.
+
+For each element, we considered these three pieces of data
+(feedforward cues, feedback cues, and consequences) and arrived at our
+best determination of whether the element had adequate feedforward and
+feedback. This was a fairly ad-hoc process done by individuals at
+various points over the course of the project, although it seemed
+fairly effective. In retrospect, however, it would have been valuable
+to explicitly borrow many of the techniques from the CHE---one person
+compiling the lists of elements, cues, and consequences, and then the
+group performing a collaborative evaluation directed by those lists
+rather than by heuristics. But what we did seemed to work reasonably.
+
+Obviously this process is very subjective and rather
+error-prone. Fortunately, it was a supplement to the other evaluations
+we had (Collaborative Heuristic and Task-Based); the Task-Based
+evaluation in particular really exercised the feedback and feedforward
+properties of our application, (the issues it raised were covered
+there).
 
 \subsubsection{Issues Found}
 
-\begin{itemize}
-\item Ticking off instructions
-\item Setting default view
-\item Search filters?
-\end{itemize}
+\paragraph{Ticking off instructions}
+One relatively early issue we uncovered was that the cues around the
+`ticking off completed instructions' steps were wholly inadequate. In
+the version with this issue, instruction steps were presented as an
+unadorned list of paragraphs; hovering over each step would cause it
+to be coloured a dark blue, and clicking on the step would cause it to
+be styled as `strikethrough' text. This satisfied the functional
+requirement, but the feedback was potentially unclear, and feedforward
+was entirely absent.
+
+To address this issue, we styled the list with an empty check-box next
+to each instruction step---making the suggestion that each step is
+checkable. Hovering over a step then places a tick in the checkbox,
+and fades out slightly. Clicking on the step then keeps the tick in
+the checkbox, and fades the step out further to call attention to the
+subsequent, unfaded, instruction steps. We feel that this represents a
+significant improvement in feedforward in particular, as well as
+making the ticking-off feature more useful by deemphasising completed
+steps.
+
+There is still some awkwardness integrating feedforward with feedback
+for this element: after ticking off a step, you have the opportunity
+to undo that by clicking on the step again. Feedforward for this undo
+operation suggests that the element should give an indication of what
+that will do, but this conflicts with providing feedback for the
+ticking-off operation (as the user will inevitably be hovering
+immediately after clicking, but the user does not get the best
+feedback until the cursor is moved away from the element). We could
+not find a simple mechanism that would provide good feedforward and
+feedback for these transitions, but despite this, we feel that the
+major issues with this functionality have been resolved.
+
+\paragraph{Activation of search filters}
+Evaluation and testing uncovered some issues with the application of
+search filters, and the interaction between the top-banner search box
+and the filtering controls further down the page. It took users some
+time to be confident as to the effects of various filtering
+operations.
+
+We addressed the issue of interaction between filters and search box
+by replicating the search box alongside the filtering controls
+(scripting was used to ensure that the search terms were identical, to
+prevent user confusion). This made it easy for the user to understand
+the interaction between the text query and the filters.
+
+To address the other issues, we altered the filtering controls so that
+the list of results would update immediately on changing the values of
+the filters. This gave the users immediate feedback on the effects of
+their actions, allowing them to become comfortable with the filtering
+more quickly. It also prevented the user from losing track of which
+filters they would apply on pressing the `Filter' button.
