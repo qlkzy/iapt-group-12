@@ -1,6 +1,7 @@
 name: Three fish pie
 type: main
 serves: 6
+time: 75
 narrative:
     ingredients:
         - peeled main crop potatoes, cubed
