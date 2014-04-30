@@ -5,7 +5,6 @@
 */cache/!index.html
 *.aux
 *.log
-*.pdf
 */.idea
 .idea
 .sass*
