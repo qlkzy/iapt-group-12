@@ -62,7 +62,7 @@ CSS is missing a number of abstraction features which are important in
 keeping stylesheets maintainable, such as the ability to define
 variables (for colours, sizes, etc), and functional units (such as
 margin-based block centring). To improve the maintainability of our
-system, we used the Sass CSS preprocessor\todo{reference} to generate
+system, we used the Sass CSS preprocessor\cite{Scss} to generate
 pure CSS from our more-maintainable SCSS stylesheets.
 
 \subsection{Version Control}
@@ -95,7 +95,7 @@ rewriting, etc.
 In specific instances, for more complex and sweeping changes, we used
 a slightly more rigorous process, working in dedicated branches which
 were subsequently reviewed and merged using GitHub's pull request
-system\todo{reference GitHub flow}.
+system\cite{Githubflow}.
 
 In practice, we were satisfied most of the time with a simple
 no-branching centralised model. It was very useful, however, to have
@@ -153,9 +153,17 @@ it easy to refactor the database or extend that data model.
 
 \subsection{Testing}
 
-Most of the testing we did was effectively informal acceptance testing; because of
-the amount of time we spent evaluating the website from a usability
-and interaction-design perspective, w
+Most of the testing we did was effectively informal acceptance testing
+(with a side of integration testing); because of the amount of time we
+spent evaluating the website from a usability and interaction-design
+perspective, we effectively and thoroughly exercised every part of the
+application on a regular basis. While this testing was not
+specifically directed towards ensuring reliability, the effect was to
+demand a high level of reliability, and highlight any robustness or
+reliability issues immediately.
+
+However, we also did some more explicit testing to help with
+maintainability.
 
 \subsubsection{Integration Testing}
 
