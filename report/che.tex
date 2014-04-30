@@ -21,28 +21,32 @@ Our group was given the choice between using Nielsen Heuristics for interactive 
 \subsection{Results}
 The results for the CHE are contained within figure~\ref{che2}. The task that displayed the majority of severe heuristic issues are ones involving the recipe page, in particular we asked the user to read a recipe and navigate between the different view types. We have decided to highlight the issues that were granted a rating of 2.5 or above, even though all the issues will be tackled these are the highest priority changes and the ones with largest impact.
 \begin{center}
-  \emph{hard to tell where one ingredient begins and the other ends} (see figure~\ref{che3})
+  \emph{Hard to tell where one ingredient begins and the other ends} (see figure~\ref{che3})
 \end{center}
 This breaks heuristic 8, provide clear well organised information structures. The information is all present however it is very difficult to see the boundaries between items in the list. The structure does not suggest that the information is a list and as such the users first instinct is to read it as a paragraph, for which it is not grammatically suitable. After reading the paragraph it becomes obvious the information should be presented as a list allowing the user to recover. With an average rating of 2.75 this problem does not stop the user completing their task but in our opinion will definitely slow them down and provide a source of irritance. Coupled with the fact that the recipe list is likely to referenced often during the process of reading a recipe, this problem is a significant flaw in our prototype.
 \begin{center}
-  \emph{no indicator recipe instruction can be checked off} (see figure~\ref{che4})
+  \emph{No indication that recipe instruction can be checked off} (see figure~\ref{che4})
 \end{center}
 Here we are guilty of breaking interactivity heuristics “how and why” and “interactive elements should be clearly distinguished”. Though we do provide some feed forward when the cursor is moved over the element we rely completely on the users curiosity, and a certain amount of luck, for the user to discover this functionality. At some point we must tell the user that our site allows them to check off items from the list or provide some visual indicator that the recipe list is not just a list of text but a list of pressable elements. With an average severity rating of 3.5 we clearly see this as a major issue, unless something is done the user is going to completely pass this functionality by.
+
 \begin{center}
-  \emph{no idea which view you are in/press button for view that you are in, nothing happens} (see figure~\ref{che5})
+  \emph{No idea which view you are in/press button for view that you are in, nothing happens} (see figure~\ref{che5})
 \end{center}
-This does not provide “clear labels and instructions” in relation to both interactive elements and the current presented content and fails to “provide feedback on user actions and system progress”. The user is not able to definitively know which view they are in, short of figuring it out based on the content which if they are the novice user isn’t going to happen. Related to this problem, the fact that nothing happens if you press the button for the view you are currently on is a cause for concern. To the user there is no difference between this button and the others and as such it is reasonable for them expect something to happen when they press it. When they press it, and nothing happens, there is a complete lack of feedback. The user is not given any indication that their button press has been registered let alone what effect it had on the system. 
+
+This does not provide ``clear labels and instructions'' in relation to both interactive elements and the current presented content and fails to “provide feedback on user actions and system progress”. The user is not able to definitively know which view they are in, short of figuring it out based on the content which if they are the novice user isn’t going to happen. Related to this problem, the fact that nothing happens if you press the button for the view you are currently on is a cause for concern. To the user there is no difference between this button and the others and as such it is reasonable for them expect something to happen when they press it. When they press it, and nothing happens, there is a complete lack of feedback. The user is not given any indication that their button press has been registered let alone what effect it had on the system. 
 
 Both these problems were rated very highly both having an average over 3, though they are serious problems that affect the usability of the site it is possible for the user to user their problem solving skills to complete their task. Thus we decided it did warrant the catastrophic rating even though we will definitely be addressing this issue.
 
 \begin{center}
-  \emph{changing view: don't know what view change buttons fo or what they relate to/don't know what other views are} (see figure~\ref{che5})
+  \emph{Changing view: don't know what view change buttons do or what they relate to/don't know what other views are} (see figure~\ref{che5})
 \end{center}
+
 There is a problem with the buttons that change from the different types of recipe view. There is no explanation for what these different views are or the effect they have on the recipe view by switching between them. This breaks the “how and why” heuristic, obviously the problem lies in not educating the user to what these options are, they could figure out what they do by trial and error and such this problem was rated 3.5/2.5 but again not quite a 4. 
 
 \begin{center}
-  \emph{no distinction between instructions} (see figure~\ref{che4})
+  \emph{No distinction between instructions} (see figure~\ref{che4})
 \end{center}
+
 Again we are breaking the information architecture heuristic of “providing clear, well organised information structures”. Very similar to the problem with the ingredients list each step of the recipe is an element in a list but it is presented like one complete body of text. Not a problem in narrative view as it is mostly one large piece of text but a major issue in step by step and segmented views as the main purpose of the view is to break down a lengthy recipe into steps. The group rated the problem at 2.5, though it slows down the user considerably and is not pleasant to use, the user can still ultimately carry out their goal.
 
 \begin{figure}[htbp]
